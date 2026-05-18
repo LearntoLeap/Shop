@@ -103,13 +103,41 @@ async function loadProductsFile() {
 async function saveProductsFile(message = 'Cập nhật sản phẩm') {
   const status = document.getElementById('saveStatus');
   status.textContent = '💾 Đang lưu...';
+  const content = JSON.stringify(STATE.data, null, 2);
   try {
-    const content = JSON.stringify(STATE.data, null, 2);
     const res = await ghPut(DATA_PATH, toBase64(content), STATE.sha, message);
     STATE.sha = res.content.sha;
     status.textContent = '✓ Đã lưu lên GitHub';
     setTimeout(() => status.textContent = '', 3000);
   } catch (e) {
+    // 409 Conflict: SHA stale → refresh SHA and retry once
+    if (/\b409\b/.test(e.message)) {
+      try {
+        status.textContent = '⟳ Đồng bộ lại...';
+        const file = await ghGet(DATA_PATH);
+        if (!file) throw new Error('File không tồn tại sau khi refresh');
+        const remote = JSON.parse(fromBase64(file.content));
+        STATE.sha = file.sha;
+        // Detect if remote has changes that local doesn't know about
+        const remoteStr = JSON.stringify(remote);
+        if (remoteStr !== content && !confirm('File trên GitHub đã bị thay đổi từ nơi khác. Ghi đè bằng phiên bản hiện tại của bạn?\n\n(Bấm Hủy để load lại bản trên GitHub, mất các thay đổi chưa lưu.)')) {
+          STATE.data = remote;
+          render();
+          status.textContent = '↻ Đã load bản mới từ GitHub';
+          setTimeout(() => status.textContent = '', 3000);
+          return;
+        }
+        const res = await ghPut(DATA_PATH, toBase64(content), STATE.sha, message + ' (force after conflict)');
+        STATE.sha = res.content.sha;
+        status.textContent = '✓ Đã lưu (sau khi giải quyết xung đột)';
+        setTimeout(() => status.textContent = '', 3000);
+        return;
+      } catch (e2) {
+        status.textContent = '✗ Lỗi: ' + e2.message;
+        alert('Lỗi khi đồng bộ: ' + e2.message);
+        return;
+      }
+    }
     status.textContent = '✗ Lỗi: ' + e.message;
     alert('Lỗi khi lưu: ' + e.message);
   }
