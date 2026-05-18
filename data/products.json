@@ -33,52 +33,6 @@
   ],
   "products": [
     {
-      "id": "p004",
-      "name": "Bộ học liệu STEM Tiểu học (Khối 1-5)",
-      "slug": "bo-hoc-lieu-stem-tieu-hoc",
-      "category": "courseware",
-      "price": 12000000,
-      "originalPrice": 15000000,
-      "currency": "VND",
-      "images": [
-        "https://placehold.co/600x600/f59e0b/white?text=Hoc+Lieu+STEM"
-      ],
-      "shortDescription": "Trọn bộ 120 bài giảng STEM số cho khối tiểu học, bám sát chương trình GDPT 2018.",
-      "description": "Bộ học liệu số STEM Tiểu học của Learn to Leap:\n\n- 120 bài giảng (5 khối × 24 bài/khối)\n- Mỗi bài gồm: kế hoạch bài dạy, slide tương tác, video demo, phiếu học tập, rubric đánh giá\n- Truy cập online qua LtL LMS, không giới hạn người dùng trong trường\n- Cập nhật bổ sung trong 3 năm\n- Đào tạo sử dụng cho giáo viên (8 giờ online)",
-      "tags": [
-        "học liệu",
-        "tiểu học",
-        "GDPT 2018",
-        "LMS"
-      ],
-      "stock": 999,
-      "featured": false,
-      "createdAt": "2026-03-10"
-    },
-    {
-      "id": "p005",
-      "name": "Cảm biến IoT Lab Pack",
-      "slug": "cam-bien-iot-lab-pack",
-      "category": "ai-iot",
-      "price": 3200000,
-      "originalPrice": 3800000,
-      "currency": "VND",
-      "images": [
-        "https://placehold.co/600x600/ef4444/white?text=IoT+Lab+Pack"
-      ],
-      "shortDescription": "20 loại cảm biến IoT phổ biến cho dự án trường học thông minh.",
-      "description": "Bộ cảm biến IoT đầy đủ cho các dự án trường học thông minh: nhiệt độ, độ ẩm, CO2, bụi mịn PM2.5, cường độ ánh sáng, âm thanh, chuyển động, từ trường... Tích hợp module WiFi/LoRa, gateway và dashboard giám sát thời gian thực.",
-      "tags": [
-        "IoT",
-        "cảm biến",
-        "trường học thông minh",
-        "lora"
-      ],
-      "stock": 25,
-      "featured": false,
-      "createdAt": "2026-03-25"
-    },
-    {
       "id": "p006",
       "name": "STEM Starter Kit Mầm non",
       "slug": "stem-starter-kit-mam-non",
