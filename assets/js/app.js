@@ -129,7 +129,7 @@ function openProduct(id) {
           ${(p.tags || []).map(t => `<span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">#${t}</span>`).join('')}
         </div>
         <div class="text-sm text-slate-600 mb-4">Tình trạng: ${p.stock > 0 ? `<span class="text-emerald-600 font-semibold">Còn hàng (${p.stock})</span>` : '<span class="text-red-500">Liên hệ</span>'}</div>
-        <a href="mailto:contact@learntoleap.vn?subject=Yêu cầu báo giá: ${encodeURIComponent(p.name)}" class="block text-center bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3 rounded-lg">📧 Yêu cầu báo giá</a>
+        <a href="mailto:contact@learntoleap.vn?subject=Liên hệ đặt sản phẩm: ${encodeURIComponent(p.name)}" class="block text-center bg-gradient-to-r from-accent-500 to-brand-600 hover:opacity-90 text-white font-semibold py-3 rounded-lg shadow-lg shadow-purple-200">📧 Liên hệ đặt sản phẩm</a>
       </div>
     </div>
   `;

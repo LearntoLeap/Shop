@@ -12,7 +12,12 @@
       extend: {
         colors: {
           brand: {
-            50: '#eff6ff', 100: '#dbeafe', 500: '#2563eb', 600: '#1d4ed8', 700: '#1e40af', 900: '#1e3a8a'
+            50: '#faf5ff', 100: '#f3e8ff', 200: '#e9d5ff', 300: '#d8b4fe',
+            400: '#c084fc', 500: '#a855f7', 600: '#9333ea', 700: '#7e22ce',
+            800: '#6b21a8', 900: '#581c87'
+          },
+          accent: {
+            400: '#f472b6', 500: '#ec4899', 600: '#db2777'
           }
         }
       }
@@ -27,48 +32,46 @@
   .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 </style>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-white text-slate-800">
 
 <!-- Header -->
-<header class="bg-white shadow-sm sticky top-0 z-40">
+<header class="bg-white shadow-sm sticky top-0 z-40 border-b border-purple-100">
   <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-    <a href="#" class="flex items-center gap-2">
-      <div class="w-10 h-10 bg-gradient-to-br from-brand-500 to-brand-700 rounded-lg flex items-center justify-center text-white font-extrabold">L</div>
-      <div>
-        <div class="font-extrabold text-lg leading-none text-brand-700">Learn to Leap</div>
-        <div class="text-xs text-slate-500">EdTech STEM • Robotics • AI</div>
-      </div>
+    <a href="#" class="flex items-center gap-3">
+      <img src="images/logo.png" alt="Learn to Leap" class="h-10 md:h-12 w-auto" onerror="this.style.display='none'" />
     </a>
     <div class="flex-1 max-w-xl hidden md:block">
-      <input id="searchInput" type="search" placeholder="Tìm sản phẩm, kit, học liệu..." class="w-full px-4 py-2 rounded-full border border-slate-300 focus:border-brand-500 focus:ring-2 focus:ring-brand-100 outline-none" />
+      <input id="searchInput" type="search" placeholder="Tìm sản phẩm, kit, học liệu..." class="w-full px-4 py-2 rounded-full border border-purple-200 focus:border-brand-500 focus:ring-2 focus:ring-brand-100 outline-none" />
     </div>
-    <nav class="flex items-center gap-4 text-sm">
-      <a href="#products" class="hover:text-brand-600 hidden sm:inline">Sản phẩm</a>
-      <a href="#contact" class="hover:text-brand-600 hidden sm:inline">Liên hệ</a>
-      <a href="admin.html" class="text-xs text-slate-400 hover:text-brand-600">Quản trị</a>
+    <nav class="flex items-center gap-5 text-sm font-medium">
+      <a href="#products" class="text-slate-700 hover:text-brand-600 hidden sm:inline">Sản phẩm</a>
+      <a href="#contact" class="text-slate-700 hover:text-brand-600 hidden sm:inline">Liên hệ</a>
     </nav>
   </div>
 </header>
 
 <!-- Hero -->
-<section class="bg-gradient-to-br from-brand-700 via-brand-600 to-brand-500 text-white">
-  <div class="max-w-7xl mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-8 items-center">
+<section class="bg-white relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-purple-50 via-white to-pink-50"></div>
+  <div class="absolute -top-24 -right-24 w-96 h-96 bg-purple-200 rounded-full blur-3xl opacity-40"></div>
+  <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-pink-200 rounded-full blur-3xl opacity-40"></div>
+  <div class="relative max-w-7xl mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-8 items-center">
     <div>
-      <span class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs font-medium mb-4">Theo Nghị quyết 57-NQ/TW & 71-NQ/TW</span>
-      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">Giải pháp STEM, Robotics & AI cho trường học Việt Nam</h1>
-      <p class="text-white/90 text-base md:text-lg mb-6">Learn to Leap cung cấp kit học cụ, phòng STEM trọn gói, học liệu số và đào tạo giáo viên — đồng hành cùng các trường phổ thông trong hành trình chuyển đổi số giáo dục.</p>
+      <span class="inline-block bg-purple-100 text-brand-700 px-3 py-1 rounded-full text-xs font-semibold mb-4">Theo Nghị quyết 57-NQ/TW & 71-NQ/TW</span>
+      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 bg-gradient-to-r from-accent-500 to-brand-700 bg-clip-text text-transparent">Giải pháp STEM, Robotics & AI cho trường học Việt Nam</h1>
+      <p class="text-slate-600 text-base md:text-lg mb-6">Learn to Leap cung cấp kit học cụ, phòng STEM trọn gói, học liệu số và đào tạo giáo viên — đồng hành cùng các trường phổ thông trong hành trình chuyển đổi số giáo dục.</p>
       <div class="flex gap-3 flex-wrap">
-        <a href="#products" class="bg-white text-brand-700 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100">Xem sản phẩm</a>
-        <a href="#contact" class="bg-white/10 border border-white/30 px-6 py-3 rounded-lg font-semibold hover:bg-white/20">Yêu cầu báo giá</a>
+        <a href="#products" class="bg-gradient-to-r from-accent-500 to-brand-600 text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 shadow-lg shadow-purple-200">Xem sản phẩm</a>
+        <a href="#contact" class="bg-white border-2 border-brand-200 text-brand-700 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50">Liên hệ đặt sản phẩm</a>
       </div>
     </div>
     <div class="hidden md:flex justify-end">
-      <div class="bg-white/10 backdrop-blur rounded-2xl p-6 border border-white/20 w-full max-w-md">
+      <div class="bg-white rounded-2xl p-6 border border-purple-100 shadow-xl shadow-purple-100 w-full max-w-md">
         <div class="grid grid-cols-2 gap-4 text-center">
-          <div><div class="text-3xl font-extrabold">120+</div><div class="text-sm text-white/80">Trường đang dùng</div></div>
-          <div><div class="text-3xl font-extrabold">15K+</div><div class="text-sm text-white/80">Học sinh tiếp cận</div></div>
-          <div><div class="text-3xl font-extrabold">500+</div><div class="text-sm text-white/80">Giáo viên đào tạo</div></div>
-          <div><div class="text-3xl font-extrabold">24</div><div class="text-sm text-white/80">Tỉnh/Thành</div></div>
+          <div><div class="text-3xl font-extrabold text-brand-700">120+</div><div class="text-sm text-slate-500">Trường đang dùng</div></div>
+          <div><div class="text-3xl font-extrabold text-accent-500">15K+</div><div class="text-sm text-slate-500">Học sinh tiếp cận</div></div>
+          <div><div class="text-3xl font-extrabold text-accent-500">500+</div><div class="text-sm text-slate-500">Giáo viên đào tạo</div></div>
+          <div><div class="text-3xl font-extrabold text-brand-700">24</div><div class="text-sm text-slate-500">Tỉnh/Thành</div></div>
         </div>
       </div>
     </div>
@@ -77,20 +80,20 @@
 
 <!-- Categories -->
 <section class="max-w-7xl mx-auto px-4 py-10">
-  <h2 class="text-2xl font-bold mb-5">Danh mục sản phẩm</h2>
+  <h2 class="text-2xl font-bold mb-5 text-slate-800">Danh mục sản phẩm</h2>
   <div id="categoryGrid" class="grid grid-cols-2 md:grid-cols-5 gap-3"></div>
 </section>
 
 <!-- Featured -->
 <section class="max-w-7xl mx-auto px-4 pb-4">
-  <h2 class="text-2xl font-bold mb-5 flex items-center gap-2">⭐ Sản phẩm nổi bật</h2>
+  <h2 class="text-2xl font-bold mb-5 flex items-center gap-2 text-slate-800"><span class="text-accent-500">⭐</span> Sản phẩm nổi bật</h2>
   <div id="featuredGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
 </section>
 
 <!-- All Products -->
 <section id="products" class="max-w-7xl mx-auto px-4 py-10">
   <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
-    <h2 class="text-2xl font-bold">Tất cả sản phẩm</h2>
+    <h2 class="text-2xl font-bold text-slate-800">Tất cả sản phẩm</h2>
     <div class="flex gap-2 flex-wrap" id="filterChips"></div>
   </div>
   <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
@@ -98,15 +101,16 @@
 </section>
 
 <!-- Contact -->
-<section id="contact" class="bg-slate-900 text-white mt-10">
+<section id="contact" class="bg-gradient-to-br from-brand-800 via-brand-700 to-accent-600 text-white mt-10">
   <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8">
     <div>
+      <img src="images/logo-white.png" alt="Learn to Leap" class="h-12 mb-3" onerror="this.style.display='none'" />
       <div class="font-extrabold text-xl mb-2">Learn to Leap</div>
-      <p class="text-slate-400 text-sm">Công ty Cổ phần Công nghệ Giáo dục Learn to Leap — Giải pháp EdTech STEM, Robotics, AI cho trường phổ thông Việt Nam.</p>
+      <p class="text-purple-100 text-sm">Công ty Cổ phần Công nghệ Giáo dục Learn to Leap — Giải pháp EdTech STEM, Robotics, AI cho trường phổ thông Việt Nam.</p>
     </div>
     <div>
       <div class="font-semibold mb-2">Liên hệ</div>
-      <ul class="text-sm text-slate-300 space-y-1">
+      <ul class="text-sm text-purple-100 space-y-1">
         <li>📧 contact@learntoleap.vn</li>
         <li>📞 0xxx xxx xxx</li>
         <li>📍 Hà Nội, Việt Nam</li>
@@ -114,14 +118,14 @@
     </div>
     <div>
       <div class="font-semibold mb-2">Dành cho đối tác</div>
-      <ul class="text-sm text-slate-300 space-y-1">
+      <ul class="text-sm text-purple-100 space-y-1">
         <li>• Phòng/Sở GD&ĐT</li>
         <li>• Trường phổ thông</li>
         <li>• Nhà đầu tư & nhà phân phối</li>
       </ul>
     </div>
   </div>
-  <div class="border-t border-slate-800 text-center text-xs text-slate-500 py-4">© 2026 Learn to Leap. All rights reserved.</div>
+  <div class="border-t border-white/20 text-center text-xs text-purple-200 py-4">© 2026 Learn to Leap. All rights reserved.</div>
 </section>
 
 <!-- Product Detail Modal -->
