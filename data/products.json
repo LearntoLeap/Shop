@@ -39,6 +39,24 @@
   ],
   "products": [
     {
+      "id": "pmpch88ha2g8k",
+      "name": "Giá treo di động",
+      "slug": "gia-treo-di-dong",
+      "category": "thiet-bi-ket-noi-thong-minh",
+      "price": 4750000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779185766400-52176-gi-tivi-di-ng-ft-l.jpg"
+      ],
+      "shortDescription": "",
+      "description": "\"- VESA: 200x200mm, 200x400mm, 300x300mm, 400x400mm, 500x400mm, 600x400mm, 630x1140mm.\n- Giá đỡ phù hợp với tất cả các tivi, màn hình tương tác từ: 52 inch đến 100 inch\n- Màu sắc: Sắt SPCC sơn tĩnh điện màu đen, ốp nhựa\n- Tải trọng: 140kg\n- Độ cao điều chỉnh: max 2.350m (bao gồm cả giá để cam)\n- Di chuyển dễ dàng với 4 bánh xe, cố định bằng khóa\"\n",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcdfgcf88ku",
       "name": "Màn hình tương tác thông minh 75 inch\t",
       "slug": "man-hinh-tuong-tac-thong-minh-75-inch",
