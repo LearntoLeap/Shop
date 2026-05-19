@@ -344,7 +344,9 @@
       "price": 7797000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779183691872-thpt19a.jpg"
+      ],
       "shortDescription": "",
       "description": "\"1x Bộ dụng cụ chấp hành : Bộ dụng cụ chấp hành 062, gồm dây điện 4 mm (3 đỏ, 3 đen); chuyển mạch 12V; đế đèn với 3 bóng đèn màu 12V; còi 12V; động cơ một chiều 12V và cánh quạt kết nối; tất cả sử dụng chân cắm 4 mm\n1x Hộp KIT nhựa : Dung tích 15 L\"",
       "tags": [],
