@@ -39,6 +39,24 @@
   ],
   "products": [
     {
+      "id": "pmpchczyv16ln",
+      "name": "Camera",
+      "slug": "camera",
+      "category": "robotics",
+      "price": 35500000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779185947119-tb-012.png"
+      ],
+      "shortDescription": "",
+      "description": "\"Camera trực tuyến\n Loại camera: Camera kép 4K (Dual Camera): Camera PTZ và Camera Panoramic\n Camera PTZ\n Cảm biến hình ảnh: Cảm biến Sony 4K, 8.42M pixel\n Đầu ra video (USB 3.0): H.264/MJEPG lên tới 2160p@30fps\n Đầu ra video (USB 2.0): H.264/MJEPG lên tới 1080p@30fps\n Đầu ra video (HDMI): H.264/MJEPG lên tới 2160p@30fps\n Đầu ra video (IP): H.264/MJEPG lên tới 2160p@30fps (luồng thứ nhất); H.264/MJEPG lên tới 720p@30fps (luồng thứ hai)\n Zoom: 12x Zoom quang học, 16X Zoom số\n Góc nhìn (FOV): DFOV 90°/ HFOV 80°/ VFOV 49.2°\n Tiêu cự ống kính: 4.8mm ~ 57.8mm\n Khẩu độ ống kính: F1.8 ~ F3.6\n Pan & Tilt điều khiển bằng động cơ: Pan: ±170°, Tilt: ±90°\n Số lượng cài đặt trước: 10 qua điều khiển hồng ngoại, 128 qua RS232\n Lật hình ảnh và phản chiếu hình ảnh: Có\n Camera Panoramic\n Cảm biến hình ảnh: 8MP, Cảm biến Sony\n Nắp che riêng tư điện tử: Có\n Đèn LED hiển thị: Có\n Góc nhìn: DFOV 120°\n Xoay thủ công: +-10°\n Thông số khác\n Tính năng AI: Tự động lấy khung hình, Theo dõi diễn giả, Theo dõi người thuyết trình\n Cổng I/O: USB 3.0 Type-C ×1 (Device), USB 2.0 Type-A ×1 (host), Mic in (3.5mm) ×1, RJ45 ×1 (IP Stream, POE+), RS232 ×1 (VISCA/Pelco-D/Pelco-P protocol), 1 × Security Lock Slot, HDMI 1.4 out ×1\n Phụ kiện: Cáp USB C-A (2m) x1, Nguồn, Điều khiển, Kit lắp đặt, Sách hướng dẫn sử dụng\n Kích thước: 181 × 151.5 × 178.4mm\n Kích thước đóng gói: 295 × 245 × 243mm\n Trọng lượng tịnh: 2.3 kg\n Trọng lượng tổng: 3.95 kg\n - Bảo hành: 24 tháng\"\n",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpchc3pf1x02",
       "name": "Loa kèm micro",
       "slug": "loa-kem-micro",
