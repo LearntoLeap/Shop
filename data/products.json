@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcdbihgwqu9",
+      "name": "Mô hình STEM phun tưới cây trồng\t",
+      "slug": "mo-hinh-stem-phun-tuoi-cay-trong",
+      "category": "robotics",
+      "price": 17496000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"* Phần cơ khí lắp ghép:\n- Kích thước đế mô hình: 550x400mm\n- Nhận các thông số đo được từ các cảm biến, khi nhận thấy môi trường nuôi trồng vượt qua các điều kiện môi trường được thiết lập trước, thực thi điều khiển đèn chiếu sáng, động cơ bơm nước, quạt thông gió để đưa môi trường nuôi cấy về môi trường tối ưu.\n-  Téc chứa nước tưới và làm mát, trụ nhôm 20x20, hàng rào, các cây trang trí,…\n-  Nhà ươm cây bằng mica\n- Đèn chiếu sáng.\n- Động cơ bơm nước và bép phun sương.\n- Quạt thông gió\n- Tạo điều kiện môi trường tối ưu và ổn định cho cây ươm.\n* Các Modul cảm biến kèm theo:\n1- Mô-đun cảm biến đo nhiệt độ (SEN101)\n (Dùng chung với cảm biến đã cung cấp ở chuyên đề trong phòng STEM)\n2- Modul cảm biến ánh sáng (SEN112):\n (Dùng chung với cảm biến đã cung cấp ở chuyên đề trong phòng STEM)\n3- Mô-đun cảm biến đo độ ẩm (SEN102)\n- Dải đo: 0 ~ 100 %RH\n- Độ chính xác: ± 2 %RH\n- Độ phân dải: 0.01 %RH\n- Đơn vị đo: %RH\n- Tốc độ lấy mẫu: 10Hz\n- Tần số hoạt động: 48MHz\n- Bộ nhớ Flash: 64Kbytes\n- Bộ nhớ SRAM: 8 Kbytes\n- Cổng điều khiển: Có thể cài đặt: \n                                + 2 đầu ra điều khiển\n                                + 2 đầu vào giám sát\n- Cổng giao tiếp: USB-C\n- Chuẩn kết nối: RS485\n- Giao thức: Modbus RTU\n- Phần mềm: STEMe\n- Điện áp hoạt động: 4.75 ~ 5.25V\n4- Mô-đun cảm biến đo nồng độ khí O2 trong không khí (SEN108)\n- Dải đo: 0 ~ 30 %Vol\n- Độ chính xác: ± 2 %\n- Độ phân dải: 0.15 %Vol\n- Đơn vị đo: %Vol\n- Tần số lấy mẫu: 10Hz\n- Tần số hoạt động: 48MHz\n- Bộ nhớ Flash: 64Kbytes\n- Bộ nhớ SRAM: 8 Kbytes\n- Cổng điều khiển: Có thể cài đặt: \n                                + 2 đầu ra điều khiển\n                                + 2 đầu vào giám sát\n                                + đầu dò nhiệt độ bù\n- Cổng giao tiếp: USB-C\n- Chuẩn kết nối: RS485\n- Giao thức: Modbus RTU\n- Phần mềm: STEMe\n- Điện áp hoạt động: 4.75 ~ 5.25V\n* Bộ phần mềm giáo dục STEMe: Sử dụng phần mềm STEMe tiếng việt được cài trên máy tính, tự động kết nối các cảm biến và thiết lập được các trạng thái điều khiển\n* Tài liệu hướng dẫn sử dụng\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcdb3ahwvwq",
       "name": "Mô hình STEM điều khiển nhà thông minh\t",
       "slug": "mo-hinh-stem-dieu-khien-nha-thong-minh",
