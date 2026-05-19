@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpccu8hy36m6",
+      "name": "Cảm biến đo áp suất khí",
+      "slug": "cam-bien-do-ap-suat-khi",
+      "category": "robotics",
+      "price": 9188000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"Đo áp suất khi tuyệt đối trong hai phạm vi: 0…700 kPa, 0...130 kPa\nĐộ phân giải (12 bit): 0.2 kPa, 0.04 kPa\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcctqq5m95y",
       "name": "Mô đun công tắc",
       "slug": "mo-dun-cong-tac",
