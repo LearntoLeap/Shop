@@ -46,7 +46,9 @@
       "price": 15000000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779186044740-tb-009.png"
+      ],
       "shortDescription": "",
       "description": "\"Loa có  kết nối bluetooth (1 bộ gồm 2 cái)\n Loa chính: 1x Rj45, 1x USB A, 1x audio in, 1x mic in, 1x audio out, 1x cổng kết nối tới loa phụ.\n Loa phụ: 1x cổng kết nối tới loa chính.\n Chế độ loa Bluetooth:Hỗ trợ điện thoại Android, kết nối không dây với loa qua Bluetooth để điều khiển âm lượng của loa. Đặt tên Bluetooth, đặt mật khẩu Bluetooth và các chức năng khác giúp giáo viên quản lý loa dễ dàng điều khiển hơn.\n Thiết bị hiển thị màn hình phẳng thông minh tương tác kết nối không dây với loa thông qua Bluetooth để đạt được khả năng điều khiển chức năng âm lượng của loa hoạt động (yêu cầu máy tính bảng thông minh tương tác và loa hoạt động giống nhau một thương hiệu)\n Hỗ trợ một bộ loa được ghép nối với hai micrô đồng thương hiệu \n Độ nhạy của loa: 85dB(1W/1M)\n Công suất định mức: 2x40W@4Ω\n Tỷ lệ tín hiệu trên tạp âm: ≥83dB \n THD+N: ≤1% @1W/1k\n Bluetooth 5.0\n Kích thước: 340x230x193mm / 1 chiếc\n Trọng lượng: 11kg / 1 chiếc\n - Bảo hành: 24 tháng\"\n",
       "tags": [],
