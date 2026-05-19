@@ -456,7 +456,9 @@
       "price": 4026000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779183567370-thpt03.jpg"
+      ],
       "shortDescription": "",
       "description": "\"1x Túi nấm men : 10 g\n1x Túi đường glucose : 50 g\n1x Túi đường sacarose : 50 g\n2x Bình tam giác 250 ml\n1x Nước cất : 500 ml\n1x Giá để ống nghiệm nhỏ\n2x Nút cao su có lỗ Φ6\n2x Ống dẫn đồng : Φ4–6\n1x Nút cao su\n2x Ống nghiệm\n4x Pipet : Nhựa\n1x Cân điện tử mini : Độ chia nhỏ nhất 1 g, giới hạn đo tối thiểu 500 g\n1x Hộp KIT nhựa : Dung tích 15 L\"",
       "tags": [],
