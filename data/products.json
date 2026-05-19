@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcctb83z504",
+      "name": "Động cơ bước",
+      "slug": "dong-co-buoc",
+      "category": "robotics",
+      "price": 11223000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "Động cơ bước Burette 061, còn được gọi là máy chuẩn độ, là một thiết bị định lượng, rẻ, chính xác và có thể được sử dụng để kiểm soát quá trình thêm chuẩn độ vào các thí nghiệm chuẩn đô",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpccsunxd9xy",
       "name": "Điện cực pH",
       "slug": "dien-cuc-ph",
