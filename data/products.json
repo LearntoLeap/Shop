@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcd86podp6v",
+      "name": "Robot giáo dục hình người, lập trình AI\t",
+      "slug": "robot-giao-duc-hinh-nguoi-lap-trinh-ai",
+      "category": "robotics",
+      "price": 208783000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"Model: Yanshee\nMô tả mẫu: Dáng người, màu bạc\nVật liệu: Khung hợp kim nhôm; vỏ Al + PC + ABS\nThành phần kết cấu: 1\nKhối lượng: 2,05 kg\nSố lượng đóng gói: 1\nKích thước robot: Cao 370 × Rộng 192 × Dày 106 (mm)\nThông số phần cứng\nExplore Controller ×1\nThông số cơ bản\nNhiệt độ làm việc: 0℃ ~ 40℃\nỨng dụng (Hệ điều hành): Hỗ trợ Android và iOS\nVi xử lý chính\nCPU: STM32F103RDT6 + Broadcom BCM2837 1,2 GHz, 64‑bit, 4 nhân ARMv8 Cortex‑A53\nRAM: ≥ 1 GB\nROM: ≥ 16 GB\nHệ điều hành: Raspbian\nGiao tiếp: Bluetooth 4.1 và Wi‑Fi 2.4G 802.11 b/g/n\nGiao diện ngoại vi\nCổng DC: 1\nCổng USB: 1\nCổng HDMI: 1\nGPIO: 40\nCổng mở rộng nam châm Pogo 4‑pin: 6\nPhím\nPhím nguồn: 1, ở ngực (thoracic)\nPhím dừng khẩn cấp: 1, ở đỉnh đầu\nPin\nLoại: Pin lithium 7,24V\nDung lượng: ≥ 2750 mAh\nLED\nLED ba màu: 2, ở mắt\nLED ba màu: 3, ở ngực\nServo ×17\nKhối lượng mỗi servo: ≥ 50 g\nMô‑men xoắn đầu ra: ≥ 6,5V: 8 kg·cm; 8,5V: 12 kg·cm\nTỷ số truyền bánh răng: ≥ 1/333\nDải góc: ≥ 180° (±30°)\nĐiện áp cấp: DC 6V–9V (định mức điển hình: 7,4V)\nTốc độ: 6,5V: ≥ 0,238 s/60°; 8,5V: ≥ 0,198 s/60°\nDòng làm việc: ARM® 32‑bit Cortex®‑M0 CPU\nDòng kẹt rôto: 0,9 A\nĐộ chính xác: không tải 1,5°, có tải 3°\nChỉ thị làm việc: Định dạng số (Digital)\nCảm biến:\nMicrophone: 1\nLoa stereo: 2, 4 Ω, 2 W, Φ25 mm\nCamera: ≥ 8 megapixel, tiêu cự cố định\nCảm biến chuyển động 9 trục: 1\nCảm biến đo nhiệt độ bo mạch chính: 1\nPhụ kiện\nSách hướng dẫn nhanh ×1, Bộ đổi nguồn (Adapter) ×1\"\"\nMô tả:\nRobot hình người phục vụ giáo dục AI và Robotics với nền tảng mã nguồn mở, tích hợp nhiều cảm biến (hồng ngoại, nhiệt độ, điện dung, độ ẩm, áp suất) và bộ xử lý có thể lập trình (Raspberry Pi). Robot hỗ trợ nhiều ngôn ngữ lập trình như Python, C/C++, Java và Blockly, cho phép điều khiển chuyển động, nhận diện hình ảnh/giọng nói và phản hồi dữ liệu môi trường thông qua phần mềm lập trình trực quan và ứng dụng hỗ trợ điều khiển. Thiết bị có thể thực hiện các hoạt động tương tác, phản hồi theo lệnh, thu thập và truyền dữ liệu, góp phần xây dựng môi trường học STEM/AI tương tác, nâng cao kỹ năng lập trình và hiểu biết về trí tuệ nhân tạo.\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcd7tp4q31z",
       "name": "Tài liệu học tập song ngữ Việt Anh Robot ứng dụng AI Tăng cường - Kỹ sư siêu đẳng - Tập 2\t",
       "slug": "tai-lieu-hoc-tap-song-ngu-viet-anh-robot-ung-dung-ai-tang-cuong-ky-su-sieu-dang-tap-2",
