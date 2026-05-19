@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpccq9asqt3w",
+      "name": "Cảm biến điện thế",
+      "slug": "cam-bien-dien-the",
+      "category": "robotics",
+      "price": 5978000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"Đo hiệu điện thế trong phạm vi: -12 V…+ 12 V\nĐộ phân giải (12 bit): 6.5 mV\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpccpno63lvs",
       "name": "Cảm biến ánh sáng",
       "slug": "cam-bien-anh-sang",
