@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcded078nhg",
+      "name": "Kính thực tế ảo VR\t",
+      "slug": "kinh-thuc-te-ao-vr",
+      "category": "robotics",
+      "price": 25920000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"Thông số kỹ thuật:\nBộ xử lý & Bộ nhớ\nCPU: Qualcomm Snapdragon XR2 Gen 2\nRAM: 8GB\nBộ nhớ trong: 512GB\nMàn hình & Hiển thị\nCông nghệ hiển thị: 4K+ Infinite Display\nMàn hình:\n02 màn hình LCD\nĐộ phân giải: 2064 × 2208 pixel / mỗi mắt\nTần số quét:\n90Hz (mặc định)\n120Hz (đang thử nghiệm)\nQuang học\nThấu kính: Pancake Lens\nGóc nhìn (FOV – Field of View):\nNgang: 103.8°\nDọc: 96.4°\nĐiều chỉnh IPD:\nĐiều chỉnh vật lý\nKhoảng cách: 58 – 71 mm\nCamera & Theo dõi chuyển động\nCamera theo dõi:\n04 camera hồng ngoại (IR) theo dõi chuyển động ngoài\nCamera xuyên thấu (Passthrough):\n02 camera màu độ phân giải cao (18 PPD)\nKết nối\nWi-Fi: Wi-Fi 6E\nBluetooth: Bluetooth 5.2\nCổng kết nối:\nUSB-C (hỗ trợ Oculus Link)\nPin & Nguồn\nThời lượng pin: Tối đa 3 giờ\nThời gian sạc: Khoảng 2 giờ\nThiết kế & Vật lý\nTrọng lượng: 515 g\nKích thước: 184 x 160 × 98 (mm)\nDây đeo đầu: Dây vải mềm, dễ điều chỉnh\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcddya6u04a",
       "name": "Bộ chế tạo dụng cụ cơ khí\t",
       "slug": "bo-che-tao-dung-cu-co-khi",
