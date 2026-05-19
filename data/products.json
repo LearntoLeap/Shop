@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcda1em7rmq",
+      "name": "Tài liệu học tập song ngữ Việt Anh Robot giáo dục hình người, lập trình AI - Ứng dụng và Khám phá Trí tuệ Nhân tạo - Tập 2\t",
+      "slug": "tai-lieu-hoc-tap-song-ngu-viet-anh-robot-giao-duc-hinh-nguoi-lap-trinh-ai-ung-dung-va-kham-pha-tri-tue-nhan-tao-tap-2",
+      "category": "robotics",
+      "price": 240000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"Nhà xuất bản: Đại học Quốc Gia TP.HCM\nĐơn vị phát hành: UBTECH Việt Nam\nChất lượng: Mới 100%\nThông số kỹ thuật\n\nChất liệu giấy: Giấy trắng định lượng 70–80 gsm\nBìa: Bìa mềm, in màu\nNgôn ngữ: Tiếng Việt và tiếng Anh\nHình thức: In offset, đóng gáy keo\nNội dung: Sách hướng dẫn lắp ráp, lập trình, giáo trình STEM, tài liệu tham khảo cho các bộ sản phẩm UBTECH\nPhụ kiện đi kèm: Không (nếu có sẽ ghi rõ theo từng đầu sách)\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcd9nsi6k1g",
       "name": "Tài liệu học tập song ngữ Việt Anh Robot giáo dục hình người, lập trình AI - Ứng dụng và Khám phá Trí tuệ Nhân tạo - Tập 1\t",
       "slug": "tai-lieu-hoc-tap-song-ngu-viet-anh-robot-giao-duc-hinh-nguoi-lap-trinh-ai-ung-dung-va-kham-pha-tri-tue-nhan-tao-tap-1",
