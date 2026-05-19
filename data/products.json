@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpccxnp19zve",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Lên men rượu - Lớp 10\t",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-len-men-ruou-lop-10",
+      "category": "robotics",
+      "price": 4026000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"1x Túi nấm men : 10 g\n1x Túi đường glucose : 50 g\n1x Túi đường sacarose : 50 g\n2x Bình tam giác 250 ml\n1x Nước cất : 500 ml\n1x Giá để ống nghiệm nhỏ\n2x Nút cao su có lỗ Φ6\n2x Ống dẫn đồng : Φ4–6\n1x Nút cao su\n2x Ống nghiệm\n4x Pipet : Nhựa\n1x Cân điện tử mini : Độ chia nhỏ nhất 1 g, giới hạn đo tối thiểu 500 g\n1x Hộp KIT nhựa : Dung tích 15 L\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpccwm20lf2x",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Nóng chảy, đông đặc - Lớp 10\t",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nong-chay-dong-dac-lop-10",
