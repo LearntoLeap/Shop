@@ -39,6 +39,22 @@
   ],
   "products": [
     {
+      "id": "pmpchjgoyxdl6",
+      "name": "Dịch vụ thuê Server và Hosting",
+      "slug": "dich-vu-thue-server-va-hosting",
+      "category": "thiet-bi-ket-noi-thong-minh",
+      "price": 6500000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"CPU 20 Core\nCấu hình thiết bị thuê\n128GB RAM\nSSD 500GB x 1\nSATA 1TB x1 \nBăng thông 300Mbps \n Chạy phần mềm EyePro Cloud Quản lý LHTM và các phần mềm khác.\nThời hạn thuê 60 tháng (trả phí trước)\"\n",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpchiu8ejdme",
       "name": "Phần mềm quản lý (Giải pháp Lớp học thông minh EyePro Cloud - Phần mềm bán trọn gói 5 năm bao gồm cả Streaming Server)",
       "slug": "phan-mem-quan-ly-giai-phap-lop-hoc-thong-minh-eyepro-cloud-phan-mem-ban-tron-goi-5-nam-bao-gom-ca-streaming-server",
