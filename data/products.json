@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpccupm8ruy4",
+      "name": "Cáp kết nối\t",
+      "slug": "cap-ket-noi",
+      "category": "robotics",
+      "price": 55000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "Được sử dụng cho các cảm biến BT với chốt cắm chuẩn IEEE1394.",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpccu8hy36m6",
       "name": "Cảm biến đo áp suất khí",
       "slug": "cam-bien-do-ap-suat-khi",
