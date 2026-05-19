@@ -592,7 +592,9 @@
       "price": 4436000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779184181023-sen-009.jpg"
+      ],
       "shortDescription": "",
       "description": "\"Xác định mức độ pH trong phạm vi: 0...14 pH\nĐộ phân giải (12 bit): 0.005 pH\"",
       "tags": [],
