@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcd56ttyol1",
+      "name": "Hoạt động giáo dục STEM 11\t",
+      "slug": "hoat-dong-giao-duc-stem-11",
+      "category": "robotics",
+      "price": 36000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"Tác giả: Tưởng Duy Hải (Chủ biên), Trần Bá Trình, Nguyễn Thanh Hường, Trần Minh Đức, Trần Ngọc Chất, An Biên Thuỳ\nSở hữu bản quyền: Nhà xuất bản Giáo dục Việt Nam và Công ty Cổ phần Phát hành Sách Giáo dục\nChịu trách nhiệm nội dung: Hoàng Lê Bách\nBiên tập: Phạm Thị Mai – Đặng Thị Hoài Thanh – Lê Văn Thành\nSửa bản in: Lê Văn Thành\nTrình bày bìa: Nguyễn Văn Đông\nKhổ sách: 19x26 cm\nSố ĐKXB: 4683-2020/CXBIPH/2-2176/GD\nQuyết định XB: 5329/QĐ-GD-HN (17/12/2020)\nIn tại: Công ty CP In Khoa học Công nghệ Hà Nội\nNộp lưu chiểu: 12/2020\nISBN: 978-604-0-24559-5\nGiáo dục STEM là mô hình giáo dục dựa trên cách tiếp cận liên môn nhằm áp dụng các kiến thức khoa học, công nghệ, kĩ thuật và toán học vào giải quyết các vấn đề thực tiễn. Thực hiện các bài học/ chủ đề STEM giúp các em hình thành, phát triển các năng lực trong lĩnh vực STEM, đồng thời tạo điều kiện cho các em khám phá bản thân và định hướng nghề nghiệp tương lai.\n\nBộ sách Hoạt động giáo dục STEM cấp Trung học phổ thông được biên soạn thành các chủ đề STEM. Nội dung các bài học/ chủ đề không chỉ gắn với kiến thức được học trong nhà trường mà còn tích hợp nền tảng số, công nghệ số để các em làm quen và rèn luyện các thao tác kĩ thuật trong lĩnh vực nghiên cứu khoa học, ứng dụng khoa học vào xây dựng các sản phẩm công nghệ, kĩ thuật phục vụ đời sống.\n\nMỗi bài học/ chủ đề STEM có nhiều hoạt động học tập khác nhau như tìm hiểu vấn đề, nghiên cứu kiến thức nền, trải nghiệm, thực hành dựa trên các thao tác thí nghiệm, thử nghiệm… Các hoạt động được hướng dẫn cụ thể, chi tiết, giúp các em có thể tự thực hiện được trên lớp để “Tạo sản phẩm”, “Báo cáo sản phẩm”, “Điều chỉnh sản phẩm” và tiến tới “Mở rộng sản phẩm”. Cách thiết kế chuỗi hoạt động này tạo cơ hội tối đa cho các em phát triển năng lực sáng tạo, năng lực nghiên cứu khoa học và bước đầu thực hiện các dự án xây dựng mô hình, sản phẩm cho cuộc sống. Sản phẩm của các em trong hoạt động “Mở rộng” giúp các em có bước chuẩn bị chắc chắn để tham gia giao lưu trong các ngày hội STEM, câu lạc bộ STEM hoặc tham gia cuộc thi khoa học kĩ thuật.\n\nCuốn sách Hoạt động giáo dục STEM lớp 11 gồm các bài học/ chủ đề:\n\n– Chủ đề: Tích – xả tụ điện\n\n– Chủ đề: Axit hay bazơ\n\n– Chủ đề: Cảm ứng điện từ\n\n– Chủ đề: Hô hấp của hạt này mầm\n\n– Chủ đề: Các yếu tố ảnh hưởng tới hoạt tính enzim\n\n– Chủ đề: Đo nhịp tim\n\nĐể thực hiện mỗi bài học/ chủ đề STEM, các em có thể tự tổ chức học tập cùng bạn ở trường hoặc ở nhà. Bên cạnh các phương tiện, thiết bị, vật tư và phần mềm được gợi ý trong sách, các em có thể tự tìm kiếm, thay thế các phương tiện, thiết bị, vật tư phù hợp với sản phẩm các em muốn thực hiện. Mỗi bài học/ chủ đề STEM đều có hồ sơ học tập trên phần mềm Coach 7 tải tại địa chỉ: http://sachthietbigiaoduc.vn/gioi-thieu-thiet-bi.\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcd3xkoftly",
       "name": "Hoạt động giáo dục STEM 10\t",
       "slug": "hoat-dong-giao-duc-stem-10",
