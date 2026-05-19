@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcd3dyr2mcx",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hệ thống chống trộm - Lớp 12\t",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-he-thong-chong-trom-lop-12",
+      "category": "robotics",
+      "price": 7797000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"1x Bộ dụng cụ chấp hành : Bộ dụng cụ chấp hành 062, gồm dây điện 4 mm (3 đỏ, 3 đen); chuyển mạch 12V; đế đèn với 3 bóng đèn màu 12V; còi 12V; động cơ một chiều 12V và cánh quạt kết nối; tất cả sử dụng chân cắm 4 mm\n1x Hộp KIT nhựa : Dung tích 15 L\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcd2vytc0hy",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hệ thống chiếu sáng tự động - Lớp 12\t",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-he-thong-chieu-sang-tu-dong-lop-12",
