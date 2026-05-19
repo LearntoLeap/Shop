@@ -717,24 +717,6 @@
       "createdAt": "2026-05-19"
     },
     {
-      "id": "pmpay2bcg6omr",
-      "name": "Robot AI UGOT",
-      "slug": "robot-ai-ugot",
-      "category": "robotics",
-      "price": 41000000,
-      "originalPrice": 0,
-      "currency": "VND",
-      "images": [
-        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779093156364-545617783-709830315443362-2220728885901306890-n.jpg"
-      ],
-      "shortDescription": "",
-      "description": "",
-      "tags": [],
-      "stock": 0,
-      "featured": true,
-      "createdAt": "2026-05-18"
-    },
-    {
       "id": "p006",
       "name": "STEM Starter Kit Mầm non",
       "slug": "stem-starter-kit-mam-non",
