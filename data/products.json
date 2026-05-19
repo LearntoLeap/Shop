@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpccous86hfz",
+      "name": "Cảm biến đo nhiệt độ",
+      "slug": "cam-bien-do-nhiet-do",
+      "category": "robotics",
+      "price": 2273000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"Đo nhiệt độ trong phạm vi: -40 °C...140 °C\nĐộ chính xác: 2˚C ở -40˚C, 0.6 ở 30˚C, 1.8˚C ở 140˚C\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcco9jdg366",
       "name": "Wilab (Bộ chuyển đổi tín hiệu số)",
       "slug": "wilab-bo-chuyen-doi-tin-hieu-so",
