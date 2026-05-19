@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcd0yscj4q6",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Axit hay Bazơ - Lớp 11\t",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-axit-hay-bazo-lop-11",
+      "category": "robotics",
+      "price": 2177000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"1x Nước cất : 500 ml\n5x Cốc đong thủy tinh 100 ml\n1x Lọ dung dịch chuẩn pH = 10,01 : 50 ml\n1x Lọ dung dịch chuẩn pH = 7,01 : 50 ml\n1x Lọ dung dịch chuẩn pH = 4,01 : 50 ml\n1x Hộp KIT nhựa : Dung tích 15 L\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcd0cxffo1y",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Tích - Xả tụ điện - Lớp 11\t",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tich-xa-tu-dien-lop-11",
