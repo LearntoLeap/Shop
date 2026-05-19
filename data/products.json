@@ -666,7 +666,9 @@
       "price": 15816000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://drive.google.com/file/d/1nU7U2CTRRvyilUAtx6pALHD9N27teVeI/view?usp=drive_link"
+      ],
       "shortDescription": "",
       "description": "\"Độ phân giải: 12-bits\nTần số lấy mẫu tối đa: 100kHz\nĐầu vào cảm biến: Hai đầu tương tự BT, kết nối được với cảm biến\nTích hợp: đèn LED và coi báo hiệu trong các hoạt động\nKết nối không dây: Bluetooth\nKết nối máy tính: Micro USB - USB A\nNguồn: Pin sạc\nPhần mềm cài đặt được trên các hệ điều hành Window, MAC OS, IOS, Android\"",
       "tags": [],
