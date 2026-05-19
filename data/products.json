@@ -39,6 +39,24 @@
   ],
   "products": [
     {
+      "id": "pmpchc3pf1x02",
+      "name": "Loa kèm micro",
+      "slug": "loa-kem-micro",
+      "category": "robotics",
+      "price": 12500000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779185918067-tb-011.png"
+      ],
+      "shortDescription": "",
+      "description": "\" Loa kèm micro họp trực tuyến:\n Số lượng micro: 8\n Phạm vi thu âm: Tốt nhất: 4 m (13.1 ft), Tối đa: 8 m (26.2 ft)\n Dải tần micro 100 – 10 kHz\n Công suất loa (tối đa) 5W\n Mức áp suất âm thanh 82 dB @ 1m\n Dải tần loa 100 Hz – 20 kHz\n Loại bỏ nhiễu AI: Có\n Full Duplex: Có\n Tự động điều chỉnh âm lượng: Có\n Loại bỏ tiếng vang tự động: Có\n Kết nối USB-C x1, RJ45 (PoE vào) x1, RJ45 (PoE ra)x1,\n DC vào 54V / 0.925A\n Phím nhanh Tắt/Bật micro, Tăng/giảm âm lượng, Trả lời, Kết thúc cuộc gọi\n Đèn LED báo hiệu: Có\n Kích thước: 122 mm (đường kính) x 65 mm (cao)\n Trọng lượng 472 g\n Phụ kiện đi kèm: Gía để bàn, Cáp USB-C to USB-A 3mx1, dây nguồn\n Chứng nhận phòng họp: Được chứng nhận bởi Microsoft Teams Rooms\n - Bảo hành: 24 tháng\"\n",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpchb1trb60z",
       "name": "Bộ cân bằng tải Router",
       "slug": "bo-can-bang-tai-router",
