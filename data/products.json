@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcdb3ahwvwq",
+      "name": "Mô hình STEM điều khiển nhà thông minh\t",
+      "slug": "mo-hinh-stem-dieu-khien-nha-thong-minh",
+      "category": "robotics",
+      "price": 21384000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"* Phần cơ khí lắp ghép:\n- Kích thước đế mô hình: 550x400mm\n- Điều khiển đóng mở cổng, đóng mở cửa, bật tắt đèn, bình nóng lạnh, quạt gió… tự động và thông minh. Khi các cảm biến chuyển động, cảm biến nhiệt độ, cảm biến ánh sáng nhận được tín hiệu khi có người hoặc xe di chuyển.\n- Cổng chính: (Kích thước: 155x85x105 mm) điều khiển đóng mở tự động sử dụng động cơ giảm tốc N20 điện áp 12Vdc, cảm biến chuyển động, cảm biến hall, mạch điều khiển khi có xe vào cổng.\n- Đèn led chiếu sáng ngoài sân: (Kích thước: 40x25x80 mm) điều khiển bật tắt tự động sử dụng Cảm biến ánh sáng, trời tối đèn được tự động bật.\n- Nhà chính: (Kích thước: 335x240x115 mm) gồm có phòng khách, phòng ngủ, phòng vệ sinh.\n- Điều khiển đóng mở cửa chính Cửa vào nhà sử dụng động cơ giảm tốc N20 điện áp 12Vdc, cảm biến chuyển động, hai cảm biến hall, mạch điều khiển, khi có người ra vào cửa.\n- Điều khiển bật tắt các led mô phỏng bình nóng lạnh, đèn ngủ, đèn chiếu sáng, báo cháy… khi có cảm biến chuyển động vào các phòng và cảm biến nhiệt độ khi có hiện tượng cháy.\n- Gara để xe: (Kích thước: 130x120x115) sử dụng động cơ giảm tốc N20 điện áp 12Vdc, cảm biến chuyển động, hai cảm biến hall, mạch điều khiển, điều khiển đóng - mở cửa.\n- Hệ thống hàng rào và các cây trang trí, thảm cỏ, nhôm 20x20, mica, gỗ Mdf, các thiết bị điều khiển…\n* Các Modul cảm biến kèm theo:\n1- Modul cảm biến ánh sáng (SEN112):\n- Dải đo: 0 ~ 65000 lx\n- Độ chính xác: ± 1 % F.S\n- Độ phân dải: 1 lx\n- Đơn vị đo: lx\n- Tần số lấy mẫu: 5Hz\n- Tần số hoạt động: 48MHz\n- Bộ nhớ Flash: 64Kbytes\n- Bộ nhớ SRAM: 8 Kbytes\n- Cổng điều khiển: Có thể cài đặt: \n      + 2 đầu ra điều khiển\n      + 2 đầu vào giám sát\n- Cổng giao tiếp: USB-C\n- Chuẩn kết nối: RS485\n- Giao thức: Modbus RTU\n- Phần mềm: Tiếng việt STEMe\n- Điện áp hoạt động: 4.75 ~ 5.25V\n2- Mô-đun cảm biến đo nhiệt độ (SEN101)\n- Dải đo: -50 ~ 200 oC\n- Độ chính xác: ± 0.2 % F.S\n-Độ phân dải: 0.01 oC\n- Đơn vị đo: độ C, độ K, độ F\n- Tốc độ lấy mẫu: 10Hz\n- Tần số hoạt động: 48MHz\n- Bộ nhớ Flash: 64Kbytes\n- Bộ nhớ SRAM: 8 Kbytes\n- Cổng điều khiển: Có thể cài đặt: \n                                + 2 đầu ra điều khiển\n                                + 2 đầu vào giám sát\n- Cổng giao tiếp: USB-C\n- Chuẩn kết nối: RS485\n- Giao thức: Modbus RTU\n- Phần mềm: Tiếng việt STEMe\n- Điện áp hoạt động: 4.75 ~ 5.25V\n3- Modul cảm biến khoảng cách (SEN121)\n- Dải đo: 0.15 ~ 2 m\n- Độ chính xác: ± 3 % F.S\n- Độ phân dải: 1 mm\n- Đơn vị đo: mm, dm, cm, m\n- Tần số lấy mẫu: 50Hz\n- Tần số hoạt động: 48MHz\n- Bộ nhớ Flash: 64Kbytes\n- Bộ nhớ SRAM: 8 Kbytes\n- Cổng điều khiển: \n     + 02 đầu ra điều khiển\n     + 02 đầu vào giám sát\n- Cổng giao tiếp: USB-C\n- Chuẩn kết nối: RS485\n- Giao thức: Modbus RTU\n- Phần mềm: STEMe\n- Điện áp hoạt động: 4.75 ~ 5.25V\n4- Modul cảm biến chuyển động (SEN123)\n- Dải cảm biến: < 120o , 5m\n- Đầu ra: Kỹ thuật số\n- Đơn vị đo: ON/OFF\n- Tần số lấy mẫu: 10Hz\n- Tần số hoạt động: 48MHz\n- Bộ nhớ Flash: 64Kbytes\n- Bộ nhớ SRAM: 8 Kbytes\n- Cổng điều khiển: Có thể cài đặt:\n       + 2 đầu ra điều khiển\n       + 2 đầu vào giám sát\n- Cổng giao tiếp: USB-C\n- Chuẩn kết nối: RS485\n- Giao thức: Modbus RTU\n- Phần mềm: STEMe\n- Điện áp hoạt động: 4.75 ~ 5.25V\n* Bộ phần mềm giáo dục STEMe: Sử dụng phần mềm STEMe tiếng việt được cài trên máy tính, tự động kết nối các cảm biến và thiết lập được các trạng thái điều khiển.\n* Tài liệu hướng dẫn sử dụng\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcda1em7rmq",
       "name": "Tài liệu học tập song ngữ Việt Anh Robot giáo dục hình người, lập trình AI - Ứng dụng và Khám phá Trí tuệ Nhân tạo - Tập 2\t",
       "slug": "tai-lieu-hoc-tap-song-ngu-viet-anh-robot-giao-duc-hinh-nguoi-lap-trinh-ai-ung-dung-va-kham-pha-tri-tue-nhan-tao-tap-2",
