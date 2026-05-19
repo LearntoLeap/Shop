@@ -408,7 +408,9 @@
       "price": 2177000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779183617628-thpt09.jpg"
+      ],
       "shortDescription": "",
       "description": "\"1x Nước cất : 500 ml\n5x Cốc đong thủy tinh 100 ml\n1x Lọ dung dịch chuẩn pH = 10,01 : 50 ml\n1x Lọ dung dịch chuẩn pH = 7,01 : 50 ml\n1x Lọ dung dịch chuẩn pH = 4,01 : 50 ml\n1x Hộp KIT nhựa : Dung tích 15 L\"",
       "tags": [],
