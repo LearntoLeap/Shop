@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcdesl6tb7c",
+      "name": "\"Gói chương trình đào tạo, hoạt động trải nghiệm  Chương trình STEM AI& Robotics, Thiết kế với máy in 3D, VR…\"",
+      "slug": "goi-chuong-trinh-dao-tao-hoat-dong-trai-nghiem-chuong-trinh-stem-ai-robotics-thiet-ke-voi-may-in-3d-vr",
+      "category": "robotics",
+      "price": 129600000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"Mục tiêu:\nTrang bị cho giáo viên năng lực sử dụng, vận hành và khai thác hiệu quả phòng STEM – AI Lab; tổ chức hoạt động dạy học STEM – Robotics – AI phù hợp chương trình giáo dục hiện hành; bảo đảm phòng Lab được sử dụng ổn định, hiệu quả.\nĐối tượng & quy mô:\nGiáo viên Tin học, Công nghệ, Khoa học, STEM và giáo viên phụ trách phòng Lab; tối đa 05 giáo viên/trường (01–02 giáo viên nòng cốt). Đào tạo ban đầu hoàn thành trong giai đoạn đầu sau khi bàn giao phòng.\nCấu trúc đào tạo:\nChương trình gồm 07 module, triển khai trong 05 buổi, hình thức trực tiếp tại trường kết hợp hỗ trợ trực tuyến, gồm: (1) Tổng quan chương trình STEM–AI–Robotics; (2) Học cụ – học liệu – phần mềm; (3) Lắp ráp mô hình Robotics; (4) Lập trình và kết nối; (5) Phương pháp dạy học STEM–AI; (6) Training giáo án mẫu; (7) Tổng kết – dạy demo – duyệt giảng.\nNội dung tập trung vào làm chủ thiết bị, phương pháp tổ chức hoạt động học và xây dựng giáo án phù hợp thực tiễn.\nHỗ trợ & sinh hoạt chuyên môn (02 năm):\nSau khi kết thúc đào tạo ban đầu, đơn vị triển khai đồng hành 02 năm, hỗ trợ kỹ thuật onsite & offsite; đồng thời tổ chức sinh hoạt chuyên môn định kỳ (sau mỗi học kỳ hoặc nửa học kỳ) nhằm rà soát triển khai, cập nhật học liệu/phương pháp và tháo gỡ vướng mắc.\nKết quả:\nGiáo viên làm chủ phòng STEM - AI Lab, tổ chức được tiết học và hoạt động trải nghiệm; nhà trường duy trì khai thác phòng Lab hiệu quả, có giáo án đã được duyệt và áp dụng thực tế.\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcded078nhg",
       "name": "Kính thực tế ảo VR\t",
       "slug": "kinh-thuc-te-ao-vr",
