@@ -39,6 +39,22 @@
   ],
   "products": [
     {
+      "id": "pmpchiu8ejdme",
+      "name": "Phần mềm quản lý (Giải pháp Lớp học thông minh EyePro Cloud - Phần mềm bán trọn gói 5 năm bao gồm cả Streaming Server)",
+      "slug": "phan-mem-quan-ly-giai-phap-lop-hoc-thong-minh-eyepro-cloud-phan-mem-ban-tron-goi-5-nam-bao-gom-ca-streaming-server",
+      "category": "robotics",
+      "price": 4000000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"Đăng nhập hệ thống\nĐăng xuất khỏi hệ thống\nThay đổi các thông tin cá nhân người sử dụng\nQuản lý nhiều lớp học thông minh, tổng số không quá 3000 học sinh trên một trường\nXem toàn bộ danh sách học sinh của một trường \nThêm mới học sinh kèm video khuôn mặt \nThêm mới nhiều học sinh từ file excel \nĐăng ký khuôn mặt cho nhiều học sinh theo lô \nThay đổi thông tin học sinh \nTìm kiếm học sinh dựa trên các thông tin cá nhân \nXóa học sinh khỏi hệ thống \nXem toàn bộ danh sách môn học \nThêm mới một môn học\nThêm mới nhiều môn học từ file excel\nThay đổi thông tin môn học\nTìm kiếm môn học\nXóa môn học khỏi hệ thống\nXem toàn bộ danh sách lớp học\nThêm mới một lớp học\nThêm mới nhiều lớp học từ file excel\nThay đổi thông tin lớp học\nTìm kiếm lớp học\nXóa lớp học khỏi hệ thống\nThêm một học sinh vào lớp\nXóa một học sinh khỏi lớp\nThêm nhiều học sinh vào lớp từ file excel\nXem toàn bộ danh sách phòng học\nThêm mới một phòng học\nThay đổi thông tin phòng\nThêm / thay đổi camera trong phòng học\nTìm kiếm phòng học\nXóa phòng học\nThêm phòng học theo lô từ file excel\nXem danh sách thiết bị AI BOX được quản lý bởi hệ thống\nChấp thuận yêu cầu đăng ký từ AI BOX gửi lên hệ thống\nTừ chối yêu cầu đăng ký từ AI BOX gửi lên hệ thống\nThay đổi thông tin AI BOX: tên, mô tả, v.v.\nGán một camera và chức năng của camera (điểm danh, auto tracking) vào cấu hình của AI BOX\nThay đổi chức năng của camera (điểm danh, auto tracking) được gán cho AI BOX\nXóa một camera khỏi danh sách được gán cho AI BOX\nTìm kiếm AI BOX\nXóa một AI BOX khỏi danh sách quản lý của hệ thống\nXem danh sách camera\nThêm mới một camera\nThay đổi thông tin camera\nTìm kiếm camera\nXóa camera\nXem toàn bộ danh sách lịch học\nThêm mới một lịch học\nThêm mới nhiều lịch học từ file excel\nThay đổi thông tin lịch học\nTìm kiếm lịch học\nXóa lịch học khỏi hệ thống\nXem danh sách các luồng Streaming – Cấu hình ghi bài giảng\nThêm mới một luồng Video Streaming ghi bài giảng\nThay đổi cấu hình luồng Streaming như thời gian ghi, camera, v.v.\nXem danh sách video ghi bài giảng đã ghi\nThêm mô tả cho video\nXóa nhiều video một lúc trên hệ thống\n- Khả năng xem lại video với tốc độ xem từ 0.5x đến 2x\n - Chất lượng video: FullHD\n - Xem video với đồ thị cảm xúc lớp học\nẨn hoặc hiện đồ thị Cảm xúc khi xem Video cho phép xem thông tin đầy đủ hoặc chỉ xem Video\nHiển thị điểm danh, cảm xúc thời gian thực (< 5 giây)\nHiển thị các thông tin:\n- Số lượng học sinh đã được điểm danh\n- Khuôn mặt và cảm xúc của học sinh được điểm danh\n- Các học sinh chưa được điểm danh\n- Các học sinh bỏ tiết (Không có trong lớp trong một khoảng thời gian nhất định)\nBáo cáo điểm danh theo ngày với các nhãn: Vắng, muộn, bỏ tiết, đi học\nXuất báo cáo điểm danh chi tiết của lớp học ra file excel\nXem báo cáo sĩ số của lớp học.\nXuất báo cáo sĩ số của lớp học ra file excel\nXem sĩ số của tất cả các lớp trong trường tại thời điểm xem.\nTính cảm xúc trung bình lớp học trong một chu kỳ thời gian ngắn\nXem đồ thị cảm xúc của học sinh trong lớp học.\nXuất báo cáo cảm xúc của học sinh trong lớp học ra file excel\nXem đồ thị cảm xúc của học sinh trong lớp học thời gian thực\nSo sánh cảm xúc của học sinh trong các khoảng thời gian khác nhau.\nXem danh sách các tài khoản\nThêm mới một tài khoản\nTìm kiếm tài khoản\nThay đổi thông tin tài khoản\nXóa một tài khoản\n- Super admin: quản trị viên toàn hệ thống\n- Site admin: quản trị viên trường học\n- Team admin: Giáo viên\n- Group admin: Lớp trưởng\n- Object: Học sinh\nThay đổi quyền của một đối tượng\nThay đổi các cấu hình mặc định của hệ thống\nCho phép các hệ thống khác tích hợp với hệ thống thông qua giao diện lập trình ứng dụng API\nĐây là phiên bản dùng 5 năm trả phí trước. \"\n",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpchhhe736wx",
       "name": "Thiết bị AIBox streaming ",
       "slug": "thiet-bi-aibox-streaming",
