@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcd7tp4q31z",
+      "name": "Tài liệu học tập song ngữ Việt Anh Robot ứng dụng AI Tăng cường - Kỹ sư siêu đẳng - Tập 2\t",
+      "slug": "tai-lieu-hoc-tap-song-ngu-viet-anh-robot-ung-dung-ai-tang-cuong-ky-su-sieu-dang-tap-2",
+      "category": "robotics",
+      "price": 240000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"Nhà xuất bản: Đại học Quốc Gia TP.HCM\nĐơn vị phát hành: UBTECH Việt Nam\nChất lượng: Mới 100%\nThông số kỹ thuật\n\nChất liệu giấy: Giấy trắng định lượng 70–80 gsm\nBìa: Bìa mềm, in màu\nNgôn ngữ: Tiếng Việt và tiếng Anh\nHình thức: In offset, đóng gáy keo\nNội dung: Sách hướng dẫn lắp ráp, lập trình, giáo trình STEM, tài liệu tham khảo cho các bộ sản phẩm UBTECH\nPhụ kiện đi kèm: Không (nếu có sẽ ghi rõ theo từng đầu sách)\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcd75tw3x8s",
       "name": "Tài liệu học tập song ngữ Việt Anh Robot ứng dụng AI Tăng cường - Kỹ sư siêu đẳng - Tập 1\t",
       "slug": "tai-lieu-hoc-tap-song-ngu-viet-anh-robot-ung-dung-ai-tang-cuong-ky-su-sieu-dang-tap-1",
