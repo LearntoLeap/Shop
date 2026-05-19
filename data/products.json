@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpccsunxd9xy",
+      "name": "Điện cực pH",
+      "slug": "dien-cuc-ph",
+      "category": "robotics",
+      "price": 2087000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "Sử dụng cùng với cảm biến pH để đo mức độ pH trong phạm vi 0…14pH",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpccsf4d8l3p",
       "name": "Cảm biến đo độ pH",
       "slug": "cam-bien-do-do-ph",
