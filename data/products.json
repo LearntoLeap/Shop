@@ -528,7 +528,9 @@
       "price": 9188000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779184422852-sen-006.png"
+      ],
       "shortDescription": "",
       "description": "\"Đo áp suất khi tuyệt đối trong hai phạm vi: 0…700 kPa, 0...130 kPa\nĐộ phân giải (12 bit): 0.2 kPa, 0.04 kPa\"",
       "tags": [],
