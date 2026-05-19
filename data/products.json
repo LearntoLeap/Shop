@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcd1zpx5eb7",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hệ thống thang nâng ô tô - Lớp 12",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-he-thong-thang-nang-o-to-lop-12",
+      "category": "robotics",
+      "price": 3862000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\t\"Mô hình thang nâng ô tô : 1x Motor DC 12V, 1x Ô tô điều khiển từ xa loại nhỏ, 1x Mô hình bãi đỗ xe, 1x Bơm xi lanh 20 ml, 1x Bơm xi lanh 5 ml, 1x Ống truyền nước 30 cm, 1x Tay vặn lục giác\n1x Rơ le nút ấn ngắt mạch : Rơ le dạng nút ấn, dùng để ngắt mạch điện\n1x Hộp KIT nhựa : Dung tích 15 L\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcd1lhndepb",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Cảm ứng điện từ - Lớp 11\t",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-cam-ung-dien-tu-lop-11",
