@@ -737,29 +737,6 @@
       "stock": 0,
       "featured": false,
       "createdAt": "2026-05-19"
-    },
-    {
-      "id": "p006",
-      "name": "STEM Starter Kit Mầm non",
-      "slug": "stem-starter-kit-mam-non",
-      "category": "stem-kit",
-      "price": 1800000,
-      "originalPrice": 2200000,
-      "currency": "VND",
-      "images": [
-        "https://placehold.co/600x600/ec4899/white?text=Mam+Non+Kit"
-      ],
-      "shortDescription": "Bộ học cụ STEM cho trẻ 4-6 tuổi, không dùng điện, an toàn tuyệt đối.",
-      "description": "STEM Starter Kit dành riêng cho trẻ mầm non 4-6 tuổi: khối hình học từ tính, bộ thí nghiệm khoa học cơ bản (nam châm, ròng rọc, đòn bẩy), thẻ học tư duy logic. Hoàn toàn không dùng điện, chứng nhận an toàn vật liệu EN71.",
-      "tags": [
-        "mầm non",
-        "stem",
-        "an toàn",
-        "EN71"
-      ],
-      "stock": 80,
-      "featured": false,
-      "createdAt": "2026-04-05"
     }
   ]
 }
