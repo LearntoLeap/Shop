@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcd1lhndepb",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Cảm ứng điện từ - Lớp 11\t",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-cam-ung-dien-tu-lop-11",
+      "category": "robotics",
+      "price": 4236000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"1x Mô hình cảm biến điện từ : Ống dây cuốn 300 vòng; ống dây cuốn 400 vòng; nam châm đất hiếm\n1x Bộ giá thí nghiệm : Cao 30 cm\n1x Hộp KIT nhựa : Dung tích 15 L\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcd0yscj4q6",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Axit hay Bazơ - Lớp 11\t",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-axit-hay-bazo-lop-11",
