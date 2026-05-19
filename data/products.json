@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpccsf4d8l3p",
+      "name": "Cảm biến đo độ pH",
+      "slug": "cam-bien-do-do-ph",
+      "category": "robotics",
+      "price": 4436000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"Xác định mức độ pH trong phạm vi: 0...14 pH\nĐộ phân giải (12 bit): 0.005 pH\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpccs10c9ygo",
       "name": "Bộ dụng cụ chấp hành",
       "slug": "bo-dung-cu-chap-hanh",
