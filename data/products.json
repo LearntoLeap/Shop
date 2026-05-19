@@ -39,6 +39,24 @@
   ],
   "products": [
     {
+      "id": "pmpchhhe736wx",
+      "name": "Thiết bị AIBox streaming ",
+      "slug": "thiet-bi-aibox-streaming",
+      "category": "thiet-bi-ket-noi-thong-minh",
+      "price": 50000000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779186173508-picture1-1-300x229.png"
+      ],
+      "shortDescription": "",
+      "description": "\"Thiết bị AIBox\nModel: VDSMART BOX PRO 2023\n- 1024 Core GPU\n- 8 Core CPU Arm 1,2 Ghz\n- 8/16GB RAM\n- Lưu trữ 512GB SSD\n- Tăng tốc các thuật toán trí tuệ nhân tạo AI\n- Có khả năng điều khiển quay quét đến 5 Camera PTZ đồng thời \n- Có khả năng ghi bài giảng lên Máy chủ trên đám mây\n- Tích hợp phần mềm trí tuệ nhân tạo AI (License vĩnh viễn theo phần cứng)\"\n",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpchgwvye74t",
       "name": "Bộ Phần mềm học ngoại ngữ dành cho học sinh",
       "slug": "bo-phan-mem-hoc-ngoai-ngu-danh-cho-hoc-sinh",
