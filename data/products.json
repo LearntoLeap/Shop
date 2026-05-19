@@ -512,7 +512,9 @@
       "price": 550000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779184459317-sen-014.png"
+      ],
       "shortDescription": "",
       "description": "Được sử dụng cho các cảm biến BT với chốt cắm chuẩn IEEE1394.",
       "tags": [],
