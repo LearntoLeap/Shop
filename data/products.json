@@ -39,6 +39,24 @@
   ],
   "products": [
     {
+      "id": "pmpchdp0f4nx6",
+      "name": "Micro không dây cài ve",
+      "slug": "micro-khong-day-cai-ve",
+      "category": "thiet-bi-ket-noi-thong-minh",
+      "price": 6500000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779185967400-tb-008.png"
+      ],
+      "shortDescription": "",
+      "description": "\" Micro không dây cài ve áo:\n Micro không dây bluetooth\n Công tắc nguồn, tăng giảm âm lượng và bật tắt tiếng\n Giao diện sạc: Type C\n Hỗ trợ sạc từ tính\n Đèn LED khác nhau báo các trạng thái khác nhau bao gồm: Đang ghép nối loa; Đã ghép nối (loa hoặc bộ thu âm thanh); Trạng thái tắt tiếng; Đang sạc; Trạng thái sạc đầy\n Chức năng kết nối: Sử dụng mã hóa hồng ngoại để kết nối nhằm tránh kết nối với các loa khác trong lớp . Việc khớp mã với loa giảng dạy có thể được hoàn thành nhanh chóng trong vòng 5 giây mà không cần thao tác rườm rà. \n Thời lượng pin ≥5 giờ. Khi sạc đầy, có thể đáp ứng việc dạy tần suất cao cho 7 lớp trong một ngày (45 phút/một lớp). Sạc trong 10 phút có thể đáp ứng thời gian dạy của một lớp (45). phút/lớp) \n Trong môi trường mở và không bị nhiễu, khoảng cách truyền không dây hiệu quả là ≥15 mét .\n Hỗ trợ ghép nối hai micrô không dây với loa hoạt động tích hợp cùng lúc để đạt được đầu ra trộn của hai micrô để khuếch đại \n Tính năng chờ tự động để tiết kiệm pin: Nếu không được sử dụng trong 15 phút khi bật nguồn, micro sẽ ở chế độ chờ\n Được trang bị giao diện micro ngoài Type-c, được tái sử dụng với giao diện sạc. Nó có thể kết nối với micrô khác có giao diện Type-C, ví dụ kết nối với micrô choàng đầu khác\n Thông số nguồn:\n Đầu vào sạc: 5V/0,5A\n Dung lượng pin: 350 mAh\n Thời gian sử dụng: ≥ 5 giờ\n Thông số hiệu suất:\n Biến dạng: <1% 94dB SPL@1kHz/ <5% 110dB SPL@1kHz\n Độ khuếch đại: ≥15dB\n tỷ lệ tín hiệu trên tạp âm: ≥60dB\n Tầng ồn: ≤ 200uVrms\n Độ trễ âm thanh : 35ms \n Kích thước tổng thể (dài × rộng × cao): 62,1×26,5×24,7mm (bao gồm cả kẹp sau)/ 62,1×26,5×18,3mm (không bao gồm kẹp sau)\n - Bảo hành: 24 tháng\"\n",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpchczyv16ln",
       "name": "Camera",
       "slug": "camera",
