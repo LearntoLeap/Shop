@@ -640,7 +640,9 @@
       "price": 5978000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779184047914-sen-016.png"
+      ],
       "shortDescription": "",
       "description": "\"Đo hiệu điện thế trong phạm vi: -12 V…+ 12 V\nĐộ phân giải (12 bit): 6.5 mV\"",
       "tags": [],
