@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcddya6u04a",
+      "name": "Bộ chế tạo dụng cụ cơ khí\t",
+      "slug": "bo-che-tao-dung-cu-co-khi",
+      "category": "robotics",
+      "price": 25920000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"Bộ dụng cụ cơ khí bao gồm:\n\nThước lá: Loại thông dụng, có độ dài 300 mm, độ chia 1mm, độ dày 1mm.\nThước cặp cơ: Loại thông dụng, vật liệu hợp kim thép, kích thước 150mm, thang đo từ 0 đến 150mm; dung sai 0,02mm\nĐầu vạch dấu: Loại thông dụng, vật liệu: hợp kim thép HSS, Độ cứng HRC58°~65, kích thước: 130mm, đường kính lỗ: 13mm)\nThước đo góc : Loại thông dụng, vật liệu: thép không gỉ; Khoảng đo: 0-180°/145mm; Độ chia: 1°, Độ chính xác: +/- 20\nThước đo mặt phẳng: Loại thông dụng, Vật liệu: Thép hợp kim không gỉ; Cán cầm: Nhựa tổng hợp\nDao dọc giấy: Thân bọc nhựa, Lưỡi bằng thép không rỉ; kích thước 0.4 x 9 x 80 mm\nDao cắt nhựa Acrylic: chất liệu bọc nhựa ABS an toàn; Chiều dài tổng thể 160mm\nÊ tô nhỏ: Kích thước tổng thể 195x163mm; Ngàm mở rộng tối đa: 50mm; Vật liệu: Gang, thép\nDũa dẹt\nDũa tròn\nCưa tay: vật liệu thép không gỉ, cán làm bằng nhựa hoặc bằng gỗ, lưỡi cưa làm bằng thép hợp kim carbon, chiều dài lưỡi cưa và tay cầm: 300mm\nTuốc nơ vít mũi dẹt: cán làm bằng vật liệu cách điện, phần thân làm bằng vật liệu thép không gỉ, chiều dài: 250mm\nTuốc nơ vít bốn cạnh: cán làm bằng vật liệu cách điện, mũi và thân tròn làm bằng thép không gỉ, chiều dài: 250mm\nMỏ lết cỡ nhỏ: vật liệu hợp kim thép cứng không gỉ, chiều dài 200mm\nKìm mỏ vuông: mũi kìm làm bằng thép hợp kim cứng không gỉ, phần tay cầm làm bằng vật liệu cách điện, kích thước chiều dài: 180mm\nBúa cỡ nhỏ: Đầu búa làm bằng hợp kim cứng, cán búa làm bằng vật liệu cách điện chống trượt, chiều dài búa: 320mm\nSúng bắn keo: loại 10mm, công suất 60W\"\"\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcdd8wmrvgf",
       "name": "Máy in 3D\t",
       "slug": "may-in-3d",
