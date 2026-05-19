@@ -576,7 +576,9 @@
       "price": 2087000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779184189953-sen-010.jpg"
+      ],
       "shortDescription": "",
       "description": "Sử dụng cùng với cảm biến pH để đo mức độ pH trong phạm vi 0…14pH",
       "tags": [],
