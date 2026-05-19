@@ -560,7 +560,9 @@
       "price": 11223000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779184367357-sen-022.png"
+      ],
       "shortDescription": "",
       "description": "Động cơ bước Burette 061, còn được gọi là máy chuẩn độ, là một thiết bị định lượng, rẻ, chính xác và có thể được sử dụng để kiểm soát quá trình thêm chuẩn độ vào các thí nghiệm chuẩn đô",
       "tags": [],
