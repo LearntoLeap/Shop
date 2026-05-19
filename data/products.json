@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpccs10c9ygo",
+      "name": "Bộ dụng cụ chấp hành",
+      "slug": "bo-dung-cu-chap-hanh",
+      "category": "robotics",
+      "price": 7500000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "Bộ dụng cụ bao gồm: dây điện 4 mm (3 đỏ, 3 đen); chuyển mạch 12V; đế đèn với 3 bóng đèn màu 12V; còi 12V; động cơ một chiều 12V và cánh quạt kết nối với động cơ. Tất cả các dụng cụ đều sử dụng chân cắm 4 mm",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpccrhkgo1nh",
       "name": "Cảm biến chuyển động",
       "slug": "cam-bien-chuyen-dong",
