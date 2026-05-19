@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpccyalf9umd",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Nhiệt độ sôi - Lớp 10",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nhiet-do-soi-lop-10",
+      "category": "robotics",
+      "price": 2541000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"1x Bộ giá thí nghiệm : Cao 30 cm\n1x Kẹp ống nghiệm gỗ\n1x Đèn cồn thủy tinh : 150 ml\n1x Nước cất : 500 ml\n1x Bình cầu chịu nhiệt 50 ml\n1x Hộp KIT nhựa : Dung tích 15L\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpccxnp19zve",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Lên men rượu - Lớp 10\t",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-len-men-ruou-lop-10",
