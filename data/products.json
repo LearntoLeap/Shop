@@ -168,7 +168,9 @@
       "price": 240000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779184680490-ra-018.png"
+      ],
       "shortDescription": "",
       "description": "\"Nhà xuất bản: Đại học Quốc Gia TP.HCM\nĐơn vị phát hành: UBTECH Việt Nam\nChất lượng: Mới 100%\nThông số kỹ thuật\n\nChất liệu giấy: Giấy trắng định lượng 70–80 gsm\nBìa: Bìa mềm, in màu\nNgôn ngữ: Tiếng Việt và tiếng Anh\nHình thức: In offset, đóng gáy keo\nNội dung: Sách hướng dẫn lắp ráp, lập trình, giáo trình STEM, tài liệu tham khảo cho các bộ sản phẩm UBTECH\nPhụ kiện đi kèm: Không (nếu có sẽ ghi rõ theo từng đầu sách)\"",
       "tags": [],
