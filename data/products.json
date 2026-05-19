@@ -39,6 +39,24 @@
   ],
   "products": [
     {
+      "id": "pmpchb1trb60z",
+      "name": "Bộ cân bằng tải Router",
+      "slug": "bo-can-bang-tai-router",
+      "category": "thiet-bi-ket-noi-thong-minh",
+      "price": 10000000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779185871067-rb5009ug-s-n.jpg"
+      ],
+      "shortDescription": "",
+      "description": "\"Router\n CPU: 88F7040 1.4 GHz\n CPU architecture : ARM 64bit\n CPU core count : 4\n Size of RAM : 1 GB\n Number of 1G Ethernet ports : 7\n Number of 2.5G Ethernet ports: 1\n Number of 10G SFP+ ports : 1\n USB port : 1 (3.0 type A)\n PoE-in: 802.3af/at\n Certification: CE, FCC, IC\"\n",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpch9weonep6",
       "name": "Thiết bị định tuyến",
       "slug": "thiet-bi-dinh-tuyen",
