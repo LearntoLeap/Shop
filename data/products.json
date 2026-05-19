@@ -392,7 +392,9 @@
       "price": 4236000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779183634906-thpt10.jpg"
+      ],
       "shortDescription": "",
       "description": "\"1x Mô hình cảm biến điện từ : Ống dây cuốn 300 vòng; ống dây cuốn 400 vòng; nam châm đất hiếm\n1x Bộ giá thí nghiệm : Cao 30 cm\n1x Hộp KIT nhựa : Dung tích 15 L\"",
       "tags": [],
