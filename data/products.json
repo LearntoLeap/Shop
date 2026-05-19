@@ -656,7 +656,9 @@
       "price": 8039000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779184008241-sen-004.png"
+      ],
       "shortDescription": "",
       "description": "\"Đo cường độ ánh sáng trong ba phạm vi: 0 .. 1500 lux. 0 .. 15000 lux và 0 .. 150000 lux.\nĐộ phân giải (12bit): 0.37lx, 3.7lx, 37lx\"",
       "tags": [],
