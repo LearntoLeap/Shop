@@ -39,6 +39,22 @@
   ],
   "products": [
     {
+      "id": "pmpchgwvye74t",
+      "name": "Bộ Phần mềm học ngoại ngữ dành cho học sinh",
+      "slug": "bo-phan-mem-hoc-ngoai-ngu-danh-cho-hoc-sinh",
+      "category": "robotics",
+      "price": 3970000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"2.1. Báo cáo học tập: \nCó màn hình dashboard thông tin học tập, hiển thị thông tin tổng quan về quá trình học tập của học sinh (tổng số lớp học, số lượng buổi học đã hoàn thành, số lượng lớp học đang diễn ra)\n2.2. Xem được lịch dạy.\nHọc sinh xem được lịch dạy của Giáo viên lớp của mình.\n2.3. Thảo luận: \nHọc sinh có chức năng Thảo luận chung/riêng để trao đổi hay gửi thắc mắc.\n2.4. Xem lịch sử học tập:\nCho phép học sinh xem lại lịch sử học tập các lớp đã tham gia.\n2.5. Theo dõi lộ trình học: \nHọc sinh có thể theo dõi lộ trình học tập của bản thân.\n2.6. Thư viện số: \nHọc sinh có thể sử dụng thư viện số để trau dồi kiến thức. \n2.7. Tham gia bài thi và xem kết quả: \n- Học sinh có thể tham gia thi.\n- Học sinh có thể xem lại bài thi: xem điểm, xem lại bài làm, xem đáp án đúng/sai (theo cài đặt của quản trị viên)..\"\n",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpchg0br7l1y",
       "name": "Phần mềm dành cho giáo viên",
       "slug": "phan-mem-danh-cho-giao-vien",
