@@ -624,7 +624,9 @@
       "price": 8000000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779184132812-sen-015.png"
+      ],
       "shortDescription": "",
       "description": "\"- Phạm vi: 0.2 m...6 đến 12 m (tùy thuộc vào hình dạng, kích thước và bề mặt của đối tượng)\n- Độ chính xác: ± 1 mm\"",
       "tags": [],
