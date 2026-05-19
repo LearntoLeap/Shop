@@ -440,7 +440,9 @@
       "price": 2541000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779183592536-thpt04.jpg"
+      ],
       "shortDescription": "",
       "description": "\"1x Bộ giá thí nghiệm : Cao 30 cm\n1x Kẹp ống nghiệm gỗ\n1x Đèn cồn thủy tinh : 150 ml\n1x Nước cất : 500 ml\n1x Bình cầu chịu nhiệt 50 ml\n1x Hộp KIT nhựa : Dung tích 15L\"",
       "tags": [],
