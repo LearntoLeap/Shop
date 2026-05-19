@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcd0cxffo1y",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Tích - Xả tụ điện - Lớp 11\t",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tich-xa-tu-dien-lop-11",
+      "category": "robotics",
+      "price": 706000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"1x Bộ thí nghiệm tụ điện : 1x Các tụ điện 10 µF, 100 µF; 1x các điện trở 10 kΩ, 22 kΩ; 1x công tắc tắt/bật; 1x pin 9V; 1x đế mica; 6x Dây điện đỏ đen, rắc bắp chuối\n1x Hộp KIT nhựa : Dung tích 5,5 L\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpccyalf9umd",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Nhiệt độ sôi - Lớp 10",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nhiet-do-soi-lop-10",
