@@ -360,7 +360,9 @@
       "price": 1830000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779183678444-thpt17.jpg"
+      ],
       "shortDescription": "",
       "description": "\"1x Đèn học để bàn\n1x Dây nguồn máy tính\n8x Dây điện đỏ đen, rắc bắp chuối\n1x Giá đỡ cảm biến\n1x Hộp KIT nhựa : Dung tích 15 L\"",
       "tags": [],
