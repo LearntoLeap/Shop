@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpcdc255s5pg",
+      "name": "Mô hình STEM xe ROBOT đa năng\t",
+      "slug": "mo-hinh-stem-xe-robot-da-nang",
+      "category": "robotics",
+      "price": 5832000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"* Phần cơ khí lắp ghép:\n- Khung xe bằng chất liệu Mica\n- Xe di chuyển một khoảng cách được thiết lập theo mong muốn trên phần mềm STEme. Di chuyển theo màu, di chuyển theo dường cong.\n- Phát hiện vật cản thực hiện gắp vật cản ra khỏi tuyến đường đang di chuyển.\n- Gắp vật màu bật kì tại một vị trí bất kì và đưa vật về trạm sao cho trùng màu với màu của vật.\n- Xe dò đường sử dụng hai động cơ bước kết nối với bánh xe thông qua hộp số.\n- Mạch vi xử lý CPU:\n    + Lõi: Xtensa 32-bit LX6\n    + Tần số hoạt động: 240MHz\n    + Bộ nhớ SRAM: 512Kbytes\n    + Kết nối Wifi: 802.11 b/g/n\n    + Kết nối Bluetooth: BR/EDR và BLE\n    + Giao tiếp cảm biến: Modbus RTU\n    + Số cổng giao tiếp cảm biến: 8 cổng\n- Động cơ:\n    + Động cơ bước: 02\n    + Điện áp hoạt động: 5V\n    + Góc quay: 5.625 x 1/64\n    + Tỷ số truyền hộp số: 1:2\n    + Chíp điều khiển: ULN2003\n- Nguồn điện:\n    + Dung lượng PIN: 2000 mAh\n    + Điện áp PIN: 3.7V\n    + Điện áp sạc: 5V\n    + Dòng sạc tối đa: 2.1A\n    + Điện áp xả: 5V\n    + Dòng xả tối đa: 2.4A\n    + Cổng sạc: USB-C\n- Cánh tay gắp:\n    + Bậc điều khiển: 03\n    + Loại động cơ: Servo\n    + Góc quay: 180 độ\n    + Mô men xoắn tối đa: 2.2kg/cm\n    + Điện áp: 4.8 ~ 6V\n* Các Modul cảm biến kèm theo:\n1- Cảm biến khoảng cách:\n- Loại cảm biến: Laser\n- Dải đo: 0.15 ~ 1.2m\n- Độ phân dải: 1mm\n2- Cảm biến dò đường:\n- Loại cảm biến: Hồng ngoại\n- Số kênh: 05\n- Khoảng cách: 10-15mm\n- Tín hiệu: Dạng số TTL\n- Điện áp: 3.3 ~ 5V\n* Bộ phần mềm giáo dục STEMe: Sử dụng phần mềm STEMe tiếng việt được cài trên máy tính, tự động kết nối các cảm biến và thiết lập được các trạng thái điều khiển\n* Tài liệu hướng dẫn sử dụng\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpcdbihgwqu9",
       "name": "Mô hình STEM phun tưới cây trồng\t",
       "slug": "mo-hinh-stem-phun-tuoi-cay-trong",
