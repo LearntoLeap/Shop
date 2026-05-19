@@ -376,7 +376,9 @@
       "price": 3862000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779183653063-thpt15.jpg"
+      ],
       "shortDescription": "",
       "description": "\t\"Mô hình thang nâng ô tô : 1x Motor DC 12V, 1x Ô tô điều khiển từ xa loại nhỏ, 1x Mô hình bãi đỗ xe, 1x Bơm xi lanh 20 ml, 1x Bơm xi lanh 5 ml, 1x Ống truyền nước 30 cm, 1x Tay vặn lục giác\n1x Rơ le nút ấn ngắt mạch : Rơ le dạng nút ấn, dùng để ngắt mạch điện\n1x Hộp KIT nhựa : Dung tích 15 L\"",
       "tags": [],
