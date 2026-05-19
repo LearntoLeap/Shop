@@ -424,7 +424,9 @@
       "price": 706000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779183605032-thpt08.jpg"
+      ],
       "shortDescription": "",
       "description": "\"1x Bộ thí nghiệm tụ điện : 1x Các tụ điện 10 µF, 100 µF; 1x các điện trở 10 kΩ, 22 kΩ; 1x công tắc tắt/bật; 1x pin 9V; 1x đế mica; 6x Dây điện đỏ đen, rắc bắp chuối\n1x Hộp KIT nhựa : Dung tích 5,5 L\"",
       "tags": [],
