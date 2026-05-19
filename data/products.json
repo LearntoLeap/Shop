@@ -39,6 +39,24 @@
   ],
   "products": [
     {
+      "id": "pmpch9weonep6",
+      "name": "Thiết bị định tuyến",
+      "slug": "thiet-bi-dinh-tuyen",
+      "category": "robotics",
+      "price": 10000000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779185812391-gwn76706-600x600.jpg"
+      ],
+      "shortDescription": "",
+      "description": "\"Wifi 6, (2x2), MU-MIMO\n Chuyên dụng: WiFi Indoor Ceiling/Wall\n Miễn phí Cloud Managed, 2400 Mbps (5 GHz), and 574 Mbps (2.4 GHz)\n 2 x 6 dBi (2.4 GHz); 2 x 7 dBi (5 GHz)\n 21 dBm on 2.4 GHz, 21 dBm on 5GHz.\n 1x GE PoE port, 802.3af (Maximum Power 10.7W)\"\n",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpch88ha2g8k",
       "name": "Giá treo di động",
       "slug": "gia-treo-di-dong",
