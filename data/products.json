@@ -104,7 +104,9 @@
       "price": 32400000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779184822689-iot-002.jpg"
+      ],
       "shortDescription": "",
       "description": "\"Thông số kỹ thuật:\n1. Kích thước vùng in\nKích thước vùng in (Rộng × Sâu × Cao): 256 × 256 × 256 mm\n2. Cấu trúc & Vật liệu máy\nVỏ máy (Shell): Vỏ kín, vật liệu nhựa kết hợp kính cường lực\nKhả năng giữ nhiệt: Hỗ trợ in vật liệu yêu cầu môi trường ổn định\n3. Đầu in & Hệ thống đùn\nĐầu nóng (Hotend): Toàn bộ kim loại (All-metal)\nVòi phun tiêu chuẩn: 0.4 mm – thép không gỉ\nCác tùy chọn vòi phun: 0.2 mm, 0.6 mm, 0.8 mm\nNhiệt độ đầu nóng tối đa: 300 °C\n4. Bề mặt bàn in\nTương thích với nhiều loại tấm:\nTấm PEI nhám (Textured PEI)\nTấm PEI mượt (Cool Plate)\nTấm kỹ thuật (Engineering Plate)\nTấm chịu nhiệt cao (High Temperature Plate)\nNhiệt độ bàn in tối đa: 100 °C\n5. Hiệu năng chuyển động\nTốc độ dịch chuyển đầu in tối đa: 500 mm/s\nGia tốc tối đa của đầu in: 20,000 mm/s²\n6. Hệ thống quạt & ổn định môi trường\nQuạt bo mạch điều khiển: Vòng kín (Closed-loop Control)\nQuạt điều hòa nhiệt độ buồng in: Vòng kín\nQuạt làm mát chi tiết in: Vòng kín\nBộ lọc khí: Bộ lọc than hoạt tính (Activated Carbon Filter) hỗ trợ lọc mùi và hạt siêu nhỏ\n7. Vật liệu in hỗ trợ\nVật liệu in lý tưởng: PLA, PETG, TPU, PVA, PET, ABS, ASA\nVật liệu có thể in (khuyến nghị môi trường kiểm soát nhiệt): PA, PC\n8. Hệ thống cảm biến & giám sát\nCamera giám sát buồng in: 1280 × 720p, 0.5 fps, hỗ trợ quay timelapse\nCảm biến hết nhựa: Có (Filament Runout Sensor)\n9. Kích thước & Trọng lượng\nKích thước máy: 389 × 389 × 458 mm\nKích thước đóng gói: 485 × 480 × 530 mm\nTrọng lượng tịnh: 12.95 kg\nTrọng lượng cả thùng: 17.6 kg\nPhiên bản Combo (kèm AMS):\nKích thước đóng gói: 485 × 460 × 585 mm\nTrọng lượng cả thùng: 21.6 kg\n10. Nguồn điện yêu cầu\nĐiện áp: 100 – 240 VAC, 50/60 Hz\nCông suất tiêu thụ:\n1000 W @ 220 V\n350 W @ 110 V\"",
       "tags": [],
