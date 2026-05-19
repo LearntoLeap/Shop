@@ -33,6 +33,22 @@
   ],
   "products": [
     {
+      "id": "pmpccpno63lvs",
+      "name": "Cảm biến ánh sáng",
+      "slug": "cam-bien-anh-sang",
+      "category": "robotics",
+      "price": 8039000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "\"Đo cường độ ánh sáng trong ba phạm vi: 0 .. 1500 lux. 0 .. 15000 lux và 0 .. 150000 lux.\nĐộ phân giải (12bit): 0.37lx, 3.7lx, 37lx\"",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-19"
+    },
+    {
       "id": "pmpccous86hfz",
       "name": "Cảm biến đo nhiệt độ",
       "slug": "cam-bien-do-nhiet-do",
