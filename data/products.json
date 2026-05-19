@@ -544,7 +544,9 @@
       "price": 6708000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779184393730-sen-020.png"
+      ],
       "shortDescription": "",
       "description": "Hệ công tắc 063 là một rơle trạng thái rắn (SSR) cho phép bạn điều khiển các thiết bị với điện áp định mức 110 - 230 V bằng điện áp một chiều 3 V hoặc cao hơn tới 25 V. Rơle được kết nối với mạch điện của thiết bị điện cần điều khiển (110V - 230V) thông qua đầu nối Euro ở phía sau mô-đun. Rơle có thể cấp điện với công suất lên đến 1150 W,",
       "tags": [],
