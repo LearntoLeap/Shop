@@ -29,6 +29,12 @@
       "name": "Học liệu số",
       "icon": "📚",
       "description": "Giáo trình, học liệu số, khóa học STEM/AI"
+    },
+    {
+      "id": "thiet-bi-ket-noi-thong-minh",
+      "name": "Thiết bị Kết nối Thông minh",
+      "icon": "🖥️",
+      "description": ""
     }
   ],
   "products": [
