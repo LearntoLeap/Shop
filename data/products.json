@@ -39,6 +39,22 @@
   ],
   "products": [
     {
+      "id": "pmpe1n56bqqh1",
+      "name": "Phần mềm giảng dạy và học tập Nexta Edu.  Phiên bản 5 năm",
+      "slug": "phan-mem-giang-day-va-hoc-tap-nexta-edu-phien-ban-5-nam",
+      "category": "robotics",
+      "price": 4000000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "Tính theo License",
+      "description": "Nexta Edu là ứng dụng hỗ trợ giảng dạy và học tập chuyên biệt cho giáo viên và học sinh, chạy trên nền tảng các thiết bị sử dụng hệ điều hành Windows/IOS ( Laptop/Desktop/).\n- Hệ thống các bài học tham khảo cho giảng dạy của Nexta được xây dựng cho khối Tiền tiểu học, Tiểu học và THCS theo Chương trình Bộ giáo dục gồm 3 môn Tiếng Việt – Toán – Tiếng Anh. Các học liệu được biên soạn theo chương trình của Bộ Giáo dục hàng năm và được cập nhật liên tục hàng năm\n- Tính năng tạo và giao bài của giáo viên: Giáo viên có thể chủ động lựa chọn bài tập từ kho học liệu sẵn có để giao bài cho học sinh \n- Tính năng báo cáo kết quả bài làm của học sinh và đánh giá: Kết quả bài làm của học sinh được cập nhật liên tục giúp giáo viên đánh giá năng lực học sinh và hỗ trợ kịp thời\n- Bộ sưu tập các bài giảng điện tử, các giáo án điện tử, các trò chơi và các học liệu khác giúp giáo viên tạo bài giảng một cách sinh động, hấp dẫn.\n- Ứng dụng games trắc nghiệm để tạo và tổ chức các hoạt động đánh giá nhanh ngay trong giờ học\n- Hệ thống các mô hình thí nghiệm ảo...\n- Hệ thống quản lý: Khi nhà trường sử dụng mô hình lớp học thông minh với thiết bị của Nexta, ứng dụng của giáo viên có thể nhận báo cáo kết quả học tập của học sinh trên nền tảng của giáo viên.\nLưu ý: Nếu đăng nhập ứng dụng Nexta chạy trên nền tảng thiết bị điện thoại/ máy tính bảng (ios/android) sẽ tải app là Siêu ứng dụng Nexta\nĐây là phiên bản dùng 5 năm trả phí trước.",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-05-20"
+    },
+    {
       "id": "pmpchjgoyxdl6",
       "name": "Dịch vụ thuê Server và Hosting",
       "slug": "dich-vu-thue-server-va-hosting",
