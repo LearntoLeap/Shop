@@ -39,6 +39,22 @@
   ],
   "products": [
     {
+      "id": "pmqguyfl486jx",
+      "name": "Kính hiển vi",
+      "slug": "kinh-hien-vi",
+      "category": "stem-kit",
+      "price": 0,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "Mã hiệu: RT113\nNhãn hiệu: Sciedu\nXuất xứ: Trung Quốc",
+      "description": "Loại thông dụng, có tiêu chuẩn kỹ thuật tối thiểu: độ phóng đại 40-1600 lần; Chỉ số phóng đại vật kính (4x, 10x, 40x, 100x); Chỉ số phóng đại thị kính (10x, 16x); Khoảng điều chỉnh thô và điều chỉnh tinh đồng trục; Có hệ thống điện và đèn đi kèm. Vùng điều chỉnh bàn di mẫu có độ chính xác 0,1 mm. Có đèn soi tiêu bản và đèn soi nổi tích hợp cứng trên kính. Kèm theo valy vải kích thước 35x28x16cm để xách. (Có tài liệu, hình ảnh chứng minh các thông số kỹ thuật kính hiển vi)",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-06-16"
+    },
+    {
       "id": "pmpe1n56bqqh1",
       "name": "Phần mềm giảng dạy và học tập Nexta Edu.  Phiên bản 5 năm",
       "slug": "phan-mem-giang-day-va-hoc-tap-nexta-edu-phien-ban-5-nam",
