@@ -185,7 +185,7 @@ function renderProducts() {
       <img src="${img}" class="w-16 h-16 object-cover rounded" />
       <div class="flex-1 min-w-0">
         <div class="font-semibold truncate">${p.name} ${p.featured ? '<span class="text-amber-500">⭐</span>' : ''}</div>
-        <div class="text-xs text-slate-500">${cat ? cat.icon + ' ' + cat.name : '(không phân loại)'} • ${fmtVND(p.price)} • Kho: ${p.stock}</div>
+        <div class="text-xs text-slate-500">${cat ? cat.icon + ' ' + cat.name : '(không phân loại)'} • ${p.priceMode === 'contact' ? 'Liên hệ' : fmtVND(p.price)} • Kho: ${p.stock}</div>
         <div class="text-xs text-slate-400 truncate">${(p.tags || []).map(t => '#' + t).join(' ')}</div>
       </div>
       <div class="flex gap-1">
@@ -225,7 +225,7 @@ function renderCategories() {
 function newProduct() {
   STATE.editing = {
     id: uid(), name: '', slug: '', category: STATE.data.categories[0]?.id || '',
-    price: 0, originalPrice: 0, currency: 'VND',
+    priceMode: 'show', price: 0, originalPrice: 0, currency: 'VND',
     images: [], shortDescription: '', description: '', tags: [],
     stock: 0, featured: false, createdAt: new Date().toISOString().slice(0, 10)
   };
@@ -268,9 +268,22 @@ function renderProductEditor(isNew) {
             <select class="w-full mt-1 px-3 py-2 border rounded" onchange="STATE.editing.category=this.value">${catOpts}</select>
           </div>
         </div>
-        <div class="grid grid-cols-3 gap-3">
+        <div>
+          <label class="text-xs font-semibold">Cách hiển thị giá</label>
+          <div class="flex gap-4 mt-1">
+            <label class="flex items-center gap-2 text-sm">
+              <input type="radio" name="priceMode" value="show" ${(p.priceMode || 'show') === 'show' ? 'checked' : ''} onchange="STATE.editing.priceMode='show'; togglePriceFields(true)" />
+              Hiển thị giá cụ thể
+            </label>
+            <label class="flex items-center gap-2 text-sm">
+              <input type="radio" name="priceMode" value="contact" ${p.priceMode === 'contact' ? 'checked' : ''} onchange="STATE.editing.priceMode='contact'; togglePriceFields(false)" />
+              Hiển thị "Liên hệ"
+            </label>
+          </div>
+        </div>
+        <div id="priceFields" class="grid grid-cols-3 gap-3 ${p.priceMode === 'contact' ? 'opacity-50' : ''}">
           <div>
-            <label class="text-xs font-semibold">Giá bán (VND) *</label>
+            <label class="text-xs font-semibold">Giá bán (VND)</label>
             <input type="number" value="${p.price}" class="w-full mt-1 px-3 py-2 border rounded" oninput="STATE.editing.price=parseInt(this.value)||0" />
           </div>
           <div>
@@ -316,6 +329,11 @@ function renderProductEditor(isNew) {
     </div>
   `;
   openEditor();
+}
+
+function togglePriceFields(enabled) {
+  const el = document.getElementById('priceFields');
+  if (el) el.classList.toggle('opacity-50', !enabled);
 }
 
 function addImageUrl() {

@@ -58,8 +58,13 @@ function filterBy(catId) {
 function productCard(p) {
   const cat = STATE.data.categories.find(c => c.id === p.category);
   const img = (p.images && p.images[0]) || 'https://placehold.co/600x600/e2e8f0/64748b?text=No+Image';
-  const discount = p.originalPrice && p.originalPrice > p.price
+  const isContact = p.priceMode === 'contact';
+  const discount = !isContact && p.originalPrice && p.originalPrice > p.price
     ? Math.round((1 - p.price / p.originalPrice) * 100) : 0;
+  const priceBlock = isContact
+    ? `<span class="text-lg font-extrabold text-brand-700">Liên hệ</span>`
+    : `<span class="text-lg font-extrabold text-brand-700">${fmtVND(p.price)}</span>
+       ${p.originalPrice && p.originalPrice > p.price ? `<span class="text-xs text-slate-400 line-through">${fmtVND(p.originalPrice)}</span>` : ''}`;
   return `
     <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition overflow-hidden group cursor-pointer border border-slate-100" onclick="openProduct('${p.id}')">
       <div class="aspect-square bg-slate-100 overflow-hidden relative">
@@ -71,10 +76,7 @@ function productCard(p) {
         <div class="text-xs text-brand-600 font-medium mb-1">${cat ? cat.icon + ' ' + cat.name : ''}</div>
         <div class="font-semibold text-slate-800 line-clamp-2 min-h-[3rem]">${p.name}</div>
         <div class="text-xs text-slate-500 line-clamp-2 mt-1 min-h-[2rem]">${p.shortDescription || ''}</div>
-        <div class="mt-3 flex items-baseline gap-2">
-          <span class="text-lg font-extrabold text-brand-700">${fmtVND(p.price)}</span>
-          ${p.originalPrice && p.originalPrice > p.price ? `<span class="text-xs text-slate-400 line-through">${fmtVND(p.originalPrice)}</span>` : ''}
-        </div>
+        <div class="mt-3 flex items-baseline gap-2">${priceBlock}</div>
         <div class="mt-2 flex flex-wrap gap-1">
           ${(p.tags || []).slice(0, 3).map(t => `<span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded">#${t}</span>`).join('')}
         </div>
@@ -121,8 +123,10 @@ function openProduct(id) {
         <div class="text-sm text-brand-600 font-medium mb-1">${cat ? cat.icon + ' ' + cat.name : ''}</div>
         <h2 class="text-2xl font-extrabold mb-2">${p.name}</h2>
         <div class="flex items-baseline gap-3 mb-4">
-          <span class="text-3xl font-extrabold text-brand-700">${fmtVND(p.price)}</span>
-          ${p.originalPrice && p.originalPrice > p.price ? `<span class="text-sm text-slate-400 line-through">${fmtVND(p.originalPrice)}</span>` : ''}
+          ${p.priceMode === 'contact'
+            ? `<span class="text-3xl font-extrabold text-brand-700">Liên hệ</span>`
+            : `<span class="text-3xl font-extrabold text-brand-700">${fmtVND(p.price)}</span>
+               ${p.originalPrice && p.originalPrice > p.price ? `<span class="text-sm text-slate-400 line-through">${fmtVND(p.originalPrice)}</span>` : ''}`}
         </div>
         <div class="prose prose-sm max-w-none text-slate-700 whitespace-pre-line mb-4">${p.description || ''}</div>
         <div class="flex flex-wrap gap-1 mb-5">
