@@ -52,7 +52,8 @@
       "tags": [],
       "stock": 0,
       "featured": false,
-      "createdAt": "2026-06-16"
+      "createdAt": "2026-06-16",
+      "priceMode": "contact"
     },
     {
       "id": "pmpe1n56bqqh1",
