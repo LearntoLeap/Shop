@@ -39,6 +39,287 @@
   ],
   "products": [
     {
+      "id": "pmqkqph9rht6b",
+      "name": "Bộ Kit Stick 'Em cấp THCS",
+      "sku": "",
+      "slug": "bo-kit-stick-em-cap-thcs",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 8709750,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781862106055-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkqph9rsl0x",
+      "name": "Bộ lắp ghép thông minh AI City Guardian Props Kit",
+      "sku": "",
+      "slug": "bo-lap-ghep-thong-minh-ai-city-guardian-props-kit",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 1901603,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781862098344-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkqph9rv46c",
+      "name": "Sa bàn AI City Guardian Map Kit",
+      "sku": "",
+      "slug": "sa-ban-ai-city-guardian-map-kit",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 8982749,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781862092085-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkqph9r12ks",
+      "name": "Bộ lắp ghép thông minh AI Space Exploration Props Kit",
+      "sku": "",
+      "slug": "bo-lap-ghep-thong-minh-ai-space-exploration-props-kit",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 7764749,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861940741-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkqph9rr9xc",
+      "name": "PK - Tay cầm bluetooth",
+      "sku": "",
+      "slug": "pk-tay-cam-bluetooth",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 2116275,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861935675-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkqph9r2tog",
+      "name": "Bộ lắp ghép Robot thông minh UGOT 7 mô hình",
+      "sku": "",
+      "slug": "bo-lap-ghep-robot-thong-minh-ugot-7-mo-hinh",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 43376024,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861932707-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkqph9rh7ld",
+      "name": "Hoạt động giáo dục STEM lớp 9",
+      "sku": "",
+      "slug": "hoat-dong-giao-duc-stem-lop-9",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 42000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861929803-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkqph9ri2zx",
+      "name": "Hoạt động giáo dục STEM lớp 8",
+      "sku": "",
+      "slug": "hoat-dong-giao-duc-stem-lop-8",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 42000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861926597-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkqph9qu6nj",
+      "name": "Hoạt động giáo dục STEM lớp 7",
+      "sku": "",
+      "slug": "hoat-dong-giao-duc-stem-lop-7",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 44000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861923484-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkqph9qlap1",
+      "name": "Hoạt động giáo dục STEM lớp 6",
+      "sku": "",
+      "slug": "hoat-dong-giao-duc-stem-lop-6",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 44000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861913935-bulk-clip.png",
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861920296-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkqph9q0w2g",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Đèn đổi màu - Lớp 9",
+      "sku": "",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-den-doi-mau-lop-9",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 2064528,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861909843-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkqph9q66va",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hành trình hòa tan và kết tinh - Lớp 8",
+      "sku": "",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-hanh-trinh-hoa-tan-va-ket-tinh-lop-8",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 1784592,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861907089-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkqph9qyjy7",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề  Cuộc chạy đua sắc màu - Lớp 7",
+      "sku": "",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-cuoc-chay-dua-sac-mau-lop-7",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 3417552,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861904280-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkqph9qv5w4",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ Ánh sáng và lá phổi xanh - Lớp 6",
+      "sku": "",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-anh-sang-va-la-phoi-xanh-lop-6",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 2099520,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861900016-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
       "id": "pmqkq82n3ey87",
       "name": "Sách song ngữ Smart Life - tập 2",
       "sku": "",
