@@ -420,45 +420,55 @@ const BULK_COLUMNS = [
   { key: 'featured',         label: 'Nổi bật (true/false)',     required: false }
 ];
 
+const BULK_COL_WIDTH = {
+  name: 220, sku: 110, category: 140, priceMode: 110, price: 110, originalPrice: 110,
+  stock: 80, shortDescription: 240, description: 280, tags: 170, images: 220, featured: 90
+};
+
 function openBulkImport() {
-  const headerRow = BULK_COLUMNS.map(c => c.key).join('\t');
-  const sample = ['Robot ABC123', 'RBT-001', 'robotics', 'show', '1500000', '2000000', '10', 'Robot lập trình cho HS THCS', 'Mô tả chi tiết...', 'robot,stem,thcs', '', 'true'].join('\t');
-  const catList = STATE.data.categories.map(c => `<span class="font-mono bg-slate-100 px-1.5 py-0.5 rounded text-[11px]">${c.id}</span>`).join(' ');
+  const catList = STATE.data.categories.map(c => `<span class="font-mono bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[11px]">${c.id}</span>`).join(' ');
 
   document.getElementById('editorContent').innerHTML = `
     <div class="p-6">
-      <div class="flex justify-between items-center mb-4">
+      <div class="flex justify-between items-center mb-3">
         <h2 class="text-xl font-bold">📥 Nhập sản phẩm hàng loạt</h2>
         <button onclick="closeEditor()" class="text-2xl text-slate-400 hover:text-slate-700">&times;</button>
       </div>
 
-      <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4 text-sm">
-        <p class="font-semibold text-blue-800 mb-1">📋 Hướng dẫn:</p>
-        <ol class="list-decimal list-inside text-blue-900 space-y-0.5 text-xs">
-          <li>Mở Excel/Google Sheets, tạo các cột theo thứ tự bên dưới.</li>
-          <li>Bôi đen vùng dữ liệu (KHÔNG bao gồm dòng tiêu đề), Ctrl+C.</li>
-          <li>Ctrl+V vào ô bên dưới. Hệ thống nhận tab (Excel) hoặc dấu phẩy (CSV).</li>
-          <li>Bấm "Xem trước" để kiểm tra, rồi "Nhập" để lưu lên GitHub.</li>
-        </ol>
+      <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-3 text-xs flex flex-wrap gap-x-4 gap-y-1">
+        <span class="font-semibold text-blue-800">💡 Cách dùng:</span>
+        <span>• Nhập trực tiếp vào ô như Google Sheet</span>
+        <span>• HOẶC copy từ Excel/Sheets → click ô đầu tiên → Ctrl+V (tự động trải nhiều dòng/cột)</span>
+        <span>• Tab/Enter để di chuyển giữa các ô</span>
       </div>
 
-      <div class="bg-slate-50 border border-slate-200 rounded-lg p-3 mb-3">
-        <div class="text-xs font-semibold text-slate-700 mb-2">Thứ tự cột (12 cột):</div>
-        <div class="grid grid-cols-3 md:grid-cols-4 gap-1 text-[11px]">
-          ${BULK_COLUMNS.map((c, i) => `<div class="bg-white border border-slate-200 rounded px-2 py-1"><span class="text-slate-400">${i+1}.</span> ${c.label}</div>`).join('')}
-        </div>
-        <div class="text-[11px] text-slate-600 mt-2"><span class="font-semibold">Danh mục hợp lệ:</span> ${catList || '<i>chưa có</i>'}</div>
+      <div class="bg-slate-50 border border-slate-200 rounded-lg p-2 mb-2 text-[11px]">
+        <span class="font-semibold text-slate-700">Danh mục hợp lệ (cột "Danh mục"):</span> ${catList || '<i>chưa có</i>'}
       </div>
 
-      <div class="flex gap-2 mb-2">
-        <button onclick="bulkFillSample()" class="text-xs bg-slate-200 hover:bg-slate-300 px-3 py-1 rounded">📝 Điền 1 dòng mẫu</button>
-        <button onclick="bulkClear()" class="text-xs bg-slate-200 hover:bg-slate-300 px-3 py-1 rounded">🗑 Xóa</button>
+      <div class="flex gap-2 mb-2 items-center">
+        <button onclick="bulkAddRow(1)" class="text-xs bg-slate-200 hover:bg-slate-300 px-3 py-1 rounded">+ 1 dòng</button>
+        <button onclick="bulkAddRow(5)" class="text-xs bg-slate-200 hover:bg-slate-300 px-3 py-1 rounded">+ 5 dòng</button>
+        <button onclick="bulkFillSample()" class="text-xs bg-slate-200 hover:bg-slate-300 px-3 py-1 rounded">📝 Mẫu</button>
+        <button onclick="bulkClear()" class="text-xs bg-slate-200 hover:bg-slate-300 px-3 py-1 rounded">🗑 Xóa hết</button>
+        <span class="text-[11px] text-slate-500 ml-auto" id="bulkRowInfo"></span>
       </div>
 
-      <textarea id="bulkInput" rows="10" class="w-full px-3 py-2 border rounded font-mono text-xs" placeholder="Dán dữ liệu ở đây (mỗi dòng 1 sản phẩm, cột phân cách bằng Tab hoặc phẩy)..."></textarea>
+      <div id="bulkGridWrap" class="overflow-auto border border-slate-300 rounded-lg max-h-[55vh] bg-white">
+        <table class="border-collapse text-xs w-max">
+          <thead class="bg-purple-100 sticky top-0 z-10">
+            <tr>
+              <th class="bg-slate-200 border border-slate-300 px-1 py-1.5 w-10 text-slate-600 sticky left-0 z-20">#</th>
+              ${BULK_COLUMNS.map(c => `<th class="border border-slate-300 px-2 py-1.5 text-left text-brand-700 font-semibold whitespace-nowrap" style="min-width:${BULK_COL_WIDTH[c.key]}px">${c.label}</th>`).join('')}
+              <th class="border border-slate-300 px-1 w-8"></th>
+            </tr>
+          </thead>
+          <tbody id="bulkGridBody"></tbody>
+        </table>
+      </div>
 
       <div class="flex gap-2 mt-3">
-        <button onclick="bulkPreview()" class="flex-1 bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 rounded">👁 Xem trước</button>
+        <button onclick="bulkPreview()" class="flex-1 bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 rounded">👁 Xem trước & kiểm tra</button>
         <button onclick="closeEditor()" class="px-6 py-2 border rounded font-semibold">Hủy</button>
       </div>
 
@@ -466,16 +476,119 @@ function openBulkImport() {
     </div>
   `;
   openEditor();
-  // Sample stored for bulkFillSample
-  window._bulkSample = sample;
+  bulkAddRow(10);
+  document.getElementById('bulkGridWrap').addEventListener('paste', bulkPasteHandler);
+  document.getElementById('bulkGridWrap').addEventListener('keydown', bulkKeyNav);
+}
+
+function bulkRowHtml(idx) {
+  return `<tr data-row="${idx}">
+    <td class="bg-slate-50 border border-slate-300 px-1 text-center text-slate-500 text-[11px] sticky left-0">${idx + 1}</td>
+    ${BULK_COLUMNS.map((c, ci) => `<td class="border border-slate-200 p-0"><input type="text" data-col="${ci}" data-key="${c.key}" class="w-full px-2 py-1.5 outline-none focus:bg-yellow-50 focus:ring-2 focus:ring-inset focus:ring-brand-400" /></td>`).join('')}
+    <td class="border border-slate-200 text-center"><button onclick="bulkRemoveRow(this)" class="text-red-400 hover:text-red-600 px-1" title="Xóa dòng">✕</button></td>
+  </tr>`;
+}
+
+function bulkAddRow(n = 1) {
+  const body = document.getElementById('bulkGridBody');
+  for (let i = 0; i < n; i++) {
+    const idx = body.children.length;
+    body.insertAdjacentHTML('beforeend', bulkRowHtml(idx));
+  }
+  bulkUpdateRowInfo();
+}
+
+function bulkRemoveRow(btn) {
+  btn.closest('tr').remove();
+  bulkReindexRows();
+}
+
+function bulkReindexRows() {
+  document.querySelectorAll('#bulkGridBody tr').forEach((tr, i) => {
+    tr.dataset.row = i;
+    tr.children[0].textContent = i + 1;
+  });
+  bulkUpdateRowInfo();
+}
+
+function bulkUpdateRowInfo() {
+  const total = document.querySelectorAll('#bulkGridBody tr').length;
+  const filled = Array.from(document.querySelectorAll('#bulkGridBody tr')).filter(tr =>
+    Array.from(tr.querySelectorAll('input[data-col]')).some(i => i.value.trim())
+  ).length;
+  const el = document.getElementById('bulkRowInfo');
+  if (el) el.textContent = `${filled}/${total} dòng có dữ liệu`;
+}
+
+function bulkClear() {
+  document.querySelectorAll('#bulkGridBody input').forEach(i => i.value = '');
+  document.getElementById('bulkPreview').innerHTML = '';
+  bulkUpdateRowInfo();
 }
 
 function bulkFillSample() {
-  document.getElementById('bulkInput').value = window._bulkSample || '';
+  const sample = [
+    ['Robot mBot Ranger', 'RBT-001', 'robotics', 'show', '2500000', '3000000', '15', 'Robot lập trình STEM cho HS THCS', 'Bộ kit Ranger 3-trong-1 — xe đua, xe tăng, vượt địa hình. Scratch/Python.', 'robot,stem,thcs', '', 'true'],
+    ['Kit Arduino Starter', 'ARD-100', 'stem-kit', 'show', '850000', '0', '30', 'Bộ Arduino cơ bản cho người mới', 'Board Uno R3, breadboard, LED, điện trở, cảm biến cơ bản.', 'arduino,stem,thpt', '', 'false'],
+    ['AI Vision Box', 'AIV-200', 'ai-iot', 'contact', '0', '0', '5', 'Camera AI nhận diện vật thể real-time', 'Edge AI dùng Jetson Nano, train model nhận diện vật thể.', 'ai,vision,iot', '', 'true']
+  ];
+  bulkFillGrid(sample, 0, 0);
 }
-function bulkClear() {
-  document.getElementById('bulkInput').value = '';
-  document.getElementById('bulkPreview').innerHTML = '';
+
+function bulkFillGrid(matrix, startRow, startCol) {
+  const body = document.getElementById('bulkGridBody');
+  while (body.children.length < startRow + matrix.length) bulkAddRow(1);
+  matrix.forEach((row, r) => {
+    const tr = body.children[startRow + r];
+    const inputs = tr.querySelectorAll('input[data-col]');
+    row.forEach((val, c) => {
+      const target = inputs[startCol + c];
+      if (target) target.value = (val || '').toString();
+    });
+  });
+  bulkUpdateRowInfo();
+}
+
+function bulkPasteHandler(e) {
+  const text = (e.clipboardData || window.clipboardData).getData('text/plain');
+  // Single value (no tabs, no multi-line) → let browser default paste
+  if (!text || (!text.includes('\t') && !text.includes('\n'))) return;
+  e.preventDefault();
+  let startRow = 0, startCol = 0;
+  const active = document.activeElement;
+  if (active && active.tagName === 'INPUT' && active.dataset.col) {
+    const tr = active.closest('tr');
+    startRow = +tr.dataset.row;
+    startCol = +active.dataset.col;
+  }
+  const matrix = text.replace(/\r/g, '').split('\n')
+    .filter(l => l.length > 0)
+    .map(l => l.split('\t').map(c => c.trim()));
+  bulkFillGrid(matrix, startRow, startCol);
+}
+
+function bulkKeyNav(e) {
+  const t = e.target;
+  if (t.tagName !== 'INPUT' || !t.dataset.col) return;
+  const tr = t.closest('tr');
+  const row = +tr.dataset.row;
+  const col = +t.dataset.col;
+  const body = document.getElementById('bulkGridBody');
+  let next = null;
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    const nextTr = body.children[row + 1];
+    if (nextTr) next = nextTr.querySelectorAll('input[data-col]')[col];
+    else { bulkAddRow(1); next = body.children[row + 1].querySelectorAll('input[data-col]')[col]; }
+  } else if (e.key === 'ArrowDown' && !e.shiftKey) {
+    const nextTr = body.children[row + 1];
+    if (nextTr) { e.preventDefault(); next = nextTr.querySelectorAll('input[data-col]')[col]; }
+  } else if (e.key === 'ArrowUp' && !e.shiftKey) {
+    const prevTr = body.children[row - 1];
+    if (prevTr) { e.preventDefault(); next = prevTr.querySelectorAll('input[data-col]')[col]; }
+  }
+  if (next) { next.focus(); next.select && next.select(); }
+  bulkUpdateRowInfo();
 }
 
 function parseBulkLine(line) {
@@ -555,9 +668,13 @@ function parseBulkData(text) {
 }
 
 function bulkPreview() {
-  const text = document.getElementById('bulkInput').value;
-  if (!text.trim()) { alert('Chưa có dữ liệu để xem trước.'); return; }
-  const rows = parseBulkData(text);
+  const lines = [];
+  document.querySelectorAll('#bulkGridBody tr').forEach(tr => {
+    const vals = Array.from(tr.querySelectorAll('input[data-col]')).map(i => i.value);
+    if (vals.some(v => v.trim())) lines.push(vals.join('\t'));
+  });
+  if (!lines.length) { alert('Lưới chưa có dữ liệu. Nhập tay hoặc paste từ Excel.'); return; }
+  const rows = parseBulkData(lines.join('\n'));
   const okCount = rows.filter(r => !r.errors.length).length;
   const errCount = rows.length - okCount;
 
