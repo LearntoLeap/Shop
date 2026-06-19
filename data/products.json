@@ -996,25 +996,6 @@
       "featured": false,
       "createdAt": "2026-05-19",
       "sku": "002"
-    },
-    {
-      "id": "pmpcclcyp2d8k",
-      "name": "CoachLab II+ (Bộ điểu khiển - thu nhận tín hiệu số)",
-      "slug": "coachlab-ii-bo-dieu-khien-thu-nhan-tin-hieu-so",
-      "category": "stem-kit",
-      "price": 16180000,
-      "originalPrice": 0,
-      "currency": "VND",
-      "images": [
-        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779183965773-sen-001.png"
-      ],
-      "shortDescription": "",
-      "description": "\"Độ phân giải: 12-bit\nTần số lấy mẫu tối đa: 100 kHz\nĐầu vào cảm biến: Hai đầu vào tương tự BT, hai đầu vào 4-mm\nĐầu ra dụng cụ chấp hành: 04 đầu ra 4-mm với các mức điện áp khác nhau\nKết nối máy tính: Cổng USB\nNguồn cấp: Bộ đổi điện\nPhần mềm trên máy tính cài đặt được trên hệ điều hành Windows và MAC OS\"",
-      "tags": [],
-      "stock": 0,
-      "featured": false,
-      "createdAt": "2026-05-19",
-      "sku": "006p"
     }
   ]
 }
