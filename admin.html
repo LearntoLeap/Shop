@@ -78,7 +78,10 @@
     <div id="paneProducts">
       <div class="flex items-center justify-between mb-4">
         <h2 class="text-xl font-bold">Sản phẩm (<span id="productCount">0</span>)</h2>
-        <button onclick="newProduct()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg">+ Thêm sản phẩm</button>
+        <div class="flex gap-2">
+          <button onclick="openBulkImport()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2 rounded-lg">📥 Nhập hàng loạt</button>
+          <button onclick="newProduct()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg">+ Thêm sản phẩm</button>
+        </div>
       </div>
       <div id="productList" class="space-y-2"></div>
     </div>

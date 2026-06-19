@@ -404,6 +404,214 @@ async function deleteProduct(id) {
   await saveProductsFile('Xóa SP: ' + p.name);
 }
 
+// ---------- BULK IMPORT ----------
+const BULK_COLUMNS = [
+  { key: 'name',             label: 'Tên sản phẩm *',           required: true },
+  { key: 'sku',              label: 'Mã SP (SKU) *',            required: true },
+  { key: 'category',         label: 'Danh mục (id hoặc tên)',   required: false },
+  { key: 'priceMode',        label: 'Kiểu giá (show/contact)',  required: false },
+  { key: 'price',            label: 'Giá bán',                  required: false },
+  { key: 'originalPrice',    label: 'Giá gốc',                  required: false },
+  { key: 'stock',            label: 'Tồn kho',                  required: false },
+  { key: 'shortDescription', label: 'Mô tả ngắn',               required: false },
+  { key: 'description',      label: 'Mô tả chi tiết',           required: false },
+  { key: 'tags',             label: 'Tags (phẩy)',              required: false },
+  { key: 'images',           label: 'Ảnh (URL, phẩy)',          required: false },
+  { key: 'featured',         label: 'Nổi bật (true/false)',     required: false }
+];
+
+function openBulkImport() {
+  const headerRow = BULK_COLUMNS.map(c => c.key).join('\t');
+  const sample = ['Robot ABC123', 'RBT-001', 'robotics', 'show', '1500000', '2000000', '10', 'Robot lập trình cho HS THCS', 'Mô tả chi tiết...', 'robot,stem,thcs', '', 'true'].join('\t');
+  const catList = STATE.data.categories.map(c => `<span class="font-mono bg-slate-100 px-1.5 py-0.5 rounded text-[11px]">${c.id}</span>`).join(' ');
+
+  document.getElementById('editorContent').innerHTML = `
+    <div class="p-6">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-bold">📥 Nhập sản phẩm hàng loạt</h2>
+        <button onclick="closeEditor()" class="text-2xl text-slate-400 hover:text-slate-700">&times;</button>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-4 text-sm">
+        <p class="font-semibold text-blue-800 mb-1">📋 Hướng dẫn:</p>
+        <ol class="list-decimal list-inside text-blue-900 space-y-0.5 text-xs">
+          <li>Mở Excel/Google Sheets, tạo các cột theo thứ tự bên dưới.</li>
+          <li>Bôi đen vùng dữ liệu (KHÔNG bao gồm dòng tiêu đề), Ctrl+C.</li>
+          <li>Ctrl+V vào ô bên dưới. Hệ thống nhận tab (Excel) hoặc dấu phẩy (CSV).</li>
+          <li>Bấm "Xem trước" để kiểm tra, rồi "Nhập" để lưu lên GitHub.</li>
+        </ol>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-200 rounded-lg p-3 mb-3">
+        <div class="text-xs font-semibold text-slate-700 mb-2">Thứ tự cột (12 cột):</div>
+        <div class="grid grid-cols-3 md:grid-cols-4 gap-1 text-[11px]">
+          ${BULK_COLUMNS.map((c, i) => `<div class="bg-white border border-slate-200 rounded px-2 py-1"><span class="text-slate-400">${i+1}.</span> ${c.label}</div>`).join('')}
+        </div>
+        <div class="text-[11px] text-slate-600 mt-2"><span class="font-semibold">Danh mục hợp lệ:</span> ${catList || '<i>chưa có</i>'}</div>
+      </div>
+
+      <div class="flex gap-2 mb-2">
+        <button onclick="bulkFillSample()" class="text-xs bg-slate-200 hover:bg-slate-300 px-3 py-1 rounded">📝 Điền 1 dòng mẫu</button>
+        <button onclick="bulkClear()" class="text-xs bg-slate-200 hover:bg-slate-300 px-3 py-1 rounded">🗑 Xóa</button>
+      </div>
+
+      <textarea id="bulkInput" rows="10" class="w-full px-3 py-2 border rounded font-mono text-xs" placeholder="Dán dữ liệu ở đây (mỗi dòng 1 sản phẩm, cột phân cách bằng Tab hoặc phẩy)..."></textarea>
+
+      <div class="flex gap-2 mt-3">
+        <button onclick="bulkPreview()" class="flex-1 bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 rounded">👁 Xem trước</button>
+        <button onclick="closeEditor()" class="px-6 py-2 border rounded font-semibold">Hủy</button>
+      </div>
+
+      <div id="bulkPreview" class="mt-4"></div>
+    </div>
+  `;
+  openEditor();
+  // Sample stored for bulkFillSample
+  window._bulkSample = sample;
+}
+
+function bulkFillSample() {
+  document.getElementById('bulkInput').value = window._bulkSample || '';
+}
+function bulkClear() {
+  document.getElementById('bulkInput').value = '';
+  document.getElementById('bulkPreview').innerHTML = '';
+}
+
+function parseBulkLine(line) {
+  // Detect delimiter: tab if found, else comma
+  const delim = line.includes('\t') ? '\t' : ',';
+  // Simple split — no quoted-CSV parsing. For most spreadsheet pastes via tab, this is safe.
+  if (delim === '\t') return line.split('\t');
+  // Naive CSV: handle "..." wrapped values containing commas
+  const cells = [];
+  let cur = '', inQ = false;
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (ch === '"' && line[i+1] === '"') { cur += '"'; i++; continue; }
+    if (ch === '"') { inQ = !inQ; continue; }
+    if (ch === ',' && !inQ) { cells.push(cur); cur = ''; continue; }
+    cur += ch;
+  }
+  cells.push(cur);
+  return cells;
+}
+
+function parseBulkData(text) {
+  const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+  const rows = [];
+  const errors = [];
+  const seenSkus = new Set();
+  const existingSkus = new Set(STATE.data.products.filter(p => p.sku).map(p => p.sku));
+
+  for (let i = 0; i < lines.length; i++) {
+    const cells = parseBulkLine(lines[i]).map(c => c.trim());
+    const row = {};
+    BULK_COLUMNS.forEach((col, idx) => row[col.key] = cells[idx] || '');
+
+    const rowErrs = [];
+    if (!row.name) rowErrs.push('thiếu tên');
+    if (!row.sku) rowErrs.push('thiếu SKU');
+    if (row.sku && seenSkus.has(row.sku)) rowErrs.push('SKU trùng trong file');
+    if (row.sku && existingSkus.has(row.sku)) rowErrs.push('SKU đã tồn tại');
+    if (row.sku) seenSkus.add(row.sku);
+
+    // Resolve category by id or name
+    let catId = '';
+    if (row.category) {
+      const norm = row.category.toLowerCase();
+      const cat = STATE.data.categories.find(c => c.id.toLowerCase() === norm || c.name.toLowerCase() === norm);
+      if (cat) catId = cat.id;
+      else rowErrs.push('danh mục không tồn tại: "' + row.category + '"');
+    } else if (STATE.data.categories.length) {
+      catId = STATE.data.categories[0].id;
+    }
+
+    rows.push({
+      line: i + 1,
+      raw: row,
+      errors: rowErrs,
+      product: {
+        id: uid(),
+        name: row.name,
+        sku: row.sku,
+        slug: slugify(row.name),
+        category: catId,
+        priceMode: (row.priceMode || 'show').toLowerCase() === 'contact' ? 'contact' : 'show',
+        price: parseInt(row.price) || 0,
+        originalPrice: parseInt(row.originalPrice) || 0,
+        currency: 'VND',
+        stock: parseInt(row.stock) || 0,
+        shortDescription: row.shortDescription || '',
+        description: row.description || '',
+        tags: row.tags ? row.tags.split(',').map(t => t.trim()).filter(Boolean) : [],
+        images: row.images ? row.images.split(',').map(t => t.trim()).filter(Boolean) : [],
+        featured: /^(true|1|yes|y|x)$/i.test(row.featured || ''),
+        createdAt: new Date().toISOString().slice(0, 10)
+      }
+    });
+  }
+  return rows;
+}
+
+function bulkPreview() {
+  const text = document.getElementById('bulkInput').value;
+  if (!text.trim()) { alert('Chưa có dữ liệu để xem trước.'); return; }
+  const rows = parseBulkData(text);
+  const okCount = rows.filter(r => !r.errors.length).length;
+  const errCount = rows.length - okCount;
+
+  document.getElementById('bulkPreview').innerHTML = `
+    <div class="bg-white border rounded-lg overflow-hidden">
+      <div class="bg-slate-50 px-3 py-2 border-b flex items-center justify-between">
+        <div class="text-sm">
+          <span class="font-semibold">${rows.length}</span> dòng •
+          <span class="text-emerald-700 font-semibold">${okCount} OK</span>${errCount ? ' • <span class="text-red-600 font-semibold">' + errCount + ' lỗi</span>' : ''}
+        </div>
+        ${okCount > 0 ? `<button onclick="bulkConfirmImport()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-1.5 rounded text-sm">✓ Nhập ${okCount} sản phẩm</button>` : ''}
+      </div>
+      <div class="max-h-72 overflow-auto">
+        <table class="w-full text-xs">
+          <thead class="bg-slate-100 sticky top-0">
+            <tr>
+              <th class="px-2 py-1.5 text-left">#</th>
+              <th class="px-2 py-1.5 text-left">Tên</th>
+              <th class="px-2 py-1.5 text-left">SKU</th>
+              <th class="px-2 py-1.5 text-left">DM</th>
+              <th class="px-2 py-1.5 text-right">Giá</th>
+              <th class="px-2 py-1.5 text-left">Trạng thái</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rows.map(r => `
+              <tr class="${r.errors.length ? 'bg-red-50' : ''} border-t border-slate-100">
+                <td class="px-2 py-1.5 text-slate-500">${r.line}</td>
+                <td class="px-2 py-1.5 font-medium">${r.raw.name || '<span class="text-red-500">—</span>'}</td>
+                <td class="px-2 py-1.5 font-mono">${r.raw.sku || '<span class="text-red-500">—</span>'}</td>
+                <td class="px-2 py-1.5">${r.product.category || '<span class="text-slate-400">—</span>'}</td>
+                <td class="px-2 py-1.5 text-right">${r.product.priceMode === 'contact' ? 'Liên hệ' : fmtVND(r.product.price)}</td>
+                <td class="px-2 py-1.5">${r.errors.length ? '<span class="text-red-600">✗ ' + r.errors.join('; ') + '</span>' : '<span class="text-emerald-600">✓ OK</span>'}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  `;
+  window._bulkParsed = rows;
+}
+
+async function bulkConfirmImport() {
+  const rows = window._bulkParsed || [];
+  const valid = rows.filter(r => !r.errors.length);
+  if (!valid.length) { alert('Không có dòng hợp lệ để nhập.'); return; }
+  if (!confirm(`Nhập ${valid.length} sản phẩm vào shop? (sẽ commit 1 lần lên GitHub)`)) return;
+  valid.forEach(r => STATE.data.products.unshift(r.product));
+  closeEditor();
+  render();
+  await saveProductsFile(`Nhập hàng loạt ${valid.length} sản phẩm`);
+}
+
 // ---------- CATEGORY EDITOR ----------
 function newCategory() {
   STATE.editing = { id: '', name: '', icon: '📦', description: '' };
