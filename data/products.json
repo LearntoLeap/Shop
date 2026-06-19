@@ -942,43 +942,6 @@
       "createdAt": "2026-05-19"
     },
     {
-      "id": "pmpccpno63lvs",
-      "name": "Cảm biến ánh sáng",
-      "slug": "cam-bien-anh-sang",
-      "category": "stem-kit",
-      "price": 9960000,
-      "originalPrice": 0,
-      "currency": "VND",
-      "images": [
-        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779184008241-sen-004.png"
-      ],
-      "shortDescription": "",
-      "description": "\"Đo cường độ ánh sáng trong ba phạm vi: 0 .. 1500 lux. 0 .. 15000 lux và 0 .. 150000 lux.\nĐộ phân giải (12bit): 0.37lx, 3.7lx, 37lx\"",
-      "tags": [],
-      "stock": 0,
-      "featured": false,
-      "createdAt": "2026-05-19"
-    },
-    {
-      "id": "pmpcco9jdg366",
-      "name": "Wilab (Bộ chuyển đổi tín hiệu số)",
-      "slug": "wilab-bo-chuyen-doi-tin-hieu-so",
-      "category": "stem-kit",
-      "price": 9800000,
-      "originalPrice": 0,
-      "currency": "VND",
-      "images": [
-        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779183977230-sen-002.png"
-      ],
-      "shortDescription": "",
-      "description": "\"Độ phân giải: 12-bits\nTần số lấy mẫu tối đa: 100kHz\nĐầu vào cảm biến: Hai đầu tương tự BT, kết nối được với cảm biến\nTích hợp: đèn LED và coi báo hiệu trong các hoạt động\nKết nối không dây: Bluetooth\nKết nối máy tính: Micro USB - USB A\nNguồn: Pin sạc\nPhần mềm cài đặt được trên các hệ điều hành Window, MAC OS, IOS, Android\"",
-      "tags": [],
-      "stock": 0,
-      "featured": false,
-      "createdAt": "2026-05-19",
-      "sku": "002"
-    },
-    {
       "id": "pmpcclcyp2d8k",
       "name": "CoachLab II+ (Bộ điểu khiển - thu nhận tín hiệu số)",
       "slug": "coachlab-ii-bo-dieu-khien-thu-nhan-tin-hieu-so",
