@@ -384,8 +384,8 @@ function renderProductEditor(isNew) {
             <input id="ed_slug" type="text" value="${p.slug}" class="w-full mt-1 px-3 py-2 border rounded" oninput="STATE.editing.slug=this.value" />
           </div>
           <div>
-            <label class="text-xs font-semibold">Mã sản phẩm (SKU) *</label>
-            <input type="text" value="${p.sku || ''}" placeholder="VD: RT113" class="w-full mt-1 px-3 py-2 border rounded font-mono" oninput="STATE.editing.sku=this.value.trim()" />
+            <label class="text-xs font-semibold">Mã sản phẩm (SKU)</label>
+            <input type="text" value="${p.sku || ''}" placeholder="VD: RT113 (tùy chọn)" class="w-full mt-1 px-3 py-2 border rounded font-mono" oninput="STATE.editing.sku=this.value.trim()" />
           </div>
           <div>
             <label class="text-xs font-semibold">Danh mục *</label>
@@ -502,10 +502,11 @@ async function uploadImage(input) {
 
 async function saveProduct(isNew) {
   const p = STATE.editing;
-  if (!p.name || !p.category) { alert('Tên và danh mục bắt buộc.'); return; }
-  if (!p.sku) { alert('Mã sản phẩm (SKU) bắt buộc — dùng để tạo URL trang chi tiết.'); return; }
-  const dup = STATE.data.products.find(x => x.sku === p.sku && x.id !== p.id);
-  if (dup) { alert('Mã sản phẩm "' + p.sku + '" đã tồn tại ở sản phẩm: ' + dup.name); return; }
+  if (!p.name) { alert('Tên sản phẩm bắt buộc.'); return; }
+  if (p.sku) {
+    const dup = STATE.data.products.find(x => x.sku === p.sku && x.id !== p.id);
+    if (dup) { alert('Mã sản phẩm "' + p.sku + '" đã tồn tại ở sản phẩm: ' + dup.name); return; }
+  }
   if (isNew) STATE.data.products.unshift(p);
   else {
     const idx = STATE.data.products.findIndex(x => x.id === p.id);
@@ -527,7 +528,7 @@ async function deleteProduct(id) {
 // ---------- BULK IMPORT ----------
 const BULK_COLUMNS = [
   { key: 'name',             label: 'Tên sản phẩm *',           required: true },
-  { key: 'sku',              label: 'Mã SP (SKU) *',            required: true },
+  { key: 'sku',              label: 'Mã SP (SKU)',              required: false },
   { key: 'category',         label: 'Danh mục (id hoặc tên)',   required: false },
   { key: 'priceMode',        label: 'Kiểu giá (show/contact)',  required: false },
   { key: 'price',            label: 'Giá bán',                  required: false },
@@ -584,13 +585,17 @@ function openBulkImport() {
           <thead class="bg-purple-100 sticky top-0 z-10">
             <tr>
               <th class="bg-slate-200 border border-slate-300 px-1 py-1.5 w-10 text-slate-600 sticky left-0 z-20">#</th>
-              ${BULK_COLUMNS.map((c, ci) => `
-                <th class="border border-slate-300 px-2 py-1.5 text-left text-brand-700 font-semibold whitespace-nowrap" style="min-width:${BULK_COL_WIDTH[c.key]}px">
-                  <label class="flex items-center gap-1.5 cursor-pointer select-none">
-                    <input type="checkbox" data-col-include="${ci}" checked onchange="bulkToggleColInclude(${ci}, this.checked)" class="w-4 h-4" title="Bỏ tick để bỏ qua cột này" />
+              ${BULK_COLUMNS.map((c, ci) => {
+                const cb = c.required
+                  ? `<input type="checkbox" data-col-include="${ci}" checked disabled title="Cột bắt buộc — không thể bỏ qua" class="w-4 h-4 opacity-60 cursor-not-allowed" />`
+                  : `<input type="checkbox" data-col-include="${ci}" checked onchange="bulkToggleColInclude(${ci}, this.checked)" title="Bỏ tick để bỏ qua cột này" class="w-4 h-4" />`;
+                return `<th class="border border-slate-300 px-2 py-1.5 text-left text-brand-700 font-semibold whitespace-nowrap" style="min-width:${BULK_COL_WIDTH[c.key]}px">
+                  <label class="flex items-center gap-1.5 ${c.required ? '' : 'cursor-pointer'} select-none">
+                    ${cb}
                     <span data-col-label="${ci}">${c.label}</span>
                   </label>
-                </th>`).join('')}
+                </th>`;
+              }).join('')}
               <th class="border border-slate-300 px-1 w-8"></th>
             </tr>
           </thead>
@@ -818,7 +823,6 @@ function parseBulkData(text) {
 
     const rowErrs = [];
     if (!row.name) rowErrs.push('thiếu tên');
-    if (!row.sku) rowErrs.push('thiếu SKU');
     if (row.sku && seenSkus.has(row.sku)) rowErrs.push('SKU trùng trong file');
     if (row.sku && existingSkus.has(row.sku)) rowErrs.push('SKU đã tồn tại');
     if (row.sku) seenSkus.add(row.sku);
