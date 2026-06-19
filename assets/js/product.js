@@ -1,21 +1,24 @@
 // Learn to Leap Shop — Product detail page (handles pretty URLs via 404.html fallback)
 const fmtVND = (n) => new Intl.NumberFormat('vi-VN').format(n) + 'đ';
 const slugify = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const productUrl = (p) => `${p.slug || slugify(p.name)}/${encodeURIComponent(p.sku || p.id)}`;
+const productUrl = (p) => {
+  const slug = p.slug || slugify(p.name);
+  return p.sku ? `${slug}/${encodeURIComponent(p.sku)}` : slug;
+};
 
-// Parse identifier from either ?id= query or last path segment after /Shop/
+// Parse identifier from either ?id= query or path segments after /Shop/
+// URL formats supported:
+//   /Shop/<slug>          → SP không có SKU, match theo slug
+//   /Shop/<slug>/<sku>    → match theo SKU (slug chỉ để URL đẹp)
+//   /Shop/?id=<id>        → legacy fallback
 function getIdentifier() {
   const q = new URLSearchParams(location.search).get('id');
   if (q) return { type: 'id', value: q };
-  // Pretty URL: /Shop/<slug>/<sku>  OR  /<slug>/<sku> for custom domain
   const segs = location.pathname.split('/').filter(Boolean);
-  // Drop repo basename if present (case-insensitive)
   if (segs[0] && segs[0].toLowerCase() === 'shop') segs.shift();
-  if (segs.length >= 1) {
-    const last = decodeURIComponent(segs[segs.length - 1]);
-    return { type: 'sku', value: last, slug: segs.length >= 2 ? segs[segs.length - 2] : null };
-  }
-  return null;
+  if (segs.length === 0) return null;
+  if (segs.length === 1) return { type: 'slug', value: decodeURIComponent(segs[0]) };
+  return { type: 'sku', value: decodeURIComponent(segs[segs.length - 1]), slug: decodeURIComponent(segs[segs.length - 2]) };
 }
 
 async function loadProduct() {
@@ -31,10 +34,17 @@ async function loadProduct() {
     let p;
     if (ident.type === 'id') {
       p = data.products.find(x => x.id === ident.value);
-    } else {
-      // Match by SKU first (preferred), then by legacy id
-      p = data.products.find(x => x.sku && x.sku === ident.value)
+    } else if (ident.type === 'slug') {
+      // Tìm theo slug (cho SP không có SKU)
+      p = data.products.find(x => x.slug === ident.value)
+        || data.products.find(x => slugify(x.name) === ident.value)
         || data.products.find(x => x.id === ident.value);
+    } else {
+      // Tìm theo SKU; fallback: id, rồi slug + slug-từ-tên
+      p = data.products.find(x => x.sku && x.sku === ident.value)
+        || data.products.find(x => x.id === ident.value)
+        || (ident.slug && data.products.find(x => x.slug === ident.slug && !x.sku))
+        || (ident.slug && data.products.find(x => slugify(x.name) === ident.slug && !x.sku));
     }
     if (!p) {
       main.innerHTML = notFoundHtml('Không tìm thấy sản phẩm với mã: <span class="font-mono text-brand-700">' + ident.value + '</span>');

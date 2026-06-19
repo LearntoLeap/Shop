@@ -3,7 +3,10 @@ const STATE = { data: null, filter: 'all', search: '' };
 
 const fmtVND = (n) => new Intl.NumberFormat('vi-VN').format(n) + 'đ';
 const slugify = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const productUrl = (p) => `${p.slug || slugify(p.name)}/${encodeURIComponent(p.sku || p.id)}`;
+const productUrl = (p) => {
+  const slug = p.slug || slugify(p.name);
+  return p.sku ? `${slug}/${encodeURIComponent(p.sku)}` : slug;
+};
 
 async function loadData() {
   try {
