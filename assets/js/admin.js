@@ -548,6 +548,10 @@ const BULK_COL_WIDTH = {
 function openBulkImport() {
   const catList = STATE.data.categories.map(c => `<span class="font-mono bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[11px]">${c.id}</span>`).join(' ');
 
+  // Widen modal for the spreadsheet view
+  const box = document.getElementById('editorBox');
+  if (box) { box.classList.remove('max-w-3xl'); box.classList.add('max-w-7xl'); }
+
   document.getElementById('editorContent').innerHTML = `
     <div class="p-6">
       <div class="flex justify-between items-center mb-3">
@@ -558,8 +562,9 @@ function openBulkImport() {
       <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-3 text-xs flex flex-wrap gap-x-4 gap-y-1">
         <span class="font-semibold text-blue-800">💡 Cách dùng:</span>
         <span>• Nhập trực tiếp vào ô như Google Sheet</span>
-        <span>• HOẶC copy từ Excel/Sheets → click ô đầu tiên → Ctrl+V (tự động trải nhiều dòng/cột)</span>
-        <span>• Tab/Enter để di chuyển giữa các ô</span>
+        <span>• Copy từ Excel/Sheets → click ô đầu → <kbd class="bg-white border px-1 rounded">Ctrl+V</kbd> (trải nhiều dòng/cột)</span>
+        <span>• <b>Paste ảnh từ clipboard</b> vào ô "Ảnh" → tự upload lên GitHub</span>
+        <span>• <b>Bỏ tick ☑ ở header cột</b> nếu không muốn nhập cột đó (dữ liệu cột đó bị bỏ qua)</span>
       </div>
 
       <div class="bg-slate-50 border border-slate-200 rounded-lg p-2 mb-2 text-[11px]">
@@ -574,12 +579,18 @@ function openBulkImport() {
         <span class="text-[11px] text-slate-500 ml-auto" id="bulkRowInfo"></span>
       </div>
 
-      <div id="bulkGridWrap" class="overflow-auto border border-slate-300 rounded-lg max-h-[55vh] bg-white">
+      <div id="bulkGridWrap" class="overflow-auto border border-slate-300 rounded-lg max-h-[70vh] bg-white">
         <table class="border-collapse text-xs w-max">
           <thead class="bg-purple-100 sticky top-0 z-10">
             <tr>
               <th class="bg-slate-200 border border-slate-300 px-1 py-1.5 w-10 text-slate-600 sticky left-0 z-20">#</th>
-              ${BULK_COLUMNS.map(c => `<th class="border border-slate-300 px-2 py-1.5 text-left text-brand-700 font-semibold whitespace-nowrap" style="min-width:${BULK_COL_WIDTH[c.key]}px">${c.label}</th>`).join('')}
+              ${BULK_COLUMNS.map((c, ci) => `
+                <th class="border border-slate-300 px-2 py-1.5 text-left text-brand-700 font-semibold whitespace-nowrap" style="min-width:${BULK_COL_WIDTH[c.key]}px">
+                  <label class="flex items-center gap-1.5 cursor-pointer select-none">
+                    <input type="checkbox" data-col-include="${ci}" checked onchange="bulkToggleColInclude(${ci}, this.checked)" class="w-4 h-4" title="Bỏ tick để bỏ qua cột này" />
+                    <span data-col-label="${ci}">${c.label}</span>
+                  </label>
+                </th>`).join('')}
               <th class="border border-slate-300 px-1 w-8"></th>
             </tr>
           </thead>
@@ -669,13 +680,76 @@ function bulkFillGrid(matrix, startRow, startCol) {
   bulkUpdateRowInfo();
 }
 
+function bulkToggleColInclude(ci, on) {
+  const label = document.querySelector(`[data-col-label="${ci}"]`);
+  if (label) label.style.textDecoration = on ? '' : 'line-through';
+  document.querySelectorAll(`#bulkGridBody input[data-col="${ci}"]`).forEach(inp => {
+    inp.disabled = !on;
+    inp.classList.toggle('bg-slate-100', !on);
+    inp.classList.toggle('text-slate-400', !on);
+  });
+}
+
+function bulkGetIncludedCols() {
+  const inc = [];
+  document.querySelectorAll('[data-col-include]').forEach(cb => {
+    if (cb.checked) inc.push(+cb.dataset.colInclude);
+  });
+  return inc;
+}
+
+async function bulkUploadImageToCell(file, input) {
+  if (file.size > 1024 * 1024) { alert('Ảnh quá lớn (>1MB). Resize trước khi paste.'); return; }
+  const orig = input.value;
+  const wasDisabled = input.disabled;
+  input.disabled = true;
+  input.value = '⏳ Đang upload ảnh...';
+  try {
+    const b64 = await new Promise((res, rej) => {
+      const r = new FileReader();
+      r.onload = () => res(r.result.split(',')[1]);
+      r.onerror = rej;
+      r.readAsDataURL(file);
+    });
+    const ext = (file.type.split('/')[1] || 'png').toLowerCase().replace('jpeg', 'jpg');
+    const path = `images/${Date.now()}-bulk-clip.${ext}`;
+    const res = await ghPut(path, b64, null, 'Upload ảnh clipboard (bulk)');
+    const url = res.content.download_url;
+    input.value = orig ? orig + ',' + url : url;
+    bulkUpdateRowInfo();
+  } catch (e) {
+    alert('Upload thất bại: ' + e.message);
+    input.value = orig;
+  } finally {
+    input.disabled = wasDisabled;
+  }
+}
+
 function bulkPasteHandler(e) {
-  const text = (e.clipboardData || window.clipboardData).getData('text/plain');
-  // Single value (no tabs, no multi-line) → let browser default paste
+  const cb = e.clipboardData || window.clipboardData;
+  if (!cb) return;
+  const active = document.activeElement;
+
+  // 1) Image paste — if clipboard contains an image AND focus is on "images" cell
+  if (active && active.tagName === 'INPUT' && active.dataset.key === 'images') {
+    const items = cb.items || [];
+    for (const it of items) {
+      if (it.kind === 'file' && it.type && it.type.startsWith('image/')) {
+        const file = it.getAsFile();
+        if (file) {
+          e.preventDefault();
+          bulkUploadImageToCell(file, active);
+          return;
+        }
+      }
+    }
+  }
+
+  // 2) Text paste — single value lets browser default. Multi-line/tab → fill matrix.
+  const text = cb.getData('text/plain');
   if (!text || (!text.includes('\t') && !text.includes('\n'))) return;
   e.preventDefault();
   let startRow = 0, startCol = 0;
-  const active = document.activeElement;
   if (active && active.tagName === 'INPUT' && active.dataset.col) {
     const tr = active.closest('tr');
     startRow = +tr.dataset.row;
@@ -788,9 +862,12 @@ function parseBulkData(text) {
 }
 
 function bulkPreview() {
+  const includedCols = new Set(bulkGetIncludedCols());
   const lines = [];
   document.querySelectorAll('#bulkGridBody tr').forEach(tr => {
-    const vals = Array.from(tr.querySelectorAll('input[data-col]')).map(i => i.value);
+    const vals = Array.from(tr.querySelectorAll('input[data-col]')).map((i, ci) =>
+      includedCols.has(ci) ? i.value : ''
+    );
     if (vals.some(v => v.trim())) lines.push(vals.join('\t'));
   });
   if (!lines.length) { alert('Lưới chưa có dữ liệu. Nhập tay hoặc paste từ Excel.'); return; }
@@ -932,6 +1009,8 @@ function openEditor() {
 function closeEditor() {
   const e = document.getElementById('editor');
   e.classList.add('hidden'); e.classList.remove('flex');
+  const box = document.getElementById('editorBox');
+  if (box) { box.classList.remove('max-w-7xl'); box.classList.add('max-w-3xl'); }
   STATE.editing = null;
 }
 
