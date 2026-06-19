@@ -13,10 +13,10 @@
       "description": "Bộ thực hành STEM/STEAM đa môn"
     },
     {
-      "id": "ai-iot",
-      "name": "AI & IoT",
+      "id": "vr-iot",
+      "name": "VR và IOT",
       "icon": "🧠",
-      "description": "Thiết bị AI, IoT, cảm biến cho lớp học thông minh"
+      "description": "Thiết bị VR, IoT, cảm biến cho lớp học thông minh"
     },
     {
       "id": "smart-classroom",
@@ -317,7 +317,7 @@
       "id": "pmpcded078nhg",
       "name": "Kính thực tế ảo VR\t",
       "slug": "kinh-thuc-te-ao-vr",
-      "category": "ai-iot",
+      "category": "vr-iot",
       "price": 25920000,
       "originalPrice": 0,
       "currency": "VND",
