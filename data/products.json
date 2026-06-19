@@ -39,6 +39,727 @@
   ],
   "products": [
     {
+      "id": "pmqkq82n3ey87",
+      "name": "Sách song ngữ Smart Life - tập 2",
+      "sku": "",
+      "slug": "sach-song-ngu-smart-life-tap-2",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 180,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861248197-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3u4j6",
+      "name": "Sách song ngữ Smart Life - tập 1",
+      "sku": "",
+      "slug": "sach-song-ngu-smart-life-tap-1",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 180,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861245046-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3ptd4",
+      "name": "Sách song ngữ Fantasy Zoo - tập 2",
+      "sku": "",
+      "slug": "sach-song-ngu-fantasy-zoo-tap-2",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 170,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861241976-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n309kj",
+      "name": "Sách song ngữ Fantasy Zoo - tập 1",
+      "sku": "",
+      "slug": "sach-song-ngu-fantasy-zoo-tap-1",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 170,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861237894-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3ktgi",
+      "name": "Bộ lắp ghép Robot thông minh Smart Life",
+      "sku": "",
+      "slug": "bo-lap-ghep-robot-thong-minh-smart-life",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 31,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861234531-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3i5vz",
+      "name": "Bộ lắp ghép Robot thông minh Fantasy Zoo 2.0",
+      "sku": "",
+      "slug": "bo-lap-ghep-robot-thong-minh-fantasy-zoo-2-0",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 17,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861226156-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3g9xi",
+      "name": "Sa bàn thực hành Robotics",
+      "sku": "",
+      "slug": "sa-ban-thuc-hanh-robotics",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 5,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861222988-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3rd67",
+      "name": "Bộ Kit Stick 'Em cấp THCS",
+      "sku": "",
+      "slug": "bo-kit-stick-em-cap-thcs",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 6,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861220189-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3my4o",
+      "name": "Hoạt động giáo dục STEM lớp 5",
+      "sku": "",
+      "slug": "hoat-dong-giao-duc-stem-lop-5",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 37,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861214071-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n37cvj",
+      "name": "Hoạt động giáo dục STEM lớp 4",
+      "sku": "",
+      "slug": "hoat-dong-giao-duc-stem-lop-4",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 37,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861211102-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3f7t1",
+      "name": "Hoạt động giáo dục STEM lớp 3",
+      "sku": "",
+      "slug": "hoat-dong-giao-duc-stem-lop-3",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 37,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861208032-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n34kgl",
+      "name": "Hoạt động giáo dục STEM lớp 2",
+      "sku": "",
+      "slug": "hoat-dong-giao-duc-stem-lop-2",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 37,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861204694-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3gasp",
+      "name": "Hoạt động giáo dục STEM lớp 1",
+      "sku": "",
+      "slug": "hoat-dong-giao-duc-stem-lop-1",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 37,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861201225-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3vtdm",
+      "name": "Cáp kết nối",
+      "sku": "",
+      "slug": "cap-ket-noi",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 373,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861197557-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n30dps",
+      "name": "Cảm biến đo cường độ âm thanh",
+      "sku": "",
+      "slug": "cam-bien-do-cuong-do-am-thanh",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 3,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861194011-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n34107",
+      "name": "Cảm biến điện thế",
+      "sku": "",
+      "slug": "cam-bien-dien-the",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 4,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861189785-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3bgni",
+      "name": "Cảm biến ánh sáng",
+      "sku": "",
+      "slug": "cam-bien-anh-sang",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 5,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861186530-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n33czc",
+      "name": "Cảm biến đo nhiệt độ",
+      "sku": "",
+      "slug": "cam-bien-do-nhiet-do",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 1,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861182637-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3trln",
+      "name": "Wilab (Bộ chuyển đổi tín hiệu số)",
+      "sku": "",
+      "slug": "wilab-bo-chuyen-doi-tin-hieu-so",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 11,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861178164-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3jqfn",
+      "name": "CoachLab II+ (Bộ điểu khiển - thu nhận tín hiệu số)",
+      "sku": "",
+      "slug": "coachlab-ii-bo-dieu-khien-thu-nhan-tin-hieu-so",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 18,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861173716-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3jxyb",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Ngôi nhà điện mặt trời - Lớp 5",
+      "sku": "",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-ngoi-nha-dien-mat-troi-lop-5",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 6,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861170311-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3j831",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Nhà cách âm - Lớp 4",
+      "sku": "",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nha-cach-am-lop-4",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 2,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861166304-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3x0a1",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hệ thống chữa cháy tự động - Lớp 3",
+      "sku": "",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-he-thong-chua-chay-tu-dong-lop-3",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 4,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861161270-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3v0p1",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Tìm hiểu về âm thanh _ Lớp 2",
+      "sku": "",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-am-thanh-lop-2",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 1,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861156457-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3xkov",
+      "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Tìm hiểu về âm thanh - Lớp 1",
+      "sku": "",
+      "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-am-thanh-lop-1",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 3,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861152919-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3l3aa",
+      "name": "Phần mềm quản lý phòng học STEM 5 năm",
+      "sku": "",
+      "slug": "phan-mem-quan-ly-phong-hoc-stem-5-nam",
+      "category": "thiet-bi-ket-noi-thong-minh",
+      "priceMode": "show",
+      "price": 13,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861149097-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3rjv7",
+      "name": "Máy tính xách tay Asus B1400CBA-EK2925",
+      "sku": "",
+      "slug": "may-tinh-xach-tay-asus-b1400cba-ek2925",
+      "category": "thiet-bi-ket-noi-thong-minh",
+      "priceMode": "show",
+      "price": 21,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861145417-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3ata8",
+      "name": "Máy tính bảng JoyStar J16 màu xám (Gray)",
+      "sku": "",
+      "slug": "may-tinh-bang-joystar-j16-mau-xam-gray",
+      "category": "thiet-bi-ket-noi-thong-minh",
+      "priceMode": "show",
+      "price": 6,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861140916-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n38n33",
+      "name": "Tivi thông minh Samsung UHD 4K 75 inch",
+      "sku": "",
+      "slug": "tivi-thong-minh-samsung-uhd-4k-75-inch",
+      "category": "thiet-bi-ket-noi-thong-minh",
+      "priceMode": "show",
+      "price": 20,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861137094-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3nnk4",
+      "name": "Gói trang trí không gian phòng học theo định hướng Phòng học STEM, AI và Robotics",
+      "sku": "",
+      "slug": "goi-trang-tri-khong-gian-phong-hoc-theo-dinh-huong-phong-hoc-stem-ai-va-robotics",
+      "category": "smart-classroom",
+      "priceMode": "show",
+      "price": 5,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861132061-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n32ohr",
+      "name": "Hệ kệ tủ cao bày sách học sinh. Kích thước 3600 x400 x2400",
+      "sku": "",
+      "slug": "he-ke-tu-cao-bay-sach-hoc-sinh-kich-thuoc-3600-x400-x2400",
+      "category": "smart-classroom",
+      "priceMode": "show",
+      "price": 3,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861123761-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3yqgp",
+      "name": "Ghế học. KT:300x300x340-640 mm",
+      "sku": "",
+      "slug": "ghe-hoc-kt-300x300x340-640-mm",
+      "category": "smart-classroom",
+      "priceMode": "show",
+      "price": 349,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861110373-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3lu77",
+      "name": "Bàn học hình thang.KT: 1386x600x570 cm",
+      "sku": "",
+      "slug": "ban-hoc-hinh-thang-kt-1386x600x570-cm",
+      "category": "smart-classroom",
+      "priceMode": "show",
+      "price": 2,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861100989-bulk-clip.png",
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861105858-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n3m8yr",
+      "name": "Ghế giáo viên. KT: 570x505x910-1035mm",
+      "sku": "",
+      "slug": "ghe-giao-vien-kt-570x505x910-1035mm",
+      "category": "smart-classroom",
+      "priceMode": "show",
+      "price": 1,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861096142-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n2dm1e",
+      "name": "Bàn giáo viên. KT 1200 x600 x750",
+      "sku": "",
+      "slug": "ban-giao-vien-kt-1200-x600-x750",
+      "category": "smart-classroom",
+      "priceMode": "show",
+      "price": 2,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861093095-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
+      "id": "pmqkq82n2mhwe",
+      "name": "Bảng trượt ngang 7001539",
+      "sku": "",
+      "slug": "bang-truot-ngang-7001539",
+      "category": "smart-classroom",
+      "priceMode": "show",
+      "price": 7,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1781861089754-bulk-clip.png"
+      ],
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
       "id": "pmqguyfl486jx",
       "name": "Kính hiển vi",
       "slug": "kinh-hien-vi",
