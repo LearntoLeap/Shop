@@ -1,6 +1,6 @@
 // Learn to Leap Shop — Admin panel (GitHub API based)
 const DATA_PATH = 'data/products.json';
-const STATE = { auth: null, data: null, sha: null, tab: 'products', editing: null };
+const STATE = { auth: null, data: null, sha: null, tab: 'products', editing: null, selection: new Set(), filterCat: 'all' };
 
 const fmtVND = (n) => new Intl.NumberFormat('vi-VN').format(n) + 'đ';
 const slugify = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -158,6 +158,7 @@ async function enterAdmin() {
 
 function switchTab(tab) {
   STATE.tab = tab;
+  if (tab !== 'products') { STATE.selection.clear(); const bar = document.getElementById('bulkActionBar'); if (bar) bar.remove(); }
   document.getElementById('paneProducts').classList.toggle('hidden', tab !== 'products');
   document.getElementById('paneCategories').classList.toggle('hidden', tab !== 'categories');
   document.getElementById('tabProducts').className = 'px-4 py-2 text-sm font-medium border-b-2 ' + (tab === 'products' ? 'border-blue-600 text-blue-700' : 'border-transparent text-slate-600 hover:text-blue-600');
@@ -175,13 +176,38 @@ function renderProducts() {
   document.getElementById('productCount').textContent = STATE.data.products.length;
   if (STATE.data.products.length === 0) {
     list.innerHTML = '<div class="bg-white rounded-lg p-8 text-center text-slate-500">Chưa có sản phẩm. Bấm "+ Thêm sản phẩm" để bắt đầu.</div>';
+    renderBulkBar();
     return;
   }
-  list.innerHTML = STATE.data.products.map(p => {
+  const visible = STATE.data.products.filter(p => STATE.filterCat === 'all' || p.category === STATE.filterCat);
+  // Clean selection from products no longer present
+  for (const id of STATE.selection) if (!STATE.data.products.find(p => p.id === id)) STATE.selection.delete(id);
+  const allVisibleSelected = visible.length > 0 && visible.every(p => STATE.selection.has(p.id));
+  const catOpts = STATE.data.categories.map(c => `<option value="${c.id}" ${STATE.filterCat === c.id ? 'selected' : ''}>${c.icon || ''} ${c.name} (${STATE.data.products.filter(p => p.category === c.id).length})</option>`).join('');
+
+  const toolbar = `
+    <div class="bg-white rounded-lg p-3 mb-2 flex flex-wrap items-center gap-3 shadow-sm border border-slate-100">
+      <label class="flex items-center gap-2 text-sm">
+        <input type="checkbox" ${allVisibleSelected ? 'checked' : ''} onchange="bulkToggleAllVisible(this.checked)" class="w-4 h-4" />
+        Chọn tất cả hiển thị
+      </label>
+      <div class="h-5 border-l border-slate-200"></div>
+      <label class="text-xs text-slate-600">Lọc theo danh mục:</label>
+      <select onchange="bulkSetFilter(this.value)" class="text-sm px-2 py-1 border rounded">
+        <option value="all" ${STATE.filterCat === 'all' ? 'selected' : ''}>— Tất cả (${STATE.data.products.length}) —</option>
+        ${catOpts}
+      </select>
+      <span class="text-xs text-slate-500 ml-auto">${visible.length} sản phẩm hiển thị</span>
+    </div>
+  `;
+
+  const items = visible.map(p => {
     const cat = STATE.data.categories.find(c => c.id === p.category);
     const img = (p.images && p.images[0]) || 'https://placehold.co/100x100/e2e8f0/64748b?text=?';
+    const checked = STATE.selection.has(p.id);
     return `
-    <div class="bg-white rounded-lg p-3 flex items-center gap-3 shadow-sm">
+    <div class="bg-white rounded-lg p-3 flex items-center gap-3 shadow-sm ${checked ? 'ring-2 ring-blue-400' : ''}">
+      <input type="checkbox" ${checked ? 'checked' : ''} onchange="bulkToggleOne('${p.id}', this.checked)" class="w-4 h-4 shrink-0" />
       <img src="${img}" class="w-16 h-16 object-cover rounded" />
       <div class="flex-1 min-w-0">
         <div class="font-semibold truncate">${p.name} ${p.featured ? '<span class="text-amber-500">⭐</span>' : ''}</div>
@@ -194,6 +220,100 @@ function renderProducts() {
       </div>
     </div>`;
   }).join('');
+
+  list.innerHTML = toolbar + (items || '<div class="bg-white rounded-lg p-8 text-center text-slate-500">Không có sản phẩm trong danh mục này.</div>');
+  renderBulkBar();
+}
+
+// ---------- BULK SELECT & ACTIONS ----------
+function bulkSetFilter(catId) {
+  STATE.filterCat = catId;
+  renderProducts();
+}
+
+function bulkToggleOne(id, on) {
+  if (on) STATE.selection.add(id); else STATE.selection.delete(id);
+  renderProducts();
+}
+
+function bulkToggleAllVisible(on) {
+  const visible = STATE.data.products.filter(p => STATE.filterCat === 'all' || p.category === STATE.filterCat);
+  if (on) visible.forEach(p => STATE.selection.add(p.id));
+  else visible.forEach(p => STATE.selection.delete(p.id));
+  renderProducts();
+}
+
+function bulkClearSelection() {
+  STATE.selection.clear();
+  renderProducts();
+}
+
+function renderBulkBar() {
+  let bar = document.getElementById('bulkActionBar');
+  if (STATE.selection.size === 0) { if (bar) bar.remove(); return; }
+  const catOpts = STATE.data.categories.map(c => `<option value="${c.id}">${c.icon || ''} ${c.name}</option>`).join('');
+  const html = `
+    <div id="bulkActionBar" class="fixed bottom-0 left-0 right-0 z-40 bg-gradient-to-r from-blue-600 to-purple-700 text-white shadow-2xl border-t-4 border-white">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center gap-3">
+        <div class="font-bold text-base shrink-0">✓ Đã chọn <span class="bg-white text-blue-700 px-2 py-0.5 rounded">${STATE.selection.size}</span> sản phẩm</div>
+        <div class="h-6 border-l border-white/30"></div>
+
+        <div class="flex items-center gap-2">
+          <select id="bulkCatSelect" class="text-sm px-2 py-1.5 rounded text-slate-800">
+            <option value="">— Đổi danh mục —</option>
+            ${catOpts}
+          </select>
+          <button onclick="bulkChangeCategory()" class="bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded text-sm font-semibold">Áp dụng</button>
+        </div>
+
+        <button onclick="bulkChangePriceMode('show')" class="bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded text-sm">💰 Hiện giá</button>
+        <button onclick="bulkChangePriceMode('contact')" class="bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded text-sm">📞 Liên hệ</button>
+        <button onclick="bulkToggleFeatured(true)" class="bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded text-sm">⭐ Nổi bật</button>
+        <button onclick="bulkToggleFeatured(false)" class="bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded text-sm">☆ Bỏ nổi bật</button>
+
+        <div class="ml-auto flex items-center gap-2">
+          <button onclick="bulkDeleteSelected()" class="bg-red-500 hover:bg-red-600 px-4 py-1.5 rounded text-sm font-bold">🗑 Xóa ${STATE.selection.size}</button>
+          <button onclick="bulkClearSelection()" class="bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded text-sm">✕ Bỏ chọn</button>
+        </div>
+      </div>
+    </div>
+  `;
+  if (bar) bar.outerHTML = html;
+  else document.body.insertAdjacentHTML('beforeend', html);
+}
+
+async function bulkChangeCategory() {
+  const catId = document.getElementById('bulkCatSelect').value;
+  if (!catId) { alert('Chọn danh mục đích trước.'); return; }
+  const cat = STATE.data.categories.find(c => c.id === catId);
+  if (!confirm(`Chuyển ${STATE.selection.size} sản phẩm sang danh mục "${cat.name}"?`)) return;
+  STATE.data.products.forEach(p => { if (STATE.selection.has(p.id)) p.category = catId; });
+  renderProducts();
+  await saveProductsFile(`Bulk: chuyển ${STATE.selection.size} SP sang DM "${cat.name}"`);
+}
+
+async function bulkChangePriceMode(mode) {
+  const label = mode === 'contact' ? '"Liên hệ"' : 'hiện giá cụ thể';
+  if (!confirm(`Đổi kiểu giá của ${STATE.selection.size} sản phẩm sang ${label}?`)) return;
+  STATE.data.products.forEach(p => { if (STATE.selection.has(p.id)) p.priceMode = mode; });
+  renderProducts();
+  await saveProductsFile(`Bulk: đổi kiểu giá ${STATE.selection.size} SP → ${mode}`);
+}
+
+async function bulkToggleFeatured(on) {
+  if (!confirm(`${on ? 'Đánh dấu nổi bật' : 'Bỏ nổi bật'} ${STATE.selection.size} sản phẩm?`)) return;
+  STATE.data.products.forEach(p => { if (STATE.selection.has(p.id)) p.featured = on; });
+  renderProducts();
+  await saveProductsFile(`Bulk: ${on ? 'đánh dấu nổi bật' : 'bỏ nổi bật'} ${STATE.selection.size} SP`);
+}
+
+async function bulkDeleteSelected() {
+  const n = STATE.selection.size;
+  if (!confirm(`⚠️ XÓA ${n} sản phẩm đã chọn? Thao tác không thể hoàn tác.`)) return;
+  STATE.data.products = STATE.data.products.filter(p => !STATE.selection.has(p.id));
+  STATE.selection.clear();
+  renderProducts();
+  await saveProductsFile(`Bulk: xóa ${n} sản phẩm`);
 }
 
 function renderCategories() {
