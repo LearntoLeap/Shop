@@ -266,6 +266,7 @@ function renderBulkBar() {
           <button onclick="bulkChangeCategory()" class="bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded text-sm font-semibold">Áp dụng</button>
         </div>
 
+        <button onclick="openBulkEdit()" class="bg-amber-400 hover:bg-amber-500 text-slate-900 font-semibold px-3 py-1.5 rounded text-sm">✏️ Sửa hàng loạt (bảng)</button>
         <button onclick="bulkChangePriceMode('show')" class="bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded text-sm">💰 Hiện giá</button>
         <button onclick="bulkChangePriceMode('contact')" class="bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded text-sm">📞 Liên hệ</button>
         <button onclick="bulkToggleFeatured(true)" class="bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded text-sm">⭐ Nổi bật</button>
@@ -928,6 +929,176 @@ async function bulkConfirmImport() {
   closeEditor();
   render();
   await saveProductsFile(`Nhập hàng loạt ${valid.length} sản phẩm`);
+}
+
+// ---------- BULK EDIT (spreadsheet) ----------
+function openBulkEdit() {
+  if (STATE.selection.size === 0) { alert('Chưa chọn sản phẩm nào.'); return; }
+  const products = STATE.data.products.filter(p => STATE.selection.has(p.id));
+  const catList = STATE.data.categories.map(c => `<span class="font-mono bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[11px]">${c.id}</span>`).join(' ');
+
+  const box = document.getElementById('editorBox');
+  if (box) { box.classList.remove('max-w-3xl'); box.classList.add('max-w-7xl'); }
+
+  document.getElementById('editorContent').innerHTML = `
+    <div class="p-6">
+      <div class="flex justify-between items-center mb-3">
+        <h2 class="text-xl font-bold">✏️ Sửa hàng loạt — ${products.length} sản phẩm</h2>
+        <button onclick="closeEditor()" class="text-2xl text-slate-400 hover:text-slate-700">&times;</button>
+      </div>
+
+      <div class="bg-amber-50 border border-amber-200 rounded-lg p-3 mb-3 text-xs flex flex-wrap gap-x-4 gap-y-1">
+        <span class="font-semibold text-amber-800">💡 Cách dùng:</span>
+        <span>• Mỗi dòng = 1 sản phẩm đã chọn, đã pre-fill giá trị hiện tại</span>
+        <span>• Sửa thẳng vào ô; bỏ tick ☑ ở header cột để <b>không động vào cột đó</b> (giữ nguyên giá trị cũ)</span>
+        <span>• Paste ảnh vào ô "Ảnh" để upload</span>
+        <span>• Xóa dòng (✕) → sản phẩm đó không bị cập nhật</span>
+      </div>
+
+      <div class="bg-slate-50 border border-slate-200 rounded-lg p-2 mb-2 text-[11px]">
+        <span class="font-semibold text-slate-700">Danh mục hợp lệ:</span> ${catList || '<i>chưa có</i>'}
+      </div>
+
+      <div class="flex gap-2 mb-2 items-center">
+        <button onclick="bulkClear()" class="text-xs bg-slate-200 hover:bg-slate-300 px-3 py-1 rounded">🗑 Xóa nội dung tất cả ô</button>
+        <span class="text-[11px] text-slate-500 ml-auto" id="bulkRowInfo">${products.length} sản phẩm</span>
+      </div>
+
+      <div id="bulkGridWrap" class="overflow-auto border border-slate-300 rounded-lg max-h-[70vh] bg-white">
+        <table class="border-collapse text-xs w-max">
+          <thead class="bg-amber-100 sticky top-0 z-10">
+            <tr>
+              <th class="bg-slate-200 border border-slate-300 px-1 py-1.5 w-10 text-slate-600 sticky left-0 z-20">#</th>
+              ${BULK_COLUMNS.map((c, ci) => {
+                const cb = c.required
+                  ? `<input type="checkbox" data-col-include="${ci}" checked disabled title="Cột bắt buộc" class="w-4 h-4 opacity-60 cursor-not-allowed" />`
+                  : `<input type="checkbox" data-col-include="${ci}" checked onchange="bulkToggleColInclude(${ci}, this.checked)" title="Bỏ tick để giữ nguyên cột này" class="w-4 h-4" />`;
+                return `<th class="border border-slate-300 px-2 py-1.5 text-left text-amber-800 font-semibold whitespace-nowrap" style="min-width:${BULK_COL_WIDTH[c.key]}px">
+                  <label class="flex items-center gap-1.5 ${c.required ? '' : 'cursor-pointer'} select-none">
+                    ${cb}<span data-col-label="${ci}">${c.label}</span>
+                  </label>
+                </th>`;
+              }).join('')}
+              <th class="border border-slate-300 px-1 w-8"></th>
+            </tr>
+          </thead>
+          <tbody id="bulkGridBody"></tbody>
+        </table>
+      </div>
+
+      <div class="flex gap-2 mt-3">
+        <button onclick="bulkConfirmEdit()" class="flex-1 bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 rounded">💾 Lưu thay đổi ${products.length} sản phẩm</button>
+        <button onclick="closeEditor()" class="px-6 py-2 border rounded font-semibold">Hủy</button>
+      </div>
+    </div>
+  `;
+  openEditor();
+
+  // Add rows + pre-fill + tag product id
+  bulkAddRow(products.length);
+  const trs = document.querySelectorAll('#bulkGridBody tr');
+  products.forEach((p, i) => {
+    const tr = trs[i];
+    tr.dataset.productId = p.id;
+    const inputs = tr.querySelectorAll('input[data-col]');
+    BULK_COLUMNS.forEach((col, ci) => {
+      const v = p[col.key];
+      let val = '';
+      if (col.key === 'tags' || col.key === 'images') val = (v || []).join(',');
+      else if (col.key === 'featured') val = v ? 'true' : 'false';
+      else if (col.key === 'priceMode') val = v || 'show';
+      else if (v === undefined || v === null) val = '';
+      else val = String(v);
+      inputs[ci].value = val;
+    });
+  });
+
+  document.getElementById('bulkGridWrap').addEventListener('paste', bulkPasteHandler);
+  document.getElementById('bulkGridWrap').addEventListener('keydown', bulkKeyNav);
+}
+
+async function bulkConfirmEdit() {
+  const includedCols = new Set(bulkGetIncludedCols());
+  const trs = Array.from(document.querySelectorAll('#bulkGridBody tr'));
+  const updates = [];
+  const errors = [];
+
+  for (const tr of trs) {
+    const id = tr.dataset.productId;
+    if (!id) continue; // row removed or new
+    const product = STATE.data.products.find(p => p.id === id);
+    if (!product) continue;
+    const inputs = tr.querySelectorAll('input[data-col]');
+    const changes = {};
+    BULK_COLUMNS.forEach((col, ci) => {
+      if (!includedCols.has(ci)) return;
+      const val = inputs[ci].value.trim();
+      switch (col.key) {
+        case 'name':
+          if (!val) errors.push(`SP "${product.name}": tên trống`);
+          else changes.name = val;
+          break;
+        case 'sku':
+          changes.sku = val;
+          break;
+        case 'category':
+          if (val) {
+            const cat = STATE.data.categories.find(c => c.id.toLowerCase() === val.toLowerCase() || c.name.toLowerCase() === val.toLowerCase());
+            if (cat) changes.category = cat.id;
+            else errors.push(`SP "${product.name}": danh mục "${val}" không tồn tại`);
+          } else changes.category = '';
+          break;
+        case 'priceMode':
+          changes.priceMode = val.toLowerCase() === 'contact' ? 'contact' : 'show';
+          break;
+        case 'price':
+        case 'originalPrice':
+        case 'stock':
+          changes[col.key] = parseInt(val) || 0;
+          break;
+        case 'featured':
+          changes.featured = /^(true|1|yes|y|x|✓)$/i.test(val);
+          break;
+        case 'tags':
+        case 'images':
+          changes[col.key] = val ? val.split(',').map(t => t.trim()).filter(Boolean) : [];
+          break;
+        default:
+          changes[col.key] = val;
+      }
+    });
+    updates.push({ product, changes });
+  }
+
+  if (!updates.length) { alert('Không có sản phẩm nào để cập nhật (đã xóa hết dòng?).'); return; }
+
+  // SKU uniqueness across all products after edit
+  const newSkuMap = new Map();
+  STATE.data.products.forEach(p => {
+    const u = updates.find(x => x.product.id === p.id);
+    const sku = (u && u.changes.sku !== undefined) ? u.changes.sku : p.sku;
+    if (sku) {
+      if (newSkuMap.has(sku)) errors.push(`SKU "${sku}" bị trùng giữa nhiều sản phẩm`);
+      else newSkuMap.set(sku, p.id);
+    }
+  });
+
+  if (errors.length) {
+    alert('Có lỗi:\n\n• ' + errors.slice(0, 10).join('\n• ') + (errors.length > 10 ? `\n…và ${errors.length - 10} lỗi khác` : ''));
+    return;
+  }
+
+  if (!confirm(`Áp dụng thay đổi cho ${updates.length} sản phẩm? (commit 1 lần lên GitHub)`)) return;
+
+  updates.forEach(({ product, changes }) => {
+    Object.assign(product, changes);
+    if (changes.name) product.slug = slugify(changes.name);
+  });
+
+  STATE.selection.clear();
+  closeEditor();
+  renderProducts();
+  await saveProductsFile(`Bulk: sửa hàng loạt ${updates.length} sản phẩm`);
 }
 
 // ---------- CATEGORY EDITOR ----------
