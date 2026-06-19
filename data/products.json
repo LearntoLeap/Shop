@@ -958,44 +958,6 @@
       "stock": 0,
       "featured": false,
       "createdAt": "2026-05-19"
-    },
-    {
-      "id": "pmpccous86hfz",
-      "name": "Cảm biến đo nhiệt độ",
-      "slug": "cam-bien-do-nhiet-do",
-      "category": "stem-kit",
-      "price": 2820000,
-      "originalPrice": 0,
-      "currency": "VND",
-      "images": [
-        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779183989307-sen-003.png"
-      ],
-      "shortDescription": "",
-      "description": "\"Đo nhiệt độ trong phạm vi: -40 °C...140 °C\nĐộ chính xác: 2˚C ở -40˚C, 0.6 ở 30˚C, 1.8˚C ở 140˚C\"",
-      "tags": [],
-      "stock": 0,
-      "featured": false,
-      "createdAt": "2026-05-19",
-      "sku": "BT05i"
-    },
-    {
-      "id": "pmpcco9jdg366",
-      "name": "Wilab (Bộ chuyển đổi tín hiệu số)",
-      "slug": "wilab-bo-chuyen-doi-tin-hieu-so",
-      "category": "stem-kit",
-      "price": 9800000,
-      "originalPrice": 0,
-      "currency": "VND",
-      "images": [
-        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1779183977230-sen-002.png"
-      ],
-      "shortDescription": "",
-      "description": "\"Độ phân giải: 12-bits\nTần số lấy mẫu tối đa: 100kHz\nĐầu vào cảm biến: Hai đầu tương tự BT, kết nối được với cảm biến\nTích hợp: đèn LED và coi báo hiệu trong các hoạt động\nKết nối không dây: Bluetooth\nKết nối máy tính: Micro USB - USB A\nNguồn: Pin sạc\nPhần mềm cài đặt được trên các hệ điều hành Window, MAC OS, IOS, Android\"",
-      "tags": [],
-      "stock": 0,
-      "featured": false,
-      "createdAt": "2026-05-19",
-      "sku": "002"
     }
   ]
 }
