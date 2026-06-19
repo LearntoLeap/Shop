@@ -185,7 +185,7 @@ function renderProducts() {
       <img src="${img}" class="w-16 h-16 object-cover rounded" />
       <div class="flex-1 min-w-0">
         <div class="font-semibold truncate">${p.name} ${p.featured ? '<span class="text-amber-500">⭐</span>' : ''}</div>
-        <div class="text-xs text-slate-500">${cat ? cat.icon + ' ' + cat.name : '(không phân loại)'} • ${p.priceMode === 'contact' ? 'Liên hệ' : fmtVND(p.price)} • Kho: ${p.stock}</div>
+        <div class="text-xs text-slate-500">${cat ? cat.icon + ' ' + cat.name : '(không phân loại)'} • ${p.priceMode === 'contact' ? 'Liên hệ' : fmtVND(p.price)} • Kho: ${p.stock}${p.sku ? ' • <span class="font-mono text-brand-700">Mã: ' + p.sku + '</span>' : ''}</div>
         <div class="text-xs text-slate-400 truncate">${(p.tags || []).map(t => '#' + t).join(' ')}</div>
       </div>
       <div class="flex gap-1">
@@ -224,7 +224,7 @@ function renderCategories() {
 // ---------- PRODUCT EDITOR ----------
 function newProduct() {
   STATE.editing = {
-    id: uid(), name: '', slug: '', category: STATE.data.categories[0]?.id || '',
+    id: uid(), name: '', slug: '', sku: '', category: STATE.data.categories[0]?.id || '',
     priceMode: 'show', price: 0, originalPrice: 0, currency: 'VND',
     images: [], shortDescription: '', description: '', tags: [],
     stock: 0, featured: false, createdAt: new Date().toISOString().slice(0, 10)
@@ -258,10 +258,14 @@ function renderProductEditor(isNew) {
           <label class="text-xs font-semibold">Tên sản phẩm *</label>
           <input id="ed_name" type="text" value="${p.name}" class="w-full mt-1 px-3 py-2 border rounded" oninput="STATE.editing.name=this.value; document.getElementById('ed_slug').value = slugify(this.value); STATE.editing.slug = slugify(this.value);" />
         </div>
-        <div class="grid grid-cols-2 gap-3">
+        <div class="grid grid-cols-3 gap-3">
           <div>
             <label class="text-xs font-semibold">Slug (URL)</label>
             <input id="ed_slug" type="text" value="${p.slug}" class="w-full mt-1 px-3 py-2 border rounded" oninput="STATE.editing.slug=this.value" />
+          </div>
+          <div>
+            <label class="text-xs font-semibold">Mã sản phẩm (SKU) *</label>
+            <input type="text" value="${p.sku || ''}" placeholder="VD: RT113" class="w-full mt-1 px-3 py-2 border rounded font-mono" oninput="STATE.editing.sku=this.value.trim()" />
           </div>
           <div>
             <label class="text-xs font-semibold">Danh mục *</label>
@@ -379,6 +383,9 @@ async function uploadImage(input) {
 async function saveProduct(isNew) {
   const p = STATE.editing;
   if (!p.name || !p.category) { alert('Tên và danh mục bắt buộc.'); return; }
+  if (!p.sku) { alert('Mã sản phẩm (SKU) bắt buộc — dùng để tạo URL trang chi tiết.'); return; }
+  const dup = STATE.data.products.find(x => x.sku === p.sku && x.id !== p.id);
+  if (dup) { alert('Mã sản phẩm "' + p.sku + '" đã tồn tại ở sản phẩm: ' + dup.name); return; }
   if (isNew) STATE.data.products.unshift(p);
   else {
     const idx = STATE.data.products.findIndex(x => x.id === p.id);

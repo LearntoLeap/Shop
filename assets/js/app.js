@@ -2,6 +2,8 @@
 const STATE = { data: null, filter: 'all', search: '' };
 
 const fmtVND = (n) => new Intl.NumberFormat('vi-VN').format(n) + 'đ';
+const slugify = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const productUrl = (p) => `${p.slug || slugify(p.name)}/${encodeURIComponent(p.sku || p.id)}`;
 
 async function loadData() {
   try {
@@ -63,7 +65,7 @@ function productCard(p) {
     : `<span class="text-lg font-extrabold text-brand-700">${fmtVND(p.price)}</span>
        ${p.originalPrice && p.originalPrice > p.price ? `<span class="text-xs text-slate-400 line-through">${fmtVND(p.originalPrice)}</span>` : ''}`;
   return `
-    <a href="product.html?id=${encodeURIComponent(p.id)}" class="block bg-white rounded-xl shadow-sm hover:shadow-lg transition overflow-hidden group border border-slate-100">
+    <a href="${productUrl(p)}" class="block bg-white rounded-xl shadow-sm hover:shadow-lg transition overflow-hidden group border border-slate-100">
       <div class="aspect-square bg-slate-100 overflow-hidden relative">
         <img src="${img}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition" loading="lazy" />
         ${discount > 0 ? `<span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">-${discount}%</span>` : ''}
