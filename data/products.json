@@ -39,6 +39,24 @@
   ],
   "products": [
     {
+      "id": "pmqkt01qf8611",
+      "name": "Cảm biển màu",
+      "slug": "cam-bien-mau",
+      "sku": "",
+      "category": "stem-kit",
+      "priceMode": "show",
+      "price": 7214400,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [],
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-06-19"
+    },
+    {
       "id": "pmqkqph9rht6b",
       "name": "Bộ Kit Stick 'Em cấp THCS",
       "sku": "",
