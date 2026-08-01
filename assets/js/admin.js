@@ -1040,8 +1040,11 @@ function openBulkEdit() {
         <span class="font-semibold text-slate-700">Danh mục hợp lệ:</span> ${catList || '<i>chưa có</i>'}
       </div>
 
-      <div class="flex gap-2 mb-2 items-center">
+      <div class="flex gap-2 mb-2 items-center flex-wrap">
         <button onclick="bulkClear()" class="text-xs bg-slate-200 hover:bg-slate-300 px-3 py-1 rounded">🗑 Xóa nội dung tất cả ô</button>
+        <button onclick="bulkCopyAllLinks('url')" class="text-xs bg-brand-100 hover:bg-brand-200 text-brand-700 px-3 py-1 rounded">📋 Copy tất cả link (chỉ URL)</button>
+        <button onclick="bulkCopyAllLinks('name-url')" class="text-xs bg-brand-100 hover:bg-brand-200 text-brand-700 px-3 py-1 rounded">📋 Copy Tên + Link (TSV)</button>
+        <button onclick="bulkCopyAllLinks('md')" class="text-xs bg-brand-100 hover:bg-brand-200 text-brand-700 px-3 py-1 rounded">📋 Copy Markdown</button>
         <span class="text-[11px] text-slate-500 ml-auto" id="bulkRowInfo">${products.length} sản phẩm</span>
       </div>
 
@@ -1121,6 +1124,36 @@ function shopBaseUrl() {
 function productUrlFor(p) {
   const slug = p.slug || slugify(p.name);
   return p.sku ? `${slug}/${encodeURIComponent(p.sku)}` : slug;
+}
+
+function bulkCopyAllLinks(format) {
+  const trs = Array.from(document.querySelectorAll('#bulkGridBody tr'));
+  const lines = [];
+  const nameColIdx = BULK_COLUMNS.findIndex(c => c.key === 'name');
+  trs.forEach(tr => {
+    const id = tr.dataset.productId;
+    if (!id) return;
+    const p = STATE.data.products.find(x => x.id === id);
+    if (!p) return;
+    // Prefer current in-grid name (in case user edited it)
+    const nameInput = tr.querySelectorAll('input[data-col]')[nameColIdx];
+    const name = (nameInput && nameInput.value.trim()) || p.name;
+    const url = shopBaseUrl() + productUrlFor({ ...p, name, slug: p.slug || slugify(name) });
+    switch (format) {
+      case 'name-url': lines.push(name + '\t' + url); break;
+      case 'md':       lines.push(`- [${name}](${url})`); break;
+      default:         lines.push(url);
+    }
+  });
+  if (!lines.length) { alert('Không có sản phẩm để copy link.'); return; }
+  const text = lines.join('\n');
+  navigator.clipboard.writeText(text).then(() => {
+    alert('✓ Đã copy ' + lines.length + ' link vào clipboard');
+  }).catch(() => {
+    // Fallback: show textarea for manual copy
+    const w = window.open('', '_blank', 'width=600,height=400');
+    w.document.body.innerHTML = `<textarea style="width:100%;height:100%;font-family:monospace;padding:10px" autofocus>${text.replace(/</g, '&lt;')}</textarea>`;
+  });
 }
 
 function bulkCopyLink(btn, url) {
