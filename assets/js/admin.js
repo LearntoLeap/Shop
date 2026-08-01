@@ -567,6 +567,7 @@ function openBulkImport() {
         <span>• Copy từ Excel/Sheets → click ô đầu → <kbd class="bg-white border px-1 rounded">Ctrl+V</kbd> (trải nhiều dòng/cột)</span>
         <span>• <b>Paste ảnh từ clipboard</b> vào ô "Ảnh" → tự upload lên GitHub</span>
         <span>• <b>Bỏ tick ☑ ở header cột</b> nếu không muốn nhập cột đó (dữ liệu cột đó bị bỏ qua)</span>
+        <span>• <kbd class="bg-white border px-1 rounded">Ctrl+Z</kbd> để hoàn tác thao tác paste/xóa/thêm dòng gần nhất</span>
       </div>
 
       <div class="bg-slate-50 border border-slate-200 rounded-lg p-2 mb-2 text-[11px]">
@@ -613,6 +614,7 @@ function openBulkImport() {
     </div>
   `;
   openEditor();
+  bulkResetHistory();
   bulkAddRow(10);
   document.getElementById('bulkGridWrap').addEventListener('paste', bulkPasteHandler);
   document.getElementById('bulkGridWrap').addEventListener('keydown', bulkKeyNav);
@@ -626,7 +628,8 @@ function bulkRowHtml(idx) {
   </tr>`;
 }
 
-function bulkAddRow(n = 1) {
+function bulkAddRow(n = 1, snap = false) {
+  if (snap) bulkSnapshot();
   const body = document.getElementById('bulkGridBody');
   for (let i = 0; i < n; i++) {
     const idx = body.children.length;
@@ -636,6 +639,7 @@ function bulkAddRow(n = 1) {
 }
 
 function bulkRemoveRow(btn) {
+  bulkSnapshot();
   btn.closest('tr').remove();
   bulkReindexRows();
 }
@@ -658,12 +662,14 @@ function bulkUpdateRowInfo() {
 }
 
 function bulkClear() {
+  bulkSnapshot();
   document.querySelectorAll('#bulkGridBody input').forEach(i => i.value = '');
-  document.getElementById('bulkPreview').innerHTML = '';
+  const pv = document.getElementById('bulkPreview'); if (pv) pv.innerHTML = '';
   bulkUpdateRowInfo();
 }
 
 function bulkFillSample() {
+  bulkSnapshot();
   const sample = [
     ['Robot mBot Ranger', 'RBT-001', 'robotics', 'show', '2500000', '3000000', '15', 'Robot lập trình STEM cho HS THCS', 'Bộ kit Ranger 3-trong-1 — xe đua, xe tăng, vượt địa hình. Scratch/Python.', 'robot,stem,thcs', '', 'true'],
     ['Kit Arduino Starter', 'ARD-100', 'stem-kit', 'show', '850000', '0', '30', 'Bộ Arduino cơ bản cho người mới', 'Board Uno R3, breadboard, LED, điện trở, cảm biến cơ bản.', 'arduino,stem,thpt', '', 'false'],
@@ -684,6 +690,44 @@ function bulkFillGrid(matrix, startRow, startCol) {
     });
   });
   bulkUpdateRowInfo();
+}
+
+// ---------- BULK GRID UNDO (Ctrl+Z snapshots) ----------
+const BULK_HISTORY_MAX = 50;
+let bulkHistory = [];
+
+function bulkResetHistory() { bulkHistory = []; }
+
+function bulkSnapshot() {
+  const rows = [];
+  document.querySelectorAll('#bulkGridBody tr').forEach(tr => {
+    const productId = tr.dataset.productId || null;
+    const cells = Array.from(tr.querySelectorAll('input[data-col]')).map(i => i.value);
+    rows.push({ productId, cells });
+  });
+  bulkHistory.push(rows);
+  if (bulkHistory.length > BULK_HISTORY_MAX) bulkHistory.shift();
+}
+
+function bulkUndo() {
+  if (!bulkHistory.length) return false;
+  const snap = bulkHistory.pop();
+  const body = document.getElementById('bulkGridBody');
+  if (!body) return false;
+  body.innerHTML = '';
+  snap.forEach((row, i) => {
+    body.insertAdjacentHTML('beforeend', bulkRowHtml(i));
+    const tr = body.children[i];
+    if (row.productId) tr.dataset.productId = row.productId;
+    const inputs = tr.querySelectorAll('input[data-col]');
+    row.cells.forEach((v, ci) => { if (inputs[ci]) inputs[ci].value = v; });
+  });
+  // Reapply column-disabled state per current header checkboxes
+  document.querySelectorAll('[data-col-include]').forEach(cb => {
+    bulkToggleColInclude(+cb.dataset.colInclude, cb.checked);
+  });
+  bulkUpdateRowInfo();
+  return true;
 }
 
 function bulkToggleColInclude(ci, on) {
@@ -731,12 +775,37 @@ async function bulkUploadImageToCell(file, input) {
   }
 }
 
+// Proper TSV parser that respects "..." quoted cells (Excel/Sheets format).
+// A cell with newlines/tabs inside is wrapped in "..." and embedded " is escaped as "".
+function parseTSVMatrix(text) {
+  const rows = [];
+  let cur = '', row = [], inQ = false;
+  const len = text.length;
+  for (let i = 0; i < len; i++) {
+    const ch = text[i];
+    if (inQ) {
+      if (ch === '"') {
+        if (text[i + 1] === '"') { cur += '"'; i++; }
+        else inQ = false;
+      } else cur += ch;
+    } else {
+      if (ch === '"' && cur === '') { inQ = true; }
+      else if (ch === '\t') { row.push(cur); cur = ''; }
+      else if (ch === '\r') { /* skip; \n handles line end */ }
+      else if (ch === '\n') { row.push(cur); rows.push(row); cur = ''; row = []; }
+      else cur += ch;
+    }
+  }
+  if (cur !== '' || row.length) { row.push(cur); rows.push(row); }
+  return rows.filter(r => r.some(c => c !== ''));
+}
+
 function bulkPasteHandler(e) {
   const cb = e.clipboardData || window.clipboardData;
   if (!cb) return;
   const active = document.activeElement;
 
-  // 1) Image paste — if clipboard contains an image AND focus is on "images" cell
+  // 1) Image paste — clipboard has an image file AND focus is on "images" cell
   if (active && active.tagName === 'INPUT' && active.dataset.key === 'images') {
     const items = cb.items || [];
     for (const it of items) {
@@ -744,6 +813,7 @@ function bulkPasteHandler(e) {
         const file = it.getAsFile();
         if (file) {
           e.preventDefault();
+          bulkSnapshot();
           bulkUploadImageToCell(file, active);
           return;
         }
@@ -751,9 +821,12 @@ function bulkPasteHandler(e) {
     }
   }
 
-  // 2) Text paste — single value lets browser default. Multi-line/tab → fill matrix.
+  // 2) Text paste — parse as TSV with quoted-cell support (multi-line cells safe)
   const text = cb.getData('text/plain');
-  if (!text || (!text.includes('\t') && !text.includes('\n'))) return;
+  if (!text) return;
+  const matrix = parseTSVMatrix(text);
+  // Single-cell paste (1 row, 1 col, no tab/newline) → let browser default paste
+  if (matrix.length === 1 && matrix[0].length === 1 && !text.includes('\t') && !text.includes('\n')) return;
   e.preventDefault();
   let startRow = 0, startCol = 0;
   if (active && active.tagName === 'INPUT' && active.dataset.col) {
@@ -761,13 +834,19 @@ function bulkPasteHandler(e) {
     startRow = +tr.dataset.row;
     startCol = +active.dataset.col;
   }
-  const matrix = text.replace(/\r/g, '').split('\n')
-    .filter(l => l.length > 0)
-    .map(l => l.split('\t').map(c => c.trim()));
+  bulkSnapshot();
   bulkFillGrid(matrix, startRow, startCol);
 }
 
 function bulkKeyNav(e) {
+  // Grid-level Ctrl+Z: undo last major op (paste / fill sample / clear / add / remove row)
+  if ((e.ctrlKey || e.metaKey) && !e.shiftKey && e.key.toLowerCase() === 'z') {
+    if (bulkHistory.length) {
+      e.preventDefault();
+      bulkUndo();
+      return;
+    }
+  }
   const t = e.target;
   if (t.tagName !== 'INPUT' || !t.dataset.col) return;
   const tr = t.closest('tr');
@@ -953,6 +1032,8 @@ function openBulkEdit() {
         <span>• Sửa thẳng vào ô; bỏ tick ☑ ở header cột để <b>không động vào cột đó</b> (giữ nguyên giá trị cũ)</span>
         <span>• Paste ảnh vào ô "Ảnh" để upload</span>
         <span>• Xóa dòng (✕) → sản phẩm đó không bị cập nhật</span>
+        <span>• <kbd class="bg-white border px-1 rounded">Ctrl+Z</kbd> để hoàn tác thao tác gần nhất</span>
+        <span>• Cột "🔗 Link" ở cuối bảng để copy đường dẫn trang chi tiết</span>
       </div>
 
       <div class="bg-slate-50 border border-slate-200 rounded-lg p-2 mb-2 text-[11px]">
@@ -979,6 +1060,7 @@ function openBulkEdit() {
                   </label>
                 </th>`;
               }).join('')}
+              <th class="border border-slate-300 px-2 py-1.5 text-left text-brand-700 font-semibold whitespace-nowrap" style="min-width:320px">🔗 Link sản phẩm</th>
               <th class="border border-slate-300 px-1 w-8"></th>
             </tr>
           </thead>
@@ -993,10 +1075,12 @@ function openBulkEdit() {
     </div>
   `;
   openEditor();
+  bulkResetHistory();
 
-  // Add rows + pre-fill + tag product id
+  // Add rows + pre-fill + tag product id + inject Link cell
   bulkAddRow(products.length);
   const trs = document.querySelectorAll('#bulkGridBody tr');
+  const baseUrl = shopBaseUrl();
   products.forEach((p, i) => {
     const tr = trs[i];
     tr.dataset.productId = p.id;
@@ -1011,10 +1095,43 @@ function openBulkEdit() {
       else val = String(v);
       inputs[ci].value = val;
     });
+    // Insert Link cell just before the last <td> (delete button)
+    const url = baseUrl + productUrlFor(p);
+    const linkTd = document.createElement('td');
+    linkTd.className = 'border border-slate-200 p-0 bg-slate-50';
+    linkTd.innerHTML = `
+      <div class="flex items-center gap-1 px-2 py-1">
+        <input type="text" readonly value="${url.replace(/"/g, '&quot;')}" onclick="this.select()" class="flex-1 min-w-0 px-2 py-1 text-[11px] bg-white border rounded outline-none" />
+        <button type="button" onclick="bulkCopyLink(this, '${url.replace(/'/g, "\\'")}')" class="text-xs bg-brand-100 hover:bg-brand-200 text-brand-700 px-2 py-1 rounded shrink-0" title="Copy link">📋</button>
+        <a href="${url}" target="_blank" rel="noopener" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 px-2 py-1 rounded shrink-0" title="Mở trang chi tiết">↗</a>
+      </div>`;
+    const lastTd = tr.querySelector('td:last-child');
+    tr.insertBefore(linkTd, lastTd);
   });
 
   document.getElementById('bulkGridWrap').addEventListener('paste', bulkPasteHandler);
   document.getElementById('bulkGridWrap').addEventListener('keydown', bulkKeyNav);
+}
+
+function shopBaseUrl() {
+  const isGh = location.host.endsWith('.github.io');
+  return location.origin + (isGh ? '/Shop/' : '/');
+}
+
+function productUrlFor(p) {
+  const slug = p.slug || slugify(p.name);
+  return p.sku ? `${slug}/${encodeURIComponent(p.sku)}` : slug;
+}
+
+function bulkCopyLink(btn, url) {
+  navigator.clipboard.writeText(url).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = '✓';
+    btn.classList.add('bg-emerald-200', 'text-emerald-700');
+    setTimeout(() => { btn.textContent = orig; btn.classList.remove('bg-emerald-200', 'text-emerald-700'); }, 1200);
+  }).catch(() => {
+    prompt('Copy link:', url);
+  });
 }
 
 async function bulkConfirmEdit() {
