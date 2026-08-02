@@ -154,7 +154,8 @@ function render(p, data) {
 }
 
 function relatedHtml(current, data) {
-  const related = data.products
+  // Match storefront order: oldest → newest
+  const related = data.products.slice().reverse()
     .filter(p => p.id !== current.id && p.category === current.category)
     .slice(0, 4);
   if (!related.length) return '';

@@ -87,13 +87,17 @@ function productCard(p) {
   `;
 }
 
+// Products are stored newest-first (unshift on insert). Reverse for display
+// so users see them in insertion order (oldest → newest).
+function displayProducts() { return STATE.data.products.slice().reverse(); }
+
 function renderFeatured() {
-  const featured = STATE.data.products.filter(p => p.featured).slice(0, 4);
+  const featured = displayProducts().filter(p => p.featured).slice(0, 4);
   document.getElementById('featuredGrid').innerHTML = featured.map(productCard).join('');
 }
 
 function renderProducts() {
-  let list = STATE.data.products;
+  let list = displayProducts();
   if (STATE.filter !== 'all') list = list.filter(p => p.category === STATE.filter);
   if (STATE.search) {
     const q = STATE.search.toLowerCase();

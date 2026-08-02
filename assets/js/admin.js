@@ -179,7 +179,8 @@ function renderProducts() {
     renderBulkBar();
     return;
   }
-  const visible = STATE.data.products.filter(p => STATE.filterCat === 'all' || p.category === STATE.filterCat);
+  // Reverse so display matches insertion order (oldest first, newest last).
+  const visible = STATE.data.products.slice().reverse().filter(p => STATE.filterCat === 'all' || p.category === STATE.filterCat);
   // Clean selection from products no longer present
   for (const id of STATE.selection) if (!STATE.data.products.find(p => p.id === id)) STATE.selection.delete(id);
   const allVisibleSelected = visible.length > 0 && visible.every(p => STATE.selection.has(p.id));
