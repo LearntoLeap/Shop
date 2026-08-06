@@ -39,6 +39,24 @@
   ],
   "products": [
     {
+      "id": "pmsh6wh5kftd6",
+      "name": "Khối học liệu bản cứng, bản mềm….",
+      "sku": "",
+      "slug": "khoi-hoc-lieu-ban-cung-ban-mem",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 968000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "",
+      "tags": [],
+      "images": [],
+      "featured": false,
+      "createdAt": "2026-08-06"
+    },
+    {
       "id": "pmsh6w64resnd",
       "name": "Bộ dụng cụ cầm tay",
       "sku": "",
