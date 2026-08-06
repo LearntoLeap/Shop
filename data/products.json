@@ -39,6 +39,24 @@
   ],
   "products": [
     {
+      "id": "pmsh6w64resnd",
+      "name": "Bộ dụng cụ cầm tay",
+      "sku": "",
+      "slug": "bo-dung-cu-cam-tay",
+      "category": "robotics-ai",
+      "priceMode": "show",
+      "price": 6000000,
+      "originalPrice": 0,
+      "currency": "VND",
+      "stock": 0,
+      "shortDescription": "",
+      "description": "• Dụng cụ: kéo đầu tù (lưỡi inox), súng keo nhiệt mini 20–40 W, kìm mũi nhọn 150 mm, tua vít đa năng, thước kim loại 30 cm, dao có khóa lưỡi.• Mỏ hàn chỉnh nhiệt 40–60 W.",
+      "tags": [],
+      "images": [],
+      "featured": false,
+      "createdAt": "2026-08-06"
+    },
+    {
       "id": "pmsh6vksferh2",
       "name": "Máy cắt laser",
       "sku": "",
