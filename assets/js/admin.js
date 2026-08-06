@@ -347,6 +347,7 @@ function renderCategories() {
 function newProduct() {
   STATE.editing = {
     id: uid(), name: '', slug: '', sku: '', category: STATE.data.categories[0]?.id || '',
+    brand: '', origin: '',
     priceMode: 'show', price: 0, originalPrice: 0, currency: 'VND',
     images: [], shortDescription: '', description: '', tags: [],
     stock: 0, featured: false, createdAt: new Date().toISOString().slice(0, 10)
@@ -392,6 +393,16 @@ function renderProductEditor(isNew) {
           <div>
             <label class="text-xs font-semibold">Danh mục *</label>
             <select class="w-full mt-1 px-3 py-2 border rounded" onchange="STATE.editing.category=this.value">${catOpts}</select>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="text-xs font-semibold">Hãng</label>
+            <input type="text" value="${p.brand || ''}" placeholder="VD: Makeblock, Sciedu..." class="w-full mt-1 px-3 py-2 border rounded" oninput="STATE.editing.brand=this.value" />
+          </div>
+          <div>
+            <label class="text-xs font-semibold">Xuất xứ</label>
+            <input type="text" value="${p.origin || ''}" placeholder="VD: Việt Nam, Trung Quốc, Đức..." class="w-full mt-1 px-3 py-2 border rounded" oninput="STATE.editing.origin=this.value" />
           </div>
         </div>
         <div>
@@ -532,6 +543,8 @@ const BULK_COLUMNS = [
   { key: 'name',             label: 'Tên sản phẩm *',           required: true },
   { key: 'sku',              label: 'Mã SP (SKU)',              required: false },
   { key: 'category',         label: 'Danh mục (id hoặc tên)',   required: false },
+  { key: 'brand',            label: 'Hãng',                     required: false },
+  { key: 'origin',           label: 'Xuất xứ',                  required: false },
   { key: 'priceMode',        label: 'Kiểu giá (show/contact)',  required: false },
   { key: 'price',            label: 'Giá bán',                  required: false },
   { key: 'originalPrice',    label: 'Giá gốc',                  required: false },
@@ -544,7 +557,7 @@ const BULK_COLUMNS = [
 ];
 
 const BULK_COL_WIDTH = {
-  name: 220, sku: 110, category: 140, priceMode: 110, price: 110, originalPrice: 110,
+  name: 220, sku: 110, category: 140, brand: 130, origin: 130, priceMode: 110, price: 110, originalPrice: 110,
   stock: 80, shortDescription: 240, description: 280, tags: 170, images: 220, featured: 90
 };
 

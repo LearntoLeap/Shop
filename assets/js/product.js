@@ -122,6 +122,14 @@ function render(p, data) {
               ? `<span class="text-emerald-600 font-semibold">● Còn hàng (${p.stock})</span>`
               : `<span class="text-amber-600 font-semibold">● Liên hệ để đặt</span>`}
           </div>
+          ${p.brand ? `<div class="flex items-center gap-2">
+            <span class="text-slate-500 w-28">Hãng:</span>
+            <span class="font-semibold text-slate-800">${p.brand}</span>
+          </div>` : ''}
+          ${p.origin ? `<div class="flex items-center gap-2">
+            <span class="text-slate-500 w-28">Xuất xứ:</span>
+            <span class="text-slate-800">${p.origin}</span>
+          </div>` : ''}
           ${p.sku ? `<div class="flex items-center gap-2">
             <span class="text-slate-500 w-28">Mã sản phẩm:</span>
             <span class="font-mono text-brand-700 font-semibold">${p.sku}</span>
@@ -145,12 +153,35 @@ function render(p, data) {
     ${p.description ? `
       <div class="mt-10 bg-white border border-purple-100 rounded-xl p-6 shadow-sm">
         <h2 class="text-xl font-bold mb-4 text-slate-800 flex items-center gap-2">📋 Mô tả chi tiết</h2>
-        <div class="prose prose-sm max-w-none text-slate-700 whitespace-pre-line leading-relaxed">${p.description}</div>
+        <div id="descBox" class="desc-collapsed">
+          <div class="prose prose-sm max-w-none text-slate-700 whitespace-pre-line leading-relaxed">${p.description}</div>
+        </div>
+        <button id="descToggle" onclick="toggleDesc()" class="hidden mt-3 text-brand-700 hover:text-brand-800 font-semibold text-sm inline-flex items-center gap-1">
+          <span id="descToggleLabel">Xem thêm</span> <span id="descToggleIcon">▼</span>
+        </button>
       </div>
     ` : ''}
 
     ${relatedHtml(p, data)}
   `;
+
+  // Show "Xem thêm" only if description is actually taller than the collapsed max
+  requestAnimationFrame(() => {
+    const box = document.getElementById('descBox');
+    const btn = document.getElementById('descToggle');
+    if (!box || !btn) return;
+    if (box.scrollHeight - 4 > box.clientHeight) btn.classList.remove('hidden');
+  });
+}
+
+function toggleDesc() {
+  const box = document.getElementById('descBox');
+  const label = document.getElementById('descToggleLabel');
+  const icon = document.getElementById('descToggleIcon');
+  const collapsed = box.classList.toggle('desc-collapsed');
+  label.textContent = collapsed ? 'Xem thêm' : 'Thu gọn';
+  icon.textContent = collapsed ? '▼' : '▲';
+  if (collapsed) box.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function relatedHtml(current, data) {
