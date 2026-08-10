@@ -1121,7 +1121,8 @@ async function bulkConfirmImport() {
 // ---------- BULK EDIT (spreadsheet) ----------
 function openBulkEdit() {
   if (STATE.selection.size === 0) { alert('Chưa chọn sản phẩm nào.'); return; }
-  const products = STATE.data.products.filter(p => STATE.selection.has(p.id));
+  // Match admin list order (oldest → newest). STATE.data.products is unshift-order (newest first) → reverse.
+  const products = STATE.data.products.slice().reverse().filter(p => STATE.selection.has(p.id));
   const catList = STATE.data.categories.map(c => `<span class="font-mono bg-white border border-slate-200 px-1.5 py-0.5 rounded text-[11px]">${c.id}</span>`).join(' ');
 
   const box = document.getElementById('editorBox');
