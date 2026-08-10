@@ -39,6 +39,31 @@
   ],
   "products": [
     {
+      "id": "pmsn2sza41piq",
+      "name": "Loa MIC đa hướng có lọc nhiễu - dành để thu âm bài giảng ",
+      "slug": "loa-mic-da-huong-co-loc-nhieu-danh-de-thu-am-bai-giang",
+      "sku": "Jabra 510",
+      "category": "robotics-ai",
+      "model": "Jabra 510",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": "",
+      "priceMode": "show",
+      "price": 0,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786357036761-1786356838787-8693558848095460070-8693558848095460070-c6f40bfc094de64f32ad16035ba13f2a.jpg"
+      ],
+      "shortDescription": "",
+      "description": "Loa ngoài và micro tích hợp cùng trên một thiết bị lý tưởng cho các cuộc họp nhóm trực tuyến.\nÂm thanh tần số rộng thực sự cho cuộc trò chuyện rõ ràng.\nMicro điện dùng sử dụng nguồn USB từ máy tính với góc bắt âm thanh 360 độ.\nTích hợp loa và micro trên cùng một thiết bị.\nTương thích với mọi phần mềm.\nThu âm thanh trung thực từ\nlớp học. Dùng cho hệ thống tự động ghi bài giảng",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-08-10"
+    },
+    {
       "id": "pmsn267050y93",
       "name": "Thiết bị AIBox streaming",
       "slug": "thiet-bi-aibox-streaming",
