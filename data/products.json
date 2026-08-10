@@ -40,9 +40,9 @@
   "products": [
     {
       "id": "pmsmskxsqa3o6",
-      "name": "Phần mềm quản lý lớp học STEM dành cho Học sinh",
+      "name": "License Phần mềm quản lý lớp học STEM dành cho Học sinh",
       "sku": "SynXR HS120",
-      "slug": "phan-mem-quan-ly-lop-hoc-stem-danh-cho-hoc-sinh",
+      "slug": "license-phan-mem-quan-ly-lop-hoc-stem-danh-cho-hoc-sinh",
       "category": "robotics-ai",
       "model": "SynXR HS120",
       "project": "",
@@ -63,9 +63,9 @@
     },
     {
       "id": "pmsmskxspx4tq",
-      "name": "Phần mềm quản lý lớp học STEM dành cho Giáo viên",
+      "name": "License Phần mềm quản lý lớp học STEM dành cho Giáo viên",
       "sku": "SynXR GV120",
-      "slug": "phan-mem-quan-ly-lop-hoc-stem-danh-cho-giao-vien",
+      "slug": "license-phan-mem-quan-ly-lop-hoc-stem-danh-cho-giao-vien",
       "category": "robotics-ai",
       "model": "SynXR GV120",
       "project": "",
