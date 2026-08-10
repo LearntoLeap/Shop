@@ -100,6 +100,18 @@ async function loadProductsFile() {
   }
 }
 
+// Purge jsDelivr CDN cache so storefront sees new data within ~10-30s
+// (thay vì phải chờ ~2 phút GitHub Pages build).
+async function purgeJsdelivrCache() {
+  try {
+    const url = `https://purge.jsdelivr.net/gh/${STATE.auth.owner}/${STATE.auth.repo}@${STATE.auth.branch}/data/products.json`;
+    // no-cors: purge endpoint không cần response, chỉ cần hit
+    await fetch(url, { mode: 'no-cors' });
+  } catch (e) {
+    console.warn('Purge CDN thất bại (không critical):', e.message);
+  }
+}
+
 async function saveProductsFile(message = 'Cập nhật sản phẩm') {
   const status = document.getElementById('saveStatus');
   status.textContent = '💾 Đang lưu...';
@@ -107,8 +119,10 @@ async function saveProductsFile(message = 'Cập nhật sản phẩm') {
   try {
     const res = await ghPut(DATA_PATH, toBase64(content), STATE.sha, message);
     STATE.sha = res.content.sha;
-    status.textContent = '✓ Đã lưu lên GitHub';
-    setTimeout(() => status.textContent = '', 3000);
+    status.textContent = '⚡ Đang đồng bộ CDN...';
+    await purgeJsdelivrCache();
+    status.textContent = '✓ Đã lưu — Shop sẽ cập nhật trong ~15 giây';
+    setTimeout(() => status.textContent = '', 5000);
   } catch (e) {
     // 409 Conflict: SHA stale → refresh SHA and retry once
     if (/\b409\b/.test(e.message)) {
@@ -129,8 +143,10 @@ async function saveProductsFile(message = 'Cập nhật sản phẩm') {
         }
         const res = await ghPut(DATA_PATH, toBase64(content), STATE.sha, message + ' (force after conflict)');
         STATE.sha = res.content.sha;
-        status.textContent = '✓ Đã lưu (sau khi giải quyết xung đột)';
-        setTimeout(() => status.textContent = '', 3000);
+        status.textContent = '⚡ Đồng bộ CDN...';
+        await purgeJsdelivrCache();
+        status.textContent = '✓ Đã lưu (sau xung đột) — Shop cập nhật trong ~15s';
+        setTimeout(() => status.textContent = '', 5000);
         return;
       } catch (e2) {
         status.textContent = '✗ Lỗi: ' + e2.message;

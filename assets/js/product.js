@@ -32,8 +32,17 @@ async function loadProduct() {
     return;
   }
   try {
-    const res = await fetch('data/products.json?t=' + Date.now());
-    const data = await res.json();
+    const DATA_URL = 'https://cdn.jsdelivr.net/gh/LearntoLeap/Shop@main/data/products.json';
+    const bust = '?t=' + Date.now();
+    let data;
+    try {
+      const res = await fetch(DATA_URL + bust);
+      if (!res.ok) throw new Error('CDN fail');
+      data = await res.json();
+    } catch {
+      const res = await fetch('data/products.json' + bust);
+      data = await res.json();
+    }
     let p;
     if (ident.type === 'id') {
       p = data.products.find(x => x.id === ident.value);
