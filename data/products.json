@@ -53,7 +53,10 @@
       "price": 60500000,
       "originalPrice": 0,
       "currency": "VND",
-      "images": [],
+      "images": [
+        "https://vdsmart.vn/wp-content/uploads/2019/12/Picture1-1-300x229.png",
+        "https://vdsmart.vn/wp-content/uploads/2019/12/Picture2-1-300x230.png"
+      ],
       "shortDescription": "",
       "description": "- 1024 Core GPU\n- 8 Core CPU Arm 1,2 Ghz\n- 8/16GB RAM\n- Lưu trữ 512GB SSD\n- Tăng tốc các thuật toán trí tuệ nhân tạo AI\n- Có khả năng điều khiển quay quét đến 5 Camera PTZ đồng thời \n- Có khả năng ghi bài giảng lên Máy chủ trên đám mây\n- Tích hợp phần mềm trí tuệ nhân tạo AI (License vĩnh viễn theo phần cứng)",
       "tags": [],
