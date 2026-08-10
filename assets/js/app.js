@@ -11,19 +11,24 @@ const productUrl = (p) => {
   return tail ? `${slug}/${encodeURIComponent(tail)}` : slug;
 };
 
-// Load data trực tiếp từ jsDelivr CDN (real-time, bypass GitHub Pages build)
-const DATA_URL = 'https://cdn.jsdelivr.net/gh/LearntoLeap/Shop@main/data/products.json';
-const DATA_FALLBACK = 'data/products.json';
+// Fetch data từ raw.githubusercontent.com (cập nhật ~5s sau commit, không có 12h edge cache của jsDelivr)
+// Fallback: jsDelivr → Pages local nếu raw lỗi.
+const DATA_URLS = [
+  'https://raw.githubusercontent.com/LearntoLeap/Shop/main/data/products.json',
+  'https://cdn.jsdelivr.net/gh/LearntoLeap/Shop@main/data/products.json',
+  'data/products.json'
+];
 async function fetchData() {
   const bust = '?t=' + Date.now();
-  try {
-    const res = await fetch(DATA_URL + bust);
-    if (!res.ok) throw new Error('CDN fail ' + res.status);
-    return await res.json();
-  } catch {
-    const res = await fetch(DATA_FALLBACK + bust);
-    return await res.json();
+  let lastErr;
+  for (const url of DATA_URLS) {
+    try {
+      const res = await fetch(url + bust, { cache: 'no-store' });
+      if (!res.ok) throw new Error(url + ' → ' + res.status);
+      return await res.json();
+    } catch (e) { lastErr = e; }
   }
+  throw lastErr;
 }
 async function loadData() {
   try {

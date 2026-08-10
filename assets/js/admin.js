@@ -121,8 +121,8 @@ async function saveProductsFile(message = 'Cập nhật sản phẩm') {
     STATE.sha = res.content.sha;
     status.textContent = '⚡ Đang đồng bộ CDN...';
     await purgeJsdelivrCache();
-    status.textContent = '✓ Đã lưu — Shop sẽ cập nhật trong ~15 giây';
-    setTimeout(() => status.textContent = '', 5000);
+    status.textContent = '✓ Đã lưu — Shop cập nhật ~5-10s (F5 storefront để thấy ngay)';
+    setTimeout(() => status.textContent = '', 6000);
   } catch (e) {
     // 409 Conflict: SHA stale → refresh SHA and retry once
     if (/\b409\b/.test(e.message)) {
