@@ -11,17 +11,27 @@ const productUrl = (p) => {
   return tail ? `${slug}/${encodeURIComponent(tail)}` : slug;
 };
 
-// Fetch data từ raw.githubusercontent.com (cập nhật ~5s sau commit, không có 12h edge cache của jsDelivr)
-// Fallback: jsDelivr → Pages local nếu raw lỗi.
-const DATA_URLS = [
-  'https://raw.githubusercontent.com/LearntoLeap/Shop/main/data/products.json',
-  'https://cdn.jsdelivr.net/gh/LearntoLeap/Shop@main/data/products.json',
-  'data/products.json'
-];
+// Fetch data — ưu tiên GitHub Contents API (real-time, no CDN cache, ~60 req/hr per IP).
+// Nếu bị rate-limit (403) → fallback raw → jsDelivr → Pages local.
 async function fetchData() {
   const bust = '?t=' + Date.now();
+  // 1) GitHub API (real-time)
+  try {
+    const r = await fetch('https://api.github.com/repos/LearntoLeap/Shop/contents/data/products.json?ref=main' + '&t=' + Date.now(), {
+      headers: { Accept: 'application/vnd.github.raw' },
+      cache: 'no-store'
+    });
+    if (r.ok) return await r.json();
+    if (r.status !== 403) throw new Error('API ' + r.status);
+  } catch (e) { console.warn('API fail, fallback:', e.message); }
+  // 2/3/4) fallback CDNs
+  const fallbacks = [
+    'https://raw.githubusercontent.com/LearntoLeap/Shop/main/data/products.json',
+    'https://cdn.jsdelivr.net/gh/LearntoLeap/Shop@main/data/products.json',
+    'data/products.json'
+  ];
   let lastErr;
-  for (const url of DATA_URLS) {
+  for (const url of fallbacks) {
     try {
       const res = await fetch(url + bust, { cache: 'no-store' });
       if (!res.ok) throw new Error(url + ' → ' + res.status);

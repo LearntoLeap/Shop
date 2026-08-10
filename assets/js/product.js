@@ -32,22 +32,34 @@ async function loadProduct() {
     return;
   }
   try {
-    const DATA_URLS = [
-      'https://raw.githubusercontent.com/LearntoLeap/Shop/main/data/products.json',
-      'https://cdn.jsdelivr.net/gh/LearntoLeap/Shop@main/data/products.json',
-      'data/products.json'
-    ];
-    const bust = '?t=' + Date.now();
-    let data, lastErr;
-    for (const url of DATA_URLS) {
-      try {
-        const res = await fetch(url + bust, { cache: 'no-store' });
-        if (!res.ok) throw new Error(url + ' → ' + res.status);
-        data = await res.json();
-        break;
-      } catch (e) { lastErr = e; }
+    let data;
+    // 1) GitHub API (real-time)
+    try {
+      const r = await fetch('https://api.github.com/repos/LearntoLeap/Shop/contents/data/products.json?ref=main&t=' + Date.now(), {
+        headers: { Accept: 'application/vnd.github.raw' }, cache: 'no-store'
+      });
+      if (r.ok) data = await r.json();
+      else if (r.status !== 403) console.warn('API status ' + r.status);
+    } catch (e) { console.warn('API fail:', e.message); }
+    // 2) Fallbacks
+    if (!data) {
+      const bust = '?t=' + Date.now();
+      const fallbacks = [
+        'https://raw.githubusercontent.com/LearntoLeap/Shop/main/data/products.json',
+        'https://cdn.jsdelivr.net/gh/LearntoLeap/Shop@main/data/products.json',
+        'data/products.json'
+      ];
+      let lastErr;
+      for (const url of fallbacks) {
+        try {
+          const res = await fetch(url + bust, { cache: 'no-store' });
+          if (!res.ok) throw new Error(url + ' → ' + res.status);
+          data = await res.json();
+          break;
+        } catch (e) { lastErr = e; }
+      }
+      if (!data) throw lastErr;
     }
-    if (!data) throw lastErr;
     let p;
     if (ident.type === 'id') {
       p = data.products.find(x => x.id === ident.value);
