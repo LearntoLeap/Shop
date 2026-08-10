@@ -376,10 +376,20 @@ function renderCategories() {
     list.innerHTML = '<div class="bg-white rounded-lg p-8 text-center text-slate-500">Chưa có danh mục.</div>';
     return;
   }
-  list.innerHTML = STATE.data.categories.map(c => {
+  const info = `<div class="bg-blue-50 border border-blue-200 rounded-lg p-2 mb-2 text-xs text-blue-800">
+    💡 Thứ tự danh mục ở đây quyết định thứ tự hiển thị trên shop (sidebar, filter). Dùng ↑ ↓ để sắp xếp lại.
+  </div>`;
+  list.innerHTML = info + STATE.data.categories.map((c, i) => {
     const count = STATE.data.products.filter(p => p.category === c.id).length;
+    const isFirst = i === 0;
+    const isLast = i === STATE.data.categories.length - 1;
     return `
     <div class="bg-white rounded-lg p-3 flex items-center gap-3 shadow-sm">
+      <div class="flex flex-col gap-0.5">
+        <button onclick="moveCategory(${i}, -1)" ${isFirst ? 'disabled' : ''} class="text-slate-500 hover:text-brand-700 hover:bg-brand-50 rounded w-6 h-5 flex items-center justify-center text-xs ${isFirst ? 'opacity-30 cursor-not-allowed' : ''}" title="Lên">▲</button>
+        <button onclick="moveCategory(${i}, 1)" ${isLast ? 'disabled' : ''} class="text-slate-500 hover:text-brand-700 hover:bg-brand-50 rounded w-6 h-5 flex items-center justify-center text-xs ${isLast ? 'opacity-30 cursor-not-allowed' : ''}" title="Xuống">▼</button>
+      </div>
+      <div class="text-xs text-slate-400 font-mono w-6 text-center">${i + 1}</div>
       <div class="text-3xl">${c.icon || '📦'}</div>
       <div class="flex-1">
         <div class="font-semibold">${c.name}</div>
@@ -392,6 +402,15 @@ function renderCategories() {
       </div>
     </div>`;
   }).join('');
+}
+
+async function moveCategory(idx, delta) {
+  const cats = STATE.data.categories;
+  const newIdx = idx + delta;
+  if (newIdx < 0 || newIdx >= cats.length) return;
+  [cats[idx], cats[newIdx]] = [cats[newIdx], cats[idx]];
+  renderCategories();
+  await saveProductsFile(`Đổi thứ tự DM: ${cats[newIdx].name} ⇄ ${cats[idx].name}`);
 }
 
 // ---------- PRODUCT EDITOR ----------
