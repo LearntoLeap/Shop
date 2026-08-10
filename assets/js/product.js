@@ -3,7 +3,10 @@ const fmtVND = (n) => new Intl.NumberFormat('vi-VN').format(n) + 'đ';
 const slugify = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const productUrl = (p) => {
   const slug = p.slug || slugify(p.name);
-  return p.sku ? `${slug}/${encodeURIComponent(p.sku)}` : slug;
+  let tail = '';
+  if (p.projectCode && p.model) tail = `${p.projectCode}-${p.model}`;
+  else if (p.sku) tail = p.sku;
+  return tail ? `${slug}/${encodeURIComponent(tail)}` : slug;
 };
 
 // Parse identifier from either ?id= query or path segments after /Shop/
@@ -40,11 +43,12 @@ async function loadProduct() {
         || data.products.find(x => slugify(x.name) === ident.value)
         || data.products.find(x => x.id === ident.value);
     } else {
-      // Tìm theo SKU; fallback: id, rồi slug + slug-từ-tên
-      p = data.products.find(x => x.sku && x.sku === ident.value)
+      // Tìm theo: <projectCode>-<model> → SKU → id → slug (không SKU/model)
+      p = data.products.find(x => x.projectCode && x.model && `${x.projectCode}-${x.model}` === ident.value)
+        || data.products.find(x => x.sku && x.sku === ident.value)
         || data.products.find(x => x.id === ident.value)
-        || (ident.slug && data.products.find(x => x.slug === ident.slug && !x.sku))
-        || (ident.slug && data.products.find(x => slugify(x.name) === ident.slug && !x.sku));
+        || (ident.slug && data.products.find(x => x.slug === ident.slug && !x.sku && !x.model))
+        || (ident.slug && data.products.find(x => slugify(x.name) === ident.slug && !x.sku && !x.model));
     }
     if (!p) {
       main.innerHTML = notFoundHtml('Không tìm thấy sản phẩm với mã: <span class="font-mono text-brand-700">' + ident.value + '</span>');
@@ -122,6 +126,10 @@ function render(p, data) {
               ? `<span class="text-emerald-600 font-semibold">● Còn hàng (${p.stock})</span>`
               : `<span class="text-amber-600 font-semibold">● Liên hệ để đặt</span>`}
           </div>
+          ${p.model ? `<div class="flex items-center gap-2">
+            <span class="text-slate-500 w-28">Model:</span>
+            <span class="font-mono text-slate-800 font-semibold">${p.model}</span>
+          </div>` : ''}
           ${p.brand ? `<div class="flex items-center gap-2">
             <span class="text-slate-500 w-28">Hãng:</span>
             <span class="font-semibold text-slate-800">${p.brand}</span>
@@ -131,7 +139,7 @@ function render(p, data) {
             <span class="text-slate-800">${p.origin}</span>
           </div>` : ''}
           ${p.sku ? `<div class="flex items-center gap-2">
-            <span class="text-slate-500 w-28">Mã sản phẩm:</span>
+            <span class="text-slate-500 w-28">Mã SP:</span>
             <span class="font-mono text-brand-700 font-semibold">${p.sku}</span>
           </div>` : ''}
         </div>

@@ -1,6 +1,6 @@
 // Learn to Leap Shop — Admin panel (GitHub API based)
 const DATA_PATH = 'data/products.json';
-const STATE = { auth: null, data: null, sha: null, tab: 'products', editing: null, selection: new Set(), filterCat: 'all' };
+const STATE = { auth: null, data: null, sha: null, tab: 'products', editing: null, selection: new Set(), filterCat: 'all', filterProject: 'all' };
 
 const fmtVND = (n) => new Intl.NumberFormat('vi-VN').format(n) + 'đ';
 const slugify = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -180,11 +180,29 @@ function renderProducts() {
     return;
   }
   // Reverse so display matches insertion order (oldest first, newest last).
-  const visible = STATE.data.products.slice().reverse().filter(p => STATE.filterCat === 'all' || p.category === STATE.filterCat);
+  const visible = STATE.data.products.slice().reverse()
+    .filter(p => STATE.filterCat === 'all' || p.category === STATE.filterCat)
+    .filter(p => {
+      if (STATE.filterProject === 'all') return true;
+      if (STATE.filterProject === '__none__') return !p.projectCode && !p.project;
+      return (p.projectCode || '') === STATE.filterProject;
+    });
   // Clean selection from products no longer present
   for (const id of STATE.selection) if (!STATE.data.products.find(p => p.id === id)) STATE.selection.delete(id);
   const allVisibleSelected = visible.length > 0 && visible.every(p => STATE.selection.has(p.id));
   const catOpts = STATE.data.categories.map(c => `<option value="${c.id}" ${STATE.filterCat === c.id ? 'selected' : ''}>${c.icon || ''} ${c.name} (${STATE.data.products.filter(p => p.category === c.id).length})</option>`).join('');
+
+  // Build distinct project list from products (by projectCode; label from first occurrence)
+  const projMap = new Map();
+  STATE.data.products.forEach(p => {
+    if (!p.projectCode) return;
+    if (!projMap.has(p.projectCode)) projMap.set(p.projectCode, { code: p.projectCode, name: p.project || p.projectCode, count: 0 });
+    projMap.get(p.projectCode).count++;
+  });
+  const noProjCount = STATE.data.products.filter(p => !p.projectCode && !p.project).length;
+  const projOpts = Array.from(projMap.values())
+    .sort((a, b) => a.name.localeCompare(b.name, 'vi'))
+    .map(pj => `<option value="${pj.code}" ${STATE.filterProject === pj.code ? 'selected' : ''}>${pj.name} [${pj.code}] (${pj.count})</option>`).join('');
 
   const toolbar = `
     <div class="bg-white rounded-lg p-3 mb-2 flex flex-wrap items-center gap-3 shadow-sm border border-slate-100">
@@ -193,10 +211,16 @@ function renderProducts() {
         Chọn tất cả hiển thị
       </label>
       <div class="h-5 border-l border-slate-200"></div>
-      <label class="text-xs text-slate-600">Lọc theo danh mục:</label>
+      <label class="text-xs text-slate-600">Danh mục:</label>
       <select onchange="bulkSetFilter(this.value)" class="text-sm px-2 py-1 border rounded">
         <option value="all" ${STATE.filterCat === 'all' ? 'selected' : ''}>— Tất cả (${STATE.data.products.length}) —</option>
         ${catOpts}
+      </select>
+      <label class="text-xs text-slate-600">Dự án:</label>
+      <select onchange="bulkSetProjectFilter(this.value)" class="text-sm px-2 py-1 border rounded">
+        <option value="all" ${STATE.filterProject === 'all' ? 'selected' : ''}>— Tất cả dự án —</option>
+        ${noProjCount ? `<option value="__none__" ${STATE.filterProject === '__none__' ? 'selected' : ''}>(chưa gán) (${noProjCount})</option>` : ''}
+        ${projOpts}
       </select>
       <span class="text-xs text-slate-500 ml-auto">${visible.length} sản phẩm hiển thị</span>
     </div>
@@ -212,7 +236,7 @@ function renderProducts() {
       <img src="${img}" class="w-16 h-16 object-cover rounded" />
       <div class="flex-1 min-w-0">
         <div class="font-semibold truncate">${p.name} ${p.featured ? '<span class="text-amber-500">⭐</span>' : ''}</div>
-        <div class="text-xs text-slate-500">${cat ? cat.icon + ' ' + cat.name : '(không phân loại)'} • ${p.priceMode === 'contact' ? 'Liên hệ' : fmtVND(p.price)} • Kho: ${p.stock}${p.sku ? ' • <span class="font-mono text-brand-700">Mã: ' + p.sku + '</span>' : ''}</div>
+        <div class="text-xs text-slate-500">${cat ? cat.icon + ' ' + cat.name : '(không phân loại)'} • ${p.priceMode === 'contact' ? 'Liên hệ' : fmtVND(p.price)} • Kho: ${p.stock}${p.model ? ' • <span class="font-mono text-brand-700">Model: ' + p.model + '</span>' : ''}${p.projectCode ? ' • <span class="font-mono text-emerald-700">📁 ' + p.projectCode + '</span>' : ''}${p.sku ? ' • SKU: <span class="font-mono">' + p.sku + '</span>' : ''}</div>
         <div class="text-xs text-slate-400 truncate">${(p.tags || []).map(t => '#' + t).join(' ')}</div>
       </div>
       <div class="flex gap-1">
@@ -232,13 +256,24 @@ function bulkSetFilter(catId) {
   renderProducts();
 }
 
+function bulkSetProjectFilter(projectCode) {
+  STATE.filterProject = projectCode;
+  renderProducts();
+}
+
 function bulkToggleOne(id, on) {
   if (on) STATE.selection.add(id); else STATE.selection.delete(id);
   renderProducts();
 }
 
 function bulkToggleAllVisible(on) {
-  const visible = STATE.data.products.filter(p => STATE.filterCat === 'all' || p.category === STATE.filterCat);
+  const visible = STATE.data.products
+    .filter(p => STATE.filterCat === 'all' || p.category === STATE.filterCat)
+    .filter(p => {
+      if (STATE.filterProject === 'all') return true;
+      if (STATE.filterProject === '__none__') return !p.projectCode && !p.project;
+      return (p.projectCode || '') === STATE.filterProject;
+    });
   if (on) visible.forEach(p => STATE.selection.add(p.id));
   else visible.forEach(p => STATE.selection.delete(p.id));
   renderProducts();
@@ -347,6 +382,7 @@ function renderCategories() {
 function newProduct() {
   STATE.editing = {
     id: uid(), name: '', slug: '', sku: '', category: STATE.data.categories[0]?.id || '',
+    model: '', project: '', projectCode: '',
     brand: '', origin: '',
     priceMode: 'show', price: 0, originalPrice: 0, currency: 'VND',
     images: [], shortDescription: '', description: '', tags: [],
@@ -393,6 +429,20 @@ function renderProductEditor(isNew) {
           <div>
             <label class="text-xs font-semibold">Danh mục *</label>
             <select class="w-full mt-1 px-3 py-2 border rounded" onchange="STATE.editing.category=this.value">${catOpts}</select>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-3">
+          <div>
+            <label class="text-xs font-semibold">Model</label>
+            <input type="text" value="${p.model || ''}" placeholder="VD: RT113, mBot-R" class="w-full mt-1 px-3 py-2 border rounded font-mono" oninput="STATE.editing.model=this.value.trim()" />
+          </div>
+          <div>
+            <label class="text-xs font-semibold">Dự án</label>
+            <input type="text" value="${p.project || ''}" placeholder="VD: Trường TH Đa Kao" class="w-full mt-1 px-3 py-2 border rounded" oninput="STATE.editing.project=this.value" />
+          </div>
+          <div>
+            <label class="text-xs font-semibold">Mã dự án</label>
+            <input type="text" value="${p.projectCode || ''}" placeholder="VD: DAKAO, TS-001" class="w-full mt-1 px-3 py-2 border rounded font-mono" oninput="STATE.editing.projectCode=this.value.trim()" />
           </div>
         </div>
         <div class="grid grid-cols-2 gap-3">
@@ -541,6 +591,9 @@ async function deleteProduct(id) {
 // ---------- BULK IMPORT ----------
 const BULK_COLUMNS = [
   { key: 'name',             label: 'Tên sản phẩm *',           required: true },
+  { key: 'model',            label: 'Model',                    required: false },
+  { key: 'project',          label: 'Dự án',                    required: false },
+  { key: 'projectCode',      label: 'Mã dự án',                 required: false },
   { key: 'sku',              label: 'Mã SP (SKU)',              required: false },
   { key: 'category',         label: 'Danh mục (id hoặc tên)',   required: false },
   { key: 'brand',            label: 'Hãng',                     required: false },
@@ -557,8 +610,9 @@ const BULK_COLUMNS = [
 ];
 
 const BULK_COL_WIDTH = {
-  name: 220, sku: 110, category: 140, brand: 130, origin: 130, priceMode: 110, price: 110, originalPrice: 110,
-  stock: 80, shortDescription: 240, description: 280, tags: 170, images: 220, featured: 90
+  name: 220, model: 120, project: 160, projectCode: 120, sku: 110, category: 140, brand: 130, origin: 130,
+  priceMode: 110, price: 110, originalPrice: 110, stock: 80, shortDescription: 240, description: 280,
+  tags: 170, images: 220, featured: 90
 };
 
 function openBulkImport() {
@@ -1137,7 +1191,11 @@ function shopBaseUrl() {
 
 function productUrlFor(p) {
   const slug = p.slug || slugify(p.name);
-  return p.sku ? `${slug}/${encodeURIComponent(p.sku)}` : slug;
+  // Ưu tiên: <projectCode>-<model> → sku → chỉ slug
+  let tail = '';
+  if (p.projectCode && p.model) tail = `${p.projectCode}-${p.model}`;
+  else if (p.sku) tail = p.sku;
+  return tail ? `${slug}/${encodeURIComponent(tail)}` : slug;
 }
 
 function bulkCopyAllLinks(format) {

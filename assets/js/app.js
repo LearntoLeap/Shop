@@ -5,7 +5,10 @@ const fmtVND = (n) => new Intl.NumberFormat('vi-VN').format(n) + 'đ';
 const slugify = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const productUrl = (p) => {
   const slug = p.slug || slugify(p.name);
-  return p.sku ? `${slug}/${encodeURIComponent(p.sku)}` : slug;
+  let tail = '';
+  if (p.projectCode && p.model) tail = `${p.projectCode}-${p.model}`;
+  else if (p.sku) tail = p.sku;
+  return tail ? `${slug}/${encodeURIComponent(tail)}` : slug;
 };
 
 async function loadData() {
