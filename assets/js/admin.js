@@ -694,8 +694,8 @@ const BULK_COLUMNS = [
   { key: 'price',            label: 'Giá bán',                  required: false },
   { key: 'originalPrice',    label: 'Giá gốc',                  required: false },
   { key: 'stock',            label: 'Tồn kho',                  required: false },
-  { key: 'shortDescription', label: 'Mô tả ngắn',               required: false },
-  { key: 'description',      label: 'Mô tả chi tiết',           required: false },
+  { key: 'shortDescription', label: 'Mô tả ngắn',               required: false, multiline: true },
+  { key: 'description',      label: 'Mô tả chi tiết',           required: false, multiline: true },
   { key: 'tags',             label: 'Tags (phẩy)',              required: false },
   { key: 'images',           label: 'Ảnh (URL, phẩy)',          required: false },
   { key: 'featured',         label: 'Nổi bật (true/false)',     required: false }
@@ -727,7 +727,8 @@ function openBulkImport() {
         <span>• Copy từ Excel/Sheets → click ô đầu → <kbd class="bg-white border px-1 rounded">Ctrl+V</kbd> (trải nhiều dòng/cột)</span>
         <span>• <b>Paste ảnh từ clipboard</b> vào ô "Ảnh" → tự upload lên GitHub</span>
         <span>• <b>Bỏ tick ☑ ở header cột</b> nếu không muốn nhập cột đó (dữ liệu cột đó bị bỏ qua)</span>
-        <span>• <kbd class="bg-white border px-1 rounded">Ctrl+Z</kbd> để hoàn tác thao tác paste/xóa/thêm dòng gần nhất</span>
+        <span>• <kbd class="bg-white border px-1 rounded">Ctrl+Z</kbd> hoàn tác thao tác paste/xóa/thêm dòng gần nhất</span>
+        <span>• Ô Mô tả là <b>textarea</b> — Enter xuống dòng trong ô; <kbd class="bg-white border px-1 rounded">Ctrl+Enter</kbd> nhảy xuống dòng lưới</span>
       </div>
 
       <div class="bg-slate-50 border border-slate-200 rounded-lg p-2 mb-2 text-[11px]">
@@ -782,9 +783,21 @@ function openBulkImport() {
 
 function bulkRowHtml(idx) {
   return `<tr data-row="${idx}">
-    <td class="bg-slate-50 border border-slate-300 px-1 text-center text-slate-500 text-[11px] sticky left-0">${idx + 1}</td>
-    ${BULK_COLUMNS.map((c, ci) => `<td class="border border-slate-200 p-0"><input type="text" data-col="${ci}" data-key="${c.key}" class="w-full px-2 py-1.5 outline-none focus:bg-yellow-50 focus:ring-2 focus:ring-inset focus:ring-brand-400" /></td>`).join('')}
-    <td class="border border-slate-200 text-center"><button onclick="bulkRemoveRow(this)" class="text-red-400 hover:text-red-600 px-1" title="Xóa dòng">✕</button></td>
+    <td class="bg-slate-50 border border-slate-300 px-1 text-center text-slate-500 text-[11px] sticky left-0 align-top pt-2">${idx + 1}</td>
+    ${BULK_COLUMNS.map((c, ci) => {
+      if (c.multiline) {
+        return `<td class="border border-slate-200 p-0 align-top">
+          <textarea data-col="${ci}" data-key="${c.key}" rows="2"
+            class="w-full px-2 py-1.5 outline-none focus:bg-yellow-50 focus:ring-2 focus:ring-inset focus:ring-brand-400 resize-y text-xs leading-snug"
+            style="min-height:2.4rem"></textarea>
+        </td>`;
+      }
+      return `<td class="border border-slate-200 p-0 align-top">
+        <input type="text" data-col="${ci}" data-key="${c.key}"
+          class="w-full px-2 py-1.5 outline-none focus:bg-yellow-50 focus:ring-2 focus:ring-inset focus:ring-brand-400" />
+      </td>`;
+    }).join('')}
+    <td class="border border-slate-200 text-center align-top pt-2"><button onclick="bulkRemoveRow(this)" class="text-red-400 hover:text-red-600 px-1" title="Xóa dòng">✕</button></td>
   </tr>`;
 }
 
@@ -815,7 +828,7 @@ function bulkReindexRows() {
 function bulkUpdateRowInfo() {
   const total = document.querySelectorAll('#bulkGridBody tr').length;
   const filled = Array.from(document.querySelectorAll('#bulkGridBody tr')).filter(tr =>
-    Array.from(tr.querySelectorAll('input[data-col]')).some(i => i.value.trim())
+    Array.from(tr.querySelectorAll('[data-col]')).some(i => i.value.trim())
   ).length;
   const el = document.getElementById('bulkRowInfo');
   if (el) el.textContent = `${filled}/${total} dòng có dữ liệu`;
@@ -843,7 +856,7 @@ function bulkFillGrid(matrix, startRow, startCol) {
   while (body.children.length < startRow + matrix.length) bulkAddRow(1);
   matrix.forEach((row, r) => {
     const tr = body.children[startRow + r];
-    const inputs = tr.querySelectorAll('input[data-col]');
+    const inputs = tr.querySelectorAll('[data-col]');
     row.forEach((val, c) => {
       const target = inputs[startCol + c];
       if (target) target.value = (val || '').toString();
@@ -862,7 +875,7 @@ function bulkSnapshot() {
   const rows = [];
   document.querySelectorAll('#bulkGridBody tr').forEach(tr => {
     const productId = tr.dataset.productId || null;
-    const cells = Array.from(tr.querySelectorAll('input[data-col]')).map(i => i.value);
+    const cells = Array.from(tr.querySelectorAll('[data-col]')).map(i => i.value);
     rows.push({ productId, cells });
   });
   bulkHistory.push(rows);
@@ -879,7 +892,7 @@ function bulkUndo() {
     body.insertAdjacentHTML('beforeend', bulkRowHtml(i));
     const tr = body.children[i];
     if (row.productId) tr.dataset.productId = row.productId;
-    const inputs = tr.querySelectorAll('input[data-col]');
+    const inputs = tr.querySelectorAll('[data-col]');
     row.cells.forEach((v, ci) => { if (inputs[ci]) inputs[ci].value = v; });
   });
   // Reapply column-disabled state per current header checkboxes
@@ -981,12 +994,14 @@ function bulkPasteHandler(e) {
     }
   }
 
-  // 2) Text paste — parse as TSV with quoted-cell support (multi-line cells safe)
+  // 2) Text paste
   const text = cb.getData('text/plain');
   if (!text) return;
+  // Nếu KHÔNG có tab → text đơn (kể cả có newline) → để browser paste native
+  // (textarea giữ newline; input nuốt newline). Tránh việc paste đoạn văn bản nhiều dòng
+  // vào 1 ô lại bị hiểu là nhiều dòng lưới.
+  if (!text.includes('\t')) return;
   const matrix = parseTSVMatrix(text);
-  // Single-cell paste (1 row, 1 col, no tab/newline) → let browser default paste
-  if (matrix.length === 1 && matrix[0].length === 1 && !text.includes('\t') && !text.includes('\n')) return;
   e.preventDefault();
   let startRow = 0, startCol = 0;
   if (active && active.tagName === 'INPUT' && active.dataset.col) {
@@ -1008,23 +1023,30 @@ function bulkKeyNav(e) {
     }
   }
   const t = e.target;
-  if (t.tagName !== 'INPUT' || !t.dataset.col) return;
+  if (!t.dataset || !t.dataset.col) return;
+  const isTextarea = t.tagName === 'TEXTAREA';
   const tr = t.closest('tr');
   const row = +tr.dataset.row;
   const col = +t.dataset.col;
   const body = document.getElementById('bulkGridBody');
   let next = null;
-  if (e.key === 'Enter') {
+  if (e.key === 'Enter' && !isTextarea) {
     e.preventDefault();
     const nextTr = body.children[row + 1];
-    if (nextTr) next = nextTr.querySelectorAll('input[data-col]')[col];
-    else { bulkAddRow(1); next = body.children[row + 1].querySelectorAll('input[data-col]')[col]; }
-  } else if (e.key === 'ArrowDown' && !e.shiftKey) {
+    if (nextTr) next = nextTr.querySelectorAll('[data-col]')[col];
+    else { bulkAddRow(1); next = body.children[row + 1].querySelectorAll('[data-col]')[col]; }
+  } else if (e.key === 'Enter' && isTextarea && (e.ctrlKey || e.metaKey)) {
+    // Ctrl+Enter trong textarea = di chuyển xuống dòng dưới
+    e.preventDefault();
     const nextTr = body.children[row + 1];
-    if (nextTr) { e.preventDefault(); next = nextTr.querySelectorAll('input[data-col]')[col]; }
-  } else if (e.key === 'ArrowUp' && !e.shiftKey) {
+    if (nextTr) next = nextTr.querySelectorAll('[data-col]')[col];
+    else { bulkAddRow(1); next = body.children[row + 1].querySelectorAll('[data-col]')[col]; }
+  } else if (e.key === 'ArrowDown' && !e.shiftKey && !isTextarea) {
+    const nextTr = body.children[row + 1];
+    if (nextTr) { e.preventDefault(); next = nextTr.querySelectorAll('[data-col]')[col]; }
+  } else if (e.key === 'ArrowUp' && !e.shiftKey && !isTextarea) {
     const prevTr = body.children[row - 1];
-    if (prevTr) { e.preventDefault(); next = prevTr.querySelectorAll('input[data-col]')[col]; }
+    if (prevTr) { e.preventDefault(); next = prevTr.querySelectorAll('[data-col]')[col]; }
   }
   if (next) { next.focus(); next.select && next.select(); }
   bulkUpdateRowInfo();
@@ -1114,7 +1136,7 @@ function bulkPreview() {
   const includedCols = new Set(bulkGetIncludedCols());
   const lines = [];
   document.querySelectorAll('#bulkGridBody tr').forEach(tr => {
-    const vals = Array.from(tr.querySelectorAll('input[data-col]')).map((i, ci) =>
+    const vals = Array.from(tr.querySelectorAll('[data-col]')).map((i, ci) =>
       includedCols.has(ci) ? i.value : ''
     );
     if (vals.some(v => v.trim())) lines.push(vals.join('\t'));
@@ -1253,7 +1275,7 @@ function openBulkEdit() {
   products.forEach((p, i) => {
     const tr = trs[i];
     tr.dataset.productId = p.id;
-    const inputs = tr.querySelectorAll('input[data-col]');
+    const inputs = tr.querySelectorAll('[data-col]');
     BULK_COLUMNS.forEach((col, ci) => {
       const v = p[col.key];
       let val = '';
@@ -1306,7 +1328,7 @@ function bulkCopyAllLinks(format) {
     const p = STATE.data.products.find(x => x.id === id);
     if (!p) return;
     // Prefer current in-grid name (in case user edited it)
-    const nameInput = tr.querySelectorAll('input[data-col]')[nameColIdx];
+    const nameInput = tr.querySelectorAll('[data-col]')[nameColIdx];
     const name = (nameInput && nameInput.value.trim()) || p.name;
     const url = shopBaseUrl() + productUrlFor({ ...p, name, slug: p.slug || slugify(name) });
     switch (format) {
@@ -1348,7 +1370,7 @@ async function bulkConfirmEdit() {
     if (!id) continue; // row removed or new
     const product = STATE.data.products.find(p => p.id === id);
     if (!product) continue;
-    const inputs = tr.querySelectorAll('input[data-col]');
+    const inputs = tr.querySelectorAll('[data-col]');
     const changes = {};
     BULK_COLUMNS.forEach((col, ci) => {
       if (!includedCols.has(ci)) return;
