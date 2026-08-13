@@ -1192,6 +1192,181 @@ function bulkPreview() {
   window._bulkParsed = rows;
 }
 
+// ---------- EXCEL EXPORT / IMPORT (SheetJS) ----------
+async function ensureSheetJS() {
+  if (window.XLSX) return window.XLSX;
+  await new Promise((res, rej) => {
+    const s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js';
+    s.onload = res; s.onerror = () => rej(new Error('Không tải được thư viện SheetJS'));
+    document.head.appendChild(s);
+  });
+  return window.XLSX;
+}
+
+async function exportProductsExcel() {
+  const status = document.getElementById('saveStatus');
+  status.textContent = '📊 Đang chuẩn bị Excel...';
+  try {
+    const XLSX = await ensureSheetJS();
+    // Header: id (ẩn ID để match khi import lại) + các cột BULK_COLUMNS
+    const header = ['id', ...BULK_COLUMNS.map(c => c.label.replace(' *', ''))];
+    // Data theo thứ tự hiển thị (cũ → mới)
+    const products = STATE.data.products.slice().reverse();
+    const rows = [header];
+    products.forEach(p => {
+      const row = [p.id];
+      BULK_COLUMNS.forEach(c => {
+        const v = p[c.key];
+        if (c.key === 'tags' || c.key === 'images') row.push((v || []).join(', '));
+        else if (c.key === 'featured') row.push(v ? 'true' : 'false');
+        else if (c.key === 'priceMode') row.push(v || 'show');
+        else if (c.key === 'category') {
+          const cat = STATE.data.categories.find(x => x.id === v);
+          row.push(cat ? cat.id : (v || ''));
+        }
+        else if (v === undefined || v === null) row.push('');
+        else row.push(v);
+      });
+      rows.push(row);
+    });
+    const ws = XLSX.utils.aoa_to_sheet(rows);
+    // Width gợi ý theo BULK_COL_WIDTH (px → xấp xỉ ký tự)
+    ws['!cols'] = [{ wch: 14 }, ...BULK_COLUMNS.map(c => ({ wch: Math.max(12, Math.min(48, Math.round((BULK_COL_WIDTH[c.key] || 130) / 8))) }))];
+    ws['!freeze'] = { xSplit: 2, ySplit: 1 }; // freeze cột id + tên + hàng header
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Sản phẩm');
+    const today = new Date().toISOString().slice(0, 10);
+    XLSX.writeFile(wb, `LtL-Shop-products-${today}.xlsx`);
+    status.textContent = `✓ Đã xuất ${products.length} SP ra Excel`;
+    setTimeout(() => status.textContent = '', 4000);
+  } catch (e) {
+    status.textContent = '';
+    alert('Lỗi xuất Excel: ' + e.message);
+  }
+}
+
+async function importExcelFile(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const status = document.getElementById('saveStatus');
+  status.textContent = '📤 Đang đọc file...';
+  try {
+    const XLSX = await ensureSheetJS();
+    const buf = await file.arrayBuffer();
+    const wb = XLSX.read(buf, { type: 'array' });
+    const ws = wb.Sheets[wb.SheetNames[0]];
+    const rows = XLSX.utils.sheet_to_json(ws, { header: 1, defval: '' });
+    if (rows.length < 2) throw new Error('File rỗng hoặc chỉ có header.');
+
+    // Header → column key map
+    const header = rows[0].map(h => String(h).trim());
+    const idIdx = header.findIndex(h => h.toLowerCase() === 'id');
+    const colMap = {}; // colIdx → BULK_COLUMN key
+    BULK_COLUMNS.forEach(c => {
+      const label = c.label.replace(' *', '');
+      const idx = header.findIndex(h => h === label || h.toLowerCase() === c.key.toLowerCase());
+      if (idx !== -1) colMap[idx] = c.key;
+    });
+    if (!Object.values(colMap).includes('name')) {
+      throw new Error('Không tìm thấy cột "Tên sản phẩm" trong file. Xuất Excel từ đây trước để lấy template chuẩn.');
+    }
+
+    const updates = [];
+    const inserts = [];
+    const errors = [];
+    const skippedEmpty = [];
+
+    for (let r = 1; r < rows.length; r++) {
+      const row = rows[r] || [];
+      if (row.every(v => !String(v).trim())) { skippedEmpty.push(r + 1); continue; }
+      const id = idIdx !== -1 ? String(row[idIdx] || '').trim() : '';
+      const existing = id ? STATE.data.products.find(p => p.id === id) : null;
+
+      const changes = {};
+      Object.entries(colMap).forEach(([ci, key]) => {
+        const val = String(row[ci] ?? '').trim();
+        switch (key) {
+          case 'price':
+          case 'originalPrice':
+          case 'stock':
+            changes[key] = parseInt(String(val).replace(/[^\d-]/g, '')) || 0; break;
+          case 'priceMode':
+            changes[key] = val.toLowerCase() === 'contact' ? 'contact' : 'show'; break;
+          case 'featured':
+            changes[key] = /^(true|1|yes|y|x|✓)$/i.test(val); break;
+          case 'tags':
+          case 'images':
+            changes[key] = val ? val.split(/[,;\n]/).map(t => t.trim()).filter(Boolean) : []; break;
+          case 'category':
+            if (val) {
+              const cat = STATE.data.categories.find(c => c.id.toLowerCase() === val.toLowerCase() || c.name.toLowerCase() === val.toLowerCase());
+              if (cat) changes.category = cat.id;
+              else errors.push(`Dòng ${r + 1}: danh mục "${val}" không tồn tại`);
+            } else changes.category = '';
+            break;
+          default:
+            changes[key] = val;
+        }
+      });
+
+      if (existing) {
+        updates.push({ product: existing, changes });
+      } else {
+        if (!changes.name) { errors.push(`Dòng ${r + 1}: thiếu tên (không update được và không tạo mới được)`); continue; }
+        inserts.push({
+          id: uid(),
+          currency: 'VND',
+          createdAt: new Date().toISOString().slice(0, 10),
+          sku: '', slug: slugify(changes.name),
+          images: [], tags: [],
+          model: '', project: '', projectCode: '',
+          brand: '', origin: '',
+          priceMode: 'show', price: 0, originalPrice: 0, stock: 0,
+          shortDescription: '', description: '', featured: false,
+          category: STATE.data.categories[0]?.id || '',
+          ...changes
+        });
+      }
+    }
+
+    if (errors.length && !confirm(`Có ${errors.length} lỗi:\n\n• ${errors.slice(0, 8).join('\n• ')}${errors.length > 8 ? '\n…' : ''}\n\nBỏ qua các dòng lỗi và tiếp tục?`)) {
+      status.textContent = '';
+      input.value = '';
+      return;
+    }
+
+    if (!updates.length && !inserts.length) {
+      alert('Không có dòng nào để cập nhật hoặc thêm mới.');
+      status.textContent = '';
+      input.value = '';
+      return;
+    }
+
+    const msg = `Kết quả xử lý file "${file.name}":\n
+  • ${updates.length} sản phẩm sẽ CẬP NHẬT (match theo id)
+  • ${inserts.length} sản phẩm sẽ TẠO MỚI
+  • ${skippedEmpty.length} dòng trống bỏ qua
+  • ${errors.length} lỗi (không xử lý)
+
+Tiếp tục lưu lên GitHub?`;
+    if (!confirm(msg)) { status.textContent = ''; input.value = ''; return; }
+
+    updates.forEach(({ product, changes }) => {
+      Object.assign(product, changes);
+      if (changes.name) product.slug = slugify(changes.name);
+    });
+    inserts.forEach(p => STATE.data.products.unshift(p));
+    render();
+    await saveProductsFile(`Import Excel: ${updates.length} cập nhật, ${inserts.length} mới (${file.name})`);
+    input.value = '';
+  } catch (e) {
+    status.textContent = '';
+    alert('Lỗi nhập Excel: ' + e.message);
+    input.value = '';
+  }
+}
+
 async function bulkConfirmImport() {
   const rows = window._bulkParsed || [];
   const valid = rows.filter(r => !r.errors.length);
