@@ -752,7 +752,8 @@ function openBulkImport() {
                 const cb = c.required
                   ? `<input type="checkbox" data-col-include="${ci}" checked disabled title="Cột bắt buộc — không thể bỏ qua" class="w-4 h-4 opacity-60 cursor-not-allowed" />`
                   : `<input type="checkbox" data-col-include="${ci}" checked onchange="bulkToggleColInclude(${ci}, this.checked)" title="Bỏ tick để bỏ qua cột này" class="w-4 h-4" />`;
-                return `<th class="bg-purple-100 border border-slate-300 px-2 py-1.5 text-left text-brand-700 font-semibold whitespace-nowrap sticky top-0 z-20" style="min-width:${BULK_COL_WIDTH[c.key]}px">
+                const thStick = ci === 0 ? 'sticky top-0 left-10 z-20' : 'sticky top-0 z-20';
+                return `<th class="bg-purple-100 border border-slate-300 px-2 py-1.5 text-left text-brand-700 font-semibold whitespace-nowrap ${thStick}" style="min-width:${BULK_COL_WIDTH[c.key]}px">
                   <label class="flex items-center gap-1.5 ${c.required ? '' : 'cursor-pointer'} select-none">
                     ${cb}
                     <span data-col-label="${ci}">${c.label}</span>
@@ -785,14 +786,19 @@ function bulkRowHtml(idx) {
   return `<tr data-row="${idx}">
     <td class="bg-slate-50 border border-slate-300 px-1 text-center text-slate-500 text-[11px] sticky left-0 z-10 align-top pt-2">${idx + 1}</td>
     ${BULK_COLUMNS.map((c, ci) => {
+      // Cột đầu (Tên) sticky ngay sau # để luôn nhìn thấy khi cuộn ngang.
+      const isNameCol = ci === 0;
+      const tdCls = isNameCol
+        ? 'border border-slate-200 p-0 align-top sticky left-10 z-10 bg-white'
+        : 'border border-slate-200 p-0 align-top';
       if (c.multiline) {
-        return `<td class="border border-slate-200 p-0 align-top">
+        return `<td class="${tdCls}">
           <textarea data-col="${ci}" data-key="${c.key}" rows="2"
             class="w-full px-2 py-1.5 outline-none focus:bg-yellow-50 focus:ring-2 focus:ring-inset focus:ring-brand-400 resize-y text-xs leading-snug"
             style="min-height:2.4rem"></textarea>
         </td>`;
       }
-      return `<td class="border border-slate-200 p-0 align-top">
+      return `<td class="${tdCls}">
         <input type="text" data-col="${ci}" data-key="${c.key}"
           class="w-full px-2 py-1.5 outline-none focus:bg-yellow-50 focus:ring-2 focus:ring-inset focus:ring-brand-400" />
       </td>`;
@@ -1245,7 +1251,8 @@ function openBulkEdit() {
                 const cb = c.required
                   ? `<input type="checkbox" data-col-include="${ci}" checked disabled title="Cột bắt buộc" class="w-4 h-4 opacity-60 cursor-not-allowed" />`
                   : `<input type="checkbox" data-col-include="${ci}" checked onchange="bulkToggleColInclude(${ci}, this.checked)" title="Bỏ tick để giữ nguyên cột này" class="w-4 h-4" />`;
-                return `<th class="bg-amber-100 border border-slate-300 px-2 py-1.5 text-left text-amber-800 font-semibold whitespace-nowrap sticky top-0 z-20" style="min-width:${BULK_COL_WIDTH[c.key]}px">
+                const thStick = ci === 0 ? 'sticky top-0 left-10 z-20' : 'sticky top-0 z-20';
+                return `<th class="bg-amber-100 border border-slate-300 px-2 py-1.5 text-left text-amber-800 font-semibold whitespace-nowrap ${thStick}" style="min-width:${BULK_COL_WIDTH[c.key]}px">
                   <label class="flex items-center gap-1.5 ${c.required ? '' : 'cursor-pointer'} select-none">
                     ${cb}<span data-col-label="${ci}">${c.label}</span>
                   </label>
