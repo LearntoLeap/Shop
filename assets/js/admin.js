@@ -1192,6 +1192,122 @@ function bulkPreview() {
   window._bulkParsed = rows;
 }
 
+// ---------- BULK IMAGE UPLOAD (nhiều ảnh cùng lúc → trả URL để dán Excel) ----------
+async function bulkUploadImages(input) {
+  const files = Array.from(input.files || []).filter(f => f.type.startsWith('image/'));
+  if (!files.length) return;
+
+  // Open modal — reuse editor modal for display
+  const box = document.getElementById('editorBox');
+  if (box) { box.classList.remove('max-w-3xl'); box.classList.add('max-w-4xl'); }
+
+  const rows = files.map((f, i) => ({
+    idx: i,
+    file: f,
+    name: f.name,
+    size: (f.size / 1024).toFixed(0) + ' KB',
+    url: null,
+    error: null,
+    status: 'pending'
+  }));
+
+  const renderTable = () => {
+    const done = rows.filter(r => r.status === 'done').length;
+    const failed = rows.filter(r => r.status === 'error').length;
+    document.getElementById('editorContent').innerHTML = `
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-bold">🖼 Upload ${files.length} ảnh — ${done}/${files.length} xong${failed ? `, ${failed} lỗi` : ''}</h2>
+          <button onclick="closeEditor()" class="text-2xl text-slate-400 hover:text-slate-700">&times;</button>
+        </div>
+        <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 mb-3 text-xs text-blue-900">
+          💡 Sau khi upload xong, bấm <b>Copy tất cả URL</b> hoặc copy từng URL → dán vào cột <b>"Ảnh (URL, phẩy)"</b> trong Excel.
+          Nhiều ảnh cho 1 SP: tách bằng dấu phẩy trong cùng ô Excel.
+        </div>
+        <div class="border border-slate-200 rounded-lg max-h-[60vh] overflow-auto">
+          <table class="w-full text-xs">
+            <thead class="bg-slate-100 sticky top-0">
+              <tr>
+                <th class="px-2 py-1.5 text-left w-8">#</th>
+                <th class="px-2 py-1.5 text-left">Tên file</th>
+                <th class="px-2 py-1.5 text-left w-20">Cỡ</th>
+                <th class="px-2 py-1.5 text-left">URL / trạng thái</th>
+                <th class="px-2 py-1.5 w-16"></th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows.map(r => `
+                <tr class="border-t border-slate-100 ${r.status === 'error' ? 'bg-red-50' : (r.status === 'done' ? 'bg-emerald-50' : '')}">
+                  <td class="px-2 py-1.5 text-slate-500">${r.idx + 1}</td>
+                  <td class="px-2 py-1.5 font-medium truncate max-w-xs">${r.name}</td>
+                  <td class="px-2 py-1.5">${r.size}</td>
+                  <td class="px-2 py-1.5">
+                    ${r.status === 'pending' ? '<span class="text-slate-400">⏳ đang chờ...</span>' : ''}
+                    ${r.status === 'uploading' ? '<span class="text-blue-600">📤 uploading...</span>' : ''}
+                    ${r.status === 'done' ? `<input type="text" readonly value="${r.url}" onclick="this.select()" class="w-full px-2 py-0.5 text-[11px] bg-white border rounded font-mono" />` : ''}
+                    ${r.status === 'error' ? `<span class="text-red-600">✗ ${r.error}</span>` : ''}
+                  </td>
+                  <td class="px-2 py-1.5">
+                    ${r.status === 'done' ? `<button onclick="bulkCopyLink(this, '${r.url.replace(/'/g, "\\'")}')" class="text-xs bg-brand-100 hover:bg-brand-200 text-brand-700 px-2 py-1 rounded">📋</button>` : ''}
+                  </td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+        <div class="flex gap-2 mt-3">
+          ${done > 0 ? `
+            <button onclick="bulkCopyAllUploadedUrls()" class="flex-1 bg-brand-600 hover:bg-brand-700 text-white font-semibold py-2 rounded">📋 Copy tất cả URL (${done})</button>
+            <button onclick="bulkCopyAllUploadedUrls('csv')" class="bg-slate-600 hover:bg-slate-700 text-white font-semibold px-4 py-2 rounded">📋 Copy CSV (phẩy)</button>
+          ` : ''}
+          <button onclick="closeEditor()" class="px-6 py-2 border rounded font-semibold">Đóng</button>
+        </div>
+      </div>
+    `;
+  };
+
+  openEditor();
+  window._uploadedRows = rows;
+  renderTable();
+
+  // Upload tuần tự (tránh rate-limit GitHub API)
+  for (const r of rows) {
+    r.status = 'uploading';
+    renderTable();
+    try {
+      if (r.file.size > 1024 * 1024) throw new Error('>1MB');
+      const b64 = await new Promise((res, rej) => {
+        const rd = new FileReader();
+        rd.onload = () => res(rd.result.split(',')[1]);
+        rd.onerror = rej;
+        rd.readAsDataURL(r.file);
+      });
+      const baseName = r.file.name.replace(/\.[^.]+$/, '');
+      const ext = (r.file.type.split('/')[1] || 'png').toLowerCase().replace('jpeg', 'jpg');
+      const path = `images/${Date.now()}-${slugify(baseName) || 'img'}.${ext}`;
+      const res = await ghPut(path, b64, null, 'Bulk upload ảnh: ' + r.file.name);
+      r.url = res.content.download_url;
+      r.status = 'done';
+    } catch (e) {
+      r.status = 'error';
+      r.error = e.message;
+    }
+    renderTable();
+  }
+
+  input.value = '';
+}
+
+function bulkCopyAllUploadedUrls(format) {
+  const rows = window._uploadedRows || [];
+  const urls = rows.filter(r => r.status === 'done').map(r => r.url);
+  if (!urls.length) return;
+  const text = format === 'csv' ? urls.join(', ') : urls.join('\n');
+  navigator.clipboard.writeText(text).then(() => {
+    alert(`✓ Đã copy ${urls.length} URL (${format === 'csv' ? 'phân cách phẩy — dán vào 1 ô Excel' : 'mỗi URL 1 dòng — dán vào cột'})`);
+  }).catch(() => prompt('Copy thủ công:', text));
+}
+
 // ---------- EXCEL EXPORT / IMPORT (SheetJS) ----------
 async function ensureSheetJS() {
   if (window.XLSX) return window.XLSX;
