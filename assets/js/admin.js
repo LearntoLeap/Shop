@@ -532,15 +532,20 @@ function renderProductEditor(isNew) {
         <div>
           <label class="text-xs font-semibold">Hình ảnh</label>
           <div class="space-y-1 mt-1">${imgList || '<div class="text-xs text-slate-400">Chưa có ảnh</div>'}</div>
+          <div id="pasteDrop" tabindex="0"
+               class="mt-2 border-2 border-dashed border-brand-300 rounded-lg p-3 text-center text-sm text-brand-700 bg-brand-50/50 hover:bg-brand-50 focus:outline-none focus:ring-2 focus:ring-brand-400 cursor-pointer">
+            📋 <b>Click vào đây</b> rồi <kbd class="bg-white border px-1 rounded text-xs">Ctrl+V</kbd> để paste ảnh từ clipboard
+            <div id="pasteDropInfo" class="text-[11px] text-slate-500 mt-0.5">Hoặc kéo–thả file ảnh vào đây</div>
+          </div>
           <div class="flex gap-2 mt-2">
             <input id="newImgUrl" type="text" placeholder="Dán URL ảnh..." class="flex-1 px-3 py-1.5 border rounded text-sm" />
             <button onclick="addImageUrl()" class="bg-slate-700 text-white px-3 py-1.5 rounded text-sm">+ URL</button>
             <label class="bg-blue-600 text-white px-3 py-1.5 rounded text-sm cursor-pointer hover:bg-blue-700">
-              📤 Upload
+              📤 Chọn file
               <input type="file" accept="image/*" class="hidden" onchange="uploadImage(this)" />
             </label>
           </div>
-          <p class="text-[11px] text-slate-500 mt-1">Upload sẽ commit ảnh vào repo (thư mục /images). Ảnh &lt; 1MB.</p>
+          <p class="text-[11px] text-slate-500 mt-1">Ảnh sẽ commit vào repo (thư mục /images). Kích thước ≤ 1MB. Có thể paste (Ctrl+V), upload file, hoặc dán URL.</p>
         </div>
         <label class="flex items-center gap-2"><input type="checkbox" ${p.featured ? 'checked' : ''} onchange="STATE.editing.featured=this.checked" /> Sản phẩm nổi bật ⭐</label>
       </div>
@@ -551,6 +556,30 @@ function renderProductEditor(isNew) {
     </div>
   `;
   openEditor();
+  attachEditorPasteHandlers();
+}
+
+function attachEditorPasteHandlers() {
+  // Paste ảnh ở bất kỳ đâu trong modal editor
+  const modal = document.getElementById('editor');
+  if (modal && !modal._pasteBound) {
+    modal.addEventListener('paste', editorPasteHandler);
+    modal._pasteBound = true;
+  }
+  // Drag & drop file ảnh vào vùng pasteDrop
+  const drop = document.getElementById('pasteDrop');
+  if (drop) {
+    drop.addEventListener('dragover', e => { e.preventDefault(); drop.classList.add('bg-brand-100'); });
+    drop.addEventListener('dragleave', () => drop.classList.remove('bg-brand-100'));
+    drop.addEventListener('drop', e => {
+      e.preventDefault();
+      drop.classList.remove('bg-brand-100');
+      const files = Array.from(e.dataTransfer.files || []).filter(f => f.type.startsWith('image/'));
+      for (const f of files) uploadImageFile(f);
+    });
+    // Đảm bảo focus khi click để Ctrl+V có target
+    drop.addEventListener('click', () => drop.focus());
+  }
 }
 
 function togglePriceFields(enabled) {
@@ -574,8 +603,15 @@ function removeImage(i) {
 async function uploadImage(input) {
   const file = input.files[0];
   if (!file) return;
-  if (file.size > 1024 * 1024) { alert('Ảnh quá lớn (>1MB).'); return; }
+  await uploadImageFile(file);
+}
+
+async function uploadImageFile(file, sourceLabel) {
+  if (!file) return;
+  if (file.size > 1024 * 1024) { alert('Ảnh quá lớn (>1MB). Resize trước.'); return; }
   const status = document.getElementById('saveStatus');
+  const dropInfo = document.getElementById('pasteDropInfo');
+  if (dropInfo) dropInfo.textContent = '📤 Đang upload...';
   status.textContent = '📤 Đang upload ảnh...';
   try {
     const b64 = await new Promise((res, rej) => {
@@ -584,17 +620,38 @@ async function uploadImage(input) {
       r.onerror = rej;
       r.readAsDataURL(file);
     });
-    const ext = file.name.split('.').pop().toLowerCase();
-    const path = `images/${Date.now()}-${slugify(file.name.replace(/\.[^.]+$/, ''))}.${ext}`;
-    const res = await ghPut(path, b64, null, 'Upload ảnh: ' + file.name);
+    const baseName = file.name ? file.name.replace(/\.[^.]+$/, '') : (sourceLabel || 'clipboard');
+    const ext = (file.type.split('/')[1] || 'png').toLowerCase().replace('jpeg', 'jpg');
+    const path = `images/${Date.now()}-${slugify(baseName) || 'img'}.${ext}`;
+    const res = await ghPut(path, b64, null, 'Upload ảnh: ' + (file.name || sourceLabel || 'clipboard'));
     const url = res.content.download_url;
     STATE.editing.images = STATE.editing.images || [];
     STATE.editing.images.push(url);
-    status.textContent = '✓ Đã upload';
+    status.textContent = '✓ Đã upload ảnh';
+    setTimeout(() => status.textContent = '', 2500);
     renderProductEditor(!STATE.data.products.find(p => p.id === STATE.editing.id));
   } catch (e) {
     alert('Lỗi upload: ' + e.message);
     status.textContent = '';
+  }
+}
+
+// Bắt Ctrl+V ảnh clipboard trong editor sản phẩm (single product)
+function editorPasteHandler(e) {
+  if (!STATE.editing || !STATE.editing.hasOwnProperty('images')) return;
+  const cb = e.clipboardData || window.clipboardData;
+  if (!cb) return;
+  // Nếu đang paste text vào 1 ô input/textarea thì bỏ qua (chỉ intercept khi có ảnh)
+  const items = cb.items || [];
+  for (const it of items) {
+    if (it.kind === 'file' && it.type && it.type.startsWith('image/')) {
+      const file = it.getAsFile();
+      if (file) {
+        e.preventDefault();
+        uploadImageFile(file, 'clipboard-paste');
+        return;
+      }
+    }
   }
 }
 
