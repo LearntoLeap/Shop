@@ -1,5 +1,5 @@
 // Learn to Leap Shop — Storefront logic
-const STATE = { data: null, filter: 'all', search: '' };
+const STATE = { data: null, filter: 'all', search: '', page: 1, pageSize: 24 };
 
 const fmtVND = (n) => new Intl.NumberFormat('vi-VN').format(n) + 'đ';
 const slugify = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -81,11 +81,49 @@ function updateTreeActive() {
 
 function filterBy(catId) {
   STATE.filter = catId;
+  STATE.page = 1;
   updateTreeActive();
   const cat = STATE.data.categories.find(c => c.id === catId);
   document.getElementById('catTitle').textContent = cat ? `${cat.icon || ''} ${cat.name}` : 'Tất cả sản phẩm';
   renderProducts();
   document.getElementById('products').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function gotoPage(n) {
+  STATE.page = n;
+  renderProducts();
+  document.getElementById('products').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function renderPagination(totalPages) {
+  const el = document.getElementById('pagination');
+  if (!el) return;
+  if (totalPages <= 1) { el.innerHTML = ''; return; }
+  const cur = STATE.page;
+  const btn = (label, n, opts = {}) => {
+    const disabled = opts.disabled || n === cur;
+    const active = n === cur && !opts.plain;
+    const cls = active
+      ? 'bg-brand-600 text-white border-brand-600 font-bold'
+      : disabled
+        ? 'bg-slate-50 text-slate-400 border-slate-200 cursor-not-allowed'
+        : 'bg-white text-slate-700 border-slate-300 hover:border-brand-500 hover:text-brand-700';
+    const onclick = disabled ? '' : `onclick="gotoPage(${n})"`;
+    return `<button ${onclick} class="min-w-[40px] px-3 py-1.5 rounded-lg border text-sm ${cls}">${label}</button>`;
+  };
+  // Build list: 1 ... cur-1 cur cur+1 ... last
+  const pages = new Set([1, totalPages, cur, cur - 1, cur + 1]);
+  const list = Array.from(pages).filter(n => n >= 1 && n <= totalPages).sort((a, b) => a - b);
+  let html = btn('‹', cur - 1, { disabled: cur === 1, plain: true });
+  let prev = 0;
+  for (const n of list) {
+    if (prev && n - prev > 1) html += `<span class="px-1 text-slate-400">…</span>`;
+    html += btn(String(n), n);
+    prev = n;
+  }
+  html += btn('›', cur + 1, { disabled: cur === totalPages, plain: true });
+  html += `<span class="ml-3 text-xs text-slate-500">Trang ${cur}/${totalPages}</span>`;
+  el.innerHTML = html;
 }
 
 function productCard(p) {
@@ -139,14 +177,24 @@ function renderProducts() {
     );
   }
   document.getElementById('productCount').textContent = list.length;
+
+  // Pagination
+  const totalPages = Math.max(1, Math.ceil(list.length / STATE.pageSize));
+  if (STATE.page > totalPages) STATE.page = totalPages;
+  if (STATE.page < 1) STATE.page = 1;
+  const start = (STATE.page - 1) * STATE.pageSize;
+  const paged = list.slice(start, start + STATE.pageSize);
+
   const grid = document.getElementById('productGrid');
   const empty = document.getElementById('emptyState');
   if (list.length === 0) { grid.innerHTML = ''; empty.classList.remove('hidden'); }
-  else { empty.classList.add('hidden'); grid.innerHTML = list.map(productCard).join(''); }
+  else { empty.classList.add('hidden'); grid.innerHTML = paged.map(productCard).join(''); }
+  renderPagination(totalPages);
 }
 
 document.getElementById('searchInput')?.addEventListener('input', (e) => {
   STATE.search = e.target.value;
+  STATE.page = 1;
   renderProducts();
 });
 
