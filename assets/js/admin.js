@@ -745,21 +745,21 @@ function openBulkImport() {
 
       <div id="bulkGridWrap" class="overflow-auto border border-slate-300 rounded-lg max-h-[70vh] bg-white">
         <table class="border-collapse text-xs w-max">
-          <thead class="bg-purple-100 sticky top-0 z-10">
+          <thead>
             <tr>
-              <th class="bg-slate-200 border border-slate-300 px-1 py-1.5 w-10 text-slate-600 sticky left-0 z-20">#</th>
+              <th class="bg-slate-200 border border-slate-300 px-1 py-1.5 w-10 text-slate-600 sticky top-0 left-0 z-30">#</th>
               ${BULK_COLUMNS.map((c, ci) => {
                 const cb = c.required
                   ? `<input type="checkbox" data-col-include="${ci}" checked disabled title="Cột bắt buộc — không thể bỏ qua" class="w-4 h-4 opacity-60 cursor-not-allowed" />`
                   : `<input type="checkbox" data-col-include="${ci}" checked onchange="bulkToggleColInclude(${ci}, this.checked)" title="Bỏ tick để bỏ qua cột này" class="w-4 h-4" />`;
-                return `<th class="border border-slate-300 px-2 py-1.5 text-left text-brand-700 font-semibold whitespace-nowrap" style="min-width:${BULK_COL_WIDTH[c.key]}px">
+                return `<th class="bg-purple-100 border border-slate-300 px-2 py-1.5 text-left text-brand-700 font-semibold whitespace-nowrap sticky top-0 z-20" style="min-width:${BULK_COL_WIDTH[c.key]}px">
                   <label class="flex items-center gap-1.5 ${c.required ? '' : 'cursor-pointer'} select-none">
                     ${cb}
                     <span data-col-label="${ci}">${c.label}</span>
                   </label>
                 </th>`;
               }).join('')}
-              <th class="border border-slate-300 px-1 w-8"></th>
+              <th class="bg-purple-100 border border-slate-300 px-1 w-8 sticky top-0 z-20"></th>
             </tr>
           </thead>
           <tbody id="bulkGridBody"></tbody>
@@ -783,7 +783,7 @@ function openBulkImport() {
 
 function bulkRowHtml(idx) {
   return `<tr data-row="${idx}">
-    <td class="bg-slate-50 border border-slate-300 px-1 text-center text-slate-500 text-[11px] sticky left-0 align-top pt-2">${idx + 1}</td>
+    <td class="bg-slate-50 border border-slate-300 px-1 text-center text-slate-500 text-[11px] sticky left-0 z-10 align-top pt-2">${idx + 1}</td>
     ${BULK_COLUMNS.map((c, ci) => {
       if (c.multiline) {
         return `<td class="border border-slate-200 p-0 align-top">
@@ -1238,21 +1238,21 @@ function openBulkEdit() {
 
       <div id="bulkGridWrap" class="overflow-auto border border-slate-300 rounded-lg max-h-[70vh] bg-white">
         <table class="border-collapse text-xs w-max">
-          <thead class="bg-amber-100 sticky top-0 z-10">
+          <thead>
             <tr>
-              <th class="bg-slate-200 border border-slate-300 px-1 py-1.5 w-10 text-slate-600 sticky left-0 z-20">#</th>
+              <th class="bg-slate-200 border border-slate-300 px-1 py-1.5 w-10 text-slate-600 sticky top-0 left-0 z-30">#</th>
               ${BULK_COLUMNS.map((c, ci) => {
                 const cb = c.required
                   ? `<input type="checkbox" data-col-include="${ci}" checked disabled title="Cột bắt buộc" class="w-4 h-4 opacity-60 cursor-not-allowed" />`
                   : `<input type="checkbox" data-col-include="${ci}" checked onchange="bulkToggleColInclude(${ci}, this.checked)" title="Bỏ tick để giữ nguyên cột này" class="w-4 h-4" />`;
-                return `<th class="border border-slate-300 px-2 py-1.5 text-left text-amber-800 font-semibold whitespace-nowrap" style="min-width:${BULK_COL_WIDTH[c.key]}px">
+                return `<th class="bg-amber-100 border border-slate-300 px-2 py-1.5 text-left text-amber-800 font-semibold whitespace-nowrap sticky top-0 z-20" style="min-width:${BULK_COL_WIDTH[c.key]}px">
                   <label class="flex items-center gap-1.5 ${c.required ? '' : 'cursor-pointer'} select-none">
                     ${cb}<span data-col-label="${ci}">${c.label}</span>
                   </label>
                 </th>`;
               }).join('')}
-              <th class="border border-slate-300 px-2 py-1.5 text-left text-brand-700 font-semibold whitespace-nowrap" style="min-width:320px">🔗 Link sản phẩm</th>
-              <th class="border border-slate-300 px-1 w-8"></th>
+              <th class="bg-amber-100 border border-slate-300 px-2 py-1.5 text-left text-brand-700 font-semibold whitespace-nowrap sticky top-0 z-20" style="min-width:320px">🔗 Link sản phẩm</th>
+              <th class="bg-amber-100 border border-slate-300 px-1 w-8 sticky top-0 z-20"></th>
             </tr>
           </thead>
           <tbody id="bulkGridBody"></tbody>
