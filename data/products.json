@@ -40,7 +40,7 @@
   "products": [
     {
       "id": "pmsn2sza41piq",
-      "name": "Loa MIC đa hướng có lọc nhiễu - dành để thu âm bài giảng ",
+      "name": "Loa MIC đa hướng có lọc nhiễu - dành để thu âm bài giảng",
       "slug": "loa-mic-da-huong-co-loc-nhieu-danh-de-thu-am-bai-giang",
       "sku": "Jabra 510",
       "category": "robotics-ai",
@@ -2842,7 +2842,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116x6zb",
@@ -2860,7 +2865,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116g70q",
@@ -2878,7 +2888,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle1162576",
@@ -2896,7 +2911,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116mzr0",
@@ -2914,7 +2934,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116hnvo",
@@ -2932,7 +2957,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116c4iv",
@@ -2950,7 +2980,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116jku0",
@@ -2968,7 +3003,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116jdbk",
@@ -2986,7 +3026,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116lt2k",
@@ -3004,7 +3049,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116op1d",
@@ -3022,7 +3072,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116mq4n",
@@ -3040,7 +3095,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116frr0",
@@ -3058,7 +3118,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116684p",
@@ -3076,7 +3141,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116vmvj",
@@ -3094,7 +3164,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116i9vl",
@@ -3112,7 +3187,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle1167rbl",
@@ -3130,7 +3210,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle1167rmx",
@@ -3148,7 +3233,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116zpry",
@@ -3166,7 +3256,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116juqn",
@@ -3184,7 +3279,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116tceh",
@@ -3202,7 +3302,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116qnk3",
@@ -3220,7 +3325,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116a8us",
@@ -3238,7 +3348,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle1160g6c",
@@ -3256,7 +3371,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle116pqml",
@@ -3274,7 +3394,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115ve1r",
@@ -3292,7 +3417,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115brgz",
@@ -3310,7 +3440,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115vd3k",
@@ -3328,7 +3463,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115xfhf",
@@ -3346,7 +3486,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle1151g5y",
@@ -3364,7 +3509,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115zoh0",
@@ -3382,7 +3532,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115kufx",
@@ -3400,7 +3555,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115589q",
@@ -3418,7 +3578,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115zlfo",
@@ -3436,7 +3601,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle11522sy",
@@ -3454,7 +3624,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115qi43",
@@ -3472,7 +3647,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115pcum",
@@ -3490,7 +3670,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115jpgh",
@@ -3508,7 +3693,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115wzn0",
@@ -3526,7 +3716,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115mk44",
@@ -3544,7 +3739,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115nj49",
@@ -3562,7 +3762,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle11585cv",
@@ -3580,7 +3785,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115qnrn",
@@ -3598,7 +3808,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115siqc",
@@ -3616,7 +3831,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115el13",
@@ -3634,7 +3854,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115vos0",
@@ -3652,7 +3877,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115mi69",
@@ -3670,7 +3900,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle11507s5",
@@ -3688,7 +3923,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115rcya",
@@ -3706,7 +3946,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115wagp",
@@ -3724,7 +3969,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115l9uo",
@@ -3742,7 +3992,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle1159h4h",
@@ -3760,7 +4015,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115n1qp",
@@ -3778,7 +4038,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle115l8ex",
@@ -3796,7 +4061,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle114cqgh",
@@ -3814,7 +4084,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle114wjxz",
@@ -3832,7 +4107,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmle1146y7n",
@@ -3850,7 +4130,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mi93hg",
@@ -3868,7 +4153,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mik5gz",
@@ -3886,7 +4176,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mi9miq",
@@ -3904,7 +4199,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mi5k1s",
@@ -3922,7 +4222,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mi0plo",
@@ -3940,7 +4245,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mi0f6i",
@@ -3958,7 +4268,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98miotvj",
@@ -3976,7 +4291,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98milxuu",
@@ -3994,7 +4314,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98miktwm",
@@ -4012,7 +4337,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98miurui",
@@ -4030,7 +4360,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mi2hne",
@@ -4048,7 +4383,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mieojr",
@@ -4066,7 +4406,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98minko5",
@@ -4084,7 +4429,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mim1rl",
@@ -4102,7 +4452,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mi1g6y",
@@ -4120,7 +4475,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mil1lz",
@@ -4138,7 +4498,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98miv2ye",
@@ -4156,7 +4521,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mifpnp",
@@ -4174,7 +4544,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98miwnxk",
@@ -4192,7 +4567,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mimvkv",
@@ -4210,7 +4590,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mixdld",
@@ -4228,7 +4613,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98miwah1",
@@ -4246,7 +4636,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhwwm9",
@@ -4264,7 +4659,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhq7py",
@@ -4282,7 +4682,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhavdu",
@@ -4300,7 +4705,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhjos3",
@@ -4318,7 +4728,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mheymk",
@@ -4336,7 +4751,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhjmsw",
@@ -4354,7 +4774,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhwk1q",
@@ -4372,7 +4797,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhhecc",
@@ -4390,7 +4820,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhitks",
@@ -4408,7 +4843,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhxoor",
@@ -4426,7 +4866,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhhebw",
@@ -4444,7 +4889,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhtln5",
@@ -4462,7 +4912,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mh2c52",
@@ -4480,7 +4935,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhw0ub",
@@ -4498,7 +4958,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhsh29",
@@ -4516,7 +4981,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhozkf",
@@ -4534,7 +5004,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhwvqv",
@@ -4552,7 +5027,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mh3ugs",
@@ -4570,7 +5050,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhbhlc",
@@ -4588,7 +5073,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhe6mr",
@@ -4606,7 +5096,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhk5hp",
@@ -4624,7 +5119,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhsehz",
@@ -4642,7 +5142,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhe0c0",
@@ -4660,7 +5165,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mhv8g0",
@@ -4678,7 +5188,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mgspff",
@@ -4696,7 +5211,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mg7fpv",
@@ -4714,7 +5234,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mgnel3",
@@ -4732,7 +5257,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mg2dus",
@@ -4750,7 +5280,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mgmtf0",
@@ -4768,7 +5303,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mgkvtv",
@@ -4786,7 +5326,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mgu17m",
@@ -4804,7 +5349,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mgihyj",
@@ -4822,7 +5372,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mg20hj",
@@ -4840,7 +5395,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mg9quh",
@@ -4858,7 +5418,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mgrsgr",
@@ -4876,7 +5441,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mgnm3q",
@@ -4894,7 +5464,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mgu4hb",
@@ -4912,7 +5487,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mg6ovl",
@@ -4930,7 +5510,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mg5vlb",
@@ -4948,7 +5533,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mg8kve",
@@ -4966,7 +5556,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mgsktx",
@@ -4984,7 +5579,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mgqxfc",
@@ -5002,7 +5602,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mgj3wm",
@@ -5020,7 +5625,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mg6i84",
@@ -5038,7 +5648,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mgmg2k",
@@ -5056,7 +5671,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mg2wxj",
@@ -5074,7 +5694,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mgp9uy",
@@ -5092,7 +5717,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mg0m6u",
@@ -5110,7 +5740,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mftgpa",
@@ -5128,7 +5763,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mfr7b0",
@@ -5146,7 +5786,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mf54ay",
@@ -5164,7 +5809,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mft13h",
@@ -5182,7 +5832,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mfnb82",
@@ -5200,7 +5855,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mfnh0l",
@@ -5218,7 +5878,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mf7rjf",
@@ -5236,7 +5901,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mf3oo2",
@@ -5254,7 +5924,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mf4vfq",
@@ -5272,7 +5947,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mfsbad",
@@ -5290,7 +5970,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mf9imm",
@@ -5308,7 +5993,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mf09je",
@@ -5326,7 +6016,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mfb57x",
@@ -5344,7 +6039,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mfhgg4",
@@ -5362,7 +6062,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mfp793",
@@ -5380,7 +6085,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mfsbxs",
@@ -5398,7 +6108,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mf3nki",
@@ -5416,7 +6131,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mef9kp",
@@ -5434,7 +6154,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mec7m8",
@@ -5452,7 +6177,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mexgez",
@@ -5470,7 +6200,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98meraid",
@@ -5488,7 +6223,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98met7fl",
@@ -5506,7 +6246,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98me76gh",
@@ -5524,7 +6269,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98meua7l",
@@ -5542,7 +6292,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98me2zrj",
@@ -5560,7 +6315,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mekcsi",
@@ -5578,7 +6338,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98meu99x",
@@ -5596,7 +6361,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98meczjv",
@@ -5614,7 +6384,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mdncsn",
@@ -5632,7 +6407,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mdq7ic",
@@ -5650,7 +6430,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98md5ep6",
@@ -5668,7 +6453,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mdebi6",
@@ -5686,7 +6476,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mdq0wp",
@@ -5704,7 +6499,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mdb1nx",
@@ -5722,7 +6522,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mduf83",
@@ -5740,7 +6545,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98md38u5",
@@ -5758,7 +6568,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mdsy37",
@@ -5776,7 +6591,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mdbuaq",
@@ -5794,7 +6614,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mdzklr",
@@ -5812,7 +6637,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mdf0pd",
@@ -5830,7 +6660,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mdzm3i",
@@ -5848,7 +6683,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsml98mcxtxj",
@@ -5866,7 +6706,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zp5hu",
@@ -5884,7 +6729,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19ztpvk",
@@ -5902,7 +6752,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zg75d",
@@ -5920,7 +6775,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zrepa",
@@ -5938,7 +6798,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zrku6",
@@ -5956,7 +6821,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zkabk",
@@ -5974,7 +6844,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19z8nb5",
@@ -5992,7 +6867,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19z3w0z",
@@ -6010,7 +6890,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zdbpu",
@@ -6028,7 +6913,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zttg9",
@@ -6046,7 +6936,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19z9yg6",
@@ -6064,7 +6959,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zqwms",
@@ -6082,7 +6982,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zltld",
@@ -6100,7 +7005,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19ztw17",
@@ -6118,7 +7028,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zy5cj",
@@ -6136,7 +7051,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zju74",
@@ -6154,7 +7074,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19z19zt",
@@ -6172,7 +7097,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zo2s3",
@@ -6190,7 +7120,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19z53yx",
@@ -6208,7 +7143,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zsslt",
@@ -6226,7 +7166,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zvieh",
@@ -6244,7 +7189,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19zzjot",
@@ -6262,7 +7212,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19y5vob",
@@ -6280,7 +7235,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19y6zu5",
@@ -6298,7 +7258,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19yt7lh",
@@ -6316,7 +7281,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19yepbf",
@@ -6334,7 +7304,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19ywl6s",
@@ -6352,7 +7327,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19ygg8x",
@@ -6370,7 +7350,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19y03ic",
@@ -6388,7 +7373,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19ychpc",
@@ -6406,7 +7396,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19yzvp7",
@@ -6424,7 +7419,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19yev9m",
@@ -6442,7 +7442,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19y8a8p",
@@ -6460,7 +7465,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19yfc0t",
@@ -6478,7 +7488,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19ypjoo",
@@ -6496,7 +7511,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19ygne5",
@@ -6514,7 +7534,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19ynntf",
@@ -6532,7 +7557,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19y3hgj",
@@ -6550,7 +7580,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19y9sfh",
@@ -6568,7 +7603,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19ydjs7",
@@ -6586,7 +7626,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19y9msy",
@@ -6604,7 +7649,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19yov1r",
@@ -6622,7 +7672,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19yej8t",
@@ -6640,7 +7695,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19y7wdv",
@@ -6658,7 +7718,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19yh9on",
@@ -6676,7 +7741,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19yurgf",
@@ -6694,7 +7764,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19ygs5k",
@@ -6712,7 +7787,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19xgz2y",
@@ -6730,7 +7810,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19xuw4o",
@@ -6748,7 +7833,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19xoh3a",
@@ -6766,7 +7856,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19x5llr",
@@ -6784,7 +7879,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19xhke5",
@@ -6802,7 +7902,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19xxsd2",
@@ -6820,7 +7925,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19xvo1u",
@@ -6838,7 +7948,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsmkx19x3uq3",
@@ -6856,7 +7971,12 @@
       "tags": [],
       "images": [],
       "featured": false,
-      "createdAt": "2026-08-10"
+      "createdAt": "2026-08-10",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "",
+      "origin": ""
     },
     {
       "id": "pmsjvf544cqic",
@@ -6876,7 +7996,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544kf75",
@@ -6896,7 +8019,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544r43p",
@@ -6916,7 +8042,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf5440tsu",
@@ -6936,7 +8065,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544ienw",
@@ -6956,7 +8088,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544zsly",
@@ -6976,7 +8111,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544qc8h",
@@ -6996,7 +8134,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf5442a0b",
@@ -7016,7 +8157,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544yqzu",
@@ -7036,7 +8180,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf5440fxj",
@@ -7056,7 +8203,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544cnak",
@@ -7076,7 +8226,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544i189",
@@ -7096,7 +8249,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf54443sz",
@@ -7116,7 +8272,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf54457cd",
@@ -7136,7 +8295,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544vziq",
@@ -7156,7 +8318,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544zg27",
@@ -7176,7 +8341,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544eae2",
@@ -7196,7 +8364,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf5445olf",
@@ -7216,7 +8387,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
-      "origin": "EU/Ba Lan"
+      "origin": "EU/Ba Lan",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544n77l",
@@ -7236,7 +8410,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf5443f8t",
@@ -7256,7 +8433,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544612x",
@@ -7276,7 +8456,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544qkpn",
@@ -7296,7 +8479,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544zj4m",
@@ -7316,7 +8502,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544xxwp",
@@ -7336,7 +8525,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544n0il",
@@ -7356,7 +8548,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544e67q",
@@ -7376,7 +8571,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf544roeo",
@@ -7396,7 +8594,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf5433ob1",
@@ -7416,7 +8617,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543639b",
@@ -7436,7 +8640,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf5431nf7",
@@ -7456,7 +8663,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543d809",
@@ -7476,7 +8686,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543bi9g",
@@ -7496,7 +8709,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543rkjg",
@@ -7516,7 +8732,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543jb7a",
@@ -7536,7 +8755,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf5430jv8",
@@ -7556,7 +8778,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543k28c",
@@ -7576,7 +8801,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543b6f6",
@@ -7596,7 +8824,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf5434bhw",
@@ -7616,7 +8847,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543pt77",
@@ -7636,7 +8870,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543ywjz",
@@ -7656,7 +8893,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "TOUZHUTECHNOLOGY LIMITED",
-      "origin": "Trung Quốc"
+      "origin": "Trung Quốc",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543zajv",
@@ -7676,7 +8916,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "Ohstem",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543mbjw",
@@ -7696,7 +8939,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "Stick 'Em",
-      "origin": "Singapore"
+      "origin": "Singapore",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543wcyn",
@@ -7716,7 +8962,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "Learn to Leap",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543u719",
@@ -7736,7 +8985,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "Công ty TNHH thiết bị giáo dục thông minh Khang Thịnh",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543xinj",
@@ -7756,7 +9008,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "UBTECH",
-      "origin": "Trung Quốc"
+      "origin": "Trung Quốc",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543xv5q",
@@ -7776,7 +9031,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "UBTECH",
-      "origin": "Trung Quốc"
+      "origin": "Trung Quốc",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf5430td6",
@@ -7796,7 +9054,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "UBTECH",
-      "origin": "Trung Quốc"
+      "origin": "Trung Quốc",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543y61p",
@@ -7816,7 +9077,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "UBTECH",
-      "origin": "Trung Quốc"
+      "origin": "Trung Quốc",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf54316e9",
@@ -7836,7 +9100,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "UBTECH",
-      "origin": "Trung Quốc"
+      "origin": "Trung Quốc",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543qmb6",
@@ -7856,7 +9123,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "UBTECH",
-      "origin": "Trung Quốc"
+      "origin": "Trung Quốc",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543h69v",
@@ -7876,7 +9146,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "Công ty TNHH thiết bị giáo dục thông minh Khang Thịnh",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543k4dj",
@@ -7896,7 +9169,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "Công ty TNHH thiết bị giáo dục thông minh Khang Thịnh",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543wc6i",
@@ -7916,7 +9192,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "Công ty TNHH thiết bị giáo dục thông minh Khang Thịnh",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf5434jwj",
@@ -7936,7 +9215,10 @@
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "Công ty TNHH thiết bị giáo dục thông minh Khang Thịnh",
-      "origin": "Việt Nam"
+      "origin": "Việt Nam",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     },
     {
       "id": "pmsjvf543a159",
@@ -7950,13 +9232,16 @@
       "currency": "VND",
       "stock": 50,
       "shortDescription": "",
-      "description": "AI Vision",
+      "description": "ALPHA MINI\nKiểu dáng & kết cấu\nRobot hình người (humanoid); màu Trắng/Xám\nKích thước: 245 (H) × 149 (W) × 112 (D) mm; khối lượng ~720 g\nVật liệu: khung hợp kim nhôm, vỏ ngoài nhựa ABS\n14 động cơ servo; nhiệt độ hoạt động 0–40 °C\n\nBộ xử lý & lưu trữ\nHệ điều hành: Android 11\nCPU: RK3566; GPU: ARM Mali-G52\nRAM: 2GB DDR3 (32 bit); bộ nhớ trong (ROM): 32 GB\n\nKết nối mạng\nWi-Fi băng tần kép 2.4GHz & 5.0GHz, chuẩn 802.11 a/b/g/n\nBluetooth 5.0 + EDR & BLE\nMạng di động: GSM 900/1800; WCDMA (B1/5/8); 4G/LTE đa băng tần (hỗ trợ Nano SIM)\n\nNguồn điện\nPin lithium 7.4V – 2000mAh\nAdapter: đầu vào 100–240V, 50/60Hz, 0.5A; đầu ra DC 5V/3A\n\nÂm thanh\nLoa 4Ω/0.8W, 2 kênh (dual track)\nDàn 4 micro (khoảng cách 60 mm) + 1 micro đàm thoại\n\nHiển thị & tín hiệu\n2 màn hình IPS LCD 1.22\" (làm mắt)\nĐèn LED RGB ở miệng\n\nCamera\nCamera độ phân giải 5 MP (5 triệu điểm ảnh)\n\nGiao tiếp, điều khiển & cảm biến\nCổng: nguồn & USB 2.0; khe Nano SIM\nĐiều khiển bằng giọng nói hoặc ứng dụng trên điện thoại\nCảm biến: PIR (chuyển động), gia tốc kế, con quay hồi chuyển, cảm biến chạm\nBảo vệ: chống quá tải, ngắn mạch, quá áp\n\nThông số động cơ servo – loại 2 kg·cm\nKhối lượng 50 g; mô-men xoắn 2 kg·cm; góc quay 0–240°\nĐiện áp 7.4V (dải hoạt động 6–10V); tốc độ 0.36 s/60°\nDòng hoạt động tối đa 0.4A; độ chính xác 1.5°\nĐiều khiển số; giao thức RS232 bán song công (Half-duplex TTL)\n\nThông số động cơ servo – loại 3 kg·cm\nKhối lượng 50 g; mô-men xoắn 3 kg·cm; góc quay 0–360°\nĐiện áp 7.4V (dải hoạt động 6–9V); tốc độ 0.18 s/60°\nDòng hoạt động tối đa 0.5A; độ chính xác 1°\nĐiều khiển số; giao thức RS232 bán song công (Half-duplex TTL)",
       "tags": [],
       "images": [],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "UBTECH",
-      "origin": "Trung Quốc"
+      "origin": "Trung Quốc",
+      "model": "",
+      "project": "",
+      "projectCode": ""
     }
   ]
 }
