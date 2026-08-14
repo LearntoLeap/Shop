@@ -177,7 +177,9 @@
       "shortDescription": "",
       "description": "(Sản phẩm được sản xuất và lắp ráp bởi nhà sản xuất đạt tiêu chuẩn chứng nhận: ISO 45001: 2018, chứng nhận: ISO 14001:2015, chứng nhận: ISO 9001: 2015)\n* Phần cơ khí lắp ghép:\n- Kích thước đế mô hình: 550x400mm\n- Khảo sát chất lượng nước thông qua các cảm biến (cảm biến nhiệt độ, cảm biến đo độ mặn, cảm biến đo pH, cảm biến khoảng cách) giữ chất lượng nước luôn ổn định ở một trạng thái được thiết lập trước bằng cách bơm các chất trung hòa độ mặn, ph thấp và ph cao để trung hòa nước trong bể.\n- Bể chứa nước: kích thước 205x285x110 mm bằng nhựa chứa nước cần khảo sát.\n- Hệ thống bơm: 3 bơm nước 12Vdc từ các téc chứa các dung dịch trung hòa độ mặn (téc 1), dung dịch trung hòa ph cao (téc 2) trung hòa ph thấp (téc 3) vào bể, 1 bơm sục khí điện áp 12Vdc để trung hòa nhiệt độ trong nước.\n- Bộ điều khiển: kết nối với các cảm biến, nhận tín hiệu điều khiển từ cảm biến điều khiển các bơm thông qua jack quả chuối 2mm.\n- Chất lượng nước và lượng nước ban đầu trong bể có thể tùy biến thay đổi theo yêu cầu ( nước trong bể được xả qua van ở đáy ra dụng cụ chứa sau mỗi thí nghiệm)\n- Trụ nhôm 20x20, hàng rào, cổng, téc chứa nước điều hòa và  téc nước bổ xung, các cây trang trí…\n* Các Modul cảm biến kèm theo:\n1- Mô-đun cảm biến đo nhiệt độ (SEN101)\n (Dùng chung với cảm biến đã cung cấp ở chuyên đề trong phòng STEM)\n2- Mô-đun cảm biến đo độ pH (SEN106)\n- Dải đo: 0 ~ 14 Ph\n- Độ chính xác: ± 0.1 pH (25oC)\n- Độ phân dải: 0.01 pH\n- Đơn vị đo: pH\n- Tốc độ lấy mẫu: 10Hz\n- Tần số hoạt động: 48MHz\n- Bộ nhớ Flash: 64Kbytes\n- Bộ nhớ SRAM: 8 Kbytes\n- Cổng điều khiển: Có thể cài đặt: \n                                + 2 đầu ra điều khiển\n                                + 2 đầu vào giám sát\n                                + đầu dò nhiệt độ bù\n- Cổng giao tiếp: USB-C\n- Chuẩn kết nối: RS485\n- Giao thức: Modbus RTU\n- Phần mềm: STEMe\n- Điện áp hoạt động: 4.75 ~ 5.25V\n3- Mô-đun cảm biến đo nồng độ mặn (SEN109)\n- Dải đo: 0 ~ 50 ppt\n- Độ chính xác: ± 5 % F.S\n- Độ phân dải: 0.01 ppt\n- Đơn vị đo: ppt\n- Tốc độ lấy mẫu: 10Hz\n- Tần số hoạt động: 48MHz\n- Bộ nhớ Flash: 64Kbytes\n- Bộ nhớ SRAM: 8 Kbytes\n- Cổng điều khiển: Có thể cài đặt: \n                                + 2 đầu ra điều khiển\n                                + 2 đầu vào giám sát\n                                + đầu dò nhiệt độ bù\n- Cổng giao tiếp: USB-C\n- Chuẩn kết nối: RS485\n- Giao thức: Modbus RTU\n- Phần mềm: STEMe\n- Điện áp hoạt động: 4.75 ~ 5.25V\n* Bộ phần mềm giáo dục STEMe: Sử dụng phần mềm STEMe tiếng việt được cài trên máy tính, tự động kết nối các cảm biến và thiết lập được các trạng thái điều khiển.\n* Tài liệu hướng dẫn sử dụng",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692820320-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -200,7 +202,9 @@
       "shortDescription": "",
       "description": "",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692815155-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -223,7 +227,9 @@
       "shortDescription": "",
       "description": "License bản quyền sử dụng phần mềm dành cho Giáo viên cài đặt và tương thích với thiết bị của giáo viên (laptop/PC). Bản quyền sử dụng License 05 năm. Được cập nhật và update các tính năng liên tục từ nhà cung cấp trong suốt quá trình sử dụng\n1. Sidebar/Thanh Điều hướng\nLớp học\nSơ đồ lớp học\n2. Truy cập hệ thống\nKích hoạt phần mềm bằng mã bản quyền\nĐăng nhập bằng tài khoản được cấp\nẨn / hiện mật khẩu khi nhập\nGhi nhớ đăng nhập cho lần sau\nĐăng xuất khỏi hệ thống\nChuyển đổi ngôn ngữ hiển thị (Eng/Vie)\n3. Quản lý lớp học\nXem danh sách lớp Sắp diễn ra\nXem danh sách lớp Đã kết thúc\nTìm kiếm lớp theo tên\nVào phòng học từ thẻ lớp\n4. STEM\nHỗ trợ xây dựng nội dung STEM\nGiao nội dung mô phỏng từ máy GV đến máy HS\nTích hợp thiết bị VR\nThư viện mẫu tương tác liên môn\nThư viện hoạt động tích hợp kỹ năng 4C\nMô hình hợp tác và mô phỏng 3D\nO2O: từ online đến offline, giao nhiệm vụ STEM cho học sinh học tập cùng cha mẹ\n5. Bảng trắng (Board)\nVẽ / viết lên bảng\nXóa toàn bộ nội dung bảng (Trash)\nHiển thị tài liệu (ảnh / slide) trên bảng\nQuản lý nhiều slide trong bảng trắng\nMở / đóng panel hình thu nhỏ (thumbnail)\nChuyển bảng bằng thumbnail\nChuyển bảng bằng nút Trước / Sau\nXem vị trí trang hiện tại / tổng số bảng\nTắt toàn bộ chức năng vẽ của lớp\n6. Nội dung & Tài liệu\nMở mục Nội dung từ thanh điều khiển\nTruy cập Thư viện tài nguyên (Library)\nChia sẻ màn hình\nChuyển tệp\n7. Câu hỏi tương tác\nTạo câu hỏi Single Choice\nTạo câu hỏi Multiple Choice\nTạo câu hỏi Fill in Blank\nGiao câu hỏi cho lớp\n8. Bài tập & chấm điểm\nGiao bài tập trên lớp\nDừng nội dung\nXem bảng tổng soát kết quả của cả lớp\nChấm điểm cho cả lớp\nChấm điểm cho nhóm\nChấm điểm cá nhân cho từng học sinh\n9. Điều khiển lớp real-time\nTắt camera toàn bộ học sinh\nTắt micro toàn bộ học sinh\nBật / tắt camera của chính GV\nBật / tắt micro của chính GV\nSet Timer (Đồng hồ bấm giờ)\n10. Theo dõi & điều khiển thiết bị\nMở màn hình quản lý thiết bị học sinh\nKhóa toàn bộ thiết bị học sinh\nMở khóa thiết bị học sinh\nChặn ứng dụng cụ thể (FB / TikTok / YouTube...) trên thiết bị của học sinh\nChia sẻ màn hình của 1 học sinh lên bảng chung\n11. Hoạt động nhóm\nXem bản đồ lớp học\nChia nhóm\nKéo & thả học sinh vào nhóm\nThêm nhóm mới\nTham gia phòng nhóm\nDừng phiên làm việc nhóm\n12. Tương tác & người tham gia\nXem danh sách Người tham gia (Participants)\nBật / tắt camera của từng học sinh\nBật / tắt micro của từng học sinh\nĐiều khiển thiết bị từ xa của học sinh\n13. Tích hợp phần mềm soạn giảng\nTải lên Powerpoint\nKho Template\nCông cụ lập trình trực quan\nCông cụ văn bản\nCông cụ hình khối\nCông cụ vẽ\nCông cụ tải lên\n14. Cài đặt & Ghi hình\nGhi màn hình buổi học\nDừng ghi màn hình\nVideo và Âm thanh: Học sinh có thể bật/tắt camera và micro của mình để giao tiếp bằng lời nói và hình ảnh.\nHọc sinh làm bài kiểm tra trắc nghiệm, bài tập tự luận hoặc phiếu bài tập tương tác ngay trong buổi học. \nHệ thống chấm điểm tự động cho các câu hỏi trắc nghiệm.",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692813731-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -246,7 +252,9 @@
       "shortDescription": "",
       "description": "License bản quyền sử dụng phần mềm dành cho học sinh cài đặt và tương thích với thiết bị của học sinh (laptop/PC Window hoặc Máy tính bảng Android). Bản quyền sử dụng License 05 năm. Được cập nhật và update các tính năng liên tục từ nhà cung cấp trong suốt quá trình sử dụng.\nĐầy đủ các tính năng sau:\n1. Sidebar/Thanh Điều hướng\nLớp học\n2. Truy cập hệ thống\nKích hoạt phần mềm bằng mã bản quyền (license)\nĐăng nhập bằng tài khoản được cấp\nẨn / hiện mật khẩu khi nhập\nGhi nhớ đăng nhập cho lần sau\nĐăng xuất\nChuyển đổi ngôn ngữ hiển thị (Eng/Vie)\n3. Tham gia lớp học\nXem danh sách lớp có thể tham gia\nXem thông tin lớp trên thẻ\nVào phòng học từ thẻ lớp\n4. Theo dõi bài giảng\nXem bảng trắng đồng bộ với GV\nXem slide / nội dung theo GV\nXem video GV chia sẻ (play / pause / seek / volume / speed)\nNghe audio GV chia sẻ (play / pause / seek / volume / speed)\nXem ảnh GV chia sẻ (zoom / di chuyển, đồng bộ)\nXem PDF GV chia sẻ (chuyển trang đồng bộ, vẽ đồng bộ)\nXem màn hình GV chia sẻ\nNhận tệp GV chuyển\n5. Tương tác real-time trong lớp\nTrả lời câu hỏi Single Choice\nTrả lời câu hỏi Multiple Choice\nTrả lời câu hỏi Fill in Blank\nLàm bài Writing (bài viết)\nLàm bài Speaking (nói)\nGiơ tay\nBật / tắt micro cá nhân\nBật / tắt camera cá nhân\n6. Nhận kết quả\nNhận điểm từ GV\nXem nhận xét chấm bài từ GV (Speaking/Writing)",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692812775-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -407,7 +415,9 @@
       "shortDescription": "",
       "description": "\"ALPHA MINI\nKiểu dáng & kết cấu\nRobot hình người (humanoid); màu Trắng/Xám\nKích thước: 245 (H) × 149 (W) × 112 (D) mm; khối lượng ~720 g\nVật liệu: khung hợp kim nhôm, vỏ ngoài nhựa ABS\n14 động cơ servo; nhiệt độ hoạt động 0–40 °C\n\nBộ xử lý & lưu trữ\nHệ điều hành: Android 11\nCPU: RK3566; GPU: ARM Mali-G52\nRAM: 2GB DDR3 (32 bit); bộ nhớ trong (ROM): 32 GB\n\nKết nối mạng\nWi-Fi băng tần kép 2.4GHz & 5.0GHz, chuẩn 802.11 a/b/g/n\nBluetooth 5.0 + EDR & BLE\nMạng di động: GSM 900/1800; WCDMA (B1/5/8); 4G/LTE đa băng tần (hỗ trợ Nano SIM)\n\nNguồn điện\nPin lithium 7.4V – 2000mAh\nAdapter: đầu vào 100–240V, 50/60Hz, 0.5A; đầu ra DC 5V/3A\n\nÂm thanh\nLoa 4Ω/0.8W, 2 kênh (dual track)\nDàn 4 micro (khoảng cách 60 mm) + 1 micro đàm thoại\n\nHiển thị & tín hiệu\n2 màn hình IPS LCD 1.22\"\" (làm mắt)\nĐèn LED RGB ở miệng\n\nCamera\nCamera độ phân giải 5 MP (5 triệu điểm ảnh)\n\nGiao tiếp, điều khiển & cảm biến\nCổng: nguồn & USB 2.0; khe Nano SIM\nĐiều khiển bằng giọng nói hoặc ứng dụng trên điện thoại\nCảm biến: PIR (chuyển động), gia tốc kế, con quay hồi chuyển, cảm biến chạm\nBảo vệ: chống quá tải, ngắn mạch, quá áp\n\nThông số động cơ servo – loại 2 kg·cm\nKhối lượng 50 g; mô-men xoắn 2 kg·cm; góc quay 0–240°\nĐiện áp 7.4V (dải hoạt động 6–10V); tốc độ 0.36 s/60°\nDòng hoạt động tối đa 0.4A; độ chính xác 1.5°\nĐiều khiển số; giao thức RS232 bán song công (Half-duplex TTL)\n\nThông số động cơ servo – loại 3 kg·cm\nKhối lượng 50 g; mô-men xoắn 3 kg·cm; góc quay 0–360°\nĐiện áp 7.4V (dải hoạt động 6–9V); tốc độ 0.18 s/60°\nDòng hoạt động tối đa 0.5A; độ chính xác 1°\nĐiều khiển số; giao thức RS232 bán song công (Half-duplex TTL)\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692802388-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -430,7 +440,9 @@
       "shortDescription": "",
       "description": "Bảo hành: 01 năm\nKích thước tổng thể: khoảng 1.2 m x 1.8 m, có khung viền bao quanh\nChất liệu bề mặt: tấm Bạt chất liệu Hiflex cán mờ mô phỏng các khu vực nhiệm vụ cho các hoạt động thực hành và thi đấu Robotics",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692793717-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -453,7 +465,9 @@
       "shortDescription": "",
       "description": "Chất liệu: ABS, ABS+PC\nSố lượng chi tiết lắp ghép: >1000 chi tiết\nTrọng lượng: Xấp xỉ 2.9kg\nKích thước hộp: 418 × 318 × 109 mm\nKích thước thùng carton: 440 × 350 × 465 mm\nSố lượng đóng gói: 4 bộ/thùng\nBộ điều khiển chính uKit 2.0 (MC03) ×1\nĐiện áp cung cấp: DC 6.8V – 9.6V (giá trị điển hình 7.4V)\nDòng làm việc: 0–2A\nNhiệt độ làm việc: 0°C – 40°C\nHệ điều hành hỗ trợ: Android 4.0.3 trở lên, iOS 9.0 trở lên\nCPU: ESP32\nRAM: 4MB\nFLASH: 16MB\nGiao tiếp: Bluetooth 4.2 (BLE + EDR), WiFi 802.b/g/h\nCổng sạc: USB Type-C\nCổng công tắc: Đầu nối 3Pin ×1\nCổng servo & cảm biến: Đầu nối 3Pin ×5\nCổng 7Pin ×1\nPin: Pin lithium polymer\nDung lượng pin: 1200mAh\nServo ×4\nMô-men xoắn: 3.5kg·cm\nTrọng lượng: 25 ± 0.2g\nTốc độ: 0.17 giây/60°\nĐộ chính xác: 1° (không tải), 3° (có tải)\nGóc hoạt động: 0–240°\nĐiện áp làm việc: 6.4V – 9.6V DC (giá trị điển hình 7.4V)\nĐịnh dạng điều khiển: Kỹ thuật số\nGiao thức truyền thông: Half-Duplex Serial Port\nĐộng cơ DC ×1\nĐiện áp làm việc: 7.4V DC (phạm vi 5.5V – 8.4V DC)\nMô-men xoắn: 2.2kg·cm (tối đa)\nTốc độ không tải: 140 ± 10% vòng/phút\nChiều quay: Thuận chiều/Ngược chiều kim đồng hồ\nĐộ chính xác: ±1.5 RPM\nGóc quay: 360°\nGiao diện: Đầu nối 3Pin\nNhiệt độ làm việc: 0°C – 40°C\nKích thước: 78 × 30 × 36 mm\nCảm biến hồng ngoại ×1\nĐiện áp làm việc: 6.8V – 9.6V DC\nBước sóng hồng ngoại: 940nm\nPhạm vi đo: 2–15 cm\nGiao diện: Đầu nối 3Pin\nNhiệt độ làm việc: 0°C – 40°C\nKích thước: 30 × 30 × 12 mm\nCảm biến chạm ×2\nĐiện áp làm việc: 6.8V – 9.6V DC\nÁp lực chạm: 160gf\nGiao diện: Đầu nối 3Pin\nNhiệt độ làm việc: 0°C – 40°C\nKích thước: 30 × 30 × 12 mm\nModule LED ×2\nĐiện áp làm việc: 6.8V – 9.6V DC\nSố lượng LED: 8 cụm\nMàu LED: RGB\nGiao thức truyền thông: Half-Duplex Serial Port\nGiao diện: Đầu nối 3Pin\nNhiệt độ làm việc: 0°C – 40°C\nMàu sắc: Xanh ghi\nTrọng lượng: 8.8 ± 0.1g\nKích thước: Φ30 × 18 mm\nCảm biến siêu âm ×1\nĐiện áp làm việc: 6.8V – 9.6V DC\nTần số siêu âm: 40.0 ± 1.0 kHz\nGóc đo: 60° ± 15° (−6dB)\nSai số đo: <1cm\nPhạm vi đo: 3cm – 300cm (bề mặt phẳng)\nGiao diện: Đầu nối 3Pin\nNhiệt độ làm việc: 0°C – 40°C\nKích thước: 42 × 42 × 19.6 mm\nCảm biến ánh sáng ×2\nĐiện áp làm việc: 6.8V – 9.6V DC\nDòng làm việc: 10mA\nGiao diện: Đầu nối 3Pin\nPhạm vi đo: 0 – 4000 lux\nKích thước: 35.8 × 30 × 12 mm\nCảm biến âm thanh ×1\nĐiện áp làm việc: 6.8V – 9.6V DC\nDòng làm việc: 10mA\nPhạm vi đo: 0 – 100 cm\nGiá trị đầu ra: 0–1023\nGiao diện: Đầu nối 3Pin\nKích thước: 35.8 × 30 × 12 mm\nCảm biến nhiệt độ & độ ẩm ×1\nĐiện áp làm việc: 6.8V – 9.6V DC\nDòng làm việc: 10mA\nGiao diện: Đầu nối 3Pin\nPhạm vi đo nhiệt độ: −5°C – 45°C\nPhạm vi đo độ ẩm: 0%RH – 100%RH\nKích thước: 35.8 × 30 × 12 mm\nPhụ kiện kèm theo:\nSách hướng dẫn nhanh ×1\nDanh sách linh kiện ×1\nBộ nguồn ×1\nNội dung học tập xoay quanh chủ đề thế giới động vật, giúp học sinh làm quen với AI thông qua các mô hình robot mô phỏng hành vi, chuyển động và phản hồi.\nHọc sinh được tiếp cận các khái niệm nền tảng: cảm biến, điều khiển, tư duy thuật toán, trình tự lệnh, thông qua hoạt động lắp ráp và lập trình trực quan.\nGiáo trình chú trọng phát triển tư duy sáng tạo, tư duy logic và kỹ năng hợp tác, phù hợp với lứa tuổi tiểu học.\nTài liệu học tập được xây dựng theo các chủ đề và phân phối chương trình phù hợp với chương trình giáo dục phổ thông, được thẩm định vởi các Viện có thẩm quyền trực thuộc Bộ Giáo dục và Đào tạo.",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692787707-bulk-clip.jpg"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -545,7 +559,9 @@
       "shortDescription": "",
       "description": "Thông số kỹ thuật:\n1. Thông số in ấn\nKích thước vùng in: 256 × 256 × 256 mm\nLoại đầu in 3D: đầu in toàn kim loại (All-metal Hotend)\nVật liệu vòi phun: thép không gỉ\nĐường kính vòi phun tiêu chuẩn: 0.4 mm (kèm theo)\nTùy chọn vòi phun: 0.2 mm, 0.6 mm, 0.8 mm\nNhiệt độ đầu in tối đa: 300°C\nNhiệt độ bàn in tối đa: 100°C\n2. Bàn in và bề mặt in\nBàn in 3D sử dụng hệ thống tấm PEI nhiều loại:\nTấm PEI bề mặt tre (textured PEI) – đi kèm theo máy\nTấm PEI mịn (smooth PEI)\nTấm PEI hai mặt kết cấu kép\nTấm chịu nhiệt độ cao (high-temp smooth PEI)\nTấm làm mát (cooling plate)\n3. Hiệu suất chuyển động\nTốc độ di chuyển tối đa: 500 mm/s\nGia tốc tối đa: 10,000 mm/s²\n4. Vật liệu in tương thích\nVật liệu đề xuất (in tối ưu): PLA, PETG, TPU, PVA\nVật liệu có thể in (không khuyến nghị nếu không có buồng kín): ABS, ASA, PC, PA, PET, polymer gia cường sợi thủy tinh hoặc sợi carbon\n(Lưu ý: cần buồng kín để đảm bảo độ ổn định của bản in với các vật liệu nhiệt cao.)\n5. Hệ thống cảm biến & giám sát\nCamera giám sát buồng in: độ phân giải đến 1080p, tốc độ khung hình thấp; hỗ trợ timelapse\nCảm biến hết sợi (Filament Runout Sensor): có\nCảm biến đo quãng đường sợi (Filament Motion Sensor): có\nCảm biến rối sợi (Filament Tangle Detection): có\nKhôi phục khi mất điện (Power Loss Recovery): có\n6. Kích thước & trọng lượng\nKích thước máy: 385 × 410 × 430 mm\nKích thước đóng gói: 596 × 536 × 325 mm\nTrọng lượng tịnh: 8.3 kg\nTổng trọng lượng: 13 kg\nPhiên bản Combo (kèm AMS Lite):\nKích thước đóng gói: 560 × 540 × 430 mm\nTổng trọng lượng: 13.5 kg",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692779135-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -660,7 +676,9 @@
       "shortDescription": "",
       "description": "Tác giả: Tưởng Duy Hải (Chủ biên), Trần Minh Đức, Mai Thị Kim Tuyến, Trần Bá Trình\nSở hữu bản quyền: Nhà xuất bản Giáo dục Việt Nam và Công ty Cổ phần Phát hành Sách Giáo dục\nChịu trách nhiệm nội dung: Phạm Vĩnh Thái\nBiên tập: Phạm Thị Mai – Đặng Thị Hoài Thanh – Lê Văn Thành\nSửa bản in: Phạm Thị Mai – Đặng Thị Hoài Thanh – Lê Văn Thành\nTrình bày bìa: Phạm Hoài Thanh\nKhổ sách: 19x26 cm\nSố ĐKXB: 343-2022/CXBIPH/66-131/GD\nQuyết định XB: 1868/QĐ-GD-HN (20/05/2022)\nIn tại: Công ty CP In & Thương mại Trường An\nNộp lưu chiểu: 06/2022\nISBN: 978-604-0-31528-1\nMô tả:\nCuốn sách Hoạt động giáo dục STEM lớp 5 là một trong 7 cuốn của bộ sách Hoạt động giáo dục STEM. Bộ sách được biên soạn dành cho các em từ lớp 3 đến lớp 9.\nBộ sách được biên soạn với mục đích tạo cơ hội cho các em được “Học đi đôi với hành” và đáp ứng yêu cầu của xã hội trong cuộc cách mạng công nghiệp lần thứ tư (4.0).\nCuốn sách Hoạt động giáo dục STEM lớp 5 gồm 4 chủ đề hoạt động:\nChủ đề 1: Kẹo tinh thể\nChủ đề 2: Ngôi nhà điện mặt trời\nChủ đề 3: Lọc nước sạch\nChủ đề 4: Em điều khiển và tham gia giao thông\nCác chủ đề được biên soạn một cách logic, khoa học tích hợp kiến thức, kĩ năng của các lĩnh vực Khoa học, Công nghệ, Kĩ thuật , Toán,… Ở mỗi chủ đề, các em sẽ được tự mình mắt thấy – tai nghe – tay chạm để thực hiện hệ thống hoạt động tìm tòi, khám phá hoặc thiết kế, chế tạo. Từ đó, giúp các em phát triển tư duy khoa học, tư duy công nghệ, tư duy thiết kế kĩ thuật, dần hình thành năng lực truyền tải nội dung khoa học thành các sản phẩm công nghệ phục vụ đời sống.\nBên cạnh đó, một số chủ đề có tích hợp nền tảng kết nối vạn vật qua hệ thống cảm biến, hệ thống điều khiển thiết bị đầu cuối. Điều này giúp các em làm quen với các câu lệnh lập trình đơn giản để biến ý tưởng thành hiện thực, tạo thành sản phẩm công nghệ của riêng các em.\nTrước khi bắt tay vào việc tìm tòi, khám phá, thiết kế, chế tạo sản phẩm trong mỗi chủ đề, các em cần đọc kĩ và làm tốt các nhiệm vụ của hoạt động đầu tiên. Đây là hoạt động giúp các em hệ thống kiến thức cơ sở của chủ đề. Sau khi chuẩn bị đầy đủ kiến thức nền, các em cùng thảo luận, đề xuất các ý tưởng tìm tòi, khám phá, thiết kế thực hiện sản phẩm.\nỞ mỗi bước thực hiện hoạt động, các em cần phân công và hợp tác với nhau để chọn được các cách làm tốt và đảm bảo thành công. Cuối mỗi chủ đề đều có hoạt động mở rộng yêu cầu các em đưa sản phẩm của mình vào thực tiễn hoặc thực hiện việc chế tạo một sản phẩm mới, hoàn thiện hơn, phù hợp với cuộc sống trong gia đình và trong cộng đồng của chúng ta.\nTrong quá trình hoạt động và học tập các chủ đề giáo dục STEM, các em có thể xin ý kiến, sự trợ giúp của các thầy cô giáo, người thân và các chuyên gia để thực hiện sản phẩm được tốt hơn. Đồng thời, hãy mời thầy cô, người thân đánh giá, thử nghiệm các sản phẩm mà mình tạo ra.",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692764306-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -683,7 +701,9 @@
       "shortDescription": "",
       "description": "Tác giả: Tưởng Duy Hải (Chủ biên), Vũ Thị Yến, Mai Thị Kim Tuyến, Trần Bá Trình\nSở hữu bản quyền: Nhà xuất bản Giáo dục Việt Nam và Công ty Cổ phần Phát hành Sách Giáo dục\nChịu trách nhiệm nội dung: Phạm Vĩnh Thái\nBiên tập: Phạm Thị Mai – Đặng Thị Hoài Thanh – Lê Văn Thành\nSửa bản in: Phạm Thị Mai – Đặng Thị Hoài Thanh – Lê Văn Thành\nTrình bày bìa: Phạm Hoài Thanh\nKhổ sách: 19x26 cm\nSố ĐKXB: 343-2022/CXBIPH/51-131/GD\nQuyết định XB: 1667/QĐ-GD-HN (20/05/2022)\nIn tại: Công ty CP In & Thương mại Trường An\nNộp lưu chiểu: 06/2022\nISBN: 978-604-0-31513-7\nMô tả:\nCuốn sách Hoạt động giáo dục STEM lớp 4 là một trong 7 cuốn của bộ sách Hoạt động giáo dục STEM. Bộ sách được biên soạn dành cho các em từ lớp 3 đến lớp 9.\nBộ sách được biên soạn với mục đích tạo cơ hội cho các em được “Học đi đôi với hành” và đáp ứng yêu cầu của xã hội trong cuộc cách mạng công nghiệp lần thứ tư (4.0).\nCuốn sách Hoạt động giáo dục STEM lớp 4 gồm 4 chủ đề hoạt động:\nChủ đề 1: Nhà cách âm\nChủ đề 2: Nhà mát\nChủ đề 3: Máy phát điện gió\nChủ đề 4: Chuồng nuôi thông minh\nCác chủ đề được biên soạn một cách logic, khoa học tích hợp kiến thức, kĩ năng của các lĩnh vực Khoa học, Công nghệ, Kĩ thuật, Toán,… Ở mỗi chủ đề, các em sẽ được tự mình mắt thấy – tai nghe – tay chạm để thực hiện hệ thống hoạt động tìm tòi, khám phá hoặc thiết kế, chế tạo. Từ đó, giúp các em phát triển tư duy khoa học, tư duy công nghệ, tư duy thiết kế kĩ thuật, dần hình thành năng lực truyền tải nội dung khoa học thành các sản phẩm công nghệ phục vụ đời sống.\nBên cạnh đó, một số chủ đề có tích hợp nền tảng kết nối vạn vật qua hệ thống cảm biến, hệ thống điều khiển thiết bị đầu cuối. Điều này giúp các em làm quen với các câu lệnh lập trình đơn giản để biến ý tưởng thành hiện thực, tạo thành sản phẩm công nghệ của riêng các em.\nTrước khi bắt tay vào việc tìm tòi, khám phá, thiết kế, chế tạo sản phẩm trong mỗi chủ đề, các em cần đọc kĩ và làm tốt các nhiệm vụ của hoạt động đầu tiên. Đây là hoạt động giúp các em hệ thống kiến thức cơ sở của chủ đề. Sau khi chuẩn bị đầy đủ kiến thức nền, các em cùng thảo luận, đề xuất các ý tưởng tìm tòi, khám phá, thiết kế thực hiện sản phẩm. Ở mỗi bước thực hiện hoạt động, các em cần phân công và hợp tác với nhau để chọn được các cách làm tốt và đảm bảo thành công. Cuối mỗi chủ đề đều có hoạt động mở rộng yêu cầu các em đưa sản phẩm của mình vào thực tiễn hoặc thực hiện việc chế tạo một sản phẩm mới, hoàn thiện hơn, phù hợp với cuộc sống trong gia đình và trong cộng đồng của chúng ta.\nTrong quá trình hoạt động và học tập các chủ đề giáo dục STEM, các em có thể xin ý kiến, sự trợ giúp của các thầy cô giáo, người thân và các chuyên gia để thực hiện sản phẩm được tốt hơn. Đồng thời, hãy mời thầy cô, người thân đánh giá, thử nghiệm các sản phẩm mà mình tạo ra.",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692761502-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -706,7 +726,9 @@
       "shortDescription": "",
       "description": "Tác giả: Tưởng Duy Hải (Chủ biên), Nguyễn Ngọc Ánh, Vũ Thị Yến, Nguyễn Thanh Hường, Phạm Thanh Nga, Trần Bá Trình\nSở hữu bản quyền: Nhà xuất bản Giáo dục Việt Nam và Công ty Cổ phần Phát hành Sách Giáo dục\nChịu trách nhiệm nội dung: Phạm Vĩnh Thái\nBiên tập: Phạm Thị Mai – Đặng Thị Hoài Thanh – Lê Văn Thành\nSửa bản in: Phạm Thị Mai – Đặng Thị Hoài Thanh – Lê Văn Thành\nTrình bày bìa: Phạm Hoài Thanh\nKhổ sách: 19x26 cm\nSố ĐKXB: 467-2024/CXBIPH/32-264/GD\nQuyết định XB: 1680/QĐ-GD-NN (14/05/2024)\nIn tại: Công ty CP In & Thương mại PRIMA\nNộp lưu chiểu: 05/2024\nISBN: 978-604-0-41904-0\nMô tả:\nCuốn sách Hoạt động giáo dục STEM lớp 3 là một trong 7 cuốn của bộ sách Hoạt động giáo dục STEM. Bộ sách được biên soạn dành cho các em từ lớp 3 đến lớp 9.\nBộ sách được biên soạn với mục đích tạo cơ hội cho các em được “Học đi đôi với hành” và đáp ứng yêu cầu của xã hội trong cuộc cách mạng công nghiệp lần thứ tư (4.0).\nCuốn sách Hoạt động giáo dục STEM lớp 3 gồm 4 chủ đề hoạt động:\nChủ đề 1: Hệ hô hấp\nChủ đề 2: Kem đánh răng\nChủ đề 3: Hệ thống chữa cháy tự động\nChủ đề 4: Chuyển động của Trái Đất\nCác chủ đề được biên soạn một cách logic, khoa học tích hợp kiến thức, kĩ năng của các lĩnh vực Khoa học, Công nghệ, Kĩ thuật, Toán,… Ở mỗi chủ đề, các em sẽ được tự mình mắt thấy – tai nghe – tay chạm để thực hiện hệ thống hoạt động tìm tòi, khám phá hoặc thiết kế, chế tạo. Từ đó, giúp các em phát triển tư duy khoa học, tư duy công nghệ, tư duy thiết kế kĩ thuật, dần hình thành năng lực truyền tải nội dung khoa học thành các sản phẩm công nghệ phục vụ đời sống.\nBên cạnh đó, một số chủ đề có tích hợp nền tảng kết nối vạn vật qua hệ thống cảm biến, hệ thống điều khiển thiết bị đầu cuối. Điều này giúp các em làm quen với các câu lệnh lập trình đơn giản để biến ý tưởng thành hiện thực, tạo thành sản phẩm công nghệ của riêng các em.\nTrước khi bắt tay vào việc tìm tòi, khám phá, thiết kế, chế tạo sản phẩm trong mỗi chủ đề, các em cần đọc kĩ và làm tốt các nhiệm vụ của hoạt động đầu tiên. Đây là hoạt động giúp các em hệ thống kiến thức cơ sở của chủ đề. Sau khi chuẩn bị đầy đủ kiến thức nền, các em cùng thảo luận, đề xuất các ý tưởng tìm tòi, khám phá, thiết kế thực hiện sản phẩm. Ở mỗi bước thực hiện hoạt động, các em cần phân công và hợp tác với nhau để chọn được các cách làm tốt và đảm bảo thành công. Cuối mỗi chủ đề đều có hoạt động mở rộng yêu cầu các em đưa sản phẩm của mình vào thực tiễn hoặc thực hiện việc chế tạo một sản phẩm mới, hoàn thiện hơn, phù hợp với cuộc sống trong gia đình và trong cộng đồng của chúng ta.\nTrong quá trình hoạt động và học tập các chủ đề giáo dục STEM, các em có thể xin ý kiến, sự trợ giúp của các thầy cô giáo, người thân và các chuyên gia để thực hiện sản phẩm được tốt hơn. Đồng thời, hãy mời thầy cô, người thân đánh giá, thử nghiệm các sản phẩm mà mình tạo ra.",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692758662-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -729,7 +751,9 @@
       "shortDescription": "",
       "description": "Tác giả: Tưởng Duy Hải (Chủ biên), Trần Ngọc Chất, Đào Thị Sen, An Biên Thuỳ, Trần Bá Trình\nSở hữu bản quyền: Nhà xuất bản Giáo dục Việt Nam và Công ty Cổ phần Phát hành Sách Giáo dục\nChịu trách nhiệm nội dung: Phạm Vĩnh Thái\nBiên tập: Phạm Thị Mai – Lê Văn Thành\nSửa bản in: Phạm Thị Mai – Lê Văn Thành\nTrình bày bìa: Nguyễn Văn Đông\nKhổ sách: 19x26 cm\nSố ĐKXB: 343-2022/CXBIPH/31-131/GD\nQuyết định XB: 4987/QĐ-GD-HN (23/11/2022)\nIn tại: Công ty CP In Khoa học Công nghệ Hà Nội\nNộp lưu chiểu: 12/2022\nISBN: 978-604-0-31493-2\nMô tả:\nGiáo dục STEM giúp các em khám phá vai trò của khoa học, công nghệ và toán học trong nhận thức về cuộc sống xung quanh và biết ứng dụng khoa học phục vụ cuộc sống.\nCuốn sách Hoạt động giáo dục STEM lớp 2 được thiết kế với 12 bài học tương ứng với 4 chủ đề sau:\n1. Ánh sáng\n2. Nhiệt độ\n3. Tìm hiểu về âm thanh\n4. Chạy xe bằng dây chun\nCác bài học STEM được thiết kế để các em có thể thực hiện trên lớp với các dụng cụ dễ tìm, dễ kiếm, dễ gia công, trong đó có cả các thiết bị giúp các em khám phá về cảm biến ánh sáng, nhiệt độ, âm thanh qua điện thoại, máy tính của các thầy cô.\nDưới sự hướng dẫn của các thầy cô và sự tò mò ham hiểu biết, ham khám phá khoa học, công nghệ của các em, hi vọng cuốn sách sẽ giúp các em thu được nhiều điều bổ ích trong cuộc sống muôn màu của chúng ta.",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692754233-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -752,7 +776,9 @@
       "shortDescription": "",
       "description": "Tác giả: Tưởng Duy Hải (Chủ biên), Trần Ngọc Chất, Đào Thị Sen, An Biên Thuỳ, Trần Bá Trình\nSở hữu bản quyền: Nhà xuất bản Giáo dục Việt Nam và Công ty Cổ phần Phát hành Sách Giáo dục\nChịu trách nhiệm nội dung: Phạm Vĩnh Thái\nBiên tập: Phạm Thị Mai – Lê Văn Thành\nSửa bản in: Phạm Thị Mai – Lê Văn Thành\nTrình bày bìa: Nguyễn Văn Đông – Phạm Kiên Cường\nKhổ sách: 19x26 cm\nSố ĐKXB: 467-2024/CXBIHP/24-264/GD\nQuyết định XB: 1678/QĐ-GD-HN (14/05/2024)\nIn tại: Công ty CP In & Thương mại PRIMA\nNộp lưu chiểu: 05/2024\nISBN: 978-604-0-41896-8\nMô tả:\nGiáo dục STEM giúp các em khám phá vai trò của khoa học, công nghệ và toán học trong nhận thức về cuộc sống xung quanh và biết ứng dụng khoa học phục vụ cuộc sống.\nCuốn sách Hoạt động giáo dục STEM lớp 1 được thiết kế với 12 bài học tương ứng với 4 chủ đề sau:\n1. Ánh sáng\n2. Nhiệt độ\n3. Tìm hiểu về âm thanh\n4. Chuyển động bằng phản lực\nCác bài học STEM được thiết kế để các em có thể thực hiện trên lớp với các dụng cụ dễ tìm, dễ kiếm, dễ gia công, trong đó có cả các thiết bị giúp các em khám phá về cảm biến ánh sáng, nhiệt độ, âm thanh qua điện thoại, máy tính của các thầy cô.\nDưới sự hướng dẫn của các thầy cô và sự tò mò ham hiểu biết, ham khám phá khoa học, công nghệ của các em, hi vọng cuốn sách sẽ giúp các em thu được nhiều điều bổ ích trong cuộc sống muôn màu của chúng ta.",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692751269-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -775,7 +801,9 @@
       "shortDescription": "",
       "description": "Được sử dụng cho các cảm biến BT với chốt cắm chuẩn IEEE1394.",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692747385-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -798,7 +826,9 @@
       "shortDescription": "",
       "description": "\"Đo độ đục của mẫu nước trong khoảng phạm vi: 0…200 NTUĐộ phân giải (12 bit): 0.2 NTU\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692743632-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -821,7 +851,9 @@
       "shortDescription": "",
       "description": "\"Đo các biến thể của áp suất không khí do sóng âm thanh gây ra trong phạm vi: + Thang đo: 40 …. 130 dB+ Giải tần số hoạt động: 20 Hz …. 20.000 HzĐộ phân giải (12 bit): 22 mPa\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692737850-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -844,7 +876,9 @@
       "shortDescription": "",
       "description": "Sử dụng cùng với cảm biến pH để đo mức độ pH trong phạm vi 0…14pH",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692733319-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -867,7 +901,9 @@
       "shortDescription": "",
       "description": "Xác định mức độ pH trong phạm vi: 0...14 pH\nĐộ phân giải (12 bit): 0.005 pH",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692730436-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -890,7 +926,9 @@
       "shortDescription": "",
       "description": "\"Đo hiệu điện thế trong phạm vi: -12 V…+ 12 VĐộ phân giải (12 bit): 6.5 mV\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692726997-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -913,7 +951,9 @@
       "shortDescription": "",
       "description": "\"Đo áp suất khi tuyệt đối trong hai phạm vi: 0…700 kPa, 0...130 kPa\nĐộ phân giải (12 bit): 0.2 kPa, 0.04 kPa\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692723616-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -936,7 +976,9 @@
       "shortDescription": "",
       "description": "\"Đo cường độ ánh sáng trong ba phạm vi: 0 .. 1500 lux. 0 .. 15000 lux và 0 .. 150000 lux.Độ phân giải (12bit): 0.37lx, 3.7lx, 37lx\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692720126-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -959,7 +1001,9 @@
       "shortDescription": "",
       "description": "\"Đo nhiệt độ trong phạm vi: -40 °C...140 °CĐộ chính xác: 2˚C ở -40˚C, 0.6 ở 30˚C, 1.8˚C ở 140˚C\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692717582-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -982,7 +1026,9 @@
       "shortDescription": "",
       "description": "Độ phân giải: 12-bits\nTần số lấy mẫu tối đa: 100kHz\nĐầu vào cảm biến: Hai đầu tương tự BT, kết nối được với cảm biến\nTích hợp: đèn LED và coi báo hiệu trong các hoạt động\nKết nối không dây: Bluetooth\nKết nối máy tính: Micro USB - USB A\nNguồn: Pin sạc\nPhần mềm cài đặt được trên các hệ điều hành Window, MAC OS, IOS, Android",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692714700-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1005,7 +1051,9 @@
       "shortDescription": "",
       "description": "Độ phân giải: 12-bitTần số lấy mẫu tối đa: 100 kHzĐầu vào cảm biến: Hai đầu vào tương tự BT, hai đầu vào 4-mmĐầu ra dụng cụ chấp hành: 04 đầu ra 4-mm với các mức điện áp khác nhauKết nối máy tính: Cổng USBNguồn cấp: Bộ đổi điệnPhần mềm trên máy tính cài đặt được trên hệ điều hành Windows và MAC OS",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692711416-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1028,7 +1076,9 @@
       "shortDescription": "",
       "description": "1x Mô hình em điều khiển và tham gia giao thông : Mô hình giao lộ có cột đèn tín hiệu; mạch in + dây nối; bộ bóng đèn LED 3 màu (đỏ, vàng, xanh); dây điện đỏ đen, rắc bắp chuối; mô hình đồ chơi các phương tiện giao thông; tay vặn lục giác\n1x Hộp KIT nhựa : Dung tích 30 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692705764-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1051,7 +1101,9 @@
       "shortDescription": "",
       "description": "1x Mô hình lọc nước sạch tiểu học : 5 ngăn có chân đế\n1x Túi cát đen : 200 g\n1x Túi cát vàng : 200 g\n1x Túi sỏi nhỏ : 200 g\n1x Túi sỏi to : 200 g\n1x Túi than hoạt tính : 200 g\n5x Màng ngăn màu xanh\n1x Khăn vải thấm nước\n1x Nước cất : 500 ml\n1x Bình tia : Dung tích tối thiểu 150 ml\n3x Cốc đong nhựa 100 ml\n1x Lọ dung dịch chuẩn pH = 4,01 : 50 ml\n1x Lọ dung dịch chuẩn pH = 7,01 : 50 ml\n1x Lọ dung dịch chuẩn pH = 10,01 : 50 ml\n1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692701632-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1074,7 +1126,9 @@
       "shortDescription": "",
       "description": "1x Mô hình ngôi nhà điện mặt trời : Nhà có cửa sổ\n1x Giá đỡ cảm biến\n1x Giá treo mặt trời nhân tạo có thể xoay góc : Chiết áp, bóng sưởi, dây điện, phích cắm\n1x Tay vặn lục giác\n1x Pin mặt trời 12V\n1x Quạt mini\n1x Đèn LED\n4x Dây điện đỏ đen, rắc bắp chuối\n1x Hộp KIT nhựa : Dung tích 30 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692696992-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1097,7 +1151,9 @@
       "shortDescription": "",
       "description": "1x Kiềng đèn cồn\n1x Cốc đong thủy tinh 100 ml\n1x Cốc đong thủy tinh 250 ml\n1x Cốc đong thủy tinh 500 ml\n1x Nước cất : 500 ml\n1x Cồn 90 độ : 50 ml\n1x Đèn cồn thủy tinh : 150 ml\n1x Đũa thủy tinh : Dài tối thiểu 18 cm\n2x Pipet : Nhựa\n1x Kẹp ống nghiệm gỗ\n2x Thìa nhựa ngắn\n1x Hộp diêm\n1x Lọ màu thực phẩm vàng : 60 g\n1x Lọ màu thực phẩm hồng : 60 g\n1x Lọ màu thực phẩm cam : 60 g\n1x Đường tinh luyện : 500 g\n1x Que tre/gỗ nhỏ : Gói 10 que, que gỗ y tế\n1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692693035-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1120,7 +1176,9 @@
       "shortDescription": "",
       "description": "1x Mô hình chuồng nuôi thú cưng : Mô hình chuồng thú vách bằng lưới\n4x Dây điện đỏ đen, rắc bắp chuối\n1x Máng uống nước tự động : Đóng mở bằng nam châm điện\n1x Động cơ một chiều 12V\n1x Băng chun\n1x Gà nhựa đồ chơi\n1x Tay vặn lục giác\n1x Hộp KIT nhựa : Dung tích 30 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692689958-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1143,7 +1201,9 @@
       "shortDescription": "",
       "description": "1x Mô hình máy phát điện gió tiểu học (STH0008) : Cánh quạt có thể tháo rời, thay đổi góc\n1x Động cơ một chiều 12V\n1x Đèn LED\n6x Dây điện đỏ đen, rắc bắp chuối\n1x Tay vặn lục giác\n1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692684860-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1166,7 +1226,9 @@
       "shortDescription": "",
       "description": "1x La bàn cầm tay : Đường kính tối thiểu 6 cm, nắp nhựa, mặt nhựa\n1x Đèn học\n1x Bóng sưởi 220V\n1x Giá đỡ cảm biến\n1x Tay vặn lục giác\n1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692680993-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1189,7 +1251,9 @@
       "shortDescription": "",
       "description": "1x Mô hình nhà cách âm tiểu học : Mái vát, phòng kín + các tấm cách âm\n1x Hộp còi chip : Có công tắc, 3 viên pin AA\n1x Tay vặn lục giác\n1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692676919-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1212,7 +1276,9 @@
       "shortDescription": "",
       "description": "1x Mô hình chuyển động của Trái Đất : Gồm Trái Đất, Mặt Trăng có trục quay\n1x Đèn học\n1x Bóng sưởi 220V\n1x Tay vặn lục giác\n1x Hộp KIT nhựa : Dung tích 30 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692672718-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1235,7 +1301,9 @@
       "shortDescription": "",
       "description": "1x Mô hình hệ thống chữa cháy tự động : Nhà mái bằng có két nước; 1x Giá đỡ cảm biến; 1x Béc phun sương; 3x Nến cốc nhỏ; 1x Loa đèn 12V (đỏ); 2x Dây điện đỏ đen, rắc bắp chuối; 1x Máy bơm 12V; 1x Ống tio; 1x Tay vặn lục giác\n1x Hộp diêm\n1x Khăn vải thấm nước\n1x Hộp KIT nhựa : Dung tích 30 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692668225-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1258,7 +1326,9 @@
       "shortDescription": "",
       "description": "1x Túi Baking soda : 30 g\n1x Túi bột ngô : 100 g\n1x Lọ dầu dừa : 100 ml\n1x Lọ tinh dầu (tạo mùi thơm an toàn) : 10 ml\n1x Túi bột củ dền : 50 g\n1x Ống đong 10 ml\n1x Pipet : Nhựa\n1x Đĩa Petri : Thủy tinh, đường kính tối thiểu 8 cm\n1x Đũa thủy tinh : Dài tối thiểu 18 cm\n1x Bình tia : Dung tích tối thiểu 150 ml\n1x Nước cất : 500 ml\n1x Lọ dung dịch chuẩn pH = 10,01 : 50 ml\n1x Lọ dung dịch chuẩn pH = 7,01 : 50 ml\n1x Lọ dung dịch chuẩn pH = 4,01 : 50 ml\n1x Khăn vải thấm nước\n1x Thìa nhựa ngắn\n1x Lọ nhựa có nắp : Dung tích khoảng 50 ml\n1x Bàn chải đánh răng\n1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692664612-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1281,7 +1351,9 @@
       "shortDescription": "",
       "description": "1x Mô hình hệ hô hấp : Mặt nạ thở; mô hình lồng ngực; tay vặn lục giác\n1x Kéo đầu tròn : Kéo làm từ thép không gỉ, phần đầu bo tròn\n1x Túi bóng bay : Túi 20 chiếc\n1x Túi dây chun buộc tóc : 20 cái\n1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692660191-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1304,7 +1376,9 @@
       "shortDescription": "",
       "description": "1x Kéo đầu tròn : Kéo làm từ thép không gỉ, phần đầu bo tròn\n1x Que gỗ tròn : Túi 20 chiếc\n1x Mẫu in mô hình xe\n1x Túi ống hút nhựa nhỏ : Túi 20 chiếc\n1x Túi dây chun buộc tóc : 20 cái\n1x Băng dính 2 mặt : Bản tối thiểu 1 cm\n1x Nắp chai nhựa : Túi 24 chiếc\n1x Thước kẻ nhựa 20 cm\n1x Dây thép 0,5 mm : Dài 5 cm\n1x Hộp KIT nhựa : Dung tích 5,5 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692655850-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1327,7 +1401,9 @@
       "shortDescription": "",
       "description": "1x Ống nhựa hở hai đầu : Kích thước tối thiểu dài 15 mm, Φ60\n1x Túi bóng bay to : Túi 20 chiếc\n1x Túi dây chun buộc tóc : 20 cái\n1x Túi vụn giấy : Học sinh tự chuẩn bị\n1x Hộp còi chip : Có công tắc, 3 viên pin AA\n1x Túi giấy màu thủ công\n1x Hộp fomex có nắp đậy (từng mảnh) : Kích thước 15 x 15 x 15 cm, dày tối thiểu 0,5 cm\n1x Hộp gỗ có nắp đậy (từng mảnh) : Kích thước 15 x 15 x 15 cm, dày tối thiểu 0,5 cm\n1x Hộp nhựa có nắp đậy (từng mảnh) : Kích thước 15 x 15 x 15 cm, dày tối thiểu 0,5 cm\n1x Túi cốc giấy : 20 cốc / túi\n3x Giấy bìa màu trắng : Khổ giấy A4\n1x Thước kẻ nhựa 20 cm\n1x Băng dính 2 mặt : Bản tối thiểu 1 cm\n1x Kéo đầu tròn : Kéo làm từ thép không gỉ, phần đầu bo tròn\n1x Bút chì : Bút 2B\n1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692651478-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1350,7 +1426,9 @@
       "shortDescription": "",
       "description": "1x Khay nhựa : Kích thước tối thiểu 20 x 30 cm\n1x Cốc đong nhựa 250 ml\n1x Bình giữ nhiệt : Tối thiểu 200 ml\n1x Quạt cầm tay Mini\n1x Đĩa Petri : Thủy tinh, đường kính tối thiểu 8 cm\n1x Cốc đong nhựa 100 ml\n1x Bát nhựa to : Đường kính tối thiểu 15 cm\n1x Thìa inox café ngắn\n1x Hộp sữa tươi 180 ml : Giáo viên tự chuẩn bị (1 lốc 4 hộp)\n1x Đường tinh luyện : 10 g\n1x Túi muối ăn : 100 g\n1x Túi ốc quế : Giáo viên tự mua\n3x Túi zip nhỏ : Tối thiểu 5 cm x 5 cm\n3x Túi zip trung bình : Tối thiểu 10 cm x 10 cm\n1x Miếng vải mỏng màu đen : Kích thước 7 x 7 cm\n1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692646499-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1373,7 +1451,9 @@
       "shortDescription": "",
       "description": "1x Hộp đất nặn : Loại 5 thanh, đóng gói trong hộp kín, đảm bảo an toàn, không có chất độc hại\n1x Băng dính giấy\n1x Kéo đầu tròn : Kéo làm từ thép không gỉ, phần đầu bo tròn\n1x Bút chì : Bút 2B\n1x Túi giấy màu thủ công\n1x Miếng giấy bạc : Kích thước 7 × 7 cm\n1x Miếng giấy bóng kính : Kích thước 7 × 7 cm\n1x Nến thả\n1x Hộp diêm\n1x Giấy bìa màu đen : Khổ A4\n1x Giấy bìa màu đỏ : Khổ A4\n1x Giấy bìa màu xanh : Khổ A4\n1x Giấy bìa màu trắng : Khổ A4\n1x Giấy bìa màu vàng : Khổ A4\n1x Đèn pin cầm tay\n1x Thước kẻ nhựa 20 cm\n1x Đèn học để bàn\n1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692643359-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1396,7 +1476,9 @@
       "shortDescription": "",
       "description": "1x Kéo đầu tròn : Kéo làm từ thép không gỉ, phần đầu bo tròn\n1x Mẫu in mô hình xe\n1x Túi ống hút nhựa nhỏ : Túi 20 chiếc\n1x Túi dây chun buộc tóc : 20 cái\n1x Que gỗ tròn : Túi 20 chiếc\n1x Thước kẻ nhựa 20 cm\n1x Nắp chai nhựa : Túi 24 chiếc\n1x Túi bóng bay : Túi 20 chiếc\n1x Băng dính 2 mặt : Bản tối thiểu 1 cm\n1x Dây thép 0,5 mm : Dài 5 cm\n1x Hộp KIT nhựa : Dung tích 5,5 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692639904-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1419,7 +1501,9 @@
       "shortDescription": "",
       "description": "1x Hộp còi chip : Có công tắc, 3 viên pin AA\n1x Âm thoa : Có búa cao su, hộp cộng hưởng\n3x Giấy bìa màu trắng : Khổ giấy A4\n1x Một số dụng cụ âm nhạc dùng cho tiểu học :\nGồm các nhạc cụ:\nTrống nhỏ: Theo mẫu trống thông dụng, gồm trống và một dùi gõ\nSong loan: Hai mảnh gỗ hình tròn (kích thước khác nhau) nối với nhau bằng một thanh mỏng\nThanh phách: Hai thanh phách bằng tre hoặc gỗ theo mẫu nhạc cụ dân tộc\nTam giác chuông: Triangle và thanh gõ đều bằng kim loại\nTrống lục lạc: Theo mẫu nhạc cụ thông dụng\nMaracas: Hai bầu rỗng bằng nhựa hoặc gỗ, có tay cầm, bên trong chứa hạt đậu hoặc viên đá nhỏ\n1x Thìa inox café ngắn\n3x Cốc đong thủy tinh 100ml\n1x Thước kẻ nhựa 20cm\n1x Kéo đầu tròn : Kéo làm từ thép không gỉ, phần đầu bo tròn, bọc nhựa, kích thước 140mm\n1x Bút chì : Bút 2B\n1x Túi ống hút nhựa nhỏ : Túi ống hút nhựa 20 chiếc, dài 18cm\n3x Tờ giấy A4 trắng\n1x Băng dính 2 mặt : Bản tối thiểu 1cm\n1x Túi dây chun buộc tóc : 20 cái\n1x Hộp nhựa đựng giấy ăn : Hộp chữ nhật\n1x Hộp KIT nhựa : Dung tích 15L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692635926-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1442,7 +1526,9 @@
       "shortDescription": "",
       "description": "1x Bát nhựa to : Đường kính tối thiểu 15 cm\n3x Cốc đong nhựa 250 ml\n1x Bình giữ nhiệt : Tối thiểu 200 ml\n1x Đèn học để bàn : Bóng dây tóc\n3x Găng tay y tế : Tính theo đôi\n1x Miếng vải mỏng màu đen : Kích thước 20 × 20 cm\n1x Kéo đầu tròn : Kéo làm từ thép không gỉ, đầu bo tròn, bọc nhựa, kích thước 140 mm\n1x Băng dính 2 mặt : Bản tối thiểu 1 cm\n1x Hộp đất nặn : Loại 5 thanh, đóng gói trong hộp kín, an toàn, không độc hại\n1x Gói bông y tế\n1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692631678-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1465,7 +1551,9 @@
       "shortDescription": "",
       "description": "1x Hộp đất nặn : Loại 5 thanh, đóng gói trong hộp kín, an toàn, không độc hại\n1x Kéo đầu tròn\n1x Tờ giấy A4 trắng\n1x Bút chì : Bút 2B\n1x Thước kẻ nhựa 20 cm\n1x Đèn học để bàn\n1x Tờ giấy trắng hình đám mây\n1x Tờ giấy đen hình đám mây\n1x Kính râm loại 1 : Khả năng chắn sáng tốt\n1x Kính râm loại 2 : Khả năng chắn sáng kém\n1x Các tấm lọc sắc khác nhau : Kích thước 7 × 7 cm\n1x Đèn pin cầm tay\n1x Miếng giấy bóng kính : Kích thước 7 × 7 cm\n1x Miếng giấy bạc : Kích thước 7 × 7 cm\n1x Miếng vải mỏng màu xanh lá cây : Kích thước 7 × 7 cm\n1x Miếng vải mỏng màu đen : Kích thước 7 × 7 cm\n1x Miếng vải mỏng màu vàng : Kích thước 7 × 7 cm\n1x Chai nhựa vuông 330 ml : Đóng chai 330 ml\n1x Đĩa CD cũ : Học sinh tự chuẩn bị\n1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692625235-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1580,7 +1668,9 @@
       "shortDescription": "",
       "description": "",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786692614951-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
@@ -1672,9 +1762,7 @@
       "shortDescription": "",
       "description": "Học sinh dùng cảm biến âm thanh, cảm biến siêu âm, cảm biến ánh sáng, cảm biến áp suất, cảm biến khoảng cách hồng ngoại, servo, mô-đun LED và các thành phần khác để hiện thực hóa ý tưởng thành mô hình thực tế (mô hình bảng quảng cáo biến hình, phát hiện ô nhiễm tiếng ồn, robot tấn công, đường cảnh báo…).· Số lượng mẫu: Không giới hạn · Vật liệu: Nhựa ABS, ABS+PCSố chi tiết kết cấu: ≥ 950 chi tiết (PCS)Quy cách đóng gói: 2 bộ/thùng; KT hộp 418×318×218 mm; KT thùng carton 442×332×452 mmBộ điều khiển chính uKit 2.0 (MC03) ×1Điện áp cung cấp: DC 6.8V – 9.6V (điển hình 7.4V); dòng làm việc: 0 – 2ANhiệt độ làm việc: 0°C – 40°C; hệ điều hành hỗ trợ: Android 4.0.3 trở lên, iOS 9.0 trở lênCPU: ESP32; RAM: 4MB; FLASH: 16MBGiao tiếp: Bluetooth 4.2 hai chế độ (BLE + EDR); WiFi 802.11 b/g/nCổng: sạc USB Type-C; cổng công tắc 3Pin ×1; cổng servo & cảm biến 3Pin ×5; cổng 7Pin ×1Pin: Lithium polymer, dung lượng 1200mAhBộ điều khiển Explore ×1Điện áp vào: 7.2V – 12V DC; điện áp cấp: 5V; nhiệt độ làm việc: −5°C – 60°CCPU: ATMEGA2560; con quay hồi chuyển: MPU6050; còi: nguồn 5VNgôn ngữ lập trình: C/C++/Blockly; kích thước: 78 × 66 × 15 mmServo ×16Mô-men xoắn: 3.5 kg·cm; điện áp làm việc: 6.5 – 9.6V; dòng làm việc ~0.6A; dòng kẹt rôto: 1700mATốc độ: 0.17 giây/60°; độ chính xác: không tải 1°, có tải 3°; tuổi thọ: 150 giờCảm biếnCảm biến hồng ngoại ×2: 6.8 – 9.6V; ~1.5W; bước sóng 940nm; phạm vi 2 – 15cm; giao diện 3Pin; −15~45°C; 30×30×12mm; MCU ARM 32-bit Cortex-M0, SRAM 4KB, FLASH 16KB, dao động 8MHzCảm biến chạm ×2: 6.8 – 9.6V; ~1.5W; lực nhấn ≥160g; giao diện 3Pin; −15~45°C; 30×30×12mm; MCU ARM Cortex-M0, SRAM 4KB, FLASH 16KB, 8MHzCảm biến ánh sáng ×1: 6.8 – 9.6V DC; dòng 10mA; dải đo 0 – 4000 lux; giao diện 3Pin; 35.8×30×12mmCảm biến âm thanh ×1: 6.8 – 9.6V DC; dòng 10mA; phạm vi 0 – 100cm; ngõ ra 0 – 1023; giao diện 3Pin; 35.8×30×12mmCảm biến siêu âm ×1: 6.8 – 9.6V DC; ~0.5W; tần số 40±1kHz; góc đo 60°±15° (−6dB); sai số ≤1cm; phạm vi 3 – 300cm (bề mặt phẳng); giao diện 3Pin; −20~50°C; 42×42×19.6mmMô-đun LED RGB ×2: DC 6.8 – 9.6V; ~0.8W; 8 cụm LED; màu RGB; giao thức Half-Duplex Serial Port; giao diện 3Pin; −10~50°C; màu xám xanh; 8.8±0.1g; φ30×18mm; MCU ARM Cortex-M0, SRAM 4KB, FLASH 16KB, 8MHzPhần mềm & học liệu: uCode, Explore & Arduino (lập trình khối và mã lệnh trên PC); hỗ trợ 17 chủ đề bài học; tài liệu hướng dẫn.",
       "tags": [],
-      "images": [
-        "⏳ Đang upload ảnh..."
-      ],
+      "images": [],
       "featured": false,
       "createdAt": "2026-08-10"
     },
