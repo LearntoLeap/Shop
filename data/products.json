@@ -8844,7 +8844,9 @@
       "shortDescription": "",
       "description": "1x Mô hình máy phát điện gió THCS : Máy phát, 6 cánh quạt to, 6 cánh quạt nhỏ, thiết bị chỉnh góc cánh4x Dây điện đỏ đen, rắc bắp chuối1x Động cơ xoay chiều AC 12V1x Tay vặn lục giác1x Hộp KIT nhựa : Dung tích 30 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786690561360-thcs19.jpg"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
