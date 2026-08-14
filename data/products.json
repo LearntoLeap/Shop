@@ -1693,7 +1693,9 @@
       "shortDescription": "",
       "description": "",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786702102848-iot-010.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
