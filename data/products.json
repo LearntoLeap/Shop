@@ -2553,7 +2553,7 @@
     {
       "id": "pmsmljj0qxq2e",
       "name": "Cảm biến đo cường độ âm thanh",
-      "sku": "BT80i",
+      "sku": "",
       "slug": "cam-bien-do-cuong-do-am-thanh",
       "category": "robotics-ai",
       "model": "BT80i",
@@ -2576,7 +2576,7 @@
     {
       "id": "pmsmljj0qcnnz",
       "name": "Cảm biến điện thế",
-      "sku": "BT31i",
+      "sku": "",
       "slug": "cam-bien-dien-the",
       "category": "robotics-ai",
       "model": "BT31i",
@@ -2599,7 +2599,7 @@
     {
       "id": "pmsmljj0qs7m4",
       "name": "Cảm biến ánh sáng",
-      "sku": "BT50i",
+      "sku": "",
       "slug": "cam-bien-anh-sang",
       "category": "robotics-ai",
       "model": "BT50i",
@@ -2622,7 +2622,7 @@
     {
       "id": "pmsmljj0qokvl",
       "name": "Cảm biến đo độ đục",
-      "sku": "BT88i",
+      "sku": "",
       "slug": "cam-bien-do-do-duc",
       "category": "robotics-ai",
       "model": "BT88i",
@@ -2645,7 +2645,7 @@
     {
       "id": "pmsmljj0qzxo5",
       "name": "Cáp kết nối",
-      "sku": "BTsc_1",
+      "sku": "",
       "slug": "cap-ket-noi",
       "category": "robotics-ai",
       "model": "BTsc_1",
@@ -2714,7 +2714,7 @@
     {
       "id": "pmsmljj0qxy5g",
       "name": "Điện cực pH",
-      "sku": "031",
+      "sku": "",
       "slug": "dien-cuc-ph",
       "category": "robotics-ai",
       "model": "031",
@@ -2737,7 +2737,7 @@
     {
       "id": "pmsmljj0qoxji",
       "name": "Cảm biến đo độ pH",
-      "sku": "BT61i",
+      "sku": "",
       "slug": "cam-bien-do-do-ph",
       "category": "robotics-ai",
       "model": "BT61i",
@@ -2760,7 +2760,7 @@
     {
       "id": "pmsmljj0qedb6",
       "name": "Cảm biến đo nhiệt độ",
-      "sku": "BT05i",
+      "sku": "",
       "slug": "cam-bien-do-nhiet-do",
       "category": "robotics-ai",
       "model": "BT05i",
@@ -2806,7 +2806,7 @@
     {
       "id": "pmsmljj0qafoy",
       "name": "CoachLab II+ (Bộ điểu khiển - thu nhận tín hiệu số)",
-      "sku": "006p",
+      "sku": "",
       "slug": "coachlab-ii-bo-dieu-khien-thu-nhan-tin-hieu-so",
       "category": "robotics-ai",
       "model": "006p",
@@ -2990,7 +2990,7 @@
     {
       "id": "pmsmle116jku0",
       "name": "Bộ robot kỹ thuật và cơ cấu tự động",
-      "sku": "EREM101",
+      "sku": "",
       "slug": "bo-robot-ky-thuat-va-co-cau-tu-dong",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3013,7 +3013,7 @@
     {
       "id": "pmsmle116jdbk",
       "name": "Phụ kiện cho Sa bàn thực hành Bộ robot giáo dục lập trình được nâng cao tích hợp AI cho khối 6-7",
-      "sku": "ERMP102",
+      "sku": "",
       "slug": "phu-kien-cho-sa-ban-thuc-hanh-bo-robot-giao-duc-lap-trinh-duoc-nang-cao-tich-hop-ai-cho-khoi-6-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3036,7 +3036,7 @@
     {
       "id": "pmsmle116lt2k",
       "name": "Sa bàn thực hành Bộ robot giáo dục lập trình được nâng cao tích hợp AI cho khối 6-7",
-      "sku": "ERXE702",
+      "sku": "",
       "slug": "sa-ban-thuc-hanh-bo-robot-giao-duc-lap-trinh-duoc-nang-cao-tich-hop-ai-cho-khoi-6-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3059,7 +3059,7 @@
     {
       "id": "pmsmle116op1d",
       "name": "Sa bàn thực hành Bộ robot giáo dục lập trình được nâng cao tích hợp AI cho khối 8-9",
-      "sku": "ERXF702",
+      "sku": "",
       "slug": "sa-ban-thuc-hanh-bo-robot-giao-duc-lap-trinh-duoc-nang-cao-tich-hop-ai-cho-khoi-8-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3082,7 +3082,7 @@
     {
       "id": "pmsmle116mq4n",
       "name": "Tay cầm điểu khiển Bluetooth - Bộ robot giáo dục lập trình được nâng cao tích hợp AI",
-      "sku": "UKBTC01",
+      "sku": "",
       "slug": "tay-cam-dieu-khien-bluetooth-bo-robot-giao-duc-lap-trinh-duoc-nang-cao-tich-hop-ai",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3128,7 +3128,7 @@
     {
       "id": "pmsmle116684p",
       "name": "Sa bàn thực hành bộ lắp ghép kỹ thuật và cơ cấu chuyển động",
-      "sku": "LTLSBRBTTHCS",
+      "sku": "",
       "slug": "sa-ban-thuc-hanh-bo-lap-ghep-ky-thuat-va-co-cau-chuyen-dong",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3220,7 +3220,7 @@
     {
       "id": "pmsmle1167rmx",
       "name": "Máy in 3D giáo dục (FDM)",
-      "sku": "PF001-U",
+      "sku": "",
       "slug": "may-in-3d-giao-duc-fdm",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3243,7 +3243,7 @@
     {
       "id": "pmsmle116zpry",
       "name": "Khối học liệu bản cứng, bản mềm….",
-      "sku": "ISBN: 978-604-0-36557-6ISBN: 978-604-0-36558-3ISBN: 978-604-0-36559-0ISBN: 978-604-0-41920-0",
+      "sku": "",
       "slug": "khoi-hoc-lieu-ban-cung-ban-mem",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3266,7 +3266,7 @@
     {
       "id": "pmsmle116juqn",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Chất tẩy rửa - Lớp 9",
-      "sku": "THCS20",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chat-tay-rua-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3289,7 +3289,7 @@
     {
       "id": "pmsmle116tceh",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Máy phát điện gió - Lớp 9",
-      "sku": "THCS19",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-may-phat-dien-gio-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3312,7 +3312,7 @@
     {
       "id": "pmsmle116qnk3",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Pha chế và thử nghiệm chất khử trùng - Lớp 9",
-      "sku": "THCS18",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-pha-che-va-thu-nghiem-chat-khu-trung-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3335,7 +3335,7 @@
     {
       "id": "pmsmle116a8us",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Đèn ngủ thông minh - Lớp 9",
-      "sku": "THCS17",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-den-ngu-thong-minh-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3358,7 +3358,7 @@
     {
       "id": "pmsmle1160g6c",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Đèn đổi màu - Lớp 9",
-      "sku": "THCS16",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-den-doi-mau-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3381,7 +3381,7 @@
     {
       "id": "pmsmle116pqml",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hành trình hòa tan và kết tinh - Lớp 8",
-      "sku": "THCS15",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-hanh-trinh-hoa-tan-va-ket-tinh-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3404,7 +3404,7 @@
     {
       "id": "pmsmle115ve1r",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Chất chỉ thị tự nhiên - Lớp 8",
-      "sku": "THCS14",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chat-chi-thi-tu-nhien-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3427,7 +3427,7 @@
     {
       "id": "pmsmle115brgz",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Động cơ nhiệt mini - Lớp 8",
-      "sku": "THCS13",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-dong-co-nhiet-mini-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3450,7 +3450,7 @@
     {
       "id": "pmsmle115vd3k",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hệ thống chiếu sáng thông minh - Lớp 8",
-      "sku": "THCS12",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-he-thong-chieu-sang-thong-minh-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3473,7 +3473,7 @@
     {
       "id": "pmsmle115xfhf",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Quá trình chín sinh học - Lớp 8",
-      "sku": "THCS11",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-qua-trinh-chin-sinh-hoc-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3496,7 +3496,7 @@
     {
       "id": "pmsmle1151g5y",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Sự đa dạng của thế giới sinh vật dưới kính hiển vi - Lớp 7",
-      "sku": "THCS10",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-su-da-dang-cua-the-gioi-sinh-vat-duoi-kinh-hien-vi-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3519,7 +3519,7 @@
     {
       "id": "pmsmle115zoh0",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Nhà kính thông minh - Lớp 7",
-      "sku": "THCS09",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nha-kinh-thong-minh-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3542,7 +3542,7 @@
     {
       "id": "pmsmle115kufx",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Nhà cách âm - Lớp 7",
-      "sku": "THCS08",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nha-cach-am-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3565,7 +3565,7 @@
     {
       "id": "pmsmle115589q",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Cuộc chạy đua sắc màu - Lớp 7",
-      "sku": "THCS07",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-cuoc-chay-dua-sac-mau-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3588,7 +3588,7 @@
     {
       "id": "pmsmle115zlfo",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Lò sấy nông sản - Lớp 7",
-      "sku": "THCS06",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-lo-say-nong-san-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3611,7 +3611,7 @@
     {
       "id": "pmsmle11522sy",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Sản xuất nước sạch - Lớp 6",
-      "sku": "THCS05",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-san-xuat-nuoc-sach-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3634,7 +3634,7 @@
     {
       "id": "pmsmle115qi43",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Chất tạo màu tự nhiên - Lớp 6",
-      "sku": "THCS04",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chat-tao-mau-tu-nhien-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3657,7 +3657,7 @@
     {
       "id": "pmsmle115pcum",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Quạt điện thông minh - Lớp 6",
-      "sku": "THCS03",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-quat-dien-thong-minh-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3680,7 +3680,7 @@
     {
       "id": "pmsmle115jpgh",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ Ánh sáng và lá phổi xanh - Lớp 6",
-      "sku": "THCS02",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-anh-sang-va-la-phoi-xanh-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3703,7 +3703,7 @@
     {
       "id": "pmsmle115wzn0",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Cân chính xác - Lớp 6",
-      "sku": "THCS01",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-can-chinh-xac-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3726,7 +3726,7 @@
     {
       "id": "pmsmle115mk44",
       "name": "Cáp chuyển đổi BT - 4mm",
-      "sku": "0520",
+      "sku": "",
       "slug": "cap-chuyen-doi-bt-4mm",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3749,7 +3749,7 @@
     {
       "id": "pmsmle115nj49",
       "name": "Mô đun công tắc",
-      "sku": "063",
+      "sku": "",
       "slug": "mo-dun-cong-tac",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3772,7 +3772,7 @@
     {
       "id": "pmsmle11585cv",
       "name": "Cảm biến đo nồng độ khí CO2",
-      "sku": "BT25i",
+      "sku": "",
       "slug": "cam-bien-do-nong-do-khi-co2",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3795,7 +3795,7 @@
     {
       "id": "pmsmle115qnrn",
       "name": "Cảm biến dòng điện",
-      "sku": "BT21i",
+      "sku": "",
       "slug": "cam-bien-dong-dien",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3818,7 +3818,7 @@
     {
       "id": "pmsmle115siqc",
       "name": "Cảm biến khoảng cách",
-      "sku": "0664",
+      "sku": "",
       "slug": "cam-bien-khoang-cach",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3841,7 +3841,7 @@
     {
       "id": "pmsmle115el13",
       "name": "Cảm biến đo độ ẩm",
-      "sku": "BT72i",
+      "sku": "",
       "slug": "cam-bien-do-do-am",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3864,7 +3864,7 @@
     {
       "id": "pmsmle115vos0",
       "name": "Cảm biến đo cường độ âm thanh",
-      "sku": "BT80i",
+      "sku": "",
       "slug": "cam-bien-do-cuong-do-am-thanh",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3887,7 +3887,7 @@
     {
       "id": "pmsmle115mi69",
       "name": "Cảm biến điện thế",
-      "sku": "BT31i",
+      "sku": "",
       "slug": "cam-bien-dien-the",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3910,7 +3910,7 @@
     {
       "id": "pmsmle11507s5",
       "name": "Cảm biến ánh sáng",
-      "sku": "BT50i",
+      "sku": "",
       "slug": "cam-bien-anh-sang",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3933,7 +3933,7 @@
     {
       "id": "pmsmle115rcya",
       "name": "Cảm biến đo độ đục",
-      "sku": "BT88i",
+      "sku": "",
       "slug": "cam-bien-do-do-duc",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3956,7 +3956,7 @@
     {
       "id": "pmsmle115wagp",
       "name": "Cáp kết nối",
-      "sku": "BTsc_1",
+      "sku": "",
       "slug": "cap-ket-noi",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -3979,7 +3979,7 @@
     {
       "id": "pmsmle115l9uo",
       "name": "Cảm biến lực",
-      "sku": "BT42i",
+      "sku": "",
       "slug": "cam-bien-luc",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4002,7 +4002,7 @@
     {
       "id": "pmsmle1159h4h",
       "name": "Cảm biến màu",
-      "sku": "BT29i",
+      "sku": "",
       "slug": "cam-bien-mau",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4025,7 +4025,7 @@
     {
       "id": "pmsmle115n1qp",
       "name": "Điện cực pH",
-      "sku": "031",
+      "sku": "",
       "slug": "dien-cuc-ph",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4048,7 +4048,7 @@
     {
       "id": "pmsmle115l8ex",
       "name": "Cảm biến đo độ pH",
-      "sku": "BT61i",
+      "sku": "",
       "slug": "cam-bien-do-do-ph",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4071,7 +4071,7 @@
     {
       "id": "pmsmle114cqgh",
       "name": "Cảm biến đo nhiệt độ",
-      "sku": "BT05i",
+      "sku": "",
       "slug": "cam-bien-do-nhiet-do",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4117,7 +4117,7 @@
     {
       "id": "pmsmle1146y7n",
       "name": "CoachLab II+ (Bộ điểu khiển - thu nhận tín hiệu số)",
-      "sku": "006p",
+      "sku": "",
       "slug": "coachlab-ii-bo-dieu-khien-thu-nhan-tin-hieu-so",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4301,7 +4301,7 @@
     {
       "id": "pmsml98milxuu",
       "name": "Bộ robot kỹ thuật và cơ cấu tự động",
-      "sku": "EREM101",
+      "sku": "",
       "slug": "bo-robot-ky-thuat-va-co-cau-tu-dong",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4324,7 +4324,7 @@
     {
       "id": "pmsml98miktwm",
       "name": "Phụ kiện cho Sa bàn thực hành Bộ robot giáo dục lập trình được nâng cao tích hợp AI cho khối 6-7",
-      "sku": "ERMP102",
+      "sku": "",
       "slug": "phu-kien-cho-sa-ban-thuc-hanh-bo-robot-giao-duc-lap-trinh-duoc-nang-cao-tich-hop-ai-cho-khoi-6-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4347,7 +4347,7 @@
     {
       "id": "pmsml98miurui",
       "name": "Sa bàn thực hành Bộ robot giáo dục lập trình được nâng cao tích hợp AI cho khối 6-7",
-      "sku": "ERXE702",
+      "sku": "",
       "slug": "sa-ban-thuc-hanh-bo-robot-giao-duc-lap-trinh-duoc-nang-cao-tich-hop-ai-cho-khoi-6-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4370,7 +4370,7 @@
     {
       "id": "pmsml98mi2hne",
       "name": "Sa bàn thực hành Bộ robot giáo dục lập trình được nâng cao tích hợp AI cho khối 8-9",
-      "sku": "ERXF702",
+      "sku": "",
       "slug": "sa-ban-thuc-hanh-bo-robot-giao-duc-lap-trinh-duoc-nang-cao-tich-hop-ai-cho-khoi-8-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4393,7 +4393,7 @@
     {
       "id": "pmsml98mieojr",
       "name": "Tay cầm điểu khiển Bluetooth - Bộ robot giáo dục lập trình được nâng cao tích hợp AI",
-      "sku": "UKBTC01",
+      "sku": "",
       "slug": "tay-cam-dieu-khien-bluetooth-bo-robot-giao-duc-lap-trinh-duoc-nang-cao-tich-hop-ai",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4416,7 +4416,7 @@
     {
       "id": "pmsml98minko5",
       "name": "Bộ robot giáo dục lập trình được cơ bản",
-      "sku": "ERXI101",
+      "sku": "",
       "slug": "bo-robot-giao-duc-lap-trinh-duoc-co-ban",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4439,7 +4439,7 @@
     {
       "id": "pmsml98mim1rl",
       "name": "Sa bàn thực hành bộ lắp ghép kỹ thuật và cơ cấu chuyển động",
-      "sku": "LTLSBRBTTHCS",
+      "sku": "",
       "slug": "sa-ban-thuc-hanh-bo-lap-ghep-ky-thuat-va-co-cau-chuyen-dong",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4531,7 +4531,7 @@
     {
       "id": "pmsml98mifpnp",
       "name": "Máy in 3D giáo dục (FDM)",
-      "sku": "PF001-U",
+      "sku": "",
       "slug": "may-in-3d-giao-duc-fdm",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4554,7 +4554,7 @@
     {
       "id": "pmsml98miwnxk",
       "name": "Khối học liệu bản cứng, bản mềm….",
-      "sku": "ISBN: 978-604-0-36557-6ISBN: 978-604-0-36558-3ISBN: 978-604-0-36559-0ISBN: 978-604-0-41920-0",
+      "sku": "",
       "slug": "khoi-hoc-lieu-ban-cung-ban-mem",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4577,7 +4577,7 @@
     {
       "id": "pmsml98mimvkv",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Chất tẩy rửa - Lớp 9",
-      "sku": "THCS20",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chat-tay-rua-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4600,7 +4600,7 @@
     {
       "id": "pmsml98mixdld",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Máy phát điện gió - Lớp 9",
-      "sku": "THCS19",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-may-phat-dien-gio-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4623,7 +4623,7 @@
     {
       "id": "pmsml98miwah1",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Pha chế và thử nghiệm chất khử trùng - Lớp 9",
-      "sku": "THCS18",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-pha-che-va-thu-nghiem-chat-khu-trung-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4646,7 +4646,7 @@
     {
       "id": "pmsml98mhwwm9",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Đèn ngủ thông minh - Lớp 9",
-      "sku": "THCS17",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-den-ngu-thong-minh-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4669,7 +4669,7 @@
     {
       "id": "pmsml98mhq7py",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Đèn đổi màu - Lớp 9",
-      "sku": "THCS16",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-den-doi-mau-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4692,7 +4692,7 @@
     {
       "id": "pmsml98mhavdu",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hành trình hòa tan và kết tinh - Lớp 8",
-      "sku": "THCS15",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-hanh-trinh-hoa-tan-va-ket-tinh-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4715,7 +4715,7 @@
     {
       "id": "pmsml98mhjos3",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Chất chỉ thị tự nhiên - Lớp 8",
-      "sku": "THCS14",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chat-chi-thi-tu-nhien-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4738,7 +4738,7 @@
     {
       "id": "pmsml98mheymk",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Động cơ nhiệt mini - Lớp 8",
-      "sku": "THCS13",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-dong-co-nhiet-mini-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4761,7 +4761,7 @@
     {
       "id": "pmsml98mhjmsw",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hệ thống chiếu sáng thông minh - Lớp 8",
-      "sku": "THCS12",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-he-thong-chieu-sang-thong-minh-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4784,7 +4784,7 @@
     {
       "id": "pmsml98mhwk1q",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Quá trình chín sinh học - Lớp 8",
-      "sku": "THCS11",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-qua-trinh-chin-sinh-hoc-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4807,7 +4807,7 @@
     {
       "id": "pmsml98mhhecc",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Sự đa dạng của thế giới sinh vật dưới kính hiển vi - Lớp 7",
-      "sku": "THCS10",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-su-da-dang-cua-the-gioi-sinh-vat-duoi-kinh-hien-vi-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4830,7 +4830,7 @@
     {
       "id": "pmsml98mhitks",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Nhà kính thông minh - Lớp 7",
-      "sku": "THCS09",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nha-kinh-thong-minh-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4853,7 +4853,7 @@
     {
       "id": "pmsml98mhxoor",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Nhà cách âm - Lớp 7",
-      "sku": "THCS08",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nha-cach-am-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4876,7 +4876,7 @@
     {
       "id": "pmsml98mhhebw",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Cuộc chạy đua sắc màu - Lớp 7",
-      "sku": "THCS07",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-cuoc-chay-dua-sac-mau-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4899,7 +4899,7 @@
     {
       "id": "pmsml98mhtln5",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Lò sấy nông sản - Lớp 7",
-      "sku": "THCS06",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-lo-say-nong-san-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4922,7 +4922,7 @@
     {
       "id": "pmsml98mh2c52",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Sản xuất nước sạch - Lớp 6",
-      "sku": "THCS05",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-san-xuat-nuoc-sach-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4945,7 +4945,7 @@
     {
       "id": "pmsml98mhw0ub",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Chất tạo màu tự nhiên - Lớp 6",
-      "sku": "THCS04",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chat-tao-mau-tu-nhien-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4968,7 +4968,7 @@
     {
       "id": "pmsml98mhsh29",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Quạt điện thông minh - Lớp 6",
-      "sku": "THCS03",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-quat-dien-thong-minh-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -4991,7 +4991,7 @@
     {
       "id": "pmsml98mhozkf",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ Ánh sáng và lá phổi xanh - Lớp 6",
-      "sku": "THCS02",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-anh-sang-va-la-phoi-xanh-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5014,7 +5014,7 @@
     {
       "id": "pmsml98mhwvqv",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Cân chính xác - Lớp 6",
-      "sku": "THCS01",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-can-chinh-xac-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5037,7 +5037,7 @@
     {
       "id": "pmsml98mh3ugs",
       "name": "Cáp chuyển đổi BT - 4mm",
-      "sku": "0520",
+      "sku": "",
       "slug": "cap-chuyen-doi-bt-4mm",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5060,7 +5060,7 @@
     {
       "id": "pmsml98mhbhlc",
       "name": "Mô đun công tắc",
-      "sku": "063",
+      "sku": "",
       "slug": "mo-dun-cong-tac",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5083,7 +5083,7 @@
     {
       "id": "pmsml98mhe6mr",
       "name": "Cảm biến đo nồng độ khí CO2",
-      "sku": "BT25i",
+      "sku": "",
       "slug": "cam-bien-do-nong-do-khi-co2",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5106,7 +5106,7 @@
     {
       "id": "pmsml98mhk5hp",
       "name": "Cảm biến dòng điện",
-      "sku": "BT21i",
+      "sku": "",
       "slug": "cam-bien-dong-dien",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5129,7 +5129,7 @@
     {
       "id": "pmsml98mhsehz",
       "name": "Cảm biến khoảng cách",
-      "sku": "0664",
+      "sku": "",
       "slug": "cam-bien-khoang-cach",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5152,7 +5152,7 @@
     {
       "id": "pmsml98mhe0c0",
       "name": "Cảm biến đo độ ẩm",
-      "sku": "BT72i",
+      "sku": "",
       "slug": "cam-bien-do-do-am",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5175,7 +5175,7 @@
     {
       "id": "pmsml98mhv8g0",
       "name": "Cảm biến đo cường độ âm thanh",
-      "sku": "BT80i",
+      "sku": "",
       "slug": "cam-bien-do-cuong-do-am-thanh",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5198,7 +5198,7 @@
     {
       "id": "pmsml98mgspff",
       "name": "Cảm biến điện thế",
-      "sku": "BT31i",
+      "sku": "",
       "slug": "cam-bien-dien-the",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5221,7 +5221,7 @@
     {
       "id": "pmsml98mg7fpv",
       "name": "Cảm biến ánh sáng",
-      "sku": "BT50i",
+      "sku": "",
       "slug": "cam-bien-anh-sang",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5244,7 +5244,7 @@
     {
       "id": "pmsml98mgnel3",
       "name": "Cảm biến đo độ đục",
-      "sku": "BT88i",
+      "sku": "",
       "slug": "cam-bien-do-do-duc",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5267,7 +5267,7 @@
     {
       "id": "pmsml98mg2dus",
       "name": "Cáp kết nối",
-      "sku": "BTsc_1",
+      "sku": "",
       "slug": "cap-ket-noi",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5290,7 +5290,7 @@
     {
       "id": "pmsml98mgmtf0",
       "name": "Cảm biến lực",
-      "sku": "BT42i",
+      "sku": "",
       "slug": "cam-bien-luc",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5313,7 +5313,7 @@
     {
       "id": "pmsml98mgkvtv",
       "name": "Cảm biến màu",
-      "sku": "BT29i",
+      "sku": "",
       "slug": "cam-bien-mau",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5336,7 +5336,7 @@
     {
       "id": "pmsml98mgu17m",
       "name": "Điện cực pH",
-      "sku": "031",
+      "sku": "",
       "slug": "dien-cuc-ph",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5359,7 +5359,7 @@
     {
       "id": "pmsml98mgihyj",
       "name": "Cảm biến đo độ pH",
-      "sku": "BT61i",
+      "sku": "",
       "slug": "cam-bien-do-do-ph",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5382,7 +5382,7 @@
     {
       "id": "pmsml98mg20hj",
       "name": "Cảm biến đo nhiệt độ",
-      "sku": "BT05i",
+      "sku": "",
       "slug": "cam-bien-do-nhiet-do",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5405,7 +5405,7 @@
     {
       "id": "pmsml98mg9quh",
       "name": "Wilab",
-      "sku": "002",
+      "sku": "",
       "slug": "wilab",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5428,7 +5428,7 @@
     {
       "id": "pmsml98mgrsgr",
       "name": "CoachLab II+ (Bộ điểu khiển - thu nhận tín hiệu số)",
-      "sku": "006p",
+      "sku": "",
       "slug": "coachlab-ii-bo-dieu-khien-thu-nhan-tin-hieu-so",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5750,7 +5750,7 @@
     {
       "id": "pmsml98mftgpa",
       "name": "Máy in 3D giáo dục",
-      "sku": "A1- EU",
+      "sku": "",
       "slug": "may-in-3d-giao-duc",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5865,7 +5865,7 @@
     {
       "id": "pmsml98mfnh0l",
       "name": "Sách \"Hoạt động giáo dục STEM 5\"",
-      "sku": "ISBN: 978-604-0-31528-1",
+      "sku": "",
       "slug": "sach-hoat-dong-giao-duc-stem-5",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5888,7 +5888,7 @@
     {
       "id": "pmsml98mf7rjf",
       "name": "Sách \"Hoạt động giáo dục STEM 4\"",
-      "sku": "ISBN: 978-604-0-31513-7",
+      "sku": "",
       "slug": "sach-hoat-dong-giao-duc-stem-4",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5911,7 +5911,7 @@
     {
       "id": "pmsml98mf3oo2",
       "name": "Sách \"Hoạt động giáo dục STEM 3\"",
-      "sku": "ISBN: 978-604-0-41904-0",
+      "sku": "",
       "slug": "sach-hoat-dong-giao-duc-stem-3",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5934,7 +5934,7 @@
     {
       "id": "pmsml98mf4vfq",
       "name": "Sách \"Hoạt động giáo dục STEM 2\"",
-      "sku": "ISBN: 978-604-0-31493-2",
+      "sku": "",
       "slug": "sach-hoat-dong-giao-duc-stem-2",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5957,7 +5957,7 @@
     {
       "id": "pmsml98mfsbad",
       "name": "Sách \"Hoạt động giáo dục STEM 1\"",
-      "sku": "ISBN: 978-604-0-41896-8",
+      "sku": "",
       "slug": "sach-hoat-dong-giao-duc-stem-1",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -5980,7 +5980,7 @@
     {
       "id": "pmsml98mf9imm",
       "name": "Cáp kết nối",
-      "sku": "BTsc_1",
+      "sku": "",
       "slug": "cap-ket-noi",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6003,7 +6003,7 @@
     {
       "id": "pmsml98mf09je",
       "name": "Cảm biến đo độ đục",
-      "sku": "BT88i",
+      "sku": "",
       "slug": "cam-bien-do-do-duc",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6026,7 +6026,7 @@
     {
       "id": "pmsml98mfb57x",
       "name": "Cảm biến đo cường độ âm thanh",
-      "sku": "BT80i",
+      "sku": "",
       "slug": "cam-bien-do-cuong-do-am-thanh",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6049,7 +6049,7 @@
     {
       "id": "pmsml98mfhgg4",
       "name": "Điện cực pH",
-      "sku": "031",
+      "sku": "",
       "slug": "dien-cuc-ph",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6072,7 +6072,7 @@
     {
       "id": "pmsml98mfp793",
       "name": "Cảm biến đo độ pH",
-      "sku": "BT61i",
+      "sku": "",
       "slug": "cam-bien-do-do-ph",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6095,7 +6095,7 @@
     {
       "id": "pmsml98mfsbxs",
       "name": "Cảm biến điện thế",
-      "sku": "BT31i",
+      "sku": "",
       "slug": "cam-bien-dien-the",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6118,7 +6118,7 @@
     {
       "id": "pmsml98mf3nki",
       "name": "Cảm biến đo áp suất khí",
-      "sku": "BT66i",
+      "sku": "",
       "slug": "cam-bien-do-ap-suat-khi",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6141,7 +6141,7 @@
     {
       "id": "pmsml98mef9kp",
       "name": "Cảm biến ánh sáng",
-      "sku": "BT50i",
+      "sku": "",
       "slug": "cam-bien-anh-sang",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6164,7 +6164,7 @@
     {
       "id": "pmsml98mec7m8",
       "name": "Cảm biến đo nhiệt độ",
-      "sku": "BT05i",
+      "sku": "",
       "slug": "cam-bien-do-nhiet-do",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6187,7 +6187,7 @@
     {
       "id": "pmsml98mexgez",
       "name": "Wilab (Bộ chuyển đổi tín hiệu số)",
-      "sku": "002",
+      "sku": "",
       "slug": "wilab-bo-chuyen-doi-tin-hieu-so",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6210,7 +6210,7 @@
     {
       "id": "pmsml98meraid",
       "name": "CoachLab II+ (Bộ điểu khiển - thu nhận tín hiệu số)",
-      "sku": "006p",
+      "sku": "",
       "slug": "coachlab-ii-bo-dieu-khien-thu-nhan-tin-hieu-so",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6233,7 +6233,7 @@
     {
       "id": "pmsml98met7fl",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Em điều khiển và tham gia giao thông - Lớp 5",
-      "sku": "TH20",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-em-dieu-khien-va-tham-gia-giao-thong-lop-5",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6256,7 +6256,7 @@
     {
       "id": "pmsml98me76gh",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Lọc nước sạch - Lớp 5",
-      "sku": "TH19",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-loc-nuoc-sach-lop-5",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6279,7 +6279,7 @@
     {
       "id": "pmsml98meua7l",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Ngôi nhà điện mặt trời - Lớp 5",
-      "sku": "TH18",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-ngoi-nha-dien-mat-troi-lop-5",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6302,7 +6302,7 @@
     {
       "id": "pmsml98me2zrj",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Kẹo tinh thể - Lớp 5",
-      "sku": "TH17",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-keo-tinh-the-lop-5",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6325,7 +6325,7 @@
     {
       "id": "pmsml98mekcsi",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề  Chuồng nuôi thông minh - Lớp 4",
-      "sku": "TH16",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chuong-nuoi-thong-minh-lop-4",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6348,7 +6348,7 @@
     {
       "id": "pmsml98meu99x",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Máy phát điện gió - Lớp 4",
-      "sku": "TH15",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-may-phat-dien-gio-lop-4",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6371,7 +6371,7 @@
     {
       "id": "pmsml98meczjv",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Nhà mát - Lớp 4",
-      "sku": "TH14",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nha-mat-lop-4",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6394,7 +6394,7 @@
     {
       "id": "pmsml98mdncsn",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Nhà cách âm - Lớp 4",
-      "sku": "TH13",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nha-cach-am-lop-4",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6417,7 +6417,7 @@
     {
       "id": "pmsml98mdq7ic",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Chuyển động của trái đất - Lớp 3",
-      "sku": "TH12",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chuyen-dong-cua-trai-dat-lop-3",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6440,7 +6440,7 @@
     {
       "id": "pmsml98md5ep6",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hệ thống chữa cháy tự động - Lớp 3",
-      "sku": "TH11",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-he-thong-chua-chay-tu-dong-lop-3",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6463,7 +6463,7 @@
     {
       "id": "pmsml98mdebi6",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Kem đánh răng - Lớp 3",
-      "sku": "TH10",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-kem-danh-rang-lop-3",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6486,7 +6486,7 @@
     {
       "id": "pmsml98mdq0wp",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hệ hô hấp - Lớp 3",
-      "sku": "TH09",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-he-ho-hap-lop-3",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6509,7 +6509,7 @@
     {
       "id": "pmsml98mdb1nx",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Xe chạy bằng dây chun - Lớp 2",
-      "sku": "TH08",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-xe-chay-bang-day-chun-lop-2",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6532,7 +6532,7 @@
     {
       "id": "pmsml98mduf83",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Tìm hiểu về âm thanh _ Lớp 2",
-      "sku": "TH07",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-am-thanh-lop-2",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6555,7 +6555,7 @@
     {
       "id": "pmsml98md38u5",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề  Tìm hiểu về nhiệt độ - Lớp 2",
-      "sku": "TH06",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-nhiet-do-lop-2",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6578,7 +6578,7 @@
     {
       "id": "pmsml98mdsy37",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Tìm hiểu về ánh sáng - Lớp 2",
-      "sku": "TH05",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-anh-sang-lop-2",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6601,7 +6601,7 @@
     {
       "id": "pmsml98mdbuaq",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Chuyển động bằng phản lực - Lớp 1",
-      "sku": "TH04",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chuyen-dong-bang-phan-luc-lop-1",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6624,7 +6624,7 @@
     {
       "id": "pmsml98mdzklr",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Tìm hiểu về âm thanh - Lớp 1",
-      "sku": "TH03",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-am-thanh-lop-1",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6647,7 +6647,7 @@
     {
       "id": "pmsml98mdf0pd",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Tìm hiểu về nhiệt độ - Lớp 1",
-      "sku": "TH02",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-nhiet-do-lop-1",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -6670,7 +6670,7 @@
     {
       "id": "pmsml98mdzm3i",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Tìm hiểu về ánh sáng - Lớp 1",
-      "sku": "TH01",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-anh-sang-lop-1",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7015,7 +7015,7 @@
     {
       "id": "pmsmkx19ztw17",
       "name": "Máy in 3D giáo dục",
-      "sku": "A1- EU",
+      "sku": "",
       "slug": "may-in-3d-giao-duc",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7130,7 +7130,7 @@
     {
       "id": "pmsmkx19z53yx",
       "name": "Sách \"Hoạt động giáo dục STEM 5\"",
-      "sku": "ISBN: 978-604-0-31528-1",
+      "sku": "",
       "slug": "sach-hoat-dong-giao-duc-stem-5",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7153,7 +7153,7 @@
     {
       "id": "pmsmkx19zsslt",
       "name": "Sách \"Hoạt động giáo dục STEM 4\"",
-      "sku": "ISBN: 978-604-0-31513-7",
+      "sku": "",
       "slug": "sach-hoat-dong-giao-duc-stem-4",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7176,7 +7176,7 @@
     {
       "id": "pmsmkx19zvieh",
       "name": "Sách \"Hoạt động giáo dục STEM 3\"",
-      "sku": "ISBN: 978-604-0-41904-0",
+      "sku": "",
       "slug": "sach-hoat-dong-giao-duc-stem-3",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7199,7 +7199,7 @@
     {
       "id": "pmsmkx19zzjot",
       "name": "Sách \"Hoạt động giáo dục STEM 2\"",
-      "sku": "ISBN: 978-604-0-31493-2",
+      "sku": "",
       "slug": "sach-hoat-dong-giao-duc-stem-2",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7222,7 +7222,7 @@
     {
       "id": "pmsmkx19y5vob",
       "name": "Sách \"Hoạt động giáo dục STEM 1\"",
-      "sku": "ISBN: 978-604-0-41896-8",
+      "sku": "",
       "slug": "sach-hoat-dong-giao-duc-stem-1",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7245,7 +7245,7 @@
     {
       "id": "pmsmkx19y6zu5",
       "name": "Cáp kết nối",
-      "sku": "BTsc_1",
+      "sku": "",
       "slug": "cap-ket-noi",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7268,7 +7268,7 @@
     {
       "id": "pmsmkx19yt7lh",
       "name": "Cảm biến đo độ đục",
-      "sku": "BT88i",
+      "sku": "",
       "slug": "cam-bien-do-do-duc",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7291,7 +7291,7 @@
     {
       "id": "pmsmkx19yepbf",
       "name": "Cảm biến đo cường độ âm thanh",
-      "sku": "BT80i",
+      "sku": "",
       "slug": "cam-bien-do-cuong-do-am-thanh",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7314,7 +7314,7 @@
     {
       "id": "pmsmkx19ywl6s",
       "name": "Điện cực pH",
-      "sku": "031",
+      "sku": "",
       "slug": "dien-cuc-ph",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7337,7 +7337,7 @@
     {
       "id": "pmsmkx19ygg8x",
       "name": "Cảm biến đo độ pH",
-      "sku": "BT61i",
+      "sku": "",
       "slug": "cam-bien-do-do-ph",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7360,7 +7360,7 @@
     {
       "id": "pmsmkx19y03ic",
       "name": "Cảm biến điện thế",
-      "sku": "BT31i",
+      "sku": "",
       "slug": "cam-bien-dien-the",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7383,7 +7383,7 @@
     {
       "id": "pmsmkx19ychpc",
       "name": "Cảm biến đo áp suất khí",
-      "sku": "BT66i",
+      "sku": "",
       "slug": "cam-bien-do-ap-suat-khi",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7406,7 +7406,7 @@
     {
       "id": "pmsmkx19yzvp7",
       "name": "Cảm biến ánh sáng",
-      "sku": "BT50i",
+      "sku": "",
       "slug": "cam-bien-anh-sang",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7429,7 +7429,7 @@
     {
       "id": "pmsmkx19yev9m",
       "name": "Cảm biến đo nhiệt độ",
-      "sku": "BT05i",
+      "sku": "",
       "slug": "cam-bien-do-nhiet-do",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7452,7 +7452,7 @@
     {
       "id": "pmsmkx19y8a8p",
       "name": "Wilab (Bộ chuyển đổi tín hiệu số)",
-      "sku": "002",
+      "sku": "",
       "slug": "wilab-bo-chuyen-doi-tin-hieu-so",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7475,7 +7475,7 @@
     {
       "id": "pmsmkx19yfc0t",
       "name": "CoachLab II+ (Bộ điểu khiển - thu nhận tín hiệu số)",
-      "sku": "006p",
+      "sku": "",
       "slug": "coachlab-ii-bo-dieu-khien-thu-nhan-tin-hieu-so",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7498,7 +7498,7 @@
     {
       "id": "pmsmkx19ypjoo",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Em điều khiển và tham gia giao thông - Lớp 5",
-      "sku": "TH20",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-em-dieu-khien-va-tham-gia-giao-thong-lop-5",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7521,7 +7521,7 @@
     {
       "id": "pmsmkx19ygne5",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Lọc nước sạch - Lớp 5",
-      "sku": "TH19",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-loc-nuoc-sach-lop-5",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7544,7 +7544,7 @@
     {
       "id": "pmsmkx19ynntf",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Ngôi nhà điện mặt trời - Lớp 5",
-      "sku": "TH18",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-ngoi-nha-dien-mat-troi-lop-5",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7567,7 +7567,7 @@
     {
       "id": "pmsmkx19y3hgj",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Kẹo tinh thể - Lớp 5",
-      "sku": "TH17",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-keo-tinh-the-lop-5",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7590,7 +7590,7 @@
     {
       "id": "pmsmkx19y9sfh",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề  Chuồng nuôi thông minh - Lớp 4",
-      "sku": "TH16",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chuong-nuoi-thong-minh-lop-4",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7613,7 +7613,7 @@
     {
       "id": "pmsmkx19ydjs7",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Máy phát điện gió - Lớp 4",
-      "sku": "TH15",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-may-phat-dien-gio-lop-4",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7636,7 +7636,7 @@
     {
       "id": "pmsmkx19y9msy",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Nhà mát - Lớp 4",
-      "sku": "TH14",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nha-mat-lop-4",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7659,7 +7659,7 @@
     {
       "id": "pmsmkx19yov1r",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Nhà cách âm - Lớp 4",
-      "sku": "TH13",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nha-cach-am-lop-4",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7682,7 +7682,7 @@
     {
       "id": "pmsmkx19yej8t",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Chuyển động của trái đất - Lớp 3",
-      "sku": "TH12",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chuyen-dong-cua-trai-dat-lop-3",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7705,7 +7705,7 @@
     {
       "id": "pmsmkx19y7wdv",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hệ thống chữa cháy tự động - Lớp 3",
-      "sku": "TH11",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-he-thong-chua-chay-tu-dong-lop-3",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7728,7 +7728,7 @@
     {
       "id": "pmsmkx19yh9on",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Kem đánh răng - Lớp 3",
-      "sku": "TH10",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-kem-danh-rang-lop-3",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7751,7 +7751,7 @@
     {
       "id": "pmsmkx19yurgf",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hệ hô hấp - Lớp 3",
-      "sku": "TH09",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-he-ho-hap-lop-3",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7774,7 +7774,7 @@
     {
       "id": "pmsmkx19ygs5k",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Xe chạy bằng dây chun - Lớp 2",
-      "sku": "TH08",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-xe-chay-bang-day-chun-lop-2",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7797,7 +7797,7 @@
     {
       "id": "pmsmkx19xgz2y",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Tìm hiểu về âm thanh _ Lớp 2",
-      "sku": "TH07",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-am-thanh-lop-2",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7820,7 +7820,7 @@
     {
       "id": "pmsmkx19xuw4o",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề  Tìm hiểu về nhiệt độ - Lớp 2",
-      "sku": "TH06",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-nhiet-do-lop-2",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7843,7 +7843,7 @@
     {
       "id": "pmsmkx19xoh3a",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Tìm hiểu về ánh sáng - Lớp 2",
-      "sku": "TH05",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-anh-sang-lop-2",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7866,7 +7866,7 @@
     {
       "id": "pmsmkx19x5llr",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Chuyển động bằng phản lực - Lớp 1",
-      "sku": "TH04",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chuyen-dong-bang-phan-luc-lop-1",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7889,7 +7889,7 @@
     {
       "id": "pmsmkx19xhke5",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Tìm hiểu về âm thanh - Lớp 1",
-      "sku": "TH03",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-am-thanh-lop-1",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7912,7 +7912,7 @@
     {
       "id": "pmsmkx19xxsd2",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Tìm hiểu về nhiệt độ - Lớp 1",
-      "sku": "TH02",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-nhiet-do-lop-1",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7935,7 +7935,7 @@
     {
       "id": "pmsmkx19xvo1u",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Tìm hiểu về ánh sáng - Lớp 1",
-      "sku": "TH01",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-anh-sang-lop-1",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -7981,7 +7981,7 @@
     {
       "id": "pmsjvf544cqic",
       "name": "CoachLab II+ (Bộ điểu khiển - thu nhận tín hiệu số)",
-      "sku": "006p",
+      "sku": "",
       "slug": "coachlab-ii-bo-dieu-khien-thu-nhan-tin-hieu-so",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8004,7 +8004,7 @@
     {
       "id": "pmsjvf544kf75",
       "name": "Wilab",
-      "sku": "002",
+      "sku": "",
       "slug": "wilab",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8027,7 +8027,7 @@
     {
       "id": "pmsjvf544r43p",
       "name": "Cảm biến đo nhiệt độ",
-      "sku": "BT05i",
+      "sku": "",
       "slug": "cam-bien-do-nhiet-do",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8050,7 +8050,7 @@
     {
       "id": "pmsjvf5440tsu",
       "name": "Cảm biến đo độ pH",
-      "sku": "BT61i",
+      "sku": "",
       "slug": "cam-bien-do-do-ph",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8073,7 +8073,7 @@
     {
       "id": "pmsjvf544ienw",
       "name": "Điện cực pH",
-      "sku": "031",
+      "sku": "",
       "slug": "dien-cuc-ph",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8096,7 +8096,7 @@
     {
       "id": "pmsjvf544zsly",
       "name": "Cảm biến màu",
-      "sku": "BT29i",
+      "sku": "",
       "slug": "cam-bien-mau",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8119,7 +8119,7 @@
     {
       "id": "pmsjvf544qc8h",
       "name": "Cảm biến lực",
-      "sku": "BT42i",
+      "sku": "",
       "slug": "cam-bien-luc",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8142,7 +8142,7 @@
     {
       "id": "pmsjvf5442a0b",
       "name": "Cáp kết nối",
-      "sku": "BTsc_1",
+      "sku": "",
       "slug": "cap-ket-noi",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8165,7 +8165,7 @@
     {
       "id": "pmsjvf544yqzu",
       "name": "Cảm biến đo độ đục",
-      "sku": "BT88i",
+      "sku": "",
       "slug": "cam-bien-do-do-duc",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8188,7 +8188,7 @@
     {
       "id": "pmsjvf5440fxj",
       "name": "Cảm biến ánh sáng",
-      "sku": "BT50i",
+      "sku": "",
       "slug": "cam-bien-anh-sang",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8211,7 +8211,7 @@
     {
       "id": "pmsjvf544cnak",
       "name": "Cảm biến điện thế",
-      "sku": "BT31i",
+      "sku": "",
       "slug": "cam-bien-dien-the",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8234,7 +8234,7 @@
     {
       "id": "pmsjvf544i189",
       "name": "Cảm biến đo cường độ âm thanh",
-      "sku": "BT80i",
+      "sku": "",
       "slug": "cam-bien-do-cuong-do-am-thanh",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8257,7 +8257,7 @@
     {
       "id": "pmsjvf54443sz",
       "name": "Cảm biến đo độ ẩm",
-      "sku": "BT72i",
+      "sku": "",
       "slug": "cam-bien-do-do-am",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8280,7 +8280,7 @@
     {
       "id": "pmsjvf54457cd",
       "name": "Cảm biến khoảng cách",
-      "sku": "0664",
+      "sku": "",
       "slug": "cam-bien-khoang-cach",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8303,7 +8303,7 @@
     {
       "id": "pmsjvf544vziq",
       "name": "Cảm biến dòng điện",
-      "sku": "BT21i",
+      "sku": "",
       "slug": "cam-bien-dong-dien",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8326,7 +8326,7 @@
     {
       "id": "pmsjvf544zg27",
       "name": "Cảm biến đo nồng độ khí CO2",
-      "sku": "BT25i",
+      "sku": "",
       "slug": "cam-bien-do-nong-do-khi-co2",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8349,7 +8349,7 @@
     {
       "id": "pmsjvf544eae2",
       "name": "Mô đun công tắc",
-      "sku": "063",
+      "sku": "",
       "slug": "mo-dun-cong-tac",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8372,7 +8372,7 @@
     {
       "id": "pmsjvf5445olf",
       "name": "Cáp chuyển đổi BT - 4mm",
-      "sku": "0520",
+      "sku": "",
       "slug": "cap-chuyen-doi-bt-4mm",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8395,7 +8395,7 @@
     {
       "id": "pmsjvf544n77l",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Cân chính xác - Lớp 6",
-      "sku": "THCS01",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-can-chinh-xac-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8418,7 +8418,7 @@
     {
       "id": "pmsjvf5443f8t",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ Ánh sáng và lá phổi xanh - Lớp 6",
-      "sku": "THCS02",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-anh-sang-va-la-phoi-xanh-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8441,7 +8441,7 @@
     {
       "id": "pmsjvf544612x",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Quạt điện thông minh - Lớp 6",
-      "sku": "THCS03",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-quat-dien-thong-minh-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8464,7 +8464,7 @@
     {
       "id": "pmsjvf544qkpn",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Chất tạo màu tự nhiên - Lớp 6",
-      "sku": "THCS04",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chat-tao-mau-tu-nhien-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8487,7 +8487,7 @@
     {
       "id": "pmsjvf544zj4m",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Sản xuất nước sạch - Lớp 6",
-      "sku": "THCS05",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-san-xuat-nuoc-sach-lop-6",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8510,7 +8510,7 @@
     {
       "id": "pmsjvf544xxwp",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Lò sấy nông sản - Lớp 7",
-      "sku": "THCS06",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-lo-say-nong-san-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8533,7 +8533,7 @@
     {
       "id": "pmsjvf544n0il",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Cuộc chạy đua sắc màu - Lớp 7",
-      "sku": "THCS07",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-cuoc-chay-dua-sac-mau-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8556,7 +8556,7 @@
     {
       "id": "pmsjvf544e67q",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Nhà cách âm - Lớp 7",
-      "sku": "THCS08",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nha-cach-am-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8579,7 +8579,7 @@
     {
       "id": "pmsjvf544roeo",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Nhà kính thông minh - Lớp 7",
-      "sku": "THCS09",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nha-kinh-thong-minh-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8602,7 +8602,7 @@
     {
       "id": "pmsjvf5433ob1",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Sự đa dạng của thế giới sinh vật dưới kính hiển vi - Lớp 7",
-      "sku": "THCS10",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-su-da-dang-cua-the-gioi-sinh-vat-duoi-kinh-hien-vi-lop-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8625,7 +8625,7 @@
     {
       "id": "pmsjvf543639b",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Quá trình chín sinh học - Lớp 8",
-      "sku": "THCS11",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-qua-trinh-chin-sinh-hoc-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8648,7 +8648,7 @@
     {
       "id": "pmsjvf5431nf7",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hệ thống chiếu sáng thông minh - Lớp 8",
-      "sku": "THCS12",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-he-thong-chieu-sang-thong-minh-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8671,7 +8671,7 @@
     {
       "id": "pmsjvf543d809",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Động cơ nhiệt mini - Lớp 8",
-      "sku": "THCS13",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-dong-co-nhiet-mini-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8694,7 +8694,7 @@
     {
       "id": "pmsjvf543bi9g",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Chất chỉ thị tự nhiên - Lớp 8",
-      "sku": "THCS14",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chat-chi-thi-tu-nhien-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8717,7 +8717,7 @@
     {
       "id": "pmsjvf543rkjg",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Hành trình hòa tan và kết tinh - Lớp 8",
-      "sku": "THCS15",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-hanh-trinh-hoa-tan-va-ket-tinh-lop-8",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8740,7 +8740,7 @@
     {
       "id": "pmsjvf543jb7a",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Đèn đổi màu - Lớp 9",
-      "sku": "THCS16",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-den-doi-mau-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8763,7 +8763,7 @@
     {
       "id": "pmsjvf5430jv8",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Đèn ngủ thông minh - Lớp 9",
-      "sku": "THCS17",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-den-ngu-thong-minh-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8786,7 +8786,7 @@
     {
       "id": "pmsjvf543k28c",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Pha chế và thử nghiệm chất khử trùng - Lớp 9",
-      "sku": "THCS18",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-pha-che-va-thu-nghiem-chat-khu-trung-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8809,7 +8809,7 @@
     {
       "id": "pmsjvf543b6f6",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Máy phát điện gió - Lớp 9",
-      "sku": "THCS19",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-may-phat-dien-gio-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8832,7 +8832,7 @@
     {
       "id": "pmsjvf5434bhw",
       "name": "Thiết bị, dụng cụ, vật tư tiêu hao chủ đề Chất tẩy rửa - Lớp 9",
-      "sku": "THCS20",
+      "sku": "",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chat-tay-rua-lop-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8855,7 +8855,7 @@
     {
       "id": "pmsjvf543pt77",
       "name": "Khối học liệu bản cứng, bản mềm….",
-      "sku": "ISBN: 978-604-0-36557-6ISBN: 978-604-0-36558-3ISBN: 978-604-0-36559-0ISBN: 978-604-0-41920-0",
+      "sku": "",
       "slug": "khoi-hoc-lieu-ban-cung-ban-mem",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8878,7 +8878,7 @@
     {
       "id": "pmsjvf543ywjz",
       "name": "Máy in 3D giáo dục (FDM)",
-      "sku": "PF001-U",
+      "sku": "",
       "slug": "may-in-3d-giao-duc-fdm",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8947,7 +8947,7 @@
     {
       "id": "pmsjvf543wcyn",
       "name": "Sa bàn thực hành bộ lắp ghép kỹ thuật và cơ cấu chuyển động",
-      "sku": "LTLSBRBTTHCS",
+      "sku": "",
       "slug": "sa-ban-thuc-hanh-bo-lap-ghep-ky-thuat-va-co-cau-chuyen-dong",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8970,7 +8970,7 @@
     {
       "id": "pmsjvf543u719",
       "name": "Bộ robot giáo dục lập trình được cơ bản",
-      "sku": "ERXI101",
+      "sku": "",
       "slug": "bo-robot-giao-duc-lap-trinh-duoc-co-ban",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -8993,7 +8993,7 @@
     {
       "id": "pmsjvf543xinj",
       "name": "Bộ robot giáo dục lập trình được nâng cao tích hợp AI",
-      "sku": "ERXI101",
+      "sku": "",
       "slug": "bo-robot-giao-duc-lap-trinh-duoc-nang-cao-tich-hop-ai",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -9016,7 +9016,7 @@
     {
       "id": "pmsjvf543xv5q",
       "name": "Tay cầm điểu khiển Bluetooth - Bộ robot giáo dục lập trình được nâng cao tích hợp AI",
-      "sku": "UKBTC01",
+      "sku": "",
       "slug": "tay-cam-dieu-khien-bluetooth-bo-robot-giao-duc-lap-trinh-duoc-nang-cao-tich-hop-ai",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -9039,7 +9039,7 @@
     {
       "id": "pmsjvf5430td6",
       "name": "Sa bàn thực hành Bộ robot giáo dục lập trình được nâng cao tích hợp AI cho khối 8-9",
-      "sku": "ERXF702",
+      "sku": "",
       "slug": "sa-ban-thuc-hanh-bo-robot-giao-duc-lap-trinh-duoc-nang-cao-tich-hop-ai-cho-khoi-8-9",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -9062,7 +9062,7 @@
     {
       "id": "pmsjvf543y61p",
       "name": "Sa bàn thực hành Bộ robot giáo dục lập trình được nâng cao tích hợp AI cho khối 6-7",
-      "sku": "ERXE702",
+      "sku": "",
       "slug": "sa-ban-thuc-hanh-bo-robot-giao-duc-lap-trinh-duoc-nang-cao-tich-hop-ai-cho-khoi-6-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -9085,7 +9085,7 @@
     {
       "id": "pmsjvf54316e9",
       "name": "Phụ kiện cho Sa bàn thực hành Bộ robot giáo dục lập trình được nâng cao tích hợp AI cho khối 6-7",
-      "sku": "ERMP102",
+      "sku": "",
       "slug": "phu-kien-cho-sa-ban-thuc-hanh-bo-robot-giao-duc-lap-trinh-duoc-nang-cao-tich-hop-ai-cho-khoi-6-7",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -9108,7 +9108,7 @@
     {
       "id": "pmsjvf543qmb6",
       "name": "Bộ robot kỹ thuật và cơ cấu tự động",
-      "sku": "EREM101",
+      "sku": "",
       "slug": "bo-robot-ky-thuat-va-co-cau-tu-dong",
       "category": "robotics-ai",
       "priceMode": "show",
@@ -9177,7 +9177,7 @@
     {
       "id": "pmsjvf543wc6i",
       "name": "Bộ học tập lập trình tích hợp theo chủ đề STEM Xử lý nước",
-      "sku": "SMART-CLEWA25",
+      "sku": "",
       "slug": "bo-hoc-tap-lap-trinh-tich-hop-theo-chu-de-stem-xu-ly-nuoc",
       "category": "robotics-ai",
       "priceMode": "show",
