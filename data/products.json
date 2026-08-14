@@ -5186,7 +5186,9 @@
       "shortDescription": "",
       "description": "\"Đo các biến thể của áp suất không khí do sóng âm thanh gây ra trong phạm vi: + Thang đo: 40 …. 130 dB+ Giải tần số hoạt động: 20 Hz …. 20.000 HzĐộ phân giải (12 bit): 22 mPa\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786684111010-bulk-clip.tiff"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "",
@@ -5209,7 +5211,9 @@
       "shortDescription": "",
       "description": "\"Đo hiệu điện thế trong phạm vi: -12 V…+ 12 VĐộ phân giải (12 bit): 6.5 mV\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786684132419-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "",
@@ -5232,7 +5236,9 @@
       "shortDescription": "",
       "description": "\"Đo cường độ ánh sáng trong ba phạm vi: 0 .. 1500 lux. 0 .. 15000 lux và 0 .. 150000 lux.Độ phân giải (12bit): 0.37lx, 3.7lx, 37lx\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786684102659-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "",
@@ -5255,7 +5261,9 @@
       "shortDescription": "",
       "description": "\"Đo độ đục của mẫu nước trong khoảng phạm vi: 0…200 NTUĐộ phân giải (12 bit): 0.2 NTU\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786684094221-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "",
@@ -5278,7 +5286,9 @@
       "shortDescription": "",
       "description": "Được sử dụng cho các cảm biến BT với chốt cắm chuẩn IEEE1394.",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786684090999-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "",
@@ -5324,7 +5334,9 @@
       "shortDescription": "",
       "description": "Theo dõi nồng độ (cao) của khí cacbondioxit trong phạm vi 0 .. 100000 ppmĐộ phân giải: 20ppm\"\"Đo lượng ánh sáng truyền qua dung dịch mẫu. Nó có bốn nguồn ánh sáng LED phát ra ánh sáng với các bước sóng khác nhau: tím 430 nm, xanh dương 470 nm, xanh lá cây 565 nm và đỏ 635 nmPhạm vi: 90…10% TĐộ phân giải (12 bit): 0.025% T",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786684070747-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "",
@@ -5347,7 +5359,9 @@
       "shortDescription": "",
       "description": "Sử dụng cùng với cảm biến pH để đo mức độ pH trong phạm vi 0…14pH",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786684059419-bulk-clip.jpg"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "",
@@ -5370,7 +5384,9 @@
       "shortDescription": "",
       "description": "Xác định mức độ pH trong phạm vi: 0...14 pH\nĐộ phân giải (12 bit): 0.005 pH",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786684054903-bulk-clip.jpg"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "",
@@ -5393,7 +5409,9 @@
       "shortDescription": "",
       "description": "\"Đo nhiệt độ trong phạm vi: -40 °C...140 °CĐộ chính xác: 2˚C ở -40˚C, 0.6 ở 30˚C, 1.8˚C ở 140˚C\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786684049096-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "",
@@ -5416,7 +5434,9 @@
       "shortDescription": "",
       "description": "\"Độ phân giải: 12-bitsTần số lấy mẫu tối đa: 100kHzĐầu vào cảm biến: Hai đầu tương tự BT, kết nối được với cảm biếnTích hợp: đèn LED và coi báo hiệu trong các hoạt độngKết nối không dây: BluetoothKết nối máy tính: Micro USB - USB ANguồn: Pin sạcPhần mềm cài đặt được trên các hệ điều hành Window, MAC OS, IOS, Android\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786684045876-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "",
@@ -5439,7 +5459,9 @@
       "shortDescription": "",
       "description": "Độ phân giải: 12-bitTần số lấy mẫu tối đa: 100 kHzĐầu vào cảm biến: Hai đầu vào tương tự BT, hai đầu vào 4-mmĐầu ra dụng cụ chấp hành: 04 đầu ra 4-mm với các mức điện áp khác nhauKết nối máy tính: Cổng USBNguồn cấp: Bộ đổi điệnPhần mềm trên máy tính cài đặt được trên hệ điều hành Windows và MAC OS",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786684040070-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "",
@@ -5761,7 +5783,9 @@
       "shortDescription": "",
       "description": "Thông số kỹ thuật:\n1. Thông số in ấn\nKích thước vùng in: 256 × 256 × 256 mm\nLoại đầu in 3D: đầu in toàn kim loại (All-metal Hotend)\nVật liệu vòi phun: thép không gỉ\nĐường kính vòi phun tiêu chuẩn: 0.4 mm (kèm theo)\nTùy chọn vòi phun: 0.2 mm, 0.6 mm, 0.8 mm\nNhiệt độ đầu in tối đa: 300°C\nNhiệt độ bàn in tối đa: 100°C\n2. Bàn in và bề mặt in\nBàn in 3D sử dụng hệ thống tấm PEI nhiều loại:\nTấm PEI bề mặt tre (textured PEI) – đi kèm theo máy\nTấm PEI mịn (smooth PEI)\nTấm PEI hai mặt kết cấu kép\nTấm chịu nhiệt độ cao (high-temp smooth PEI)\nTấm làm mát (cooling plate)\n3. Hiệu suất chuyển động\nTốc độ di chuyển tối đa: 500 mm/s\nGia tốc tối đa: 10,000 mm/s²\n4. Vật liệu in tương thích\nVật liệu đề xuất (in tối ưu): PLA, PETG, TPU, PVA\nVật liệu có thể in (không khuyến nghị nếu không có buồng kín): ABS, ASA, PC, PA, PET, polymer gia cường sợi thủy tinh hoặc sợi carbon\n(Lưu ý: cần buồng kín để đảm bảo độ ổn định của bản in với các vật liệu nhiệt cao.)\n5. Hệ thống cảm biến & giám sát\nCamera giám sát buồng in: độ phân giải đến 1080p, tốc độ khung hình thấp; hỗ trợ timelapse\nCảm biến hết sợi (Filament Runout Sensor): có\nCảm biến đo quãng đường sợi (Filament Motion Sensor): có\nCảm biến rối sợi (Filament Tangle Detection): có\nKhôi phục khi mất điện (Power Loss Recovery): có\n6. Kích thước & trọng lượng\nKích thước máy: 385 × 410 × 430 mm\nKích thước đóng gói: 596 × 536 × 325 mm\nTrọng lượng tịnh: 8.3 kg\nTổng trọng lượng: 13 kg\nPhiên bản Combo (kèm AMS Lite):\nKích thước đóng gói: 560 × 540 × 430 mm\nTổng trọng lượng: 13.5 kg",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786684023764-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "",
