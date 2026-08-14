@@ -6912,7 +6912,9 @@
       "shortDescription": "",
       "description": "\"ALPHA MINI\nKiểu dáng & kết cấu\nRobot hình người (humanoid); màu Trắng/Xám\nKích thước: 245 (H) × 149 (W) × 112 (D) mm; khối lượng ~720 g\nVật liệu: khung hợp kim nhôm, vỏ ngoài nhựa ABS\n14 động cơ servo; nhiệt độ hoạt động 0–40 °C\n\nBộ xử lý & lưu trữ\nHệ điều hành: Android 11\nCPU: RK3566; GPU: ARM Mali-G52\nRAM: 2GB DDR3 (32 bit); bộ nhớ trong (ROM): 32 GB\n\nKết nối mạng\nWi-Fi băng tần kép 2.4GHz & 5.0GHz, chuẩn 802.11 a/b/g/n\nBluetooth 5.0 + EDR & BLE\nMạng di động: GSM 900/1800; WCDMA (B1/5/8); 4G/LTE đa băng tần (hỗ trợ Nano SIM)\n\nNguồn điện\nPin lithium 7.4V – 2000mAh\nAdapter: đầu vào 100–240V, 50/60Hz, 0.5A; đầu ra DC 5V/3A\n\nÂm thanh\nLoa 4Ω/0.8W, 2 kênh (dual track)\nDàn 4 micro (khoảng cách 60 mm) + 1 micro đàm thoại\n\nHiển thị & tín hiệu\n2 màn hình IPS LCD 1.22\"\" (làm mắt)\nĐèn LED RGB ở miệng\n\nCamera\nCamera độ phân giải 5 MP (5 triệu điểm ảnh)\n\nGiao tiếp, điều khiển & cảm biến\nCổng: nguồn & USB 2.0; khe Nano SIM\nĐiều khiển bằng giọng nói hoặc ứng dụng trên điện thoại\nCảm biến: PIR (chuyển động), gia tốc kế, con quay hồi chuyển, cảm biến chạm\nBảo vệ: chống quá tải, ngắn mạch, quá áp\n\nThông số động cơ servo – loại 2 kg·cm\nKhối lượng 50 g; mô-men xoắn 2 kg·cm; góc quay 0–240°\nĐiện áp 7.4V (dải hoạt động 6–10V); tốc độ 0.36 s/60°\nDòng hoạt động tối đa 0.4A; độ chính xác 1.5°\nĐiều khiển số; giao thức RS232 bán song công (Half-duplex TTL)\n\nThông số động cơ servo – loại 3 kg·cm\nKhối lượng 50 g; mô-men xoắn 3 kg·cm; góc quay 0–360°\nĐiện áp 7.4V (dải hoạt động 6–9V); tốc độ 0.18 s/60°\nDòng hoạt động tối đa 0.5A; độ chính xác 1°\nĐiều khiển số; giao thức RS232 bán song công (Half-duplex TTL)\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691817188-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "",
@@ -6935,7 +6937,9 @@
       "shortDescription": "",
       "description": "Bảo hành: 01 năm\nKích thước tổng thể: khoảng 1.2 m x 1.8 m, có khung viền bao quanh\nChất liệu bề mặt: tấm Bạt chất liệu Hiflex cán mờ mô phỏng các khu vực nhiệm vụ cho các hoạt động thực hành và thi đấu Robotics",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691806851-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "LTLSBRBTTH",
@@ -6958,7 +6962,9 @@
       "shortDescription": "",
       "description": "Chất liệu: ABS, ABS+PC\nSố lượng chi tiết lắp ghép: >1000 chi tiết\nTrọng lượng: Xấp xỉ 2.9kg\nKích thước hộp: 418 × 318 × 109 mm\nKích thước thùng carton: 440 × 350 × 465 mm\nSố lượng đóng gói: 4 bộ/thùng\nBộ điều khiển chính uKit 2.0 (MC03) ×1\nĐiện áp cung cấp: DC 6.8V – 9.6V (giá trị điển hình 7.4V)\nDòng làm việc: 0–2A\nNhiệt độ làm việc: 0°C – 40°C\nHệ điều hành hỗ trợ: Android 4.0.3 trở lên, iOS 9.0 trở lên\nCPU: ESP32\nRAM: 4MB\nFLASH: 16MB\nGiao tiếp: Bluetooth 4.2 (BLE + EDR), WiFi 802.b/g/h\nCổng sạc: USB Type-C\nCổng công tắc: Đầu nối 3Pin ×1\nCổng servo & cảm biến: Đầu nối 3Pin ×5\nCổng 7Pin ×1\nPin: Pin lithium polymer\nDung lượng pin: 1200mAh\nServo ×4\nMô-men xoắn: 3.5kg·cm\nTrọng lượng: 25 ± 0.2g\nTốc độ: 0.17 giây/60°\nĐộ chính xác: 1° (không tải), 3° (có tải)\nGóc hoạt động: 0–240°\nĐiện áp làm việc: 6.4V – 9.6V DC (giá trị điển hình 7.4V)\nĐịnh dạng điều khiển: Kỹ thuật số\nGiao thức truyền thông: Half-Duplex Serial Port\nĐộng cơ DC ×1\nĐiện áp làm việc: 7.4V DC (phạm vi 5.5V – 8.4V DC)\nMô-men xoắn: 2.2kg·cm (tối đa)\nTốc độ không tải: 140 ± 10% vòng/phút\nChiều quay: Thuận chiều/Ngược chiều kim đồng hồ\nĐộ chính xác: ±1.5 RPM\nGóc quay: 360°\nGiao diện: Đầu nối 3Pin\nNhiệt độ làm việc: 0°C – 40°C\nKích thước: 78 × 30 × 36 mm\nCảm biến hồng ngoại ×1\nĐiện áp làm việc: 6.8V – 9.6V DC\nBước sóng hồng ngoại: 940nm\nPhạm vi đo: 2–15 cm\nGiao diện: Đầu nối 3Pin\nNhiệt độ làm việc: 0°C – 40°C\nKích thước: 30 × 30 × 12 mm\nCảm biến chạm ×2\nĐiện áp làm việc: 6.8V – 9.6V DC\nÁp lực chạm: 160gf\nGiao diện: Đầu nối 3Pin\nNhiệt độ làm việc: 0°C – 40°C\nKích thước: 30 × 30 × 12 mm\nModule LED ×2\nĐiện áp làm việc: 6.8V – 9.6V DC\nSố lượng LED: 8 cụm\nMàu LED: RGB\nGiao thức truyền thông: Half-Duplex Serial Port\nGiao diện: Đầu nối 3Pin\nNhiệt độ làm việc: 0°C – 40°C\nMàu sắc: Xanh ghi\nTrọng lượng: 8.8 ± 0.1g\nKích thước: Φ30 × 18 mm\nCảm biến siêu âm ×1\nĐiện áp làm việc: 6.8V – 9.6V DC\nTần số siêu âm: 40.0 ± 1.0 kHz\nGóc đo: 60° ± 15° (−6dB)\nSai số đo: <1cm\nPhạm vi đo: 3cm – 300cm (bề mặt phẳng)\nGiao diện: Đầu nối 3Pin\nNhiệt độ làm việc: 0°C – 40°C\nKích thước: 42 × 42 × 19.6 mm\nCảm biến ánh sáng ×2\nĐiện áp làm việc: 6.8V – 9.6V DC\nDòng làm việc: 10mA\nGiao diện: Đầu nối 3Pin\nPhạm vi đo: 0 – 4000 lux\nKích thước: 35.8 × 30 × 12 mm\nCảm biến âm thanh ×1\nĐiện áp làm việc: 6.8V – 9.6V DC\nDòng làm việc: 10mA\nPhạm vi đo: 0 – 100 cm\nGiá trị đầu ra: 0–1023\nGiao diện: Đầu nối 3Pin\nKích thước: 35.8 × 30 × 12 mm\nCảm biến nhiệt độ & độ ẩm ×1\nĐiện áp làm việc: 6.8V – 9.6V DC\nDòng làm việc: 10mA\nGiao diện: Đầu nối 3Pin\nPhạm vi đo nhiệt độ: −5°C – 45°C\nPhạm vi đo độ ẩm: 0%RH – 100%RH\nKích thước: 35.8 × 30 × 12 mm\nPhụ kiện kèm theo:\nSách hướng dẫn nhanh ×1\nDanh sách linh kiện ×1\nBộ nguồn ×1\nNội dung học tập xoay quanh chủ đề thế giới động vật, giúp học sinh làm quen với AI thông qua các mô hình robot mô phỏng hành vi, chuyển động và phản hồi.\nHọc sinh được tiếp cận các khái niệm nền tảng: cảm biến, điều khiển, tư duy thuật toán, trình tự lệnh, thông qua hoạt động lắp ráp và lập trình trực quan.\nGiáo trình chú trọng phát triển tư duy sáng tạo, tư duy logic và kỹ năng hợp tác, phù hợp với lứa tuổi tiểu học.\nTài liệu học tập được xây dựng theo các chủ đề và phân phối chương trình phù hợp với chương trình giáo dục phổ thông, được thẩm định vởi các Viện có thẩm quyền trực thuộc Bộ Giáo dục và Đào tạo.",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691801673-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10",
       "model": "ERKH099",
