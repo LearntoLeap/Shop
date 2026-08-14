@@ -1897,6 +1897,160 @@ async function deleteCategory(id) {
   await saveProductsFile('Xóa DM: ' + c.name);
 }
 
+// ---------- CHECK DUPLICATES ----------
+function normName(s) {
+  return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function checkDuplicates() {
+  const products = STATE.data.products;
+  const groups = []; // [{key, reason, items:[product,...]}]
+
+  // 1) SKU trùng
+  const bySku = new Map();
+  products.forEach(p => {
+    const sku = (p.sku || '').trim();
+    if (!sku) return;
+    if (!bySku.has(sku)) bySku.set(sku, []);
+    bySku.get(sku).push(p);
+  });
+  for (const [sku, arr] of bySku) {
+    if (arr.length > 1) groups.push({ key: 'sku:' + sku, reason: `SKU trùng: <span class="font-mono">${sku}</span>`, items: arr });
+  }
+
+  // 2) projectCode + model trùng
+  const byPM = new Map();
+  products.forEach(p => {
+    const pc = (p.projectCode || '').trim();
+    const md = (p.model || '').trim();
+    if (!pc || !md) return;
+    const k = pc + '|' + md;
+    if (!byPM.has(k)) byPM.set(k, []);
+    byPM.get(k).push(p);
+  });
+  for (const [k, arr] of byPM) {
+    if (arr.length > 1) {
+      const [pc, md] = k.split('|');
+      groups.push({ key: 'pm:' + k, reason: `Trùng Dự án + Model: <span class="font-mono">${pc}-${md}</span>`, items: arr });
+    }
+  }
+
+  // 3) Tên trùng (cùng category)
+  const byName = new Map();
+  products.forEach(p => {
+    const n = normName(p.name);
+    if (!n) return;
+    const k = (p.category || '') + '::' + n;
+    if (!byName.has(k)) byName.set(k, []);
+    byName.get(k).push(p);
+  });
+  for (const [k, arr] of byName) {
+    if (arr.length > 1) {
+      const cat = STATE.data.categories.find(c => c.id === arr[0].category);
+      groups.push({ key: 'name:' + k, reason: `Tên trùng ${cat ? 'trong ' + cat.name : ''}: <b>${arr[0].name}</b>`, items: arr });
+    }
+  }
+
+  // Dedupe groups sharing full item set (SKU + name usually overlap)
+  const seenSets = new Set();
+  const unique = [];
+  for (const g of groups) {
+    const sig = g.items.map(p => p.id).sort().join(',');
+    if (seenSets.has(sig)) continue;
+    seenSets.add(sig);
+    unique.push(g);
+  }
+
+  const box = document.getElementById('editorBox');
+  if (box) { box.classList.remove('max-w-3xl'); box.classList.add('max-w-4xl'); }
+
+  if (unique.length === 0) {
+    document.getElementById('editorContent').innerHTML = `
+      <div class="p-8 text-center">
+        <div class="text-5xl mb-3">✅</div>
+        <div class="text-lg font-bold text-emerald-700 mb-1">Không phát hiện trùng lặp</div>
+        <div class="text-sm text-slate-500 mb-5">Đã quét ${STATE.data.products.length} sản phẩm theo SKU, Dự án+Model, và Tên (theo danh mục).</div>
+        <button onclick="closeEditor()" class="bg-slate-600 hover:bg-slate-700 text-white font-semibold px-5 py-2 rounded-lg">Đóng</button>
+      </div>`;
+    openEditor();
+    return;
+  }
+
+  window._dupGroups = unique;
+
+  const rows = unique.map((g, gi) => {
+    const items = g.items.map((p, i) => {
+      const img = (p.images && p.images[0]) || 'https://placehold.co/60x60/e2e8f0/64748b?text=?';
+      const keepFirst = i === 0;
+      return `
+        <label class="flex items-center gap-3 p-2 rounded hover:bg-slate-50 border ${keepFirst ? 'border-emerald-200 bg-emerald-50/40' : 'border-slate-200'}">
+          <input type="checkbox" data-dup-del="${p.id}" ${keepFirst ? '' : 'checked'} class="w-4 h-4" />
+          <img src="${img}" class="w-10 h-10 object-cover rounded" />
+          <div class="flex-1 min-w-0 text-xs">
+            <div class="font-semibold truncate">${keepFirst ? '🟢 ' : '🔴 '}${p.name}</div>
+            <div class="text-slate-500 truncate">
+              ${p.sku ? 'SKU: <span class="font-mono">' + p.sku + '</span> • ' : ''}
+              ${p.model ? 'Model: <span class="font-mono">' + p.model + '</span> • ' : ''}
+              ${p.projectCode ? '📁 ' + p.projectCode + ' • ' : ''}
+              ${p.priceMode === 'contact' ? 'Liên hệ' : fmtVND(p.price)}
+            </div>
+          </div>
+          <span class="text-[10px] text-slate-400">${keepFirst ? 'GIỮ mặc định' : 'XÓA mặc định'}</span>
+        </label>`;
+    }).join('');
+    return `
+      <div class="border border-amber-200 rounded-lg p-3 bg-amber-50/40">
+        <div class="text-sm font-semibold text-amber-800 mb-2">🔸 Nhóm ${gi + 1}: ${g.reason} <span class="text-slate-500 font-normal">(${g.items.length} SP)</span></div>
+        <div class="space-y-1">${items}</div>
+      </div>`;
+  }).join('');
+
+  document.getElementById('editorContent').innerHTML = `
+    <div class="p-5">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-lg font-bold">🔍 Kiểm tra trùng lặp — ${unique.length} nhóm</h3>
+        <button onclick="closeEditor()" class="text-slate-500 hover:text-slate-700">✕</button>
+      </div>
+      <div class="text-xs text-slate-600 mb-3 bg-blue-50 border border-blue-100 rounded p-2">
+        Đã tick = sẽ <b class="text-red-600">XÓA</b>. Bỏ tick = <b class="text-emerald-700">GIỮ LẠI</b>. Mặc định giữ sản phẩm đầu, xóa các bản sau.
+        Anh có thể tự chỉnh checkbox nếu muốn giữ bản khác.
+      </div>
+      <div class="max-h-[60vh] overflow-y-auto space-y-3 pr-1">${rows}</div>
+      <div class="mt-4 flex gap-2 justify-end border-t pt-3">
+        <button onclick="dupToggleAll(true)" class="text-xs px-3 py-1.5 rounded border border-slate-300 hover:bg-slate-50">Tick tất cả bản sau</button>
+        <button onclick="dupToggleAll(false)" class="text-xs px-3 py-1.5 rounded border border-slate-300 hover:bg-slate-50">Bỏ tick tất cả</button>
+        <div class="flex-1"></div>
+        <button onclick="closeEditor()" class="px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-50">Hủy</button>
+        <button onclick="applyDupDelete()" class="bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg">🗑 Xóa các SP đã tick</button>
+      </div>
+    </div>`;
+  openEditor();
+}
+
+function dupToggleAll(checked) {
+  const groups = window._dupGroups || [];
+  const keepIds = new Set(groups.map(g => g.items[0].id));
+  document.querySelectorAll('[data-dup-del]').forEach(cb => {
+    if (keepIds.has(cb.dataset.dupDel)) return;
+    cb.checked = checked;
+  });
+}
+
+async function applyDupDelete() {
+  const toDelete = new Set();
+  document.querySelectorAll('[data-dup-del]').forEach(cb => {
+    if (cb.checked) toDelete.add(cb.dataset.dupDel);
+  });
+  if (toDelete.size === 0) { alert('Chưa chọn sản phẩm nào để xóa.'); return; }
+  if (!confirm(`Xác nhận xóa ${toDelete.size} sản phẩm trùng?`)) return;
+  STATE.data.products = STATE.data.products.filter(p => !toDelete.has(p.id));
+  for (const id of toDelete) STATE.selection.delete(id);
+  closeEditor();
+  render();
+  window._dupGroups = null;
+  await saveProductsFile(`Xóa ${toDelete.size} SP trùng lặp`);
+}
+
 function openEditor() {
   const e = document.getElementById('editor');
   e.classList.remove('hidden'); e.classList.add('flex');
