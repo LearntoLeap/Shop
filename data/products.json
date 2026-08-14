@@ -8039,7 +8039,9 @@
       "shortDescription": "",
       "description": "\"Độ phân giải: 12-bitsTần số lấy mẫu tối đa: 100kHzĐầu vào cảm biến: Hai đầu tương tự BT, kết nối được với cảm biếnTích hợp: đèn LED và coi báo hiệu trong các hoạt độngKết nối không dây: BluetoothKết nối máy tính: Micro USB - USB ANguồn: Pin sạcPhần mềm cài đặt được trên các hệ điều hành Window, MAC OS, IOS, Android\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691514933-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8062,7 +8064,9 @@
       "shortDescription": "",
       "description": "\"Đo nhiệt độ trong phạm vi: -40 °C...140 °CĐộ chính xác: 2˚C ở -40˚C, 0.6 ở 30˚C, 1.8˚C ở 140˚C\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691510991-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8085,7 +8089,9 @@
       "shortDescription": "",
       "description": "\"Xác định mức độ pH trong phạm vi: 0...14 pHĐộ phân giải (12 bit): 0.005 pH\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691501592-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8108,7 +8114,9 @@
       "shortDescription": "",
       "description": "Sử dụng cùng với cảm biến pH để đo mức độ pH trong phạm vi 0…14pH",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691504927-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8131,7 +8139,9 @@
       "shortDescription": "",
       "description": "Theo dõi nồng độ (cao) của khí cacbondioxit trong phạm vi 0 .. 100000 ppmĐộ phân giải: 20ppm\"\"Đo lượng ánh sáng truyền qua dung dịch mẫu. Nó có bốn nguồn ánh sáng LED phát ra ánh sáng với các bước sóng khác nhau: tím 430 nm, xanh dương 470 nm, xanh lá cây 565 nm và đỏ 635 nmPhạm vi: 90…10% TĐộ phân giải (12 bit): 0.025% T",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691494079-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8154,7 +8164,9 @@
       "shortDescription": "",
       "description": "Cảm biến lực BT42i để đo lực đẩy và kéo. Nó sử dụng công nghệ đo độ căng; có hai thang đo (chuyển thang đo bằng công tắc).Phạm vi: -5 .. 5 N, -50 .. 50 N. Độ phân giải (12 bit): 0.003 N, 0.03 N",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691489969-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8177,7 +8189,9 @@
       "shortDescription": "",
       "description": "Được sử dụng cho các cảm biến BT với chốt cắm chuẩn IEEE1394.",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691484942-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8200,7 +8214,9 @@
       "shortDescription": "",
       "description": "\"Đo độ đục của mẫu nước trong khoảng phạm vi: 0…200 NTUĐộ phân giải (12 bit): 0.2 NTU\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691480787-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8223,7 +8239,9 @@
       "shortDescription": "",
       "description": "\"Đo cường độ ánh sáng trong ba phạm vi: 0 .. 1500 lux. 0 .. 15000 lux và 0 .. 150000 lux.Độ phân giải (12bit): 0.37lx, 3.7lx, 37lx\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691476001-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8246,7 +8264,9 @@
       "shortDescription": "",
       "description": "\"Đo hiệu điện thế trong phạm vi: -12 V…+ 12 VĐộ phân giải (12 bit): 6.5 mV\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691471131-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8269,7 +8289,9 @@
       "shortDescription": "",
       "description": "\"Đo các biến thể của áp suất không khí do sóng âm thanh gây ra trong phạm vi: + Thang đo: 40 …. 130 dB+ Giải tần số hoạt động: 20 Hz …. 20.000 HzĐộ phân giải (12 bit): 22 mPa\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691466450-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8292,7 +8314,9 @@
       "shortDescription": "",
       "description": "\"Đo độ ẩm tương đối trong phạm vi: 0 .. 100% Độ phân giải: 0.04% RH\"",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691461350-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8338,7 +8362,9 @@
       "shortDescription": "",
       "description": "- Thang đo: -5A ... 5A",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691445258-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8384,7 +8410,9 @@
       "shortDescription": "",
       "description": "Hệ công tắc 063 là một rơle trạng thái rắn (SSR) cho phép bạn điều khiển các thiết bị với điện áp định mức 110 - 230 V bằng điện áp một chiều 3 V hoặc cao hơn tới 25 V. Rơle được kết nối với mạch điện của thiết bị điện cần điều khiển (110V - 230V) thông qua đầu nối Euro ở phía sau mô-đun. Rơle có thể cấp điện với công suất lên đến 1150 W,",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691438156-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8407,7 +8435,9 @@
       "shortDescription": "",
       "description": "Bộ chuyển đổi này để kết nối các cảm biến với giắc cắm 4 mm vào các thiết bị chuyển đổi có đầu vào CoachLab II+ hoặc WiLab",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691433222-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "CMA - Hà Lan",
@@ -8430,7 +8460,9 @@
       "shortDescription": "",
       "description": "1x Mô hình cân chính xác : Mẫu cân thử nghiệm, quả cân1x Tay vặn lục giác1x Bộ lò xo : 5 loại lò xo khác nhau1x Kìm: Mỏ nhọn, nhỏ1x Bút dạ bảng nhỏ1x Băng dính giấy1x Cuộn chỉ1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691426020-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8453,7 +8485,9 @@
       "shortDescription": "",
       "description": "3x Cốc đong thủy tinh 100 ml2x Nước cất : 500 ml1x Đũa thủy tinh : Dài tối thiểu 18 cm10x Lọ nhựa có nắp : Dung tích khoảng 50 ml1x Lọ chất chỉ thị Bicarbonate : 1000 ml1x Hộp đèn LED 4 màu độc lập : Gồm hộp đèn và adapter 12V (trắng, xanh, đỏ, xanh lá cây)1x Cân điện tử mini : Độ chia nhỏ nhất 1 g, giới hạn đo tối thiểu 500 g1x Băng dính đen1x Thước kẻ nhựa 20 cm1x Rong đuôi chó : 100 g (GV/HS tự trang bị)1x Khăn vải thấm nước1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691419306-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8476,7 +8510,9 @@
       "shortDescription": "",
       "description": "1x Mô hình quạt điện thông minh : Mô hình quạt điện, mặt bích CNC + 3 cánh quạt dài có thể thay đổi góc1x Động cơ một chiều 12V1x Tay vặn lục giác2x Dây điện đỏ đen, đầu bắp chuối : Dài tối thiểu 25 cm1x Hộp KIT nhựa : Dung tích 5,5 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691410024-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8499,7 +8535,9 @@
       "shortDescription": "",
       "description": "1x Túi bột nếp : 400 g1x Túi đường phên : 100 g1x Túi vừng trắng : 50 g1x Túi bột trà xanh : 10 g1x Túi bột nghệ : 15 g1x Túi hoa đậu biếc khô : 5 g2x Lọ tinh dầu (tạo mùi thơm an toàn) : 10 ml1x Cồn 90 độ : 50 ml1x Hộp diêm1x Kiềng đèn cồn1x Đèn cồn thủy tinh : 150 ml3x Pipet : Nhựa5x Cốc đong thủy tinh 100 ml4x Cốc đong thủy tinh 250 ml1x Cốc đong thủy tinh 500 ml1x Đũa thủy tinh : Dài tối thiểu 18 cm3x Kẹp ống nghiệm gỗ1x Muôi thủng inox nhỏ1x Khay nhựa : Kích thước tối thiểu 20 x 30 cm1x Rây nhỏ (dùng để lọc) : Đường kính tối thiểu 6 cm3x Bát nhựa to : Đường kính tối thiểu 15 cm1x Găng tay nilon : Hộp3x Cốc hạt mít : Dung tích tối thiểu 30 ml3x Đĩa giấy : Đường kính tối thiểu 10 cm1x Sáp ong : 300 g6x Bấc nến : Dài tối thiểu 6 cm1x Hộp KIT nhựa : Dung tích 30 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691402226-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8522,7 +8560,9 @@
       "shortDescription": "",
       "description": "500 ml có ống đồng1x Túi cát đen : 200 g1x Túi cát vàng : 200 g1x Túi sỏi nhỏ : 200 g1x Túi sỏi to : 200 g1x Túi than hoạt tính : 200 g5x Màng ngăn màu xanh : Đường kính tối thiểu 14 cm1x Khăn vải thấm nước1x Nước cất : 500 ml1x Bình tia : Dung tích tối thiểu 150 ml1x Lọ dung dịch chuẩn pH = 4,01 : 50 ml1x Lọ dung dịch chuẩn pH = 7,01 : 50 ml1x Lọ dung dịch chuẩn pH = 10,01 : 50 ml1x Cồn 90 độ : 50 ml1x Đèn cồn thủy tinh : 150 ml1x Kiềng đèn cồn3x Cốc đong thủy tinh 100 ml1x Bình tam giác 250 ml1x Nút cao su có lỗ Φ61x Bộ giá thí nghiệm : Cao 30 cm1x Hộp KIT nhựa : Dung tích 30 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691396742-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8545,7 +8585,9 @@
       "shortDescription": "",
       "description": "1x Mô hình lò sấy nông sản : Lò sấy + buồng sấy + ống thu nhiệt + giá treo mặt trời1x Giá đỡ cảm biến1x Tay vặn lục giác1x Quạt tản nhiệt DC 12V1x Động cơ giảm tốc 12V6x Dây điện đỏ đen, rắc bắp chuối1x Bóng sưởi : 220V1x Rơ le nút ấn ngắt mạch : Dạng nút ấn, dùng để ngắt mạch điện1x Hộp KIT nhựa : Dung tích 55 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691389550-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8568,7 +8610,9 @@
       "shortDescription": "",
       "description": "1x Nước cất : 500 ml1x Đũa thủy tinh : Dài tối thiểu 18 cm2x Ống đong 50 ml3x Cốc đong thủy tinh 100 ml3x Cốc đong thủy tinh 250 ml3x Bình tam giác 250 ml1x Gói tăm nhọn1x Dung dịch acetone : 20 ml1x Chai thủy tinh trắng nút mài miệng rộng 30 ml : Để đựng acetone3x Hoa cúc trắng : Giáo viên tự chuẩn bị3x Hoa hồng trắng : Giáo viên tự chuẩn bị1x Lá tía tô : 10 g1x Lọ màu thực phẩm vàng : Lọ chiết 10 ml1x Lọ màu thực phẩm hồng : Lọ chiết 10 ml1x Lọ màu thực phẩm cam : Lọ chiết 10 ml1x Cối sứ, chày sứ1x Kéo đầu tròn : Kéo làm từ thép không gỉ, phần đầu bo tròn1x Giấy roki1x Khăn vải thấm nước1x Tờ giấy A4 trắng1x Máy sấy tóc mini : Công suất < 1000 W1x Thước kẻ nhựa 20 cm1x Màng bọc thực phẩm nhỏ1x Hộp KIT nhựa : Dung tích 30 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691378567-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8591,7 +8635,9 @@
       "shortDescription": "",
       "description": "1x Mô hình nhà cách âm THCS : Mô hình nhà mái bằng phòng kín + các tấm cách âm1x Tay vặn lục giác1x Hộp còi chip : Có công tắc, 3 viên pin AA1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691372101-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8614,7 +8660,9 @@
       "shortDescription": "",
       "description": "1x Mô hình nhà kính : Nhà kính vách + nóc mica trong1x Động cơ giảm tốc 12V1x Màng chắn sáng : Vải đen2x Béc phun sương1x Bóng điện 220V + Đui đèn + Dây điện + Phích cắm2x Quạt tản nhiệt DC 12V (8×8)1x Máy bơm 12V1x Giá đỡ cảm biến1x Tay vặn lục giác6x Dây điện đỏ đen, rắc bắp chuối1x Cốc nhựa1x Thảm trải sàn màu xanh1x Dây nguồn 3 chấu : 220V1x Hộp KIT nhựa : Dung tích 30 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691364478-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8637,7 +8685,9 @@
       "shortDescription": "",
       "description": "1x Cốc đong thủy tinh 500 ml1x Cốc đong thủy tinh 100 ml1x Nước cất : 500 ml1x Ống đong 10 ml2x Lọ dung dịch HCl 1M : 50 ml1x Lọ dung dịch NaOH 0.1M : 50 ml1x Lọ chất chỉ thị Bicarbonate : 1000 ml1x Đũa thủy tinh : Dài tối thiểu 18 cm1x Lọ thuốc nhuộm xanh metylen : 10 ml1x Dao nhựa1x Hộp nhựa chịu nhiệt : Dung tích tối thiểu 500 ml1x Thước kẻ nhựa 20 cm1x Hộp dụng cụ mổ : Mũi mác, dao, kéo…1x Bình đun nước siêu tốc : Điện 220V, dung tích tối thiểu 1,0 lít1x Hộp lam kính1x Khăn vải thấm nước2x Túi bột thạch rau câu : 10 g1x Hộp KIT nhựa : Dung tích 30 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691353391-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8660,7 +8710,9 @@
       "shortDescription": "",
       "description": "1x Sữa tươi không đường 1 lít : GV tự trang bị1x Sữa tươi có đường 1 lít : GV tự trang bị3x Sữa chua gốc hộp 100 ml : GV tự trang bị1x Sữa đặc có đường 100 ml : GV tự trang bị2x Khay nhựa : Kích thước tối thiểu 20 × 30 cm6x Hũ thủy tinh : Dung tích khoảng 100 ml, có nắp đậy1x Bát nhựa to : Đường kính tối thiểu 15 cm1x Khăn vải thấm nước3x Thìa nhựa dài1x Bình đun nước siêu tốc : Điện 220V, dung tích tối thiểu 1,0 lít1x Cốc đong thủy tinh 100 ml1x Cốc đong thủy tinh 250 ml1x Nước cất : 500 ml1x Bình tia : Dung tích tối thiểu 150 ml1x Lọ dung dịch chuẩn pH = 10,01 : 50 ml1x Lọ dung dịch chuẩn pH = 7,01 : 50 ml1x Lọ dung dịch chuẩn pH = 4,01 : 50 ml1x Hộp KIT nhựa : Dung tích 15L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691341690-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8683,7 +8735,9 @@
       "shortDescription": "",
       "description": "1x Mô hình hệ thống chiếu sáng thông minh : Nhà có 5 điểm treo đèn + giá treo cảm biến5x Bóng 12V : Chân T101x Tay vặn lục giác6x Dây điện đỏ đen, rắc bắp chuối1x Hộp KIT nhựa : Dung tích 30 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691336314-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8706,7 +8760,9 @@
       "shortDescription": "",
       "description": "1x Mô hình động cơ nhiệt mini : Phần khung nhựa có hai đầu bắt xi lanh; bi thủy tinh; bánh đà to; bánh đà nhỏ; ống nghiệm; xi lanh 20 cc; đế và giá đỡ động cơ; ống tio chịu nhiệt; vòng bi; tay quay1x Tay vặn lục giác1x Hộp diêm1x Đèn cồn thủy tinh : 150 ml1x Cồn 90 độ : 50 ml1x Gói bông y tế1x Khăn vải thấm nước1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691331013-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8729,7 +8785,9 @@
       "shortDescription": "",
       "description": "1x Đường tinh luyện : 200 g1x Bắp cải tím : 200 g (GV tự chuẩn bị)2x Thìa nhựa ngắn1x Bình đun nước siêu tốc : Điện 220 V, dung tích tối thiểu 1,0 lít1x Dao nhựa1x Kéo đầu tròn : Kéo làm từ thép không gỉ, phần đầu bo tròn1x Khăn vải thấm nước1x Nước rửa chén : Tối thiểu 200 ml1x Chai nước có gas : GV tự chuẩn bị1x Bình tia : Dung tích tối thiểu 150 ml1x Lọ dung dịch HCl 0.1M : 50 ml1x Lọ dung dịch NaOH 0.1M : 50 ml2x Nước cất : 500 ml1x Lọ dung dịch chuẩn pH = 10,01 : 50 ml1x Lọ dung dịch chuẩn pH = 7,01 : 50 ml1x Lọ dung dịch chuẩn pH = 4,01 : 50 ml6x Pipet : Nhựa8x Cốc đong thủy tinh 100 ml1x Cuộn giấy dán nhãn1x Túi giấy lọc : 20 tờ1x Cốc đong thủy tinh 1000 ml2x Ống đong 25 ml2x Đũa thủy tinh : Dài tối thiểu 18 cm1x Hộp KIT nhựa : Dung tích 30 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691324893-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8752,7 +8810,9 @@
       "shortDescription": "",
       "description": "1x Đũa thủy tinh : Dài tối thiểu 18 cm3x Phèn chua : 100 g2x Đĩa Petri : Thủy tinh, đường kính tối thiểu 8 cm2x Cốc đong thủy tinh 250 ml1x Nước cất : 500 ml1x Cồn 90 độ : 50 ml1x Kiềng đèn cồn1x Đèn cồn thủy tinh : 150 ml1x Kính lúp : Đường kính 50 mm1x Keo 5021x Hộp diêm1x Que tre/gỗ nhỏ : Gói 10 que, que gỗ y tế1x Cuộn chỉ1x Cân điện tử mini : Độ chia nhỏ nhất 1 g, giới hạn đo tối thiểu 500 g1x Hộp KIT nhựa : Dung tích 30 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691319378-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8775,7 +8835,9 @@
       "shortDescription": "",
       "description": "1x Mạch in1x Mút giảm nhiệt1x Nguồn adapter 5V 1A1x Đế hàn : Có bảo vệ chống bỏng1x Tụ hóa 100 µF 16V1x Jack DC 5 mm10x Trở vạch 1/4W 5% : 220 Ω1x Kìm cắt linh kiện1x Cuộn thiếc hàn2x LED 10 mm RGB Katot3x Biến trở : 100 kΩ1x Mỡ hàn : Hoặc nhựa thông1x Tua vít 2 cạnh đầu dẹt nhỏ1x Tay hàn 60 W1x Hộp KIT nhựa : 2 tầng",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691311873-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
@@ -8798,7 +8860,9 @@
       "shortDescription": "",
       "description": "1x Mô hình đèn ngủ thông minh : Mô hình đèn ngủ1x Giá đỡ cảm biến1x Tay vặn lục giác1x Bóng đèn 12V : Chân T104x Dây điện đỏ đen, rắc bắp chuối1x Hộp KIT nhựa : Dung tích 15 L",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786691300430-bulk-clip.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-08",
       "brand": "EBD - Việt Nam",
