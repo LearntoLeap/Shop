@@ -1712,33 +1712,113 @@ async function bulkConfirmEdit() {
 
   if (!updates.length) { alert('Không có sản phẩm nào để cập nhật (đã xóa hết dòng?).'); return; }
 
-  // SKU uniqueness across all products after edit
-  const newSkuMap = new Map();
+  // Kiểm tra SKU trùng: build map sku → [product,...] sau khi apply changes
+  const skuMap = new Map();
   STATE.data.products.forEach(p => {
     const u = updates.find(x => x.product.id === p.id);
     const sku = (u && u.changes.sku !== undefined) ? u.changes.sku : p.sku;
     if (sku) {
-      if (newSkuMap.has(sku)) errors.push(`SKU "${sku}" bị trùng giữa nhiều sản phẩm`);
-      else newSkuMap.set(sku, p.id);
+      if (!skuMap.has(sku)) skuMap.set(sku, []);
+      skuMap.get(sku).push({ product: p, changes: (u && u.changes) || null });
     }
   });
+  const dupSkus = Array.from(skuMap.entries()).filter(([, arr]) => arr.length > 1);
 
   if (errors.length) {
-    alert('Có lỗi:\n\n• ' + errors.slice(0, 10).join('\n• ') + (errors.length > 10 ? `\n…và ${errors.length - 10} lỗi khác` : ''));
+    alert('Có lỗi (không phải SKU trùng):\n\n• ' + errors.slice(0, 10).join('\n• ') + (errors.length > 10 ? `\n…và ${errors.length - 10} lỗi khác` : ''));
+    return;
+  }
+
+  // Nếu có SKU trùng → mở modal chọn cách xử lý
+  if (dupSkus.length) {
+    showSkuConflictModal(dupSkus, updates);
     return;
   }
 
   if (!confirm(`Áp dụng thay đổi cho ${updates.length} sản phẩm? (commit 1 lần lên GitHub)`)) return;
 
+  await bulkApplyEditAndSave(updates, '');
+}
+
+function showSkuConflictModal(dupSkus, updates) {
+  const box = document.getElementById('editorBox');
+  if (box) { box.classList.remove('max-w-3xl', 'max-w-7xl'); box.classList.add('max-w-4xl'); }
+  document.getElementById('editorContent').innerHTML = `
+    <div class="p-6">
+      <div class="flex justify-between items-center mb-3">
+        <h2 class="text-xl font-bold text-amber-700">⚠️ ${dupSkus.length} SKU đang trùng</h2>
+        <button onclick="closeEditor()" class="text-2xl text-slate-400 hover:text-slate-700">&times;</button>
+      </div>
+      <p class="text-sm text-slate-700 mb-3">SKU dùng để tạo URL trang chi tiết — mỗi SKU chỉ nên xuất hiện ở 1 sản phẩm. Chọn cách xử lý:</p>
+      <div class="border rounded-lg max-h-64 overflow-auto mb-4">
+        <table class="w-full text-xs">
+          <thead class="bg-slate-100 sticky top-0">
+            <tr><th class="px-2 py-1.5 text-left w-32">SKU trùng</th><th class="px-2 py-1.5 text-left">SP có SKU này</th></tr>
+          </thead>
+          <tbody>
+            ${dupSkus.map(([sku, arr]) => `<tr class="border-t">
+              <td class="px-2 py-1.5 font-mono font-semibold text-brand-700">${sku}</td>
+              <td class="px-2 py-1.5 text-slate-700">${arr.map((x, i) => `<span class="${i === 0 ? 'text-emerald-700 font-semibold' : 'text-red-600'}">${x.product.name}${i === 0 ? ' (giữ)' : ' (trùng)'}</span>`).join(' • ')}</td>
+            </tr>`).join('')}
+          </tbody>
+        </table>
+      </div>
+      <div class="space-y-2">
+        <button onclick="resolveSkuConflict('clearDup')" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 rounded text-left px-4">
+          🧹 <b>Xóa SKU khỏi các bản trùng</b> — Giữ nguyên tất cả SP, nhưng chỉ SP đầu tiên có SKU đó, các SP còn lại để trống SKU (sẽ dùng URL theo tên)
+        </button>
+        <button onclick="resolveSkuConflict('mergeDup')" class="w-full bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2.5 rounded text-left px-4">
+          🔗 <b>Gộp — Xóa hẳn các SP trùng</b> — Chỉ giữ SP đầu tiên có SKU đó, các SP còn lại bị xóa khỏi shop
+        </button>
+        <button onclick="closeEditor()" class="w-full border-2 border-slate-300 text-slate-700 font-semibold py-2.5 rounded">Hủy — Anh tự sửa SKU</button>
+      </div>
+    </div>
+  `;
+  openEditor();
+  window._skuConflict = { dupSkus, updates };
+}
+
+async function resolveSkuConflict(action) {
+  const ctx = window._skuConflict;
+  if (!ctx) return;
+  const { dupSkus, updates } = ctx;
+
+  if (action === 'clearDup') {
+    // Clear SKU on 2nd+ duplicates
+    for (const [, arr] of dupSkus) {
+      for (let i = 1; i < arr.length; i++) {
+        const item = arr[i];
+        if (item.changes) item.changes.sku = '';
+        else item.product.sku = '';
+      }
+    }
+  } else if (action === 'mergeDup') {
+    // Delete 2nd+ duplicate products
+    const toDelete = new Set();
+    for (const [, arr] of dupSkus) {
+      for (let i = 1; i < arr.length; i++) toDelete.add(arr[i].product.id);
+    }
+    STATE.data.products = STATE.data.products.filter(p => !toDelete.has(p.id));
+    // Also drop from updates (those products no longer exist)
+    for (let i = updates.length - 1; i >= 0; i--) {
+      if (toDelete.has(updates[i].product.id)) updates.splice(i, 1);
+    }
+  }
+
+  closeEditor();
+  await bulkApplyEditAndSave(updates, action === 'mergeDup' ? ` + gộp ${dupSkus.length} SKU trùng` : ` + dọn SKU trùng`);
+  window._skuConflict = null;
+}
+
+async function bulkApplyEditAndSave(updates, suffix) {
   updates.forEach(({ product, changes }) => {
+    if (!STATE.data.products.find(p => p.id === product.id)) return;
     Object.assign(product, changes);
     if (changes.name) product.slug = slugify(changes.name);
   });
-
   STATE.selection.clear();
-  closeEditor();
   renderProducts();
-  await saveProductsFile(`Bulk: sửa hàng loạt ${updates.length} sản phẩm`);
+  await saveProductsFile(`Bulk edit ${updates.length} SP${suffix}`);
 }
 
 // ---------- CATEGORY EDITOR ----------
