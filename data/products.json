@@ -1916,7 +1916,9 @@
       "shortDescription": "",
       "description": "Sa bàn cho Bộ mô hình lắp ráp STEM Robotics điều khiển theo các chủ đề dành cho THCS, có tài liệu hướng dẫn đi kèm. Thông số Kỹ thuật: Kích thước tổng thể: khoảng 1.8m x 2.0mChất liệu bề mặt: tấm Formex chuyên dụng, độ cứng nhẹ, an toàn, không thấm nướcĐộ dày vật liệu: từ 3–5 mm, đảm bảo ổn định khi đặt trên sànCấu trúc: bề mặt phẳng, in mô phỏng khu vực nhiệm vụ, đường di chuyển và các ký hiệu trực quanTrọng lượng: nhẹ, thuận tiện di chuyển và bố trí trong phòng họcMàu sắc: sử dụng mực in không độc hại, hình ảnh rõ nét, độ tương phản phù hợpMô tả: Sa bàn thực hành Robotics dành cho cấp Tiểu học được thiết kế như một mô hình mô phỏng không gian học tập trực quan, hỗ trợ học sinh thực hành điều khiển và lập trình robot thông qua các nhiệm vụ mang tính tư duy và giải quyết vấn đề. Bề mặt sa bàn bao gồm các tuyến đường, nút rẽ, khu vực phân luồng, điểm dừng, vật cản an toàn và thẻ nhiệm vụ, cho phép học sinh trải nghiệm nhiều dạng thử thách như điều hướng, tránh chướng ngại, nhận diện ký hiệu, thực hiện lộ trình hoặc hoàn thành nhiệm vụ theo kịch bản.Nhờ sử dụng vật liệu an toàn, bền nhẹ và không góc cạnh, sa bàn phù hợp sử dụng trong lớp học, phòng thí nghiệm STEM hoặc không gian trải nghiệm. Hệ thống giúp giáo viên tổ chức hiệu quả các hoạt động học tập có tính thực hành cao, đồng thời rèn luyện cho học sinh các kỹ năng như tư duy logic, lập trình cơ bản, kỹ năng quan sát – phán đoán, hợp tác nhóm và điều khiển robot theo quy trình.",
       "tags": [],
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1786702078506-iot-009.png"
+      ],
       "featured": false,
       "createdAt": "2026-08-10"
     },
