@@ -39,6 +39,31 @@
   ],
   "products": [
     {
+      "id": "pmsy8tatar4tq",
+      "name": "Máy cắt CNC",
+      "slug": "may-cat-cnc",
+      "sku": "TPA-3020",
+      "category": "robotics-ai",
+      "model": "",
+      "project": "",
+      "projectCode": "",
+      "brand": "ETEK / Việt Nam",
+      "origin": "",
+      "priceMode": "show",
+      "price": 0,
+      "originalPrice": 0,
+      "currency": "VND",
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1787032176439-image.png"
+      ],
+      "shortDescription": "",
+      "description": "- Vùng hoạt động: X x Y x Z = 300mm x 200mm x 45mm\n- Kết cấu : Nhôm 6061\n- Nguồn hoạt động: 24V 5A\n- Motor khắc: motor 500W  24V 12.000 RPM\n- Collet kẹp dao: ER11\n- Đường kính dao: 1 - 8mm\n- Motor bước: size 42 1.3A 0.25Nm\n- Cổng kết nối: USB",
+      "tags": [],
+      "stock": 0,
+      "featured": false,
+      "createdAt": "2026-08-18"
+    },
+    {
       "id": "pmsn2sza41piq",
       "name": "Loa MIC đa hướng có lọc nhiễu - dành để thu âm bài giảng",
       "slug": "loa-mic-da-huong-co-loc-nhieu-danh-de-thu-am-bai-giang",
