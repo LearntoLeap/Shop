@@ -67,7 +67,9 @@
       "createdAt": "2026-09-23",
       "sku": "SMART-WARI25",
       "slug": "mo-hinh-stem-phun-tuoi-cay-trong",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163239168-bulk-clip.png"
+      ],
       "tags": [],
       "model": "SMART-WARI25",
       "project": "",
@@ -90,7 +92,10 @@
       "createdAt": "2026-09-23",
       "sku": "METAQUEST3S (218G)",
       "slug": "kinh-thuc-te-ao",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163204753-bulk-clip.png",
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163211450-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "METAQUEST3S (218G)",
       "project": "",
@@ -113,7 +118,9 @@
       "createdAt": "2026-09-23",
       "sku": "PF002-A",
       "slug": "may-in-3d-danh-cho-tieu-hoc",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163201467-bulk-clip.png"
+      ],
       "tags": [],
       "model": "PF002-A",
       "project": "",
@@ -136,7 +143,9 @@
       "createdAt": "2026-09-23",
       "sku": "LTLSBRBTTIH",
       "slug": "bo-sa-ban-thuc-hanh-robot",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163198086-bulk-clip.png"
+      ],
       "tags": [],
       "model": "LTLSBRBTTIH",
       "project": "",
@@ -159,7 +168,9 @@
       "createdAt": "2026-09-23",
       "sku": "SERK01-CKSERK01-EK",
       "slug": "bo-lap-ghep-ky-thuat-va-co-cau-chuyen-dong-tich-hop-lap-trinh-dieu-khien",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163193262-bulk-clip.png"
+      ],
       "tags": [],
       "model": "SERK01-CKSERK01-EK",
       "project": "",
@@ -182,7 +193,9 @@
       "createdAt": "2026-09-23",
       "sku": "ISBN: 978-604-73-8385-6",
       "slug": "bo-hoc-lieu-tu-duy-thuat-toan-va-lap-trinh-truc-quan-chu-de-trai-nghiem-ai-tap-2",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163185293-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ISBN: 978-604-73-8385-6",
       "project": "",
@@ -205,7 +218,9 @@
       "createdAt": "2026-09-23",
       "sku": "ISBN: 978-604-73-8384-9",
       "slug": "bo-hoc-lieu-tu-duy-thuat-toan-va-lap-trinh-truc-quan-chu-de-trai-nghiem-ai-tap-1",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163182465-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ISBN: 978-604-73-8384-9",
       "project": "",
@@ -228,7 +243,9 @@
       "createdAt": "2026-09-23",
       "sku": "ISBN: 978-604-73-8322-1",
       "slug": "bo-hoc-lieu-tu-duy-thuat-toan-va-lap-trinh-truc-quan-chu-de-robot-lap-trinh-co-ban-tap-2",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163179607-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ISBN: 978-604-73-8322-1",
       "project": "",
@@ -251,7 +268,9 @@
       "createdAt": "2026-09-23",
       "sku": "ISBN: 978-604-73-8321-4",
       "slug": "bo-hoc-lieu-tu-duy-thuat-toan-va-lap-trinh-truc-quan-chu-de-robot-lap-trinh-co-ban-tap-1",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163176286-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ISBN: 978-604-73-8321-4",
       "project": "",
@@ -274,7 +293,9 @@
       "createdAt": "2026-09-23",
       "sku": "ERKH101",
       "slug": "bo-robot-thong-minh-trai-nghiem-ai-truc-quan",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163167838-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "ERKH101",
       "project": "",
@@ -297,7 +318,9 @@
       "createdAt": "2026-09-23",
       "sku": "ERKG101",
       "slug": "bo-robot-thong-minh-giao-duc-lap-trinh-co-ban",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163163192-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "ERKG101",
       "project": "",
@@ -320,7 +343,9 @@
       "createdAt": "2026-09-23",
       "sku": "ISBN: 978-604-0-31528-1",
       "slug": "hoat-dong-giao-duc-stem-5",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163149977-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ISBN: 978-604-0-31528-1",
       "project": "",
@@ -343,7 +368,9 @@
       "createdAt": "2026-09-23",
       "sku": "ISBN: 978-604-0-31513-7",
       "slug": "hoat-dong-giao-duc-stem-4",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163143283-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ISBN: 978-604-0-31513-7",
       "project": "",
@@ -366,7 +393,9 @@
       "createdAt": "2026-09-23",
       "sku": "ISBN: 978-604-0-41904-0",
       "slug": "hoat-dong-giao-duc-stem-3",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163135887-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ISBN: 978-604-0-41904-0",
       "project": "",
@@ -389,7 +418,9 @@
       "createdAt": "2026-09-23",
       "sku": "ISBN: 978-604-0-31493-2",
       "slug": "hoat-dong-giao-duc-stem-2",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163127766-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ISBN: 978-604-0-31493-2",
       "project": "",
@@ -412,7 +443,9 @@
       "createdAt": "2026-09-23",
       "sku": "ISBN: 978-604-0-41896-8",
       "slug": "hoat-dong-giao-duc-stem-1",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163121065-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ISBN: 978-604-0-41896-8",
       "project": "",
@@ -435,7 +468,9 @@
       "createdAt": "2026-09-23",
       "sku": "BT66i",
       "slug": "cam-bien-do-ap-suat-khi",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163113027-bulk-clip.png"
+      ],
       "tags": [],
       "model": "BT66i",
       "project": "",
@@ -458,7 +493,9 @@
       "createdAt": "2026-09-23",
       "sku": "TH20",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-em-dieu-khien-va-tham-gia-giao-thong-lop-5",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163085255-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "TH20",
       "project": "",
@@ -481,7 +518,9 @@
       "createdAt": "2026-09-23",
       "sku": "TH19",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-loc-nuoc-sach-lop-5",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163078091-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "TH19",
       "project": "",
@@ -504,7 +543,9 @@
       "createdAt": "2026-09-23",
       "sku": "TH15",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-may-phat-dien-gio-lop-4",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163071570-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "TH15",
       "project": "",
@@ -527,7 +568,9 @@
       "createdAt": "2026-09-23",
       "sku": "TH14",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nha-mat-lop-4",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163060071-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "TH14",
       "project": "",
@@ -550,7 +593,9 @@
       "createdAt": "2026-09-23",
       "sku": "TH11",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-he-thong-chua-chay-tu-dong-lop-3",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163050066-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "TH11",
       "project": "",
@@ -573,7 +618,9 @@
       "createdAt": "2026-09-23",
       "sku": "TH09",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-he-ho-hap-lop-3",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163047133-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "TH09",
       "project": "",
@@ -596,7 +643,9 @@
       "createdAt": "2026-09-23",
       "sku": "TH07",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-tim-hieu-ve-am-thanh-lop-2",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163043523-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "TH07",
       "project": "",
@@ -1424,7 +1473,9 @@
       "createdAt": "2026-09-23",
       "sku": "SMART-CAR3101TN",
       "slug": "mo-hinh-stem-xe-robot-da-nang",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163001694-bulk-clip.png"
+      ],
       "tags": [],
       "model": "SMART-CAR3101TN",
       "project": "",
@@ -1447,7 +1498,9 @@
       "createdAt": "2026-09-23",
       "sku": "SMART-CLEWA25",
       "slug": "mo-hinh-stem-xu-ly-nuoc-trong-ao-ho",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162998453-bulk-clip.png"
+      ],
       "tags": [],
       "model": "SMART-CLEWA25",
       "project": "",
@@ -1470,7 +1523,9 @@
       "createdAt": "2026-09-23",
       "sku": "SMART-HOME25",
       "slug": "mo-hinh-stem-dieu-khien-nha-thong-minh",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162993642-bulk-clip.png"
+      ],
       "tags": [],
       "model": "SMART-HOME25",
       "project": "",
@@ -1493,7 +1548,10 @@
       "createdAt": "2026-09-23",
       "sku": "METAQUEST3 (512G)",
       "slug": "kinh-thuc-te-ao",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162988567-bulk-clip.jpg",
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790163231805-bulk-clip.png"
+      ],
       "tags": [],
       "model": "METAQUEST3 (512G)",
       "project": "",
@@ -1516,7 +1574,9 @@
       "createdAt": "2026-09-23",
       "sku": "PF001-U",
       "slug": "may-in-3d-danh-cho-thcs-thpt",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162983441-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "PF001-U",
       "project": "",
@@ -1539,7 +1599,9 @@
       "createdAt": "2026-09-23",
       "sku": "LTLSBRBTTHCS",
       "slug": "san-thi-dau-robot-theo-the-thuc-giai-dau",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162979012-bulk-clip.png"
+      ],
       "tags": [],
       "model": "LTLSBRBTTHCS",
       "project": "",
@@ -1562,7 +1624,9 @@
       "createdAt": "2026-09-23",
       "sku": "SERK01-CKSERK01-EKSERK01-SK",
       "slug": "bo-robot-thi-dau-ket-cau-mo",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162976251-bulk-clip.png"
+      ],
       "tags": [],
       "model": "SERK01-CKSERK01-EKSERK01-SK",
       "project": "",
@@ -1585,7 +1649,9 @@
       "createdAt": "2026-09-23",
       "sku": "ERMP102",
       "slug": "bo-sa-ban-trai-chu-de-bao-ve-thanh-pho",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162968966-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ERMP102",
       "project": "",
@@ -1608,7 +1674,9 @@
       "createdAt": "2026-09-23",
       "sku": "ERXE702",
       "slug": "bo-dao-cu-nhiem-vu-robot-ai-chu-de-bao-ve-thanh-pho",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162966220-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ERXE702",
       "project": "",
@@ -1631,7 +1699,9 @@
       "createdAt": "2026-09-23",
       "sku": "ERXF702",
       "slug": "bo-dao-cu-nhiem-vu-robot-ai-chu-de-kham-pha-khong-gian",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162963379-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ERXF702",
       "project": "",
@@ -1654,7 +1724,9 @@
       "createdAt": "2026-09-23",
       "sku": "EKBTC01",
       "slug": "tay-cam-ket-noi-bluetooth-dieu-khien-robot",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162956077-bulk-clip.png"
+      ],
       "tags": [],
       "model": "EKBTC01",
       "project": "",
@@ -1677,7 +1749,9 @@
       "createdAt": "2026-09-23",
       "sku": "ERXI101",
       "slug": "bo-robot-ai-da-hinh-thai-tich-hop-camera-thi-giac-may",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162952442-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ERXI101",
       "project": "",
@@ -1700,7 +1774,9 @@
       "createdAt": "2026-09-23",
       "sku": "ISBN: 978-604-0-41920-0",
       "slug": "hoat-dong-giao-duc-stem-9",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162928624-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ISBN: 978-604-0-41920-0",
       "project": "",
@@ -1723,7 +1799,9 @@
       "createdAt": "2026-09-23",
       "sku": "ISBN: 978-604-0-36559-0",
       "slug": "hoat-dong-giao-duc-stem-8",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162936580-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ISBN: 978-604-0-36559-0",
       "project": "",
@@ -1746,7 +1824,9 @@
       "createdAt": "2026-09-23",
       "sku": "ISBN: 978-604-0-36558-3",
       "slug": "hoat-dong-giao-duc-stem-7",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162919702-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ISBN: 978-604-0-36558-3",
       "project": "",
@@ -1769,7 +1849,9 @@
       "createdAt": "2026-09-23",
       "sku": "ISBN: 978-604-0-36557-6",
       "slug": "hoat-dong-giao-duc-stem-6",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162914667-bulk-clip.png"
+      ],
       "tags": [],
       "model": "ISBN: 978-604-0-36557-6",
       "project": "",
@@ -1792,7 +1874,9 @@
       "createdAt": "2026-09-23",
       "sku": "0520",
       "slug": "cap-chuyen-doi-bt-4mm",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162895106-bulk-clip.png"
+      ],
       "tags": [],
       "model": "0520",
       "project": "",
@@ -1815,7 +1899,9 @@
       "createdAt": "2026-09-23",
       "sku": "BT42i",
       "slug": "cam-bien-luc",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162891850-bulk-clip.png"
+      ],
       "tags": [],
       "model": "BT42i",
       "project": "",
@@ -1838,7 +1924,9 @@
       "createdAt": "2026-09-23",
       "sku": "BT29i",
       "slug": "cam-bien-mau",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162884574-bulk-clip.png"
+      ],
       "tags": [],
       "model": "BT29i",
       "project": "",
@@ -1861,7 +1949,9 @@
       "createdAt": "2026-09-23",
       "sku": "BT25i",
       "slug": "cam-bien-do-nong-do-khi-co2",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162881835-bulk-clip.tiff"
+      ],
       "tags": [],
       "model": "BT25i",
       "project": "",
@@ -1884,7 +1974,9 @@
       "createdAt": "2026-09-23",
       "sku": "BT21i",
       "slug": "cam-bien-dong-dien",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162870553-bulk-clip.png"
+      ],
       "tags": [],
       "model": "BT21i",
       "project": "",
@@ -1907,7 +1999,9 @@
       "createdAt": "2026-09-23",
       "sku": "BTsc_1",
       "slug": "cap-ket-noi",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162851591-bulk-clip.png"
+      ],
       "tags": [],
       "model": "BTsc_1",
       "project": "",
@@ -1930,7 +2024,9 @@
       "createdAt": "2026-09-23",
       "sku": "BT72i",
       "slug": "cam-bien-do-do-am",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162847615-bulk-clip.tiff"
+      ],
       "tags": [],
       "model": "BT72i",
       "project": "",
@@ -1953,7 +2049,9 @@
       "createdAt": "2026-09-23",
       "sku": "BT88i",
       "slug": "cam-bien-do-do-duc",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162834671-bulk-clip.png"
+      ],
       "tags": [],
       "model": "BT88i",
       "project": "",
@@ -1976,7 +2074,9 @@
       "createdAt": "2026-09-23",
       "sku": "BT80i",
       "slug": "cam-bien-do-cuong-do-am-thanh",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162823864-bulk-clip.tiff"
+      ],
       "tags": [],
       "model": "BT80i",
       "project": "",
@@ -1999,7 +2099,9 @@
       "createdAt": "2026-09-23",
       "sku": "031",
       "slug": "dien-cuc-ph",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162753059-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "031",
       "project": "",
@@ -2022,7 +2124,9 @@
       "createdAt": "2026-09-23",
       "sku": "BT61i",
       "slug": "cam-bien-do-do-ph",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162750344-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "BT61i",
       "project": "",
@@ -2045,7 +2149,9 @@
       "createdAt": "2026-09-23",
       "sku": "BT31i",
       "slug": "cam-bien-dien-the",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162744898-bulk-clip.png"
+      ],
       "tags": [],
       "model": "BT31i",
       "project": "",
@@ -2068,7 +2174,9 @@
       "createdAt": "2026-09-23",
       "sku": "BT50i",
       "slug": "cam-bien-anh-sang",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162830153-bulk-clip.png"
+      ],
       "tags": [],
       "model": "BT50i",
       "project": "",
@@ -2091,7 +2199,9 @@
       "createdAt": "2026-09-23",
       "sku": "BT05i",
       "slug": "cam-bien-do-nhiet-do",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162733529-bulk-clip.png"
+      ],
       "tags": [],
       "model": "BT05i",
       "project": "",
@@ -2114,7 +2224,9 @@
       "createdAt": "2026-09-23",
       "sku": "002",
       "slug": "bo-chuyen-doi-tin-hieu-so",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162730506-bulk-clip.png"
+      ],
       "tags": [],
       "model": "002",
       "project": "",
@@ -2137,7 +2249,9 @@
       "createdAt": "2026-09-23",
       "sku": "006p",
       "slug": "bo-dieu-khien-thu-nhan-tin-hieu-so",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162727429-bulk-clip.png"
+      ],
       "tags": [],
       "model": "006p",
       "project": "",
@@ -2160,7 +2274,9 @@
       "createdAt": "2026-09-23",
       "sku": "THCS20",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chat-tay-rua-lop-9",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162708401-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "THCS20",
       "project": "",
@@ -2183,7 +2299,9 @@
       "createdAt": "2026-09-23",
       "sku": "THCS19",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-may-phat-dien-gio-lop-9",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162705585-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "THCS19",
       "project": "",
@@ -2206,7 +2324,9 @@
       "createdAt": "2026-09-23",
       "sku": "THCS18",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-pha-che-va-thu-nghiem-chat-khu-trung-lop-9",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162702809-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "THCS18",
       "project": "",
@@ -2229,7 +2349,9 @@
       "createdAt": "2026-09-23",
       "sku": "THCS16",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-den-doi-mau-lop-9",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162691564-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "THCS16",
       "project": "",
@@ -2252,7 +2374,9 @@
       "createdAt": "2026-09-23",
       "sku": "THCS15",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-hanh-trinh-hoa-tan-va-ket-tinh-lop-8",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162688281-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "THCS15",
       "project": "",
@@ -2275,7 +2399,9 @@
       "createdAt": "2026-09-23",
       "sku": "THCS14",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chat-chi-thi-tu-nhien-lop-8",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162684576-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "THCS14",
       "project": "",
@@ -2298,7 +2424,9 @@
       "createdAt": "2026-09-23",
       "sku": "THCS13",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-dong-co-nhiet-mini-lop-8",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162676006-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "THCS13",
       "project": "",
@@ -2321,7 +2449,9 @@
       "createdAt": "2026-09-23",
       "sku": "THCS11",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-qua-trinh-chin-sinh-hoc-lop-8",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162672390-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "THCS11",
       "project": "",
@@ -2344,7 +2474,9 @@
       "createdAt": "2026-09-23",
       "sku": "THCS10",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-su-da-dang-cua-the-gioi-sinh-vat-duoi-kinh-hien-vi-lop-7",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162669720-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "THCS10",
       "project": "",
@@ -2367,7 +2499,9 @@
       "createdAt": "2026-09-23",
       "sku": "THCS08",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-nha-cach-am-lop-7",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162659616-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "THCS08",
       "project": "",
@@ -2390,7 +2524,9 @@
       "createdAt": "2026-09-23",
       "sku": "THCS07",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-cuoc-chay-dua-sac-mau-lop-7",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162656826-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "THCS07",
       "project": "",
@@ -2413,7 +2549,9 @@
       "createdAt": "2026-09-23",
       "sku": "THCS06",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-lo-say-nong-san-lop-7",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162653665-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "THCS06",
       "project": "",
@@ -2459,7 +2597,9 @@
       "createdAt": "2026-09-23",
       "sku": "THCS04",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-chat-tao-mau-tu-nhien-lop-6",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162638868-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "THCS04",
       "project": "",
@@ -2482,7 +2622,9 @@
       "createdAt": "2026-09-23",
       "sku": "THCS02",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-anh-sang-va-la-phoi-xanh-lop-6",
-      "images": [],
+      "images": [
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162634273-bulk-clip.jpg"
+      ],
       "tags": [],
       "model": "THCS02",
       "project": "",
@@ -2506,7 +2648,7 @@
       "sku": "THCS01",
       "slug": "thiet-bi-dung-cu-vat-tu-tieu-hao-chu-de-can-chinh-xac-lop-6",
       "images": [
-        "https://drive.google.com/file/d/15gDZUJ0KUlm6z-M8Ej1XUiz1vLumZFvd/view?usp=drive_link"
+        "https://raw.githubusercontent.com/LearntoLeap/Shop/main/images/1790162630336-bulk-clip.jpg"
       ],
       "tags": [],
       "model": "THCS01",
