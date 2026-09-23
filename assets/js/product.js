@@ -143,7 +143,9 @@ function render(p, data) {
         <h1 class="text-2xl md:text-3xl font-extrabold mb-3 text-slate-800">${p.name}</h1>
         ${p.shortDescription ? `<p class="text-slate-600 mb-4 whitespace-pre-line">${p.shortDescription}</p>` : ''}
 
-        <div class="flex items-center gap-3 flex-wrap mb-5 pb-5 border-b border-slate-200">${priceHtml}</div>
+        <div class="flex items-center gap-3 flex-wrap mb-1">${priceHtml}</div>
+        ${isContact ? '' : `<div class="text-xs text-slate-500 italic mb-5 pb-5 border-b border-slate-200">(Giá trên chưa bao gồm VAT)</div>`}
+        ${isContact ? '<div class="mb-5 pb-5 border-b border-slate-200"></div>' : ''}
 
         <div class="space-y-2 mb-5 text-sm">
           <div class="flex items-center gap-2">
